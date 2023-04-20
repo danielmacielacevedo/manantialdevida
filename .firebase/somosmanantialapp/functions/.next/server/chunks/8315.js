@@ -40,7 +40,7 @@ function PredicaCardDetails(props) {
             cardVideo && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "jsx-c1f99963e9de84b7" + " " + "LinkContainer",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                    href: encodeURI(cardVideo.url),
+                    href: encodeURI(cardVideo.profileURL.replace("?", "/") + cardVideo.url),
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "jsx-c1f99963e9de84b7" + " " + "PredicadorContainer",
                         children: [

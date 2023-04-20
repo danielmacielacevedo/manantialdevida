@@ -45,11 +45,11 @@ function BackHeader() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-c3374eba3cbaa189" + " " + "BackHeaderContainer"
+                className: "jsx-59032b14dfb0ae6f" + " " + "BackHeaderContainer"
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "c3374eba3cbaa189",
-                children: ".BackHeaderContainer.jsx-c3374eba3cbaa189{width:100%;height:120px;background:var(--primary-color)}"
+                id: "59032b14dfb0ae6f",
+                children: ".BackHeaderContainer.jsx-59032b14dfb0ae6f{width:100%;height:80px;background:var(--primary-color)}"
             })
         ]
     });
