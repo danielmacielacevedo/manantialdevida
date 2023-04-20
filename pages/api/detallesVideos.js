@@ -11,6 +11,42 @@ export default function detallesVideos(req, res) {
       profileURL: '/@pastorisaac',
       embed: 'YOCJ-BZ5fvA',
     },
+
+    {
+      title: '¿De dónde vienes?',
+      autor: 'Pastor Isaac Delgado',
+      picture: '/assets/predicadores/pastor-isaac.png',
+      date: '12 ABRIL 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/pastor-isaac/de-donde-vienes.jpg',
+      url: '/de-donde-vienes',
+      profileURL: '/@pastorisaac',
+      embed: 'tKQuTw-99Ww',
+    },
+
+    {
+      title: 'Atrévete a caminar en la dirección de Dios',
+      autor: 'Pastor Isaac Delgado',
+      picture: '/assets/predicadores/pastor-isaac.png',
+      date: '16 ABRIL 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/pastor-isaac/atrevete-a-caminar-en-la-direccion-de-DIOS.jpg',
+      url: '/atrevete-a-caminar-en-la-direccion-de-DIOS',
+      profileURL: '/@pastorisaac',
+      embed: 'ocKoE3kWrs4',
+    },
+
+    {
+      title: 'Nunca te olvides',
+      autor: 'Pastor Isaac Delgado',
+      picture: '/assets/predicadores/pastor-isaac.png',
+      date: '19 ABRIL 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/pastor-isaac/nunca-te-olvides.jpg',
+      url: '/nunca-te-olvides',
+      profileURL: '/@pastorisaac',
+      embed: 'ipR1P12oR9g',
+    },
   ];
 
   const pastoraDina = [

@@ -264,7 +264,7 @@ p
 {
   display: flex;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: 40px;
   justify-content: center;
   align-items: center;
@@ -275,7 +275,7 @@ p
   background-size: 500% 500%;
   animation: animate-background 10s infinite ease-in-out;
 }
-/* @keyframes animate-background 
+@keyframes animate-background 
 {
   0%{
     background-position: 0 50%;
@@ -295,7 +295,7 @@ p
       background-position: 0 50%;
       color: var(--secondary-color);
   }
-} */
+}
 .SecondaryButton
 {
   display: flex;
