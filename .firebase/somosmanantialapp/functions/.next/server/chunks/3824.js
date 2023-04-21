@@ -169,6 +169,10 @@ function UltimasPredicas() {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 nombre: "PastorIsaac",
+                indice: "3"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                nombre: "PastorIsaac",
                 indice: "0"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
