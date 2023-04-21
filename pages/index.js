@@ -15,8 +15,7 @@ export default function Home() {
         <title>Inicio | Manantial</title>
         <meta name="description" content="Porque contigo está el manantial de la vida; En tu luz veremos la luz." />
         <meta property="og:title" content="Inicio | Manantial" />
-        <meta property="og:url" content="https://somos.mamantial.org/" />
-        {/* <meta property="og:image" content="../assets/predicadores/pastor-isaac/el-vive.jpg" /> */}
+        <meta property="og:url" content="https://somosmamantial.org/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>

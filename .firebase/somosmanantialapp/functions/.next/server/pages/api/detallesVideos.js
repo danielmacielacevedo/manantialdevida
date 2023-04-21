@@ -56,7 +56,7 @@ function detallesVideos(req, res) {
             image: "/assets/predicadores/pastor-isaac/nunca-te-olvides.jpg",
             url: "/nunca-te-olvides",
             profileURL: "/@pastorisaac",
-            embed: "ipR1P12oR9g"
+            embed: "LrikdGempDM"
         }
     ];
     const pastoraDina = [

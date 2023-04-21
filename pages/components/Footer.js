@@ -20,7 +20,7 @@ export default function Footer() {
                 <div className='FooterLinksContainer'>
                     <h3>Como llegar</h3>
                     <ul className='FooterLinks'>
-                        <li><a>Toma de Zacatecas #335 <br/> Victoria de Durango, Durango, México. <br/> CP 34230</a></li>
+                        <li><a target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic'>Toma de Zacatecas #335 <br/> Victoria de Durango, Durango, México. <br/> CP 34230</a></li>
                     </ul>
                 </div>
                 <div className='FooterLinksContainer'>

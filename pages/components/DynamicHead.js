@@ -23,7 +23,7 @@ export default function DynamicHead(props) {
             </title>
             <meta name="description" content={info.desc} />
             <meta property="og:title" content={`${info.title} | ${info.autor}`} />
-            <meta property="og:url" content="https://somos.mamantial.org/" />
+            <meta property="og:url" content="https://somosmamantial.org/" />
             <meta property="og:image" content={info.image} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/assets/favicon_manantial.png" />

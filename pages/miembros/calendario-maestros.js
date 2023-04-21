@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import BackHeader from '../components/BackHeader'
 import Footer from '../components/Footer'
+import MaestroDetails from '../components/maestros/MaestroDetalles';
 
-export default function Predicador() {
+export default function CalendarioMaestros() {
 
-  const predicador = 'Calendario Abril';
+  const mes = 'Abril';
 
   return (
     <div className='theme'>
@@ -13,7 +14,7 @@ export default function Predicador() {
         <title>Calendario Abril | Manantial</title>
         <meta name="description" content="Porque contigo está el manantial de la vida; En tu luz veremos la luz." />
         <meta property="og:title" content="Calendario Abril | Manantial" />
-        <meta property="og:url" content="https://somos.mamantial.org/" />
+        <meta property="og:url" content="https://somosmamantial.org/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -23,83 +24,122 @@ export default function Predicador() {
       <Header />
       <BackHeader />
       <div className='PageContainer'>
-        <div className='calendar-title'>
-          <h2>Calendario Abril</h2>
+        <div className='CalendarTitle'>
+          <h2>Calendario {mes}</h2>
+          <p>Selecciona tu nombre para ver tu calendario.</p>
+
         </div>
         <div className='PageContent'>
-        <div className="LinkContainer">
-          <a target="_blank" rel="noreferrer" href='https://danielmacielacevedo.github.io/somosmanantialWeb/miembros/calendario-maestros'>
-            <div className="PredicadorContainer">
-              <div className="ImageContainer">
-                <img src='https://images.unsplash.com/photo-1669658500479-a18092b391d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1378&q=80' alt='Calendario Maestros' />
-              </div>
-              <div className="PredicadorData">
-                <h3>Calendario Abril <br/> <span>Mira el calendario en la web anterior dando click aquí.</span> </h3>
-              </div>
-            </div>
-          </a>
-        </div>
+          <div className='MainCalendario'>
+            <article className="CalendarArticle">
+                        <div className="TableContainer">
+
+                          <div>A</div>
+
+                            <MaestroDetails nombre="AnitaMinchaca" />
+
+                          <div>C</div>
+
+                            <MaestroDetails nombre="CarolinaMacias" />
+
+                          <div>D</div>
+
+                            <MaestroDetails nombre="DavidSolorzano" />
+                            <MaestroDetails nombre="DoraCervantes" />
+
+                          <div>E</div>
+
+                            <MaestroDetails nombre="ElusaiCazares" />
+
+                          <div>F</div>
+
+                            <MaestroDetails nombre="FlorFernandez" />
+                            <MaestroDetails nombre="FranciscoSerrano" />
+
+                          <div>I</div>
+
+                            <MaestroDetails nombre="IsaiasRomero" />
+
+                          <div>J</div>
+
+                            <MaestroDetails nombre="JessicaTenorio" />
+
+                          <div>K</div>
+
+                            <MaestroDetails nombre="KarlaSerrano" />
+
+                          <div>M</div>
+
+                            <MaestroDetails nombre="MarlenZamora" />
+                            <MaestroDetails nombre="Margarita" />
+
+                          <div>N</div>
+
+                            <MaestroDetails nombre="NoryMontiel" />
+
+                          <div>P</div>
+
+                            <MaestroDetails nombre="PastoraDina" />
+                            <MaestroDetails nombre="PastorIsaac" />
+
+                          <div>S</div>
+
+                            <MaestroDetails nombre="SaraiGalarza" />
+
+                          <div>T</div>
+
+                            <MaestroDetails nombre="TereOlivas" />
+
+                          <div>V</div>
+
+                            <MaestroDetails nombre="VeliaAcevedo" />
+                            <MaestroDetails nombre="VeronicaCazares" />
+
+                          <div>W</div>
+
+                            <MaestroDetails nombre="WendyMartinez" />
+
+                          <div>Y</div>
+
+                            <MaestroDetails nombre="YoselinGalarza" />
+
+                        </div>
+                    </article>
+          </div>
         </div>
       </div>
       <Footer />
       <style jsx>{`
-            .LinkContainer
+            .CalendarTitle
+            {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              gap: 10px;
+            }
+            .CalendarTitle p
+            {
+              font-size: 12px;
+            }
+            .MainCalendario
             {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                max-width: 300px;
+                max-width: 700px;
                 height: auto;
             }
-            .PredicadorContainer
+            .TableContainer
             {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: auto;
-            }
-            .ImageContainer
-            {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                // background-color: var(--light-grey);
-                justify-content: center;
-                align-items: center;
-            }
-            .ImageContainer img
-            {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                background-position: top center;
-                background-repeat: no-repeat;
-                background-size: center;
-                justify-self: center;
-                align-self: center;
-            }
-            .PredicadorData
-            {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 60px;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                // padding: 20px;
-                font-size: 12px;
-                background-color: var(--light-grey);
-                color: var(--primary-color);
-            }
-            .PredicadorData span
-            {
-              font-size: 10px;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              color: var(--secondary-color)
             }
 
             @media only screen and (max-width: 860px)
             {
-              .LinkContainer
+              .MainContainer
               {
                 max-width: 500px;
               }
