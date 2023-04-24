@@ -38,7 +38,7 @@ export default function Reproductor(props) {
                     {/* </Link> */}
                     <article className="DescriptionContainer">
                         <div>
-                            <p>{` ${video.date} \u2022 ${video.desc} `}</p>
+                            <p><span>{video.date}</span> {`\u2022`} <span>{video.desc}</span> </p>
                         </div>
                     </article>
                 </div>
@@ -124,6 +124,17 @@ export default function Reproductor(props) {
                     padding: 20px;
                     background-color: var(--light-grey);
                     border-radius: 20px;
+                }
+                .DescriptionContainer p 
+                {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+                .DescriptionContainer span
+                {
+                    font-weight: 400;
+                    color: grey;
                 }
                 @media only screen and (max-width: 860px)
                 {

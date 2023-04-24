@@ -87,6 +87,9 @@ function Footer() {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "jsx-961ddd8793885209",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        href: "https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic",
                                         className: "jsx-961ddd8793885209",
                                         children: [
                                             "Toma de Zacatecas #335 ",

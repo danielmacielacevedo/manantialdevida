@@ -10,13 +10,12 @@ export default function MonthEvents() {
                     <div>
                         <h3>MIÉRCOLES</h3>
                         <p>19 de Abril</p>
-                        {/* <a className='SecondaryButton' href='#top'>PRÓXIMAMENTE</a> */}
                         <Link className='PrimaryButton' href='/@pastorisaac/nunca-te-olvides'>VER SERVICIO</Link>
                     </div>
                     <div>
                         <h3>VIERNES</h3>
                         <p>21 de Abril</p>
-                        <a className='SecondaryButton' href='#top'>PRÓXIMAMENTE</a>
+                        <Link className='PrimaryButton' href='/@franciscogarcia/integra-fidelidad'>VER SERVICIO</Link>
                     </div>
                 </article>
                 <article className='ArticleContainer'>
