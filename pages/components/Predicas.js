@@ -10,23 +10,26 @@ export default function PredicasBar() {
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="PastorIsaac" />
+                    </div>
+                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="PastoraDina" />
-                    </div>
-                </div>
-                <div className='PredicasContainer'>
-                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="AdrielRamos" />
-                        <PredicadorCard nombre="AnitaMinchaca" />
-                    </div>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="EmmanuelAguilar" />
-                        <PredicadorCard nombre="FlorFernandez" />
                     </div>
                 </div>
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
+                        <PredicadorCard nombre="AnitaMinchaca" />
+                        <PredicadorCard nombre="EmmanuelAguilar" />
+                    </div>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCard nombre="FlorFernandez" />
                         <PredicadorCard nombre="FranciscoGarcia" />
+                    </div>
+                </div>
+                <div className='PredicasContainer'>
+                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="FranciscoSerrano" />
+                        <PredicadorCard nombre="JuanLeyva" />
                     </div>
                     <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="JuanPabloRodriguez" />

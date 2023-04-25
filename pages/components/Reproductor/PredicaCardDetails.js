@@ -132,12 +132,19 @@ export default function PredicaCardDetails(props) {
                 height: auto;
                 justify-content: center;
             }
-
+            .DetailsInfoReproductor h4
+            {
+              font-size: 12px
+            }
             @media only screen and (max-width: 860px)
             {
               .LinkContainer
               {
                 max-width: none;
+              }
+              .DetailsInfoReproductor h4
+              {
+                font-size: 11px
               }
             }
         `}</style>

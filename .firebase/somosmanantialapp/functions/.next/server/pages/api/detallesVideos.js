@@ -52,7 +52,7 @@ function detallesVideos(req, res) {
             autor: "Pastor Isaac Delgado",
             picture: "/assets/predicadores/pastor-isaac.png",
             date: "19 ABRIL 2023",
-            desc: "Predicaci\xf3n Manantial de Vida",
+            desc: "Predicaci\xf3n Especial de nuestro primer servicio de Aniversario en Manantial de Vida.",
             image: "/assets/predicadores/pastor-isaac/nunca-te-olvides.jpg",
             url: "/nunca-te-olvides",
             profileURL: "/@pastorisaac",
@@ -130,11 +130,22 @@ function detallesVideos(req, res) {
             autor: "Francisco Garcia",
             picture: "/assets/predicadores/francisco-garcia.png",
             date: "06 DICIEMBRE 2021",
-            desc: "Predicaci\xf3n Manantial de Vida",
+            desc: "Predicaci\xf3n Campamento de J\xf3venes Conectados 2021",
             image: "/assets/predicadores/francisco-garcia/conectados2021.jpg",
             url: "/conectados2021",
             profileURL: "/@franciscogarcia",
             embed: "L5pPfoxTYhk"
+        },
+        {
+            title: "Integra Fidelidad",
+            autor: "Francisco Garcia",
+            picture: "/assets/predicadores/francisco-garcia.png",
+            date: "21 ABRIL 2023",
+            desc: "Predicaci\xf3n especial de nuestro segundo servicio de Aniversario en Manantial de Vida.",
+            image: "/assets/predicadores/francisco-garcia/integra-fidelidad.jpg",
+            url: "/integra-fidelidad",
+            profileURL: "/@franciscogarcia",
+            embed: "vDvJMzunM7g"
         }
     ];
     const franciscoSerrano = [

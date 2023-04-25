@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/FwLuIBtdy8XzJaGbYpiu9/_buildManifest.js",
-    "static/FwLuIBtdy8XzJaGbYpiu9/_ssgManifest.js"
+    "static/rK-_E0e3cycl0Y6XZbSLK/_buildManifest.js",
+    "static/rK-_E0e3cycl0Y6XZbSLK/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -17,7 +17,7 @@
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
       "static/chunks/5675-f05d381aacd6f33c.js",
-      "static/chunks/pages/index-7fc1f4bd4ab5b5f8.js"
+      "static/chunks/pages/index-bbc786e33a7e32b0.js"
     ],
     "/@adrielramos": [
       "static/chunks/webpack-d5bbb0b8d9193a3e.js",
@@ -33,7 +33,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@adrielramos/cuanto-dependes-de-DIOS-b8a07988e5214956.js"
     ],
     "/@anitaminchaca": [
@@ -50,7 +50,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@anitaminchaca/amor-incomparable-40d81ef7edf72e6a.js"
     ],
     "/@emmanuelaguilar": [
@@ -67,7 +67,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@emmanuelaguilar/tu-decides-ac43796b08eff6e7.js"
     ],
     "/@florfernandez": [
@@ -84,7 +84,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@florfernandez/metamorfosis-del-alma-330b7d3690535588.js"
     ],
     "/@franciscogarcia": [
@@ -101,8 +101,17 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@franciscogarcia/conectados2021-4f24e1f29347ea8a.js"
+    ],
+    "/@franciscogarcia/integra-fidelidad": [
+      "static/chunks/webpack-d5bbb0b8d9193a3e.js",
+      "static/chunks/framework-3671d8951bf44e4e.js",
+      "static/chunks/main-754f456e4536651e.js",
+      "static/chunks/6465-3c63e47298cba761.js",
+      "static/chunks/1664-606bb6b52f9d8cfd.js",
+      "static/chunks/3824-43f0feb36929885a.js",
+      "static/chunks/pages/@franciscogarcia/integra-fidelidad-95691bb21472c1f1.js"
     ],
     "/@franciscoserrano": [
       "static/chunks/webpack-d5bbb0b8d9193a3e.js",
@@ -118,7 +127,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@franciscoserrano/crucifixion-493eebcd94c49d2d.js"
     ],
     "/@juanpablorodriguez": [
@@ -135,7 +144,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@juanpablorodriguez/conectados-a-la-fuente-9de7c94bfcf9ebe2.js"
     ],
     "/@juanpablorodriguez/derribando-para-ganar": [
@@ -144,7 +153,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@juanpablorodriguez/derribando-para-ganar-3caf9eaf4e4415ea.js"
     ],
     "/@karlacervantes": [
@@ -161,7 +170,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@karlacervantes/familias-bendecidas-ca1d8c0519d874cb.js"
     ],
     "/@luisrios": [
@@ -178,7 +187,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@luisrios/la-reflexion-00121fe838277384.js"
     ],
     "/@magdielpastrana": [
@@ -195,7 +204,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@magdielpastrana/devocion-a-DIOS-4f9f4244ac928e73.js"
     ],
     "/@magdielpastrana/el-poder-de-la-fe": [
@@ -204,7 +213,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@magdielpastrana/el-poder-de-la-fe-7f8ab85f02746faa.js"
     ],
     "/@obedgarcia": [
@@ -221,7 +230,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@obedgarcia/preparados-para-la-gloria-postrera-b86c6548a4bb32f5.js"
     ],
     "/@omarmorales": [
@@ -238,7 +247,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@omarmorales/que-hacer-al-cruzar-la-tempestad-8df4e8d6a542d001.js"
     ],
     "/@oswaldoali": [
@@ -255,7 +264,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@oswaldoali/DIOS-busca-adoradores-fe5b31c5772a304d.js"
     ],
     "/@oswaldoali/mateo26": [
@@ -264,7 +273,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@oswaldoali/mateo26-6144fa5c65815981.js"
     ],
     "/@oswaldoali/nuestra-esperanza": [
@@ -273,7 +282,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@oswaldoali/nuestra-esperanza-bb570221fa9078f0.js"
     ],
     "/@pastoradina": [
@@ -290,7 +299,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@pastoradina/hossana-c5c57a5be4f912ff.js"
     ],
     "/@pastorisaac": [
@@ -307,7 +316,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@pastorisaac/atrevete-a-caminar-en-la-direccion-de-DIOS-4ef75d91fb961819.js"
     ],
     "/@pastorisaac/de-donde-vienes": [
@@ -316,7 +325,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@pastorisaac/de-donde-vienes-98d53a6b73e835da.js"
     ],
     "/@pastorisaac/el-vive": [
@@ -325,7 +334,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@pastorisaac/el-vive-990813c08a10b1d9.js"
     ],
     "/@pastorisaac/nunca-te-olvides": [
@@ -334,7 +343,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@pastorisaac/nunca-te-olvides-56d21d8582209fdc.js"
     ],
     "/@veliaacevedo": [
@@ -351,7 +360,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@veliaacevedo/getsemani-c07b5f6ca42b3335.js"
     ],
     "/@willymartinez": [
@@ -368,7 +377,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@willymartinez/Pentecostes2021-7e5390f69f26dd44.js"
     ],
     "/@yolandaperez": [
@@ -385,7 +394,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@yolandaperez/porque-buscais-entre-los-muertos-al-que-vive-9b49c5524b5bdb2c.js"
     ],
     "/@yolandaperez/un-encuentro-con-el-resicitado": [
@@ -394,7 +403,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/@yolandaperez/un-encuentro-con-el-resicitado-1b9281033835886b.js"
     ],
     "/_app": [
@@ -432,7 +441,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/pages/components/AniversaryEvents-a84172eec651e2bf.js"
+      "static/chunks/pages/components/AniversaryEvents-606c834f6753cd0b.js"
     ],
     "/components/BackHeader": [
       "static/chunks/webpack-d5bbb0b8d9193a3e.js",
@@ -501,7 +510,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/3824-6b3e649c9d062027.js",
+      "static/chunks/3824-43f0feb36929885a.js",
       "static/chunks/pages/components/Predica-07545bb9592627d3.js"
     ],
     "/components/Predicadores/PredicadorCard": [
@@ -563,7 +572,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/pages/components/Reproductor/Reproductor-ebfce6b28aaebcbb.js"
+      "static/chunks/pages/components/Reproductor/Reproductor-8bb4af0f588a0f10.js"
     ],
     "/components/Reproductor/UltimasPredicas": [
       "static/chunks/webpack-d5bbb0b8d9193a3e.js",
@@ -571,7 +580,7 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/6465-3c63e47298cba761.js",
       "static/chunks/1664-606bb6b52f9d8cfd.js",
-      "static/chunks/pages/components/Reproductor/UltimasPredicas-481b594db38d3746.js"
+      "static/chunks/pages/components/Reproductor/UltimasPredicas-b933cbb7d4abfa8a.js"
     ],
     "/components/maestros/MaestroDetalles": [
       "static/chunks/webpack-d5bbb0b8d9193a3e.js",

@@ -23,7 +23,7 @@ export default function MonthEvents() {
                     <div>
                         <h3>SABADO</h3>
                         <p>22 de Abril</p>
-                        <a className='SecondaryButton' href='#top'>PRÓXIMAMENTE</a>
+                        <Link className='PrimaryButton' href='/@juanleyva/la-palabra-que-transforma-las-generaciones'>VER SERVICIO</Link>
                     </div>
                     <div>
                         <h3>DOMINGO</h3>
