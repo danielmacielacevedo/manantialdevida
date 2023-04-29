@@ -18,7 +18,7 @@ export default function Reproductor(props) {
         <>
             <div className="ReproductorContainer">
                 <div className="Reproductor">
-                    <iframe src={`https://www.youtube.com/embed/${video.embed}?autohide=1&showinfo=0&rel=0&color=white&cc_load_policy=3`} frameborder="0" allowfullscreen="true"></iframe>
+                    <iframe src={`https://www.youtube.com/embed/${video.embed}?autohide=1&showinfo=0&rel=0&color=white&cc_load_policy=3`} frameBorder="0" allowFullScreen={true}></iframe>
                 </div>
                 <div className="InfoReproductorContainer">
                     <h2>{video.title}</h2>

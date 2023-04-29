@@ -81,10 +81,10 @@ function MonthEvents() {
                                         className: "jsx-35eb61706deb2917",
                                         children: "22 de Abril"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                        href: "#top",
-                                        className: "jsx-35eb61706deb2917" + " " + "SecondaryButton",
-                                        children: "PR\xd3XIMAMENTE"
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                        className: "PrimaryButton",
+                                        href: "/@juanleyva/la-palabra-que-transforma-las-generaciones",
+                                        children: "VER SERVICIO"
                                     })
                                 ]
                             }),

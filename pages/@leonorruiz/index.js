@@ -7,7 +7,7 @@ import PredicadorCard from '../components/Predicadores/PredicadorCard'
 
 export default function Predicador() {
 
-  const predicador = 'JuanLeyva';
+  const predicador = 'LeonorRuiz';
 
   return (
     <div className='theme'>

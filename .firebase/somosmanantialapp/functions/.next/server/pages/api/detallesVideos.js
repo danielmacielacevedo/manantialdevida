@@ -161,6 +161,19 @@ function detallesVideos(req, res) {
             embed: "GpjFkvmX9yk"
         }
     ];
+    const juanLeyva = [
+        {
+            title: "La palabra que transforma las generaciones",
+            autor: "Juan Leyva",
+            picture: "/assets/predicadores/juan-leyva.png",
+            date: "22 ABRIL 2023",
+            desc: "Predicaci\xf3n Especial de nuestro tercer servicio de Aniversario en Manantial de Vida.",
+            image: "/assets/predicadores/juan-leyva/la-palabra-que-transforma-las-generaciones.jpg",
+            url: "/la-palabra-que-transforma-las-generaciones",
+            profileURL: "/@juanleyva",
+            embed: "_Kmx8yeON4Q"
+        }
+    ];
     const juanPabloRodriguez = [
         {
             title: "[YOUTH] Conectados a la fuente",
@@ -196,6 +209,19 @@ function detallesVideos(req, res) {
             url: "/familias-bendecidas",
             profileURL: "/@karlacervantes",
             embed: "Oq-gy_YcQZs"
+        }
+    ];
+    const leonorRuiz = [
+        {
+            title: "",
+            autor: "LeonorRuiz",
+            picture: "/assets/predicadores/leonor-ruiz.png",
+            date: "23 ABRIL 2023",
+            desc: "Predicaci\xf3n Especial de nuestro cuarto servicio de Aniversario en Manantial de Vida.",
+            image: "/assets/predicadores/leonor-ruiz/",
+            url: "/",
+            profileURL: "/@leonorruiz",
+            embed: ""
         }
     ];
     const luisRios = [
@@ -356,7 +382,9 @@ function detallesVideos(req, res) {
         FranciscoGarcia: franciscoGarcia,
         FranciscoSerrano: franciscoSerrano,
         JuanPabloRodriguez: juanPabloRodriguez,
+        JuanLeyva: juanLeyva,
         KarlaCervantes: karlaCervantes,
+        LeonorRuiz: leonorRuiz,
         LuisRios: luisRios,
         MagdielPastrana: magdielPastrana,
         ObedGarcia: obedGarcia,

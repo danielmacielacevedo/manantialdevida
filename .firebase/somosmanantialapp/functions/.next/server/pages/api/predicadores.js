@@ -35,7 +35,7 @@ function predicadores(req, res) {
     };
     const emmanuelAguilar = {
         name: "Emmanuel Aguilar",
-        image: "/assets/predicadores/fam-aguilar-fernandez.png",
+        image: "/assets/predicadores/emmanuel-aguilar.png",
         url: "/@emmanuelaguilar"
     };
     const famAguilarFernandez = {
@@ -45,7 +45,7 @@ function predicadores(req, res) {
     };
     const florFernandez = {
         name: "Flor Fern\xe1ndez",
-        image: "/assets/predicadores/fam-aguilar-fernandez.png",
+        image: "/assets/predicadores/flor-fernandez.png",
         url: "/@florfernandez"
     };
     const franciscoGarcia = {
@@ -58,6 +58,11 @@ function predicadores(req, res) {
         image: "/assets/predicadores/francisco-serrano.png",
         url: "/@franciscoserrano"
     };
+    const juanLeyva = {
+        name: "Juan Leyva",
+        image: "/assets/predicadores/juan-leyva.png",
+        url: "/@juanleyva"
+    };
     const juanPabloRodriguez = {
         name: "Juan Pablo Rodr\xedguez",
         image: "/assets/predicadores/juan-pablo-rodriguez.png",
@@ -67,6 +72,11 @@ function predicadores(req, res) {
         name: "Karla Cervantes",
         image: "/assets/predicadores/karla-cervantes.png",
         url: "/@karlacervantes"
+    };
+    const leonorRuiz = {
+        name: "Leonor Ruiz",
+        image: "/assets/predicadores/leonor-ruiz.png",
+        url: "/@leonorruiz"
     };
     const luisRios = {
         name: "Luis Rios",
@@ -118,8 +128,10 @@ function predicadores(req, res) {
         FlorFernandez: florFernandez,
         FranciscoGarcia: franciscoGarcia,
         FranciscoSerrano: franciscoSerrano,
+        JuanLeyva: juanLeyva,
         JuanPabloRodriguez: juanPabloRodriguez,
         KarlaCervantes: karlaCervantes,
+        LeonorRuiz: leonorRuiz,
         LuisRios: luisRios,
         MagdielPastrana: magdielPastrana,
         ObedGarcia: obedGarcia,

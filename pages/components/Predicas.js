@@ -10,30 +10,31 @@ export default function PredicasBar() {
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="PastorIsaac" />
-                    </div>
-                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="PastoraDina" />
+                    </div>
+                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="AdrielRamos" />
-                    </div>
-                </div>
-                <div className='PredicasContainer'>
-                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="AnitaMinchaca" />
-                        <PredicadorCard nombre="EmmanuelAguilar" />
-                    </div>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="FlorFernandez" />
-                        <PredicadorCard nombre="FranciscoGarcia" />
                     </div>
                 </div>
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="FranciscoSerrano" />
-                        <PredicadorCard nombre="JuanLeyva" />
+                        <PredicadorCard nombre="EmmanuelAguilar" />
+                        <PredicadorCard nombre="FlorFernandez" />
                     </div>
                     <div className='PredicadoresContainer'>
+                        <PredicadorCard nombre="FranciscoGarcia" />
+                        <PredicadorCard nombre="FranciscoSerrano" />
+                    </div>
+                </div>
+                <div className='PredicasContainer'>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCard nombre="JuanLeyva" />
                         <PredicadorCard nombre="JuanPabloRodriguez" />
+                    </div>
+                    <div className='PredicadoresContainer'>
                         <PredicadorCard nombre="KarlaCervantes" />
+                        <PredicadorCard nombre="LeonorRuiz" />
                     </div>
                 </div>
                 <div className='PredicasContainer'>

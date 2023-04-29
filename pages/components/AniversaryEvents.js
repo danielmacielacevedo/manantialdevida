@@ -28,8 +28,8 @@ export default function MonthEvents() {
                     <div>
                         <h3>DOMINGO</h3>
                         <p>23 de Abril</p>
-                        <a id='noticias' className='SecondaryButton' href='#top'>PRÓXIMAMENTE</a>
-                        {/* <Link className='SecondaryButton' href='/@pastorisaac/el-vive'>VER SERVICIO</Link> */}
+                        {/* <a id='noticias' className='SecondaryButton' href='#top'>PRÓXIMAMENTE</a> */}
+                        <Link className='PrimaryButton' href='/@leonorruiz/marcos5'>VER SERVICIO</Link>
                     </div>
                 </article>
             </div>

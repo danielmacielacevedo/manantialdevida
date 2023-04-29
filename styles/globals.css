@@ -41,9 +41,10 @@ body {
   background-color: var(--secondary-color);
 }
 
-/* body {
-  background: var(--primary-color);
-} */
+.my-progress-bar {
+  z-index: 99999;
+}
+
 
 a {
   color: inherit;
