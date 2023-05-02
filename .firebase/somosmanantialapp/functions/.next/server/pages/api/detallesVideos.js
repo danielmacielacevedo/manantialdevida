@@ -213,15 +213,15 @@ function detallesVideos(req, res) {
     ];
     const leonorRuiz = [
         {
-            title: "",
-            autor: "LeonorRuiz",
+            title: "Marcos 5:1-20",
+            autor: "Leonor Ruiz",
             picture: "/assets/predicadores/leonor-ruiz.png",
             date: "23 ABRIL 2023",
             desc: "Predicaci\xf3n Especial de nuestro cuarto servicio de Aniversario en Manantial de Vida.",
-            image: "/assets/predicadores/leonor-ruiz/",
-            url: "/",
+            image: "/assets/predicadores/leonor-ruiz/marcos5.jpg",
+            url: "/marcos5",
             profileURL: "/@leonorruiz",
-            embed: ""
+            embed: "1gzPiaqFOFc"
         }
     ];
     const luisRios = [

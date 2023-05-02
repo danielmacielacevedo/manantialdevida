@@ -4,23 +4,44 @@ exports.id = 2888;
 exports.ids = [2888];
 exports.modules = {
 
-/***/ 6004:
+/***/ 731:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ App)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var daniel_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6764);
-/* harmony import */ var daniel_styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(daniel_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ App)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: ./styles/globals.css
+var globals = __webpack_require__(6764);
+;// CONCATENATED MODULE: external "nextjs-progressbar"
+const external_nextjs_progressbar_namespaceObject = require("nextjs-progressbar");
+var external_nextjs_progressbar_default = /*#__PURE__*/__webpack_require__.n(external_nextjs_progressbar_namespaceObject);
+;// CONCATENATED MODULE: ./pages/_app.js
+
 
 
 function App({ Component , pageProps  }) {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-        ...pageProps
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx((external_nextjs_progressbar_default()), {
+                className: "my-progress-bar",
+                color: "#2d2d2d",
+                startPosition: 0.3,
+                stopDelayMs: 200,
+                height: 85,
+                showOnShallow: true
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                ...pageProps
+            })
+        ]
     });
 }
 
@@ -49,7 +70,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(6004));
+var __webpack_exports__ = (__webpack_exec__(731));
 module.exports = __webpack_exports__;
 
 })();

@@ -44,8 +44,8 @@ function Reproductor(props) {
                         className: "jsx-ea9b0c388dfcf98" + " " + "Reproductor",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("iframe", {
                             src: `https://www.youtube.com/embed/${video.embed}?autohide=1&showinfo=0&rel=0&color=white&cc_load_policy=3`,
-                            frameborder: "0",
-                            allowfullscreen: "true",
+                            frameBorder: "0",
+                            allowFullScreen: true,
                             className: "jsx-ea9b0c388dfcf98"
                         })
                     }),

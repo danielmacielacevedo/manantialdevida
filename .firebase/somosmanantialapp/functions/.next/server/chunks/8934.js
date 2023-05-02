@@ -32,47 +32,25 @@ function PredicasBar() {
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "jsx-6ad7a42baa5dd949" + " " + "PredicasContainer",
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                    nombre: "PastorIsaac"
-                                })
-                            }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                 className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
                                 children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        nombre: "PastorIsaac"
+                                    }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
                                         nombre: "PastoraDina"
-                                    }),
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
+                                children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
                                         nombre: "AdrielRamos"
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-6ad7a42baa5dd949" + " " + "PredicasContainer",
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
-                                children: [
+                                    }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
                                         nombre: "AnitaMinchaca"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "EmmanuelAguilar"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "FlorFernandez"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "FranciscoGarcia"
                                     })
                                 ]
                             })
@@ -85,10 +63,10 @@ function PredicasBar() {
                                 className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "FranciscoSerrano"
+                                        nombre: "EmmanuelAguilar"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "JuanLeyva"
+                                        nombre: "FlorFernandez"
                                     })
                                 ]
                             }),
@@ -96,10 +74,37 @@ function PredicasBar() {
                                 className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "JuanPabloRodriguez"
+                                        nombre: "FranciscoGarcia"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        nombre: "FranciscoSerrano"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "jsx-6ad7a42baa5dd949" + " " + "PredicasContainer",
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        nombre: "JuanLeyva"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        nombre: "JuanPabloRodriguez"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "jsx-6ad7a42baa5dd949" + " " + "PredicadoresContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
                                         nombre: "KarlaCervantes"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        nombre: "LeonorRuiz"
                                     })
                                 ]
                             })
