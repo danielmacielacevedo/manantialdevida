@@ -62,6 +62,18 @@ export default function detallesVideos(req, res) {
       profileURL: '/@pastorisaac',
       embed: 'LrikdGempDM',
     },
+
+    {
+      title: 'La verdadera adoración',
+      autor: 'Pastor Isaac Delgado',
+      picture: '/assets/predicadores/pastor-isaac.png',
+      date: '03 MAYO 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/pastor-isaac/la-verdadera-adoracion.jpg',
+      url: '/la-verdadera-adoracion',
+      profileURL: '/@pastorisaac',
+      embed: 'FF8QGn4russ',
+    },
   ];
 
   const pastoraDina = [

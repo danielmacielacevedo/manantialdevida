@@ -20,17 +20,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function MaestroDetails(props) {
-    const [maestro, setMaestro] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
+    const [maestro, setMaestro] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
     const [isOpen, setOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false); // nuevo estado local para seguir el estado del boton
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         async function fetchMaestro() {
-            const res = await fetch("/api/maestros");
-            const data = await res.json();
-            setMaestro(data[props.nombre]);
+            if (props.mes) {
+                const res = await fetch(`/api/maestros/${props.mes}`);
+                const data = await res.json();
+                setMaestro(data[props.nombre]);
+            }
         }
-        ;
         fetchMaestro();
-    }, []);
+    }, [
+        props.mes,
+        props.nombre
+    ]);
     function handleClick() {
         setOpen(!isOpen); // cambia el estado local al contrario de su estado actual
     }

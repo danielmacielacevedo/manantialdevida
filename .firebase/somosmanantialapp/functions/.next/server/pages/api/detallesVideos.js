@@ -13,6 +13,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ detallesVideos)
 /* harmony export */ });
 function detallesVideos(req, res) {
+    const manantial = [
+        {
+            title: "Como ser ujier en 9 pasos",
+            autor: "Manantial de Vida",
+            picture: "/assets/profile-picture.png",
+            date: "27 MARZO 2019",
+            desc: "Guia ujieres Manantial de Vida",
+            image: "/assets/tutoriales",
+            url: "/como-ser-ujier",
+            profileURL: "/",
+            embed: "ocphbfUEpWk"
+        }
+    ];
     const pastorIsaac = [
         {
             title: "\xc9l Vive",
@@ -57,6 +70,17 @@ function detallesVideos(req, res) {
             url: "/nunca-te-olvides",
             profileURL: "/@pastorisaac",
             embed: "LrikdGempDM"
+        },
+        {
+            title: "La verdadera adoración",
+            autor: "Pastor Isaac Delgado",
+            picture: "/assets/predicadores/pastor-isaac.png",
+            date: "03 MAYO 2023",
+            desc: "Predicaci\xf3n Manantial de Vida",
+            image: "/assets/predicadores/pastor-isaac/la-verdadera-adoracion.jpg",
+            url: "/la-verdadera-adoracion",
+            profileURL: "/@pastorisaac",
+            embed: "FF8QGn4russ"
         }
     ];
     const pastoraDina = [
@@ -384,6 +408,7 @@ function detallesVideos(req, res) {
         }
     ];
     res.status(200).json({
+        Manantial: manantial,
         PastorIsaac: pastorIsaac,
         PastoraDina: pastoraDina,
         AdrielRamos: adrielRamos,

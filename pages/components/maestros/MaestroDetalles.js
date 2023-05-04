@@ -32,31 +32,31 @@ export default function MaestroDetails(props) {
                             <span>Clase</span>
                         </div>
                         {maestro.dia1 && maestro.clase1 ? (
-                            <div className="NameContainer">
+                            <div className={`NameContainer ${maestro.className1}`}>
                                 <span>{maestro.dia1}</span>
                                 <span>{maestro.clase1}</span>
                             </div>
                         ) : null}
                         {maestro.dia2 && maestro.clase2 ? (
-                            <div className="NameContainer">
+                            <div className={`NameContainer ${maestro.className1}`}>
                                 <span>{maestro.dia2}</span>
                                 <span>{maestro.clase2}</span>
                             </div>
                         ) : null}
                         {maestro.dia3 && maestro.clase3 ? (
-                            <div className="NameContainer">
+                            <div className={`NameContainer ${maestro.className1}`}>
                                 <span>{maestro.dia3}</span>
                                 <span>{maestro.clase3}</span>
                             </div>
                         ) : null}
                         {maestro.dia4 && maestro.clase4 ? (
-                            <div className="NameContainer">
+                            <div className={`NameContainer ${maestro.className1}`}>
                                 <span>{maestro.dia4}</span>
                                 <span>{maestro.clase4}</span>
                             </div>
                         ) : null}
                         {maestro.dia5 && maestro.clase5 ? (
-                            <div className="NameContainer">
+                            <div className={`NameContainer ${maestro.className1}`}>
                                 <span>{maestro.dia5}</span>
                                 <span>{maestro.clase5}</span>
                             </div>
