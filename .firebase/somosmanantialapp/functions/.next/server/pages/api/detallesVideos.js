@@ -70,6 +70,17 @@ function detallesVideos(req, res) {
             url: "/hossana",
             profileURL: "/@pastoradina",
             embed: "Xf769btY9aw"
+        },
+        {
+            title: "En mi angustia",
+            autor: "Pastora Dina Campos",
+            picture: "/assets/predicadores/pastora-dina.png",
+            date: "30 ABRIL 2023",
+            desc: "Predicaci\xf3n Manantial de Vida",
+            image: "/assets/predicadores/pastora-dina/en-mi-angustia.jpg",
+            url: "/en-mi-angustia",
+            profileURL: "/@pastoradina",
+            embed: "EvNvGzqYkJI"
         }
     ];
     const adrielRamos = [
@@ -213,7 +224,7 @@ function detallesVideos(req, res) {
     ];
     const leonorRuiz = [
         {
-            title: "Marcos 5:1-20",
+            title: "3 Ense\xf1anzas edificantes para la Iglesia",
             autor: "Leonor Ruiz",
             picture: "/assets/predicadores/leonor-ruiz.png",
             date: "23 ABRIL 2023",

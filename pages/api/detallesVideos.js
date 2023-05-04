@@ -1,4 +1,19 @@
 export default function detallesVideos(req, res) {
+
+  const manantial = [
+    {
+      title: 'Como ser ujier en 9 pasos',
+      autor: 'Manantial de Vida',
+      picture: '/assets/profile-picture.png',
+      date: '27 MARZO 2019',
+      desc: 'Guia ujieres Manantial de Vida',
+      image: '/assets/tutoriales',
+      url: '/como-ser-ujier',
+      profileURL: '/',
+      embed: 'ocphbfUEpWk',
+    },
+  ];
+
   const pastorIsaac = [
     {
       title: 'Él Vive',
@@ -400,6 +415,7 @@ export default function detallesVideos(req, res) {
   ];
 
   res.status(200).json({
+    Manantial: manantial,
     PastorIsaac: pastorIsaac,
     PastoraDina: pastoraDina,
     AdrielRamos: adrielRamos,

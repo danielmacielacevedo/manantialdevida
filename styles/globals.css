@@ -124,6 +124,12 @@ p
   background-color: #000000b1;
   backdrop-filter: blur(10px);
 }
+.NavFull.NavFullMembers
+{
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid var(--light-grey);
+}
 .NavFull img
 {
   width: auto;
@@ -261,6 +267,31 @@ p
   font-size: 20px;
   color: var(--secondary-color);
 }
+
+/* Members Global */
+.PageGlobalContainer
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.SidebarSectionContent
+{
+  position: fixed;
+  display: flex;
+  width: fit-content;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+}
+.PrincipalSectionContent
+{
+  display: flex;
+  flex: 2;
+  width: 100%;
+  height: auto;
+}
+
 .PrimaryButton
 {
   display: flex;
@@ -347,6 +378,84 @@ p
   gap: 20px;
   justify-content: center;
 }
+.PageContentIntern
+{
+  padding-top: 20px;
+  max-width: 700px;
+}
+
+/* Calendario Maestros */
+.CalendarTitle
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 40px 0 20px 0;
+  align-items: center;
+}
+.CalendarTitle span
+{
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: var(--light-grey);
+  color: var(--secondary-color)
+}
+.CalendarTitle p
+{
+  font-size: 12px;
+}
+.MainCalendario
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+.TableContainer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--secondary-color)
+}
+.GlobalCalendarContainer
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  justify-content: center;
+}
+.MesContainer {
+  display: flex;
+  flex: 1;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: var(--light-grey);
+}
+
+/* BottomMenuButton */
+.BottomMenuButton
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.BottomMenuButton p
+{
+  color: var(--mid-grey);
+  font-size: 12px;
+}
 
 @media only screen and (max-width: 860px) {
   .NavNavigation
@@ -360,5 +469,15 @@ p
   .MenuButton
   {
     display: flex;
+  }
+  /* Members Global */
+  .SidebarSectionContent
+  {
+    display: none;
+  }
+
+  .MainContainerCalendario
+  {
+    max-width: 500px;
   }
 }
