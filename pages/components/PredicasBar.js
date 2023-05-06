@@ -5,26 +5,26 @@ export default function PredicasBar() {
     return (
         <>
             <div className='PredicasBarContainer'>
-                <h2>PRÉDICAS</h2>
+                {/* <h2>PRÉDICAS</h2> */}
                 <div className='PredicasBar'>
                     <div className='PredicadoresContainer'>
                         <PredicadorImage nombre='PastorIsaac' />
                         <PredicadorImage nombre='PastoraDina' />
                     </div>
                     <div className='PredicadoresContainer'>
-                        <PredicadorImage nombre='AnitaMinchaca' />
                         <PredicadorImage nombre='VeliaAcevedo' />
+                        <PredicadorImage nombre='FranciscoSerrano' />
                     </div>
                 </div>
                 <Link className='FullButton' href='/predicas'>VER PRÉDICAS</Link>
                 <div className='PredicasBar'>
                     <div className='PredicadoresContainer'>
                         <PredicadorImage nombre='KarlaCervantes' />
-                        <PredicadorImage nombre='AdrielRamos' />
+                        <PredicadorImage nombre='WillyMartinez' />
                     </div>
                     <div className='PredicadoresContainer'>
-                        <PredicadorImage nombre='OswaldoAli' />
-                        <PredicadorImage nombre='FamAguilarFernandez' />
+                        <PredicadorImage nombre='FranciscoGarcia' />
+                        <PredicadorImage nombre='LeonorRuiz' />
                     </div>
                 </div>
             </div>

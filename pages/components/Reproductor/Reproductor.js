@@ -31,6 +31,7 @@ export default function Reproductor(props) {
                                     </div>
                                     <div className="DetailsInfoReproductor">
                                         <h4>{video.autor}</h4>
+                                        <i></i>
                                     </div>
                                 </div>
                             </Link>
@@ -95,6 +96,7 @@ export default function Reproductor(props) {
                 }
                 .ProfilePicture
                 {
+                    position: relative;
                     display: flex;
                     width: 40px;
                     height: 40px;
@@ -110,11 +112,23 @@ export default function Reproductor(props) {
                 }
                 .DetailsInfoReproductor
                 {
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     height: auto;
                     justify-content: center;
+                }
+                .DetailsInfoReproductor i
+                {
+                    position: absolute;
+                    right: -26px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('/assets/verify.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                 }
                 .DescriptionContainer
                 {
@@ -152,7 +166,7 @@ export default function Reproductor(props) {
                     }
                     .InfoReproductorContainer
                     {
-                        padding: 58vw 20px 0;
+                        padding: 62vw 20px 0;
                     }
                 }
             `}</style>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TimeAgo from "../TimeAgo";
+import Novedad from "../Novedad";
 
 export default function PostComponent(props) {
 
@@ -25,6 +26,11 @@ export default function PostComponent(props) {
                 </div>
                 <div className="PostMensajeContainer">
                     <p>{props.mensaje}</p>
+                    {props.novedad && (
+                        <div className="NovedadContainer">
+                            <Novedad content={`${props.novedad}`} />
+                        </div>
+                    )}
                 </div>
                 <Link href={rutaCodificada}>
                     <div className="PostLinkContainer">
@@ -80,19 +86,28 @@ export default function PostComponent(props) {
                     background-size: cover;
                     background-repeat: no-repeat;
                 }
-                .PostMensajeContainer
+                {/* .PostMensajeContainer
                 {
-                    font-size: 22px;
+                    font-size: 17px;
+                } */}
+                .NovedadContainer
+                {
+                    color: var(--secondary-color);
                 }
                 .PostLinkContainer
                 {
                     display: flex;
-                    padding: 20px;
-                    border-radius: 4px;
+                    padding: 10px 20px;
+                    border-radius: 10px;
                     background-color: var(--mid-grey);
                     align-items: center;
                     justify-content: center;
                     font-size: 20px;
+                    transition: 0.6s;
+                }
+                .PostLinkContainer:hover
+                {
+                    background-color: var(--dark-grey);
                 }
             `}</style>
         </>

@@ -25,7 +25,7 @@ export default function PredicadorImage(props) {
             <style jsx>{`
                 .PredicadorContainer
                 {
-                    display: flex:
+                    display: flex;
                     flex-direction: column;
                     width: 100%;
                     height: auto;
@@ -38,6 +38,7 @@ export default function PredicadorImage(props) {
                     background-color: var(--light-grey);
                     justify-content: center;
                     align-items: center;
+                    border-radius: 10px;
                 }
                 .ImageContainer img
                 {

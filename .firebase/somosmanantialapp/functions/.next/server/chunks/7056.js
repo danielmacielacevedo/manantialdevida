@@ -38,33 +38,33 @@ function PredicaCard(props) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             cardVideo && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-ada1d627156aa669" + " " + "LinkContainer",
+                className: "jsx-cb89bd0e6d223eed" + " " + "LinkContainer",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                     href: encodeURI(cardVideo.profileURL.replace("?", "/") + cardVideo.url),
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-ada1d627156aa669" + " " + "PredicadorContainer",
+                        className: "jsx-cb89bd0e6d223eed" + " " + "PredicadorContainer",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "jsx-ada1d627156aa669" + " " + "ImageContainer",
+                                className: "jsx-cb89bd0e6d223eed" + " " + "ImageContainer",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: cardVideo.image,
                                     alt: cardVideo.title,
-                                    className: "jsx-ada1d627156aa669"
+                                    className: "jsx-cb89bd0e6d223eed"
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "jsx-ada1d627156aa669" + " " + "PredicadorData",
+                                className: "jsx-cb89bd0e6d223eed" + " " + "PredicadorData",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
-                                    className: "jsx-ada1d627156aa669",
+                                    className: "jsx-cb89bd0e6d223eed",
                                     children: [
                                         cardVideo.title,
                                         " ",
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
-                                            className: "jsx-ada1d627156aa669"
+                                            className: "jsx-cb89bd0e6d223eed"
                                         }),
                                         " ",
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            className: "jsx-ada1d627156aa669",
+                                            className: "jsx-cb89bd0e6d223eed",
                                             children: cardVideo.date
                                         }),
                                         " "
@@ -76,8 +76,8 @@ function PredicaCard(props) {
                 })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "ada1d627156aa669",
-                children: ".LinkContainer.jsx-ada1d627156aa669{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;max-width:300px;height:auto}.PredicadorContainer.jsx-ada1d627156aa669{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto}.ImageContainer.jsx-ada1d627156aa669{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.ImageContainer.jsx-ada1d627156aa669 img.jsx-ada1d627156aa669{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100%;background-position:top center;background-repeat:no-repeat;-webkit-background-size:center;-moz-background-size:center;-o-background-size:center;background-size:center;justify-self:center;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}.PredicadorData.jsx-ada1d627156aa669{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:60px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;font-size:12px;background-color:var(--light-grey);color:var(--primary-color)}.PredicadorData.jsx-ada1d627156aa669 span.jsx-ada1d627156aa669{font-size:10px}@media only screen and (max-width:860px){.LinkContainer.jsx-ada1d627156aa669{max-width:500px}}"
+                id: "cb89bd0e6d223eed",
+                children: ".LinkContainer.jsx-cb89bd0e6d223eed{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;max-width:300px;height:auto}.PredicadorContainer.jsx-cb89bd0e6d223eed{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto}.ImageContainer.jsx-cb89bd0e6d223eed{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.ImageContainer.jsx-cb89bd0e6d223eed img.jsx-cb89bd0e6d223eed{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100%;background-position:top center;background-repeat:no-repeat;-webkit-background-size:center;-moz-background-size:center;-o-background-size:center;background-size:center;justify-self:center;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0}.PredicadorData.jsx-cb89bd0e6d223eed{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:60px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;font-size:12px;background-color:var(--light-grey);color:var(--primary-color);-webkit-border-radius:0 0 10px 10px;-moz-border-radius:0 0 10px 10px;border-radius:0 0 10px 10px}.PredicadorData.jsx-cb89bd0e6d223eed span.jsx-cb89bd0e6d223eed{font-size:10px}@media only screen and (max-width:860px){.LinkContainer.jsx-cb89bd0e6d223eed{max-width:500px}}"
             })
         ]
     });

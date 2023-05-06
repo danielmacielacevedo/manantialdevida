@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SmallNovedad from "./SmallNovedad";
 
 export default function Post(props) {
 
@@ -21,6 +22,14 @@ export default function Post(props) {
                         <p>Inicio</p>
                     </div>
                 </Link>
+                <Link href="/">
+                    <div className="ItemMenuContainer ">
+                        <div className="PostProfilePicture">
+                            <img src="/assets/icons/world-icon.png" alt="World Icon" />
+                        </div> 
+                        <p>Ir a somosmanantial.org</p>
+                    </div>
+                </Link>
                 Calendarios
                 <Link href="/miembros/calendario-maestros">
                     <div className="ItemMenuContainer">
@@ -30,12 +39,21 @@ export default function Post(props) {
                         <p>Maestros</p>
                     </div>
                 </Link>
+                <Link href="/miembros/calendario-sociedades">
+                    <div className="ItemMenuContainer">
+                        <div className="PostProfilePicture">
+                            <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                        </div> 
+                        <p>Sociedades</p>
+                        <SmallNovedad />
+                    </div>
+                </Link>
                 <div href="/miembros/calendario-maestros">
                     <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
                             <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
                         </div> 
-                        <p>Sociedades <br/> <span>Próximamente</span> </p>
+                        <p>Ministerios <br/> <span>Próximamente</span> </p>
                     </div>
                 </div>
                 Guias
@@ -83,6 +101,11 @@ export default function Post(props) {
                     gap: 20px;
                     align-items: center;
                     background-color: var(--light-grey);
+                    transition: 0.6s;
+                }
+                .ItemMenuContainer:hover
+                {
+                    background-color: var(--mid-grey);
                 }
                 .ItemMenuContainer span
                 {

@@ -27,10 +27,6 @@ function PredicasBar() {
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "jsx-dbe429723f515706" + " " + "PredicasBarContainer",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                        className: "jsx-dbe429723f515706",
-                        children: "PR\xc9DICAS"
-                    }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "jsx-dbe429723f515706" + " " + "PredicasBar",
                         children: [
@@ -49,10 +45,10 @@ function PredicasBar() {
                                 className: "jsx-dbe429723f515706" + " " + "PredicadoresContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "AnitaMinchaca"
+                                        nombre: "VeliaAcevedo"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "VeliaAcevedo"
+                                        nombre: "FranciscoSerrano"
                                     })
                                 ]
                             })
@@ -73,7 +69,7 @@ function PredicasBar() {
                                         nombre: "KarlaCervantes"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "AdrielRamos"
+                                        nombre: "WillyMartinez"
                                     })
                                 ]
                             }),
@@ -81,10 +77,10 @@ function PredicasBar() {
                                 className: "jsx-dbe429723f515706" + " " + "PredicadoresContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "OswaldoAli"
+                                        nombre: "FranciscoGarcia"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Predicadores_PredicadorImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                                        nombre: "FamAguilarFernandez"
+                                        nombre: "LeonorRuiz"
                                     })
                                 ]
                             })

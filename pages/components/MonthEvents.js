@@ -76,6 +76,7 @@ export default function MonthEvents() {
                     height: auto;
                     max-height: 180px;
                     object-fit: cover;
+                    border-radius: 10px;
                 }
                 .ArticleContainer p
                 {

@@ -15,7 +15,9 @@ export default function Miembros() {
         <title>Panel Miembros | Manantial</title>
         <meta name="description" content="Panel para Miembros de Manantial de Vida." />
         <meta property="og:title" content="Panel miembros | Manantial" />
-        <meta property="og:url" content="https://somosmamantial.org/" />
+        <meta property="og:url" content="https://somosmamantial.org/miembros" />
+        <meta property="og:image" content="/assets/icon_manantial.png" />
+        <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>

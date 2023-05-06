@@ -67,6 +67,7 @@ export default function PredicadorCard(props) {
                     background-size: cover;
                     justify-self: center;
                     align-self: center;
+                    border-radius: 10px;
                 }
                 .PredicadorData
                 {
@@ -81,6 +82,7 @@ export default function PredicadorCard(props) {
                     font-size: 12px;
                     background-color: var(--light-grey);
                     color: var(--primary-color);
+                    border-radius: 10px;
                 }
             `}</style>
         </>

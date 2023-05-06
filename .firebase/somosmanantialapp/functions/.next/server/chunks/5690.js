@@ -60,7 +60,7 @@ function Header() {
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "/#predicas",
+                                                        href: "/predicas",
                                                         children: "Pr\xe9dicas"
                                                     })
                                                 })
@@ -100,7 +100,7 @@ function Header() {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             onClick: handleBurgerClick,
-                                            href: "/#predicas",
+                                            href: "/predicas",
                                             children: "Pr\xe9dicas"
                                         })
                                     })

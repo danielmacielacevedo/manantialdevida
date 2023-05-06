@@ -1,19 +1,17 @@
 import Head from 'next/head'
-import Header from '../../components/Header'
 import HeaderMembers from '../../components/HeaderMembers'
 import BackHeader from '../../components/BackHeader'
 import BackSidebar from '../../components/BackSidebar'
-import Footer from '../../components/Footer'
-import MaestroDetails from '../../components/maestros/MaestroDetalles';
 import MenuMobile from 'daniel/pages/components/MenuMobile';
 import BackMenuMobile from 'daniel/pages/components/BackMenuMobile';
 import MenuMembers from '../../components/MenuMembers'
+import MaestrosFiltro from 'daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro'
 
 
 export default function CalendarioMaestros() {
 
   const mesTitle = 'MAYO';
-  const mes = 'mayo';
+  const mes = 'Mayo';
 
   return (
     <div className='theme'>
@@ -21,7 +19,9 @@ export default function CalendarioMaestros() {
         <title>Calendario Mayo | Manantial</title>
         <meta name="description" content="Calendario de clases para los maestros de Manantial de Vida." />
         <meta property="og:title" content="Calendario Mayo | Manantial" />
-        <meta property="og:url" content="https://somosmamantial.org/" />
+        <meta property="og:url" content="https://somosmamantial.org/miembros" />
+        <meta property="og:image" content="/assets/icon_manantial.png" />
+        <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -40,86 +40,14 @@ export default function CalendarioMaestros() {
         <div className='CalendarTitle'>
           <h3>Calendario Maestros</h3>
           <span>{mesTitle}</span>
-          <p>Selecciona tu nombre para ver tu calendario.</p>
+          {/* <p>Selecciona tu nombre para ver tu calendario.</p> */}
         </div>
         <div className='PageContent'>
           <div className='MainCalendario'>
             <article className="CalendarArticle">
                         <div className="TableContainer">
 
-                          <div>A</div>
-
-                            <MaestroDetails nombre="AnitaMinchaca" mes={mes}/>
-
-                          <div>C</div>
-
-                            <MaestroDetails nombre="CarolinaMacias" mes={mes}/>
-
-                          <div>D</div>
-
-                            <MaestroDetails nombre="DavidSolorzano" mes={mes}/>
-                            <MaestroDetails nombre="DoraCervantes" mes={mes}/>
-
-                          <div>E</div>
-
-                            <MaestroDetails nombre="ElusaiCazares" mes={mes}/>
-                            <MaestroDetails nombre="EmmanuelAguilar" mes={mes}/>
-
-                          <div>F</div>
-
-                            <MaestroDetails nombre="FlorFernandez" mes={mes}/>
-                            <MaestroDetails nombre="FranciscoSerrano" mes={mes}/>
-
-                          <div>H</div>
-
-                            <MaestroDetails nombre="HortensiaSigala" mes={mes}/>
-
-                          <div>I</div>
-
-                            <MaestroDetails nombre="IsaiasRomero" mes={mes}/>
-
-                          <div>J</div>
-
-                            <MaestroDetails nombre="JessicaTenorio" mes={mes}/>
-
-                          <div>K</div>
-
-                            <MaestroDetails nombre="KarlaSerrano" mes={mes}/>
-
-                          <div>M</div>
-
-                            <MaestroDetails nombre="MargaritaEscobedo" mes={mes}/>
-                            <MaestroDetails nombre="MarlenZamora" mes={mes}/>
-
-                          <div>N</div>
-
-                            <MaestroDetails nombre="NoryMontiel" mes={mes}/>
-
-                          <div>P</div>
-
-                            <MaestroDetails nombre="PastoraDina" mes={mes}/>
-                            <MaestroDetails nombre="PastorIsaac" mes={mes}/>
-
-                          <div>S</div>
-
-                            <MaestroDetails nombre="SaraiGalarza" mes={mes}/>
-
-                          <div>T</div>
-
-                            <MaestroDetails nombre="TereOlivas" mes={mes}/>
-
-                          <div>V</div>
-
-                            <MaestroDetails nombre="VeliaAcevedo" mes={mes}/>
-                            <MaestroDetails nombre="VeronicaCazares" mes={mes}/>
-
-                          <div>W</div>
-
-                            <MaestroDetails nombre="WendyMartinez" mes={mes}/>
-
-                          <div>Y</div>
-
-                            <MaestroDetails nombre="YoselinGalarza" mes={mes}/>
+                          <MaestrosFiltro mes={mes} />
 
                         </div>
                     </article>

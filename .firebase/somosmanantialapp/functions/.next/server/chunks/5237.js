@@ -20,9 +20,33 @@ function AllPost() {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 autor: "Manantial de Vida",
-                mensaje: "Hola, ya est\xe1 disponible el rol de maestros para el mes de mayo. \uD83D\uDDD3️ \uD83D\uDC4B",
+                mensaje: "Ya est\xe1 disponible el calendario con las actividades de cada sociedad.",
+                novedad: "",
+                link: "/miembros/calendario-sociedades",
+                titleLink: "Ver actividades",
+                picture: "/assets/light_logo_manantial.png",
+                dia: "06",
+                mes: "05",
+                año: "2023",
+                hora: "09"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                autor: "Manantial de Vida",
+                mensaje: "",
+                novedad: "Ya puedes filtrar los calendarios por clases.",
+                link: "/miembros/calendario-maestros",
+                titleLink: "Ver calendarios",
+                picture: "/assets/light_logo_manantial.png",
+                dia: "05",
+                mes: "05",
+                año: "2023",
+                hora: "23"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                autor: "Manantial de Vida",
+                mensaje: "Hola, ya est\xe1 disponible el rol de maestros para el mes de mayo.",
                 link: "/miembros/calendario-maestros/",
-                titleLink: "Ver calendario",
+                titleLink: "Ver calendarios",
                 picture: "/assets/light_logo_manantial.png",
                 dia: "03",
                 mes: "05",
@@ -31,7 +55,7 @@ function AllPost() {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 autor: "Manantial de Vida",
-                mensaje: "Ya puedes descargar todos los logotipos de nuestra iglesia. \uD83D\uDC47",
+                mensaje: "Ya puedes descargar todos los logotipos de nuestra iglesia.",
                 link: "/miembros/recursos/logotipo",
                 titleLink: "Descargar logotipos",
                 picture: "/assets/light_logo_manantial.png",

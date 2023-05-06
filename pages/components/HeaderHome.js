@@ -31,7 +31,7 @@ export default function Header() {
                             <div className="NavLinksContainer">
                                 <ul className="NavLinks">
                                     <li><a href="/#Top">Inicio</a></li>
-                                    <li><a href="/#predicas">Prédicas</a></li>
+                                    <li><a href="/predicas">Prédicas</a></li>
                                     {/* <li><a href="/#noticias">Noticias</a></li> */}
                                 </ul>
                             </div>
@@ -49,7 +49,7 @@ export default function Header() {
                         <div className="MenuMobileLinksContainer">
                             <ul className="MenuMobileLinks">
                                 <li><a onClick={handleBurgerClick} href="/#Top">Inicio</a></li>
-                                <li><a onClick={handleBurgerClick} href="/#predicas">Prédicas</a></li>
+                                <li><a onClick={handleBurgerClick} href="/predicas">Prédicas</a></li>
                                 {/* <li><a onClick={handleBurgerClick} href="/#noticias">Noticias</a></li> */}
                             </ul>
                         </div>

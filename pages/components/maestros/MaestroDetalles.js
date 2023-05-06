@@ -14,7 +14,7 @@ export default function MaestroDetails(props) {
           }
         }
         fetchMaestro();
-      }, [props.mes, props.nombre]);
+    }, [props.mes, props.nombre]);
 
     function handleClick() {
         setOpen(!isOpen); // cambia el estado local al contrario de su estado actual

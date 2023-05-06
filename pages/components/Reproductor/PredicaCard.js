@@ -66,6 +66,7 @@ export default function PredicaCard(props) {
                 background-size: center;
                 justify-self: center;
                 align-self: center;
+                border-radius: 10px 10px 0 0;
             }
             .PredicadorData
             {
@@ -80,6 +81,7 @@ export default function PredicaCard(props) {
                 font-size: 12px;
                 background-color: var(--light-grey);
                 color: var(--primary-color);
+                border-radius: 0 0 10px 10px;
             }
             .PredicadorData span
             {

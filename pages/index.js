@@ -25,9 +25,9 @@ export default function Home() {
       <HeaderHome />
       <BackHeader />
       <Cover />
-      <AniversaryEvents />
-      <MonthEvents />
-      <NewsBar />
+      {/* <AniversaryEvents /> */}
+      {/* <MonthEvents /> */}
+      {/* <NewsBar /> */}
       <PredicasBar />
       <Footer />
     </div>
