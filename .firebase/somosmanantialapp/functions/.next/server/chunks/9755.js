@@ -18,6 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _TimeAgoFull__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7677);
+
 
 
 
@@ -82,12 +84,20 @@ function CoverPredica(props) {
                                                         })
                                                     ]
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "jsx-9473424de5756ffc" + " " + "DetailsInfoReproductor",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                        className: "jsx-9473424de5756ffc",
-                                                        children: coverInfo.autor
-                                                    })
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                                            className: "jsx-9473424de5756ffc",
+                                                            children: coverInfo.autor
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_TimeAgoFull__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                                                            dia: "07",
+                                                            mes: "05",
+                                                            año: "2023",
+                                                            hora: "13"
+                                                        })
+                                                    ]
                                                 })
                                             ]
                                         })

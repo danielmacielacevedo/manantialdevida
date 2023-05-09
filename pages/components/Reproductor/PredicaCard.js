@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import cache from "../../../cache";
+import TimeAgoFull from '../TimeAgoFull';
 
 export default function PredicaCard(props) {
   const [cardVideo, setCardVideo] = useState(null);
@@ -33,7 +34,11 @@ export default function PredicaCard(props) {
                 <img src={cardVideo.image} alt={cardVideo.title} />
               </div>
               <div className="PredicadorData">
-                <h3>{cardVideo.title} <br/> <span>{cardVideo.date}</span> </h3>
+                <h3>{cardVideo.title}</h3>
+                <div>
+                  {/* <p>Hace</p> */}
+                  <TimeAgoFull dia={cardVideo.dia} mes={cardVideo.mes} año={cardVideo.año} hora={cardVideo.hora} />
+                </div>
               </div>
             </div>
           </Link>
@@ -78,14 +83,16 @@ export default function PredicaCard(props) {
           height: 60px;
           justify-content: center;
           align-items: center;
+          gap: 4px;
           text-align: center;
           font-size: 12px;
           background-color: var(--light-grey);
           color: var(--primary-color);
           border-radius: 0 0 10px 10px;
         }
-        .PredicadorData span {
-          font-size: 10px;
+        .PredicadorData div {
+          display: flex;
+          gap: 4px;
         }
         @media only screen and (max-width: 860px) {
           .LinkContainer {

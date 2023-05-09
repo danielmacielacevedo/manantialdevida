@@ -4,7 +4,7 @@ export default function SmallNovedad() {
             <div className="NovedadContainer">
                 <div className="NovedadHeader">
                     <img src="/assets/icons/shines.png" />
-                    <h5>Novedad</h5>
+                    <h6>Novedad</h6>
                 </div>
             </div>
             <style jsx>{`
@@ -28,6 +28,11 @@ export default function SmallNovedad() {
                 {
                     width: 10px;
                     height: 10px;
+                }
+                .NovedadHeader h6
+                {
+                    font-size: 12px;
+                    color: var(--secondary-color)
                 }
             `}</style>
         </>

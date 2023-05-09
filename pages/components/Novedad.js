@@ -4,7 +4,7 @@ export default function Novedad(props) {
             <div className="NovedadContainer">
                 <div className="NovedadHeader">
                     <img src="/assets/icons/shines.png" />
-                    <h5>Novedad</h5>
+                    <h6>Novedad</h6>
                 </div>
                 <div className="NovedadContent">{props.content}</div>
             </div>
@@ -28,6 +28,10 @@ export default function Novedad(props) {
                 {
                     width: 20px;
                     height: 20px;
+                }.NovedadHeader h6
+                {
+                    font-size: 16px;
+                    color: var(--secondary-color)
                 }
             `}</style>
         </>

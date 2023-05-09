@@ -3,6 +3,17 @@ exports.id = 1986;
 exports.ids = [1986];
 exports.modules = {
 
+/***/ 6341:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+const NodeCache = __webpack_require__(4580);
+const cache = new NodeCache();
+module.exports = cache;
+
+
+/***/ }),
+
 /***/ 1986:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -16,6 +27,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _cache__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6341);
+/* harmony import */ var _cache__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_cache__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -23,8 +37,12 @@ function PredicadorImage(props) {
     const [image, setImage] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         async function fetchImage() {
-            const res = await fetch("/api/predicadores");
-            const data = await res.json();
+            let data = _cache__WEBPACK_IMPORTED_MODULE_3___default().get("predicadores");
+            if (!data) {
+                const res = await fetch("/api/predicadores");
+                data = await res.json();
+                _cache__WEBPACK_IMPORTED_MODULE_3___default().set("predicadores", data);
+            }
             setImage(data[props.nombre]);
         }
         fetchImage();

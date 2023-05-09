@@ -58,6 +58,10 @@ function PostComponent(props) {
                                         children: props.autor
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_TimeAgo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                        dia: props.dia,
+                                        mes: props.mes,
+                                        año: props.año,
+                                        hora: props.hora,
                                         fechaPublicacion: fechaPublicacion,
                                         useLocalTime: true
                                     })

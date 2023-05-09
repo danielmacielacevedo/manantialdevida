@@ -19,8 +19,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function TimeAgo({ fechaPublicacion , useLocalTime =false  }) {
+function TimeAgo(props, { useLocalTime =true  }) {
     const [timeElapsed, setTimeElapsed] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
+    const fechaPublicacion = `${props.año}-${props.mes}-${props.dia}T${props.hora}:00:00.000Z`;
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         const interval = setInterval(()=>{
             const timePosted = new Date(fechaPublicacion);
@@ -40,9 +41,15 @@ function TimeAgo({ fechaPublicacion , useLocalTime =false  }) {
             } else if (secondsElapsed < 86400) {
                 const hours = Math.floor(secondsElapsed / 3600);
                 setTimeElapsed(`${hours}h`);
-            } else {
+            } else if (secondsElapsed < 2592000) {
                 const days = Math.floor(secondsElapsed / 86400);
                 setTimeElapsed(`${days}d`);
+            } else if (secondsElapsed < 31536000) {
+                const months = Math.floor(secondsElapsed / 2628000);
+                setTimeElapsed(`${months} meses`);
+            } else {
+                const years = Math.floor(secondsElapsed / 31536000);
+                setTimeElapsed(`${years} años`);
             }
         }, 1000);
         return ()=>clearInterval(interval);

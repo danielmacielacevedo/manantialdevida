@@ -21,7 +21,7 @@ export default function PostComponent(props) {
                     </div>
                     <div>
                         <h4>{props.autor}</h4>
-                        <TimeAgo fechaPublicacion={fechaPublicacion} useLocalTime={true} />
+                        <TimeAgo dia={props.dia} mes={props.mes} año={props.año} hora={props.hora} fechaPublicacion={fechaPublicacion} useLocalTime={true} />
                     </div>
                 </div>
                 <div className="PostMensajeContainer">

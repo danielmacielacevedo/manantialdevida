@@ -20,30 +20,30 @@ function Novedad(props) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-6d792f3556c66806" + " " + "NovedadContainer",
+                className: "jsx-35404a9d4ba3ee5c" + " " + "NovedadContainer",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-6d792f3556c66806" + " " + "NovedadHeader",
+                        className: "jsx-35404a9d4ba3ee5c" + " " + "NovedadHeader",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                 src: "/assets/icons/shines.png",
-                                className: "jsx-6d792f3556c66806"
+                                className: "jsx-35404a9d4ba3ee5c"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-                                className: "jsx-6d792f3556c66806",
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                className: "jsx-35404a9d4ba3ee5c",
                                 children: "Novedad"
                             })
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-6d792f3556c66806" + " " + "NovedadContent",
+                        className: "jsx-35404a9d4ba3ee5c" + " " + "NovedadContent",
                         children: props.content
                     })
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "6d792f3556c66806",
-                children: ".NovedadContainer.jsx-6d792f3556c66806{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:var(--manantial-color);gap:10px}.NovedadHeader.jsx-6d792f3556c66806{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}.NovedadHeader.jsx-6d792f3556c66806 img.jsx-6d792f3556c66806{width:20px;height:20px}"
+                id: "35404a9d4ba3ee5c",
+                children: ".NovedadContainer.jsx-35404a9d4ba3ee5c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:var(--manantial-color);gap:10px}.NovedadHeader.jsx-35404a9d4ba3ee5c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}.NovedadHeader.jsx-35404a9d4ba3ee5c img.jsx-35404a9d4ba3ee5c{width:20px;height:20px}.NovedadHeader.jsx-35404a9d4ba3ee5c h6.jsx-35404a9d4ba3ee5c{font-size:16px;color:var(--secondary-color)}"
             })
         ]
     });

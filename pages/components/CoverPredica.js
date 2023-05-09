@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import TimeAgoFull from "./TimeAgoFull";
 
 export default function CoverPredica(props) {
 
@@ -32,7 +33,7 @@ export default function CoverPredica(props) {
                       </div>
                       <div className="DetailsInfoReproductor">
                           <h4>{coverInfo.autor}</h4>
-                          {/* aqui va el date component */}
+                          <TimeAgoFull dia="07" mes="05" año="2023" hora="13" />
                       </div>
                   </div>
               </Link>

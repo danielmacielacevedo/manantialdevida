@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import TimeAgo from "../TimeAgoFull";
 
 export default function Reproductor(props) {
 
@@ -39,7 +40,8 @@ export default function Reproductor(props) {
                     {/* </Link> */}
                     <article className="DescriptionContainer">
                         <div>
-                            <p><span>{video.date}</span> {`\u2022`} <span>{video.desc}</span> </p>
+                            <TimeAgo dia={video.dia} mes={video.mes} año={video.año} hora={video.hora} />
+                            <p><span>{video.desc}</span></p>
                         </div>
                     </article>
                 </div>
@@ -139,11 +141,16 @@ export default function Reproductor(props) {
                     background-color: var(--light-grey);
                     border-radius: 20px;
                 }
+                .DescriptionContainer div
+                {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
                 .DescriptionContainer p 
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 700;
-                    line-height: 20px;
                 }
                 .DescriptionContainer span
                 {

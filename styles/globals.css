@@ -375,16 +375,17 @@ p
 {
   display: flex;
   width: fit-content;
+  height: 40px;
   justify-content: center;
-  padding: 10px 20px;
   align-items: center;
   border-radius: 10px;
   font-size: 14px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  background: linear-gradient(to left, var(--secondary-color), var(--light-grey), var(--secondary-color));
+  padding: 0 20px;
+  background-color: var(--light-grey);
+  background: linear-gradient(to left, var(--light-grey) , var(--secondary-color), var(--light-grey));
   background-size: 500% 500%;
   /* animation: animate-background 10s infinite ease-in-out; */
+  color: var(--secondary-color);
 }
 
 /* PredicadorStructure */
