@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import cache from "../../../cache";
 
 export default function PredicadorImage(props) {
 
@@ -7,12 +6,8 @@ export default function PredicadorImage(props) {
 
     useEffect(() => {
         async function fetchImage() {
-            let data = cache.get('predicadores');
-            if (!data) {
-                const res = await fetch('/api/predicadores');
-                data = await res.json();
-                cache.set('predicadores', data);
-            }
+            const res = await fetch('/api/predicadores');
+            const data = await res.json();
             setImage(data[props.nombre]);
         }
         fetchImage();
@@ -60,6 +55,3 @@ export default function PredicadorImage(props) {
         </>
     )
 }
-
-
-

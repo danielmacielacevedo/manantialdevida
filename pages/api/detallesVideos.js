@@ -1,4 +1,15 @@
+const cache = require('../../cache');
+
 export default function detallesVideos(req, res) {
+
+  const cacheKey = 'detallesVideos';
+
+  let cachedData = cache.get(cacheKey);
+
+  if (cachedData) {
+    console.log('Data from cache');
+    return res.status(200).json(cachedData);
+  }
 
   const manantial = [
     {
@@ -450,7 +461,7 @@ export default function detallesVideos(req, res) {
     },
   ];
 
-  res.status(200).json({
+  const data = {
     Manantial: manantial,
     PastorIsaac: pastorIsaac,
     PastoraDina: pastoraDina,
@@ -472,5 +483,11 @@ export default function detallesVideos(req, res) {
     VeliaAcevedo: veliaAcevedo,
     WillyMartinez: willyMartinez,
     YolandaPerez: yolandaPerez,
-  });
+  };
+
+  cache.set(cacheKey, data, 60 * 60); // Cache durante 1 hora
+
+  console.log('Data from API');
+
+  res.status(200).json(data);
 }

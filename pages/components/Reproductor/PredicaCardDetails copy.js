@@ -1,52 +1,44 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import cache from "../../../cache";
 
-export default function PredicaCard(props) {
+export default function PredicaCardDetails(props) {
   const [cardVideo, setCardVideo] = useState(null);
 
   useEffect(() => {
     async function fetchPredicaDetails() {
-      const cacheKey = `predicaDetails-${props.nombre}-${props.indice}`;
-      const cachedData = cache.get(cacheKey);
-
-      if (cachedData) {
-        setCardVideo(cachedData);
-      } else {
-        const res = await fetch('/api/detallesVideos');
-        const data = await res.json();
-        const cardVideoData = data[props.nombre][props.indice];
-        cache.set(cacheKey, cardVideoData);
-        setCardVideo(cardVideoData);
-      }
+      const res = await fetch('/api/detallesVideos');
+      const data = await res.json();
+      setCardVideo(data[props.nombre][props.indice]);
     }
     fetchPredicaDetails();
   }, [props.nombre, props.indice]);
 
   return (
     <>
-    {cardVideo && (
-      <div className="LinkContainer">
-        <Link href={encodeURI(cardVideo.profileURL.replace('?', '/') + cardVideo.url)}>
-          <div className="PredicadorContainer">
-            <div className="ImageContainer">
-              <img src={cardVideo.image} alt={cardVideo.title} />
-            </div>
-            <div className="PredicadorData">
-              <h3>{cardVideo.title}</h3>
-              <div className="InfoReproductor">
-                <div className="ProfilePicture">
-                  <img src={cardVideo.picture} alt={cardVideo.autor} />
-                </div>
-                <div className="DetailsInfoReproductor">
-                  <h4>{cardVideo.autor}</h4>
-                </div>
+      {cardVideo && (
+        <div className="LinkContainer">
+          <Link href={encodeURI(cardVideo.profileURL.replace('?', '/') + cardVideo.url)}>
+            <div className="PredicadorContainer">
+              <div className="ImageContainer">
+                <img src={cardVideo.image} alt={cardVideo.title} />
+              </div>
+              <div className="PredicadorData">
+                <h3>{cardVideo.title}</h3>
+                {/* <span>{cardVideo.date}</span> */}
+                  <div className="InfoReproductor">
+                    <div className="ProfilePicture">
+                      <img src={cardVideo.picture} />
+                    </div>
+                    <div className="DetailsInfoReproductor">
+                      <h4>{cardVideo.autor}</h4>
+                    </div>
+                  </div>
+                {/* <span>{cardVideo.date}</span> */}
               </div>
             </div>
-          </div>
-        </Link>
-      </div>
-    )}
+          </Link>
+        </div>
+      )}
         <style jsx>{`
             .LinkContainer
             {
