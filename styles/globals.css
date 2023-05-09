@@ -11,7 +11,7 @@
 .theme
 {
   --primary-color: #000;
-  --secondary-color: #fff;
+  --secondary-color: #ffffff;
   --light-grey: #1d1d1d;
   --dark-grey: #f0f0f0;
 }
@@ -79,6 +79,13 @@ h4
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--secondary-color);
+}
+h5
+{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 p
 {
@@ -159,7 +166,8 @@ p
   height: auto;
   list-style: none;
   gap: 20px;
-  font-family: 'Noto Serif Display', serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Noto Serif Display', serif; */
   color: var(--secondary-color);
 }
 .NavLinks li 
@@ -312,7 +320,7 @@ p
   color: var(--primary-color);
   background: linear-gradient(to left, var(--secondary-color), var(--light-grey), var(--secondary-color));
   background-size: 500% 500%;
-  animation: animate-background 10s infinite ease-in-out;
+  /* animation: animate-background 10s infinite ease-in-out; */
 }
 @keyframes animate-background 
 {
@@ -360,8 +368,23 @@ p
   background-color: var(--light-grey);
   background: linear-gradient(to left, var(--light-grey) , var(--secondary-color), var(--light-grey));
   background-size: 500% 500%;
-  animation: animate-background 10s infinite ease-in-out;
+  /* animation: animate-background 10s infinite ease-in-out; */
   color: var(--secondary-color);
+}
+.ContentButton
+{
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  background: linear-gradient(to left, var(--secondary-color), var(--light-grey), var(--secondary-color));
+  background-size: 500% 500%;
+  /* animation: animate-background 10s infinite ease-in-out; */
 }
 
 /* PredicadorStructure */
@@ -538,5 +561,10 @@ p
   .MainContainerCalendario
   {
     max-width: 500px;
+  }
+
+  .ContentButton
+  {
+    width: 100%;
   }
 }

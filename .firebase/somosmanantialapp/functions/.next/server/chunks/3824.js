@@ -16,13 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Ad() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_AdStructure__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            content: "19, 21, 22 & 23 de Abril",
-            src: "/assets/ads/aniversario.jpg",
-            alt: "XII Aniversario Manantial"
-        })
-    });
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {});
 }
 
 

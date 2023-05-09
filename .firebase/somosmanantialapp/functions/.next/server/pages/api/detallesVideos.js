@@ -81,6 +81,17 @@ function detallesVideos(req, res) {
             url: "/la-verdadera-adoracion",
             profileURL: "/@pastorisaac",
             embed: "FF8QGn4russ"
+        },
+        {
+            title: "El poder de la oraci\xf3n",
+            autor: "Pastor Isaac Delgado",
+            picture: "/assets/predicadores/pastor-isaac.png",
+            date: "07 MAYO 2023",
+            desc: "Predicaci\xf3n Manantial de Vida",
+            image: "/assets/predicadores/pastor-isaac/el-poder-de-la-oracion.jpg",
+            url: "/el-poder-de-la-oracion",
+            profileURL: "/@pastorisaac",
+            embed: "ld3xPECRZDA"
         }
     ];
     const pastoraDina = [
@@ -184,6 +195,17 @@ function detallesVideos(req, res) {
         }
     ];
     const franciscoSerrano = [
+        {
+            title: "Nehem\xedas",
+            autor: "Francisco Serrano",
+            picture: "/assets/predicadores/francisco-serrano.png",
+            date: "29 MARZO 2023",
+            desc: "Predicaci\xf3n Manantial de Vida",
+            image: "/assets/predicadores/francisco-serrano/nehemias.jpg",
+            url: "/nehemias",
+            profileURL: "/@franciscoserrano",
+            embed: "F5MqdWHDeE0"
+        },
         {
             title: "Crucifixi\xf3n",
             autor: "Francisco Serrano",

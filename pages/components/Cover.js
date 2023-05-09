@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image'
+import CoverPredica from './CoverPredica';
 
 export default function Cover() {
     return (
         <>
             <div className='CoverContainer'>
-                <img className='CoverImage' src='/assets/svg-aniversario/XII_light.svg' />
-                {/* <Link className='PrimaryButton' href='/aniversario'>VER AHORA</Link> */}
+                <CoverPredica nombre="PastorIsaac" indice="5" />
             </div>
             <style jsx>{`
 
@@ -16,7 +16,7 @@ export default function Cover() {
                     flex-direction: column;
                     width: 100%;
                     height: 650px;
-                    padding: 20px;
+                    {/* padding: 20px; */}
                     background-color: var(--primary-color);
                     // background-color: red;
                     justify-content: center;

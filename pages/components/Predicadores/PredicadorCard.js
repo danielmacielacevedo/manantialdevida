@@ -84,6 +84,10 @@ export default function PredicadorCard(props) {
                     color: var(--primary-color);
                     border-radius: 10px;
                 }
+                .PredicadorData h3
+                {
+                    font-weight: 700;
+                }
             `}</style>
         </>
     )

@@ -74,6 +74,18 @@ export default function detallesVideos(req, res) {
       profileURL: '/@pastorisaac',
       embed: 'FF8QGn4russ',
     },
+
+    {
+      title: 'El poder de la oración',
+      autor: 'Pastor Isaac Delgado',
+      picture: '/assets/predicadores/pastor-isaac.png',
+      date: '07 MAYO 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/pastor-isaac/el-poder-de-la-oracion.jpg',
+      url: '/el-poder-de-la-oracion',
+      profileURL: '/@pastorisaac',
+      embed: 'ld3xPECRZDA',
+    },
   ];
 
   const pastoraDina = [
@@ -185,6 +197,18 @@ export default function detallesVideos(req, res) {
   ];
 
   const franciscoSerrano = [
+    {
+      title: 'Nehemías',
+      autor: 'Francisco Serrano',
+      picture: '/assets/predicadores/francisco-serrano.png',
+      date: '29 MARZO 2023',
+      desc: 'Predicación Manantial de Vida',
+      image: '/assets/predicadores/francisco-serrano/nehemias.jpg',
+      url: '/nehemias',
+      profileURL: '/@franciscoserrano',
+      embed: 'F5MqdWHDeE0',
+    },
+    
     {
       title: 'Crucifixión',
       autor: 'Francisco Serrano',

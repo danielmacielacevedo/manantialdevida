@@ -20,6 +20,10 @@ function UltimasPredicas() {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 nombre: "PastorIsaac",
+                indice: "5"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                nombre: "PastorIsaac",
                 indice: "4"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -48,7 +52,7 @@ function UltimasPredicas() {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 nombre: "FranciscoSerrano",
-                indice: "0"
+                indice: "1"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PredicaCardDetails__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 nombre: "VeliaAcevedo",
