@@ -3,14 +3,14 @@ import Link from 'next/link';
 export default function NewsBar() {
     return (
         <>
-            {/* <div className='NewsContainer'>
-                <h2>NOTICIAS MANANTIAL</h2>
+            <div className='NewsContainer'>
+                <h2>INFO MANANTIAL</h2>
                 <div className='NewsTextContainer'>
-                    <p>Ya puedes ver aquí nuestros anuncios, servicios, eventos especiales, sus horarios y como llegar.</p>
+                    <p>Ya puedes ver aquí nuestros anuncios, servicios, actividades, eventos especiales, sus horarios y como llegar.</p>
                     <p><strong>"¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!"</strong></p>
                 </div>
-                <Link id='predicas' className='PrimaryButton' href='/noticias'>VER NOTICIAS</Link>
-            </div> */}
+                <Link id='predicas' className='PrimaryButton' href='/info'>VER INFO</Link>
+            </div>
             <style jsx>{`
                 .NewsContainer
                 {

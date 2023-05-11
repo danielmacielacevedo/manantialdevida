@@ -40,7 +40,6 @@ export default function MaestrosFiltro(props) {
   return (
     <>
       <div className="MaestrosFiltroContainer">
-        <Novedad content="Ya puedes filtrar el calendario por sociedad." />
         <ButtonList categories={categories} filterCategory={filterCategory} />
         <ArticleList articles={filteredArticles} />
       </div>
@@ -48,6 +47,7 @@ export default function MaestrosFiltro(props) {
         .MaestrosFiltroContainer
         {
           display: flex;
+          width: 100%;
           flex-direction: column;
           gap: 20px;
         }

@@ -41,7 +41,7 @@ export default function Header() {
                                 <ul className="NavLinks">
                                     <li><Link href="/">Inicio</Link></li>
                                     <li><Link href="/predicas">Prédicas</Link></li>
-                                    {/* <li><Link href="/noticias">Noticias</Link></li> */}
+                                    <li><Link href="/info">Info</Link></li>
                                 </ul>
                             </div>
                             <button onClick={handleBurgerClick} ref={menuButtonRef} className="MenuButton">
@@ -59,7 +59,7 @@ export default function Header() {
                             <ul className="MenuMobileLinks">
                                 <li><Link onClick={handleBurgerClick} href="/">Inicio</Link></li>
                                 <li><Link onClick={handleBurgerClick} href="/predicas">Prédicas</Link></li>
-                                {/* <li><Link onClick={handleBurgerClick} href="/noticias">Noticias</Link></li> */}
+                                <li><Link onClick={handleBurgerClick} href="/info">Info</Link></li>
                             </ul>
                         </div>
                     </div>

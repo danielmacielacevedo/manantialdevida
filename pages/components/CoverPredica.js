@@ -93,13 +93,15 @@ export default function CoverPredica(props) {
             z-index: 1;
             top: 80px;
             width: 100%;
-            height: 610px;
+            height: 410px;
+            overflow: hidden;
           }
           #ImageCoverPredica img
           {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            overflow: hidden;
           }
           .InfoReproductor
           {

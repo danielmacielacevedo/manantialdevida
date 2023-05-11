@@ -26,7 +26,7 @@ function MenuMobile() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-c6c6a661461b5fbc" + " " + "BottomMenuContainer",
+                className: "jsx-2bd80a735ff2502f" + " " + "BottomMenuContainer",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         className: "BottomMenuButton",
@@ -39,7 +39,7 @@ function MenuMobile() {
                                 alt: "Home Icon"
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: "jsx-c6c6a661461b5fbc",
+                                className: "jsx-2bd80a735ff2502f",
                                 children: "Inicio"
                             })
                         ]
@@ -55,7 +55,7 @@ function MenuMobile() {
                                 alt: "Menu Icon"
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: "jsx-c6c6a661461b5fbc",
+                                className: "jsx-2bd80a735ff2502f",
                                 children: "Men\xfa"
                             })
                         ]
@@ -63,8 +63,8 @@ function MenuMobile() {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "c6c6a661461b5fbc",
-                children: ".BottomMenuContainer.jsx-c6c6a661461b5fbc{position:fixed;bottom:0;display:none;width:100%;height:80px;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:#000000b1;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:.5px solid var(--light-grey)}.BottomMenuContainer.jsx-c6c6a661461b5fbc img.jsx-c6c6a661461b5fbc{width:40px}@media only screen and (max-width:860px){.BottomMenuContainer.jsx-c6c6a661461b5fbc{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}"
+                id: "2bd80a735ff2502f",
+                children: ".BottomMenuContainer.jsx-2bd80a735ff2502f{position:fixed;bottom:0;display:none;width:100%;height:80px;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:#000000b1;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);{}}.BottomMenuContainer.jsx-2bd80a735ff2502f img.jsx-2bd80a735ff2502f{width:40px}@media only screen and (max-width:860px){.BottomMenuContainer.jsx-2bd80a735ff2502f{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}"
             })
         ]
     });

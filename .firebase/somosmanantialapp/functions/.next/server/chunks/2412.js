@@ -70,6 +70,12 @@ function Header() {
                                                         href: "/predicas",
                                                         children: "Pr\xe9dicas"
                                                     })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                        href: "/info",
+                                                        children: "Info"
+                                                    })
                                                 })
                                             ]
                                         })
@@ -109,6 +115,13 @@ function Header() {
                                             onClick: handleBurgerClick,
                                             href: "/predicas",
                                             children: "Pr\xe9dicas"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            onClick: handleBurgerClick,
+                                            href: "/info",
+                                            children: "Info"
                                         })
                                     })
                                 ]

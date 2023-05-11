@@ -19,7 +19,7 @@ export default function Header() {
             <nav className="NavContainer">
                 {/* <div className="NavAvisos">
                     <p>Sitio en desarrollo.</p>
-                    <a href="/noticias">Más info</a>
+                    <a href="/info">Más info</a>
                 </div> */}
                 <div className="NavFull">
                     <a href="#Top">
@@ -31,8 +31,8 @@ export default function Header() {
                             <div className="NavLinksContainer">
                                 <ul className="NavLinks">
                                     <li><a href="/#Top">Inicio</a></li>
-                                    <li><a href="/predicas">Prédicas</a></li>
-                                    {/* <li><a href="/#noticias">Noticias</a></li> */}
+                                    <li><a href="/#predicas">Prédicas</a></li>
+                                    <li><a href="/#info">Info</a></li>
                                 </ul>
                             </div>
                             <button onClick={handleBurgerClick} ref={menuButtonRef} className="MenuButton">
@@ -49,8 +49,8 @@ export default function Header() {
                         <div className="MenuMobileLinksContainer">
                             <ul className="MenuMobileLinks">
                                 <li><a onClick={handleBurgerClick} href="/#Top">Inicio</a></li>
-                                <li><a onClick={handleBurgerClick} href="/predicas">Prédicas</a></li>
-                                {/* <li><a onClick={handleBurgerClick} href="/#noticias">Noticias</a></li> */}
+                                <li><a onClick={handleBurgerClick} href="/#predicas">Prédicas</a></li>
+                                <li><a onClick={handleBurgerClick} href="/#info">Info</a></li>
                             </ul>
                         </div>
                     </div>

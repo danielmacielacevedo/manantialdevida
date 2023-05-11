@@ -32,7 +32,7 @@ export default function MenuMobile() {
                     align-items: center;
                     background-color: #000000b1;
                     backdrop-filter: blur(10px);
-                    border-top: 0.5px solid var(--light-grey);
+                    {/* border-top: 0.5px solid var(--light-grey); */}
                 }
                 .BottomMenuContainer img
                 {
