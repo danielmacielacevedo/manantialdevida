@@ -12,7 +12,7 @@ export default function Predicador() {
   return (
     <div className='theme'>
       <PredicadorHead nombre={predicador} />
-      <Header />
+      {/* <Header /> */}
       <BackHeader />
       <div className='PageContainer'>
         <PredicadorCard nombre={predicador} />

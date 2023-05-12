@@ -20,18 +20,18 @@ __webpack_require__.r(__webpack_exports__);
 
 function Actividades(props) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "jsx-c6e876a4033e19e6" + " " + "MonthEventsContainer",
+        className: "jsx-6deccb6a20367480" + " " + "MonthEventsContainer",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                className: "jsx-c6e876a4033e19e6",
+                className: "jsx-6deccb6a20367480",
                 children: "ACTIVIDADES MAYO"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(daniel_pages_components_Filtrar_FilterSociedades_SociedadesFiltro__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 mes: props.mes
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "c6e876a4033e19e6",
-                children: ".MonthEventsContainer.jsx-c6e876a4033e19e6{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 20px 0 20px;gap:20px;background-color:var(--primary-color)}"
+                id: "6deccb6a20367480",
+                children: ".MonthEventsContainer.jsx-6deccb6a20367480{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 0 0 0;gap:20px;background-color:var(--primary-color)}"
             })
         ]
     });

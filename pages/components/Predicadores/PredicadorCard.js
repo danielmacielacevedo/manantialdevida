@@ -54,6 +54,7 @@ export default function PredicadorCard(props) {
             flex-direction: column;
             width: 100%;
             height: auto;
+            padding: 0 20px;
         }
         .ImageContainer
         {

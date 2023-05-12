@@ -1,46 +1,55 @@
 import Link from 'next/link';
+import { useContext } from 'react';
+import { UserContext } from '../UserProvider';
+import BackMenuMobile from './BackMenuMobile';
 
 export default function Footer() {
+    const { user } = useContext(UserContext)
 
     return (
         <>
-            <div className='FooterContainer'>
-                <div className='FooterContent'>
-                    <div className='FooterImage'>
-                        <img src='/assets/light_logo_manantial.png'/>
+            {user === null && 
+                <div className='FooterContainer'>
+                    <div className='FooterContent'>
+                        <div className='FooterImage'>
+                            <img src='/assets/light_logo_manantial.png'/>
+                        </div>
+                        <div className='FooterLinksContainer'>
+                            <h3>Navegación</h3>
+                            <ul className='FooterLinks'>
+                                <li><a href="#Top">Volver arriba</a></li>
+                                <li><Link href="/">Inicio</Link></li>
+                                <li><Link href="/predicas">Prédicas</Link></li>
+                                <li><Link href="/info">Info</Link></li>
+                            </ul>
+                        </div>
+                        <div className='FooterLinksContainer'>
+                            <h3>Como llegar</h3>
+                            <ul className='FooterLinks'>
+                                <li><a target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic'>Toma de Zacatecas #335 <br/> Victoria de Durango, Durango, México. <br/> CP 34230</a></li>
+                            </ul>
+                        </div>
+                        <div className='FooterLinksContainer'>
+                            <h3>Social</h3>
+                            <ul className='FooterLinks'>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/somosmanantial/"> Instagram</a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/somosmanantial.org/"> Facebook</a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@somosmanantial"> TikTok</a></li>
+                            </ul>
+                        </div>
+                        <div className='FooterLinksContainer'>
+                            <h3>Legal</h3>
+                            <ul className='FooterLinks'>
+                                <li><Link href="/legal/privacidad">Política de privacidad</Link></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className='FooterLinksContainer'>
-                        <h3>Navegación</h3>
-                        <ul className='FooterLinks'>
-                            <li><a href="#Top">Volver arriba</a></li>
-                            <li><Link href="/">Inicio</Link></li>
-                            <li><Link href="/predicas">Prédicas</Link></li>
-                            <li><Link href="/info">Info</Link></li>
-                        </ul>
-                    </div>
-                    <div className='FooterLinksContainer'>
-                        <h3>Como llegar</h3>
-                        <ul className='FooterLinks'>
-                            <li><a target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic'>Toma de Zacatecas #335 <br/> Victoria de Durango, Durango, México. <br/> CP 34230</a></li>
-                        </ul>
-                    </div>
-                    <div className='FooterLinksContainer'>
-                        <h3>Social</h3>
-                        <ul className='FooterLinks'>
-                            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/somosmanantial/"> Instagram</a></li>
-                            <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/somosmanantial.org/"> Facebook</a></li>
-                            <li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@somosmanantial"> TikTok</a></li>
-                        </ul>
-                    </div>
-                    <div className='FooterLinksContainer'>
-                        <h3>Legal</h3>
-                        <ul className='FooterLinks'>
-                            <li><Link href="/legal/privacidad">Política de privacidad</Link></li>
-                        </ul>
-                    </div>
+                    <p>Manantial de Vida © 2023</p>
                 </div>
-                <p>Manantial de Vida © 2023</p>
-            </div>
+            }
+            {user && user.email &&
+                <BackMenuMobile />
+            }
             <style jsx>{`
                 .FooterContainer
                 {

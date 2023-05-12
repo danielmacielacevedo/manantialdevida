@@ -3,6 +3,17 @@ exports.id = 7056;
 exports.ids = [7056];
 exports.modules = {
 
+/***/ 6341:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+const NodeCache = __webpack_require__(4580);
+const cache = new NodeCache();
+module.exports = cache;
+
+
+/***/ }),
+
 /***/ 7056:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

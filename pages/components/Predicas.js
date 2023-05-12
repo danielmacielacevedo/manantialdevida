@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PredicadorCard from './Predicadores/PredicadorCard';
+import PredicadorCardPredicas from './Predicadores/PredicadorCardPredicas';
 import NewsBar from './NewsBar';
 
 
@@ -9,52 +9,52 @@ export default function PredicasBar() {
             <div className='PredicasBarContainer'>
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="PastorIsaac" />
-                        <PredicadorCard nombre="PastoraDina" />
+                        <PredicadorCardPredicas nombre="PastorIsaac" />
+                        <PredicadorCardPredicas nombre="PastoraDina" />
                     </div>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="AdrielRamos" />
-                        <PredicadorCard nombre="AnitaMinchaca" />
-                    </div>
-                </div>
-                <div className='PredicasContainer'>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="EmmanuelAguilar" />
-                        <PredicadorCard nombre="FlorFernandez" />
-                    </div>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="FranciscoGarcia" />
-                        <PredicadorCard nombre="FranciscoSerrano" />
+                        <PredicadorCardPredicas nombre="AdrielRamos" />
+                        <PredicadorCardPredicas nombre="AnitaMinchaca" />
                     </div>
                 </div>
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="JuanLeyva" />
-                        <PredicadorCard nombre="JuanPabloRodriguez" />
+                        <PredicadorCardPredicas nombre="EmmanuelAguilar" />
+                        <PredicadorCardPredicas nombre="FlorFernandez" />
                     </div>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="KarlaCervantes" />
-                        <PredicadorCard nombre="LeonorRuiz" />
-                    </div>
-                </div>
-                <div className='PredicasContainer'>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="LuisRios" />
-                        <PredicadorCard nombre="MagdielPastrana" />
-                    </div>
-                    <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="ObedGarcia" />
-                        <PredicadorCard nombre="OmarMorales" />
+                        <PredicadorCardPredicas nombre="FranciscoGarcia" />
+                        <PredicadorCardPredicas nombre="FranciscoSerrano" />
                     </div>
                 </div>
                 <div className='PredicasContainer'>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="OswaldoAli" />
-                        <PredicadorCard nombre="VeliaAcevedo" />
+                        <PredicadorCardPredicas nombre="JuanLeyva" />
+                        <PredicadorCardPredicas nombre="JuanPabloRodriguez" />
                     </div>
                     <div className='PredicadoresContainer'>
-                        <PredicadorCard nombre="WillyMartinez" />
-                        <PredicadorCard nombre="YolandaPerez" />
+                        <PredicadorCardPredicas nombre="KarlaCervantes" />
+                        <PredicadorCardPredicas nombre="LeonorRuiz" />
+                    </div>
+                </div>
+                <div className='PredicasContainer'>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCardPredicas nombre="LuisRios" />
+                        <PredicadorCardPredicas nombre="MagdielPastrana" />
+                    </div>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCardPredicas nombre="ObedGarcia" />
+                        <PredicadorCardPredicas nombre="OmarMorales" />
+                    </div>
+                </div>
+                <div className='PredicasContainer'>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCardPredicas nombre="OswaldoAli" />
+                        <PredicadorCardPredicas nombre="VeliaAcevedo" />
+                    </div>
+                    <div className='PredicadoresContainer'>
+                        <PredicadorCardPredicas nombre="WillyMartinez" />
+                        <PredicadorCardPredicas nombre="YolandaPerez" />
                     </div>
                 </div>
             </div>

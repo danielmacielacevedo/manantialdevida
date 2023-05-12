@@ -6,60 +6,76 @@ import { UserContext } from '../UserProvider';
 export default function MenuMembers(props) {
     const { user } = useContext(UserContext);
 
-
-    // const autor = props.autor;
-    // const mensaje = props.mensaje;
-    // const link = props.link;
-    // const titleLink = props.titleLink;
-    // const picture = props.picture;
-
     return (
         <>
             {user && user.email && 
-            <div className="MenuGlobalContainer">
+            <div className="theme MenuGlobalContainer">
                 <h1>Menu</h1>
-                <Link href="/miembros">
-                    <div className="ItemMenuContainer InicioDesktop">
+
+                <div href="/">
+                    <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
-                            <img src="/assets/home-icon-active.png" alt="Home Icon" />
+                            <img id="user_profile_picture" src={user.picture} alt="Home Icon" />
+                        </div> 
+                        <div className="InfoUserMenuGlobal">
+                            <p>{user.name}</p>
+                            <span>{user.email}</span>
+                        </div>
+                    </div>
+                </div>
+                <Link className="InicioDesktop" href="/">
+                    <div className="ItemMenuContainer">
+                        <div className="PostProfilePicture">
+                            <img src="/assets/icons/home-icon.png" alt="Home Icon" />
                         </div> 
                         <p>Inicio</p>
                     </div>
                 </Link>
-                <Link href="/">
-                    <div className="ItemMenuContainer ">
-                        <div className="PostProfilePicture">
-                            <img src="/assets/icons/world-icon.png" alt="World Icon" />
-                        </div> 
-                        <p>Ir a somosmanantial.org</p>
-                    </div>
-                </Link>
-                Calendarios
-                <Link href="/miembros/calendario-maestros">
+
+                Accesos directos
+
+                <Link href="/blog">
                     <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
-                            <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                            <img src="/assets/icons/blog-icon.png" alt="Home Icon" />
                         </div> 
-                        <p>Maestros</p>
+                        <p>Blog</p>
                     </div>
                 </Link>
-                <Link href="/miembros/calendario-sociedades">
+                <Link href="/predicas">
                     <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
-                            <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                            <img src="/assets/icons/new-predicas-icon.png" alt="Home Icon" />
                         </div> 
-                        <p>Sociedades</p>
-                        <SmallNovedad />
+                        <p>Prédicas</p>
                     </div>
                 </Link>
-                <div href="/miembros/calendario-maestros">
+                <Link href="/boletin">
                     <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
-                            <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                            <img src="/assets/icons/news-icon.png" alt="Home Icon" />
                         </div> 
-                        <p>Ministerios <br/> <span>Próximamente</span> </p>
+                        <p>Boletín</p>
                     </div>
-                </div>
+                </Link>
+                <div className="PrivateContainerMenu">
+                    Privados
+                    <Link href="/miembros/calendario-maestros">
+                        <div className="ItemMenuContainer">
+                            <div className="PostProfilePicture">
+                                <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                            </div> 
+                            <p>Maestros</p>
+                        </div>
+                    </Link>
+                    <Link href="/miembros/calendario-sociedades">
+                        <div className="ItemMenuContainer">
+                            <div className="PostProfilePicture">
+                                <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                            </div> 
+                            <p>Sociedades</p>
+                        </div>
+                    </Link>
                 Guias
                 <Link href="/miembros/tutoriales/como-ser-ujier">
                     <div className="ItemMenuContainer">
@@ -69,13 +85,35 @@ export default function MenuMembers(props) {
                         <p>Como ser ujier</p>
                     </div>
                 </Link>
+                </div>
+                Calendarios
+
+                <Link href="/actividades">
+                    <div className="ItemMenuContainer">
+                        <div className="PostProfilePicture">
+                            <img src="/assets/icons/calendar-icon.png" alt="Calendar Icon" />
+                        </div> 
+                        <p>Actividades</p>
+                    <SmallNovedad />
+                    </div>
+                </Link>
+                Como llegar
+                <a target="_blank" rel="noreferrer" href='https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic'>
+                    <div className="ItemMenuContainer">
+                        <div className="PostProfilePicture">
+                            <img src="/assets/icons/map-icon-active.png" alt="Image Icon" />
+                        </div> 
+                        <p>Ver mapa</p>
+                    </div>
+                </a>
+
                 Recursos
                 <Link href="/miembros/recursos/logotipo">
                     <div className="ItemMenuContainer">
                         <div className="PostProfilePicture">
                             <img src="/assets/icons/image-icon.png" alt="Image Icon" />
                         </div> 
-                        <p>Descargar logotipos</p>
+                        <p>Logotipos</p>
                     </div>
                 </Link>
             </div>
@@ -83,18 +121,48 @@ export default function MenuMembers(props) {
             <style jsx>{`
                 .MenuGlobalContainer
                 {
+                    top: 0;
+                    bottom:0;
+                    position:fixed;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                    left: 0;
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    width: fit-content;
+                    max-width: 400px;   
                     height: auto;
                     border-radius: 10px;
-                    {/* padding: 20px; */}
                     gap: 20px;
                     color: var(--secondary-color);
+                    margin-top: 80px;
+                    padding: 20px;
+                }
+                .MenuGlobalContainer::-webkit-scrollbar
+                {
+                    width: 8px;
+                }
+                .MenuGlobalContainer::-webkit-scrollbar-thumb
+                {
+                    background-color: #1d1d1d;
+                    border-radius: 10px;
+                }
+                .MenuGlobalContainer::-webkit-scrollbar-track
+                {
+                    background-color: #000;
                 }
                 .MenuGlobalContainer h1
                 {
                     display: none;
+                }
+                .PrivateContainerMenu
+                {
+                    display: flex;
+                    flex-direction: column;
+                    background: var(--mid-grey);
+                    border-radius: 10px;
+                    padding: 20px;
+                    gap: 20px;
                 }
                 .ItemMenuContainer
                 {
@@ -114,7 +182,9 @@ export default function MenuMembers(props) {
                 }
                 .ItemMenuContainer span
                 {
-                    padding: 2px 10px;
+                    display: flex;
+                    width: fit-content;
+                    padding: 6px 10px;
                     border-radius: 4px;
                     font-size: 10px;
                     background-color: var(--primary-color);
@@ -135,16 +205,62 @@ export default function MenuMembers(props) {
                     width: auto;
                     height: 18px;
                 }
+                #user_profile_picture
+                {
+                    width: auto;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                .InfoUserMenuGlobal
+                {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+                @media only screen and (max-width: 1024px)
+                {
+                    p 
+                    {
+                        font-size: 10px;
+                    }
+                    .ItemMenuContainer
+                    {
+                        flex-direction: column;
+                        padding: 20px 10px;
+                    }
+                    .InfoUserMenuGlobal
+                    {
+                        display: none;
+                    }
+                }
                 @media only screen and (max-width: 860px)
                 {
+                    p 
+                    {
+                        font-size: 16px;
+                    }
+                    .MenuGlobalContainer
+                    {
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        max-width: none;   
+                        margin-top: 80px;
+                        padding: 0;
+                    }
                     .MenuGlobalContainer h1
                     {
                         display: flex;
-                        margin-bottom: -20px;
+                        padding-top: 20px;
                     }
-                    .InicioDesktop
+                    .ItemMenuContainer
                     {
-                        display: none;
+                        flex-direction: row;
+                        padding: 10px 20px;
+                    }
+                    .InfoUserMenuGlobal
+                    {
+                        display: flex;
                     }
                 }
             `}</style>

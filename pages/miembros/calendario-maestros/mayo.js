@@ -14,7 +14,7 @@ export default function CalendarioMaestros() {
   const mes = 'Mayo';
 
   return (
-    <div className='theme'>
+    <>
       <Head>
         <title>Calendario Mayo | Manantial</title>
         <meta name="description" content="Calendario de clases para los maestros de Manantial de Vida." />
@@ -28,13 +28,9 @@ export default function CalendarioMaestros() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <HeaderMembers />
+      {/* <HeaderMembers /> */}
       <BackHeader />
       <div className='PageGlobalContainer'>
-        <BackSidebar />
-        <div className='SidebarSectionContent'>
-          <MenuMembers />  
-        </div>
         <div className='PrincipalSectionContent'>
         <div className='PageContainer'>
         <div className='CalendarTitle'>
@@ -42,12 +38,12 @@ export default function CalendarioMaestros() {
           <span>{mesTitle}</span>
           {/* <p>Selecciona tu nombre para ver tu calendario.</p> */}
         </div>
+                          <MaestrosFiltro mes={mes} />
         <div className='PageContent'>
           <div className='MainCalendario'>
             <article className="CalendarArticle">
                         <div className="TableContainer">
 
-                          <MaestrosFiltro mes={mes} />
 
                         </div>
                     </article>
@@ -57,7 +53,7 @@ export default function CalendarioMaestros() {
         </div>
       </div>
       <BackMenuMobile />
-      <MenuMobile />
-    </div>
+      {/* <MenuMobile /> */}
+    </>
   )
 }

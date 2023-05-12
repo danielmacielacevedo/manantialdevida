@@ -17,32 +17,36 @@ export default function CoverPredica(props) {
 
     return (
       <>
-        <div id="ImageCoverPredica" >
-            <img src={coverInfo.image} />
-        </div>
         <div className="CoverPredicaContainer">
-          <section className="LeftSection">
-            <h5>Última predicación</h5>
-            <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}><h1>{coverInfo.title}</h1></Link>
-            <div className="ButtonsCoverPredica">
-              <Link href={encodeURI(coverInfo.profileURL)}>
-                  <div className="InfoReproductor">
-                      <div className="ProfilePicture">
-                          <img src={coverInfo.picture} />
-                          <i></i>
-                      </div>
-                      <div className="DetailsInfoReproductor">
-                          <h4>{coverInfo.autor}</h4>
-                          <TimeAgoFull dia="07" mes="05" año="2023" hora="13" />
-                      </div>
-                  </div>
-              </Link>
-              <Link className="ContentButton" href={`${coverInfo.profileURL}/${coverInfo.url}`}>VER AHORA</Link>
+          <div className="CoverBackground">
+            <div id="ImageCoverPredica" >
+                <img src={coverInfo.image} />
             </div>
-          </section>
-          <section className="RightSection">
-            <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}><img src={coverInfo.image} /></Link>
-          </section>
+          </div>
+          <div className="CoverSectionsContainer">
+            <section className="LeftSection">
+              <h5>Última predicación</h5>
+              <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}><h1>{coverInfo.title}</h1></Link>
+              <div className="ButtonsCoverPredica">
+                <Link href={encodeURI(coverInfo.profileURL)}>
+                    <div className="InfoReproductor">
+                        <div className="ProfilePicture">
+                            <img src={coverInfo.picture} />
+                            <i></i>
+                        </div>
+                        <div className="DetailsInfoReproductor">
+                            <h4>{coverInfo.autor}</h4>
+                            <TimeAgoFull dia="07" mes="05" año="2023" hora="13" />
+                        </div>
+                    </div>
+                </Link>
+                <Link className="ContentButton" href={`${coverInfo.profileURL}/${coverInfo.url}`}>VER AHORA</Link>
+              </div>
+            </section>
+            <section className="RightSection">
+              <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}><img src={coverInfo.image} /></Link>
+            </section>
+          </div>
         </div>
         <style jsx>{`
           .CoverPredicaContainer {
@@ -50,13 +54,10 @@ export default function CoverPredica(props) {
             z-index: 2;
             display: flex;
             width: 100%;
-            height: 100%;
-            backdrop-filter: blur(20px);
+            height: fit-content;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            gap: 100px;
-            text-align: left;
           }
           .CoverPredicaContainer span
           {
@@ -69,31 +70,61 @@ export default function CoverPredica(props) {
           {
             font-size: 70px;
           }
+          .CoverBackground
+          {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+          }
+          .CoverSectionsContainer
+          {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            height: 450px;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+            border-radius: 10px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+          }
           .LeftSection
           {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding: 20px;
+          }
+          .RightSection
+          {
+            display: flex;
+            padding-right: 20px;
           }
           .RightSection img
           {
+            width: 100%;
             border-radius: 10px;
+            overflow: hidden;
           }
           .ButtonsCoverPredica
           {
             display: flex;
             width: 100%;
-            height: auto;
+            height: fit-content;
             gap: 20px;
             justify-content: flex-start;
             align-items: left;
           }
           #ImageCoverPredica {
-            position: absolute;
-            z-index: 1;
-            top: 80px;
+            z-index: -1;
+            top: 0px;
             width: 100%;
-            height: 410px;
+            height: 450px;
             overflow: hidden;
           }
           #ImageCoverPredica img
@@ -101,6 +132,7 @@ export default function CoverPredica(props) {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 12px;
             overflow: hidden;
           }
           .InfoReproductor
@@ -152,6 +184,13 @@ export default function CoverPredica(props) {
             background-size: cover;
             background-repeat: no-repeat;
           }
+          @media only screen and (max-width: 1024px)
+          {
+            .RightSection
+            {
+              display: none;
+            }
+          }
           @media only screen and (max-width: 860px)
           {
             .RightSection
@@ -159,7 +198,7 @@ export default function CoverPredica(props) {
               display: none;
             }
             #ImageCoverPredica {
-                height: 410px;
+                height: 450px;
             }
             .CoverPredicaContainer h1
             {

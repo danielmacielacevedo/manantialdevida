@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header />
+      {/* <Header /> */}
       <BackHeader />
       <Actividades mes={mes} />
       <ManantialServices />

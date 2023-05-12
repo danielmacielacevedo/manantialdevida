@@ -22,40 +22,43 @@ __webpack_require__.r(__webpack_exports__);
 function NewsBar() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-e9ac999c91221786" + " " + "NewsContainer",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                        className: "jsx-e9ac999c91221786",
-                        children: "INFO MANANTIAL"
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-e9ac999c91221786" + " " + "NewsTextContainer",
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: "jsx-e9ac999c91221786",
-                                children: "Ya puedes ver aqu\xed nuestros anuncios, servicios, actividades, eventos especiales, sus horarios y como llegar."
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: "jsx-e9ac999c91221786",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
-                                    className: "jsx-e9ac999c91221786",
-                                    children: '"\xa1Mirad cu\xe1n bueno y cu\xe1n delicioso es habitar los hermanos juntos en armon\xeda!"'
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "jsx-1e421e1760149d38" + " " + "NewsGlobalContainer",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "jsx-1e421e1760149d38" + " " + "NewsContainer",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                            className: "jsx-1e421e1760149d38",
+                            children: "INFO MANANTIAL"
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "jsx-1e421e1760149d38" + " " + "NewsTextContainer",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: "jsx-1e421e1760149d38",
+                                    children: "Ya puedes ver aqu\xed nuestros anuncios, servicios, actividades, eventos especiales, sus horarios y como llegar."
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: "jsx-1e421e1760149d38",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                        className: "jsx-1e421e1760149d38",
+                                        children: '"\xa1Mirad cu\xe1n bueno y cu\xe1n delicioso es habitar los hermanos juntos en armon\xeda!"'
+                                    })
                                 })
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        id: "predicas",
-                        className: "PrimaryButton",
-                        href: "/info",
-                        children: "VER INFO"
-                    })
-                ]
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            id: "predicas",
+                            className: "PrimaryButton",
+                            href: "/info",
+                            children: "VER INFO"
+                        })
+                    ]
+                })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "e9ac999c91221786",
-                children: ".NewsContainer.jsx-e9ac999c91221786{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:50vh;min-height:400px;gap:40px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-top:20px;padding:20px;background-color:var(--light-grey)}.NewsTextContainer.jsx-e9ac999c91221786{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px;text-align:center;color:var(--secondary-color)}"
+                id: "1e421e1760149d38",
+                children: ".NewsGlobalContainer.jsx-1e421e1760149d38{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.NewsContainer.jsx-1e421e1760149d38{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:50vh;min-height:400px;gap:40px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin:20px 20px 0 20px;padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:var(--light-grey)}.NewsTextContainer.jsx-1e421e1760149d38{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px;text-align:center;color:var(--secondary-color)}"
             })
         ]
     });

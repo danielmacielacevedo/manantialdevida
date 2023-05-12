@@ -41,8 +41,14 @@ function EventCountdown({ eventDate }) {
   return (
     <div>
       <h4>
-        Empieza en {timeRemaining.days}d, {pad(timeRemaining.hours)}h, {pad(timeRemaining.minutes)}m, {pad(timeRemaining.seconds)}s
+        {timeRemaining.days}d, {pad(timeRemaining.hours)}h, {pad(timeRemaining.minutes)}m, {pad(timeRemaining.seconds)}s
       </h4>
+      <style jsx>{`
+        h4
+        {
+          text-align: center;
+        }  
+      `}</style>
     </div>
   );
 }

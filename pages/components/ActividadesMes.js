@@ -16,7 +16,7 @@ export default function Actividades(props) {
                     height: auto;
                     justify-content: center;
                     align-items: center;
-                    padding: 20px 20px 0 20px;
+                    padding: 20px 0 0 0;
                     gap: 20px;
                     background-color: var(--primary-color)
                 }

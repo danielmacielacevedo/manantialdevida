@@ -12,18 +12,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9816);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 function EventCountdown({ eventDate  }) {
-    const [timeRemaining, setTimeRemaining] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
+    const [timeRemaining, setTimeRemaining] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
         days: 0,
         hours: 0,
         minutes: 0,
         seconds: 0
     });
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         const timer = setInterval(()=>{
             const now = Date.now();
             const eventTime = new Date(eventDate).getTime();
@@ -46,20 +49,27 @@ function EventCountdown({ eventDate  }) {
         eventDate
     ]);
     const pad = (number)=>number.toString().padStart(2, "0");
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
-            children: [
-                "Empieza en ",
-                timeRemaining.days,
-                "d, ",
-                pad(timeRemaining.hours),
-                "h, ",
-                pad(timeRemaining.minutes),
-                "m, ",
-                pad(timeRemaining.seconds),
-                "s"
-            ]
-        })
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "jsx-432b3c71f8b9a0ae",
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
+                className: "jsx-432b3c71f8b9a0ae",
+                children: [
+                    timeRemaining.days,
+                    "d, ",
+                    pad(timeRemaining.hours),
+                    "h, ",
+                    pad(timeRemaining.minutes),
+                    "m, ",
+                    pad(timeRemaining.seconds),
+                    "s"
+                ]
+            }),
+            react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
+                id: "432b3c71f8b9a0ae",
+                children: "h4.jsx-432b3c71f8b9a0ae{text-align:center}"
+            })
+        ]
     });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EventCountdown);

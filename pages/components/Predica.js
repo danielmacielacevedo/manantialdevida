@@ -30,7 +30,7 @@ export default function Predica(props) {
   return (
     <div id='Top' className='Site theme'>
       <DynamicHead nombre={props.nombre} indice={props.indice} />
-      <Header />
+      {/* <Header /> */}
       <BackHeader />
       <div className={`MainContainer ${scrollDown ? 'scroll-down' : ''}`}>
         <div className='PrimarySection'>
@@ -53,14 +53,17 @@ export default function Predica(props) {
           height: auto;
           align-items: center;
           background-color: var(--primary-color);
+          padding-top: 20px;
         }
         .MainContainer
         {
           display: flex;
           width: 100%;
           height: auto;
-          gap: 5%;
-          padding: 0 5%;
+          gap: 20px;
+          padding: 0 20px;
+          {/* gap: 5%;
+          padding: 0 5%; */}
           justify-self
         }
         .MainContainer.scroll-down
@@ -86,8 +89,20 @@ export default function Predica(props) {
           height: auto;
           gap: 20px;
         }
+        @media only screen and (max-width: 1024px)
+        {
+          .MainContainer
+          {
+            flex-direction: column;
+            gap: 20px
+          }
+        }
         @media only screen and (max-width: 860px)
         {
+          .Site
+          {
+            padding: 0;
+          }
           .MainContainer
           {
             flex-direction: column;

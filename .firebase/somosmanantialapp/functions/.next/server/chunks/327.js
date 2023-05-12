@@ -55,34 +55,38 @@ function MonthEvents() {
     }, []);
     const { fechaDomingo , fechaMiercoles , fechaViernes  } = actualizarFechas();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "jsx-e65b3dbbfab412db" + " " + "MonthEventsContainer",
+        className: "jsx-246b0529713ade45" + " " + "MonthEventsContainer",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                className: "jsx-e65b3dbbfab412db",
+                className: "jsx-246b0529713ade45",
                 children: "NUESTROS SERVICIOS"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-e65b3dbbfab412db" + " " + "MonthEventsContent",
+                className: "jsx-246b0529713ade45" + " " + "MonthEventsContent",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-e65b3dbbfab412db" + " " + "ArticlesContainer",
+                        className: "jsx-246b0529713ade45" + " " + "ArticlesContainer",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
-                            className: "jsx-e65b3dbbfab412db" + " " + "ArticleContainer",
+                            className: "jsx-246b0529713ade45" + " " + "ArticleContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: "Servicio Manantial"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "/assets/predicadores/pastora-dina/en-mi-angustia.jpg",
-                                    className: "jsx-e65b3dbbfab412db"
+                                    className: "jsx-246b0529713ade45"
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-e65b3dbbfab412db",
-                                            children: "Todos los domingos • 11:30AM"
+                                            className: "jsx-246b0529713ade45",
+                                            children: "Todos los domingos"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "jsx-246b0529713ade45",
+                                            children: "11:30 AM"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_EventCountdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
                                             eventDate: fechaDomingo
@@ -93,24 +97,28 @@ function MonthEvents() {
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-e65b3dbbfab412db" + " " + "ArticlesContainer",
+                        className: "jsx-246b0529713ade45" + " " + "ArticlesContainer",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
-                            className: "jsx-e65b3dbbfab412db" + " " + "ArticleContainer",
+                            className: "jsx-246b0529713ade45" + " " + "ArticleContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: "Servicio de Ense\xf1anza"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "/assets/predicadores/pastor-isaac/de-donde-vienes.jpg",
-                                    className: "jsx-e65b3dbbfab412db"
+                                    className: "jsx-246b0529713ade45"
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-e65b3dbbfab412db",
-                                            children: "Todos los mi\xe9rcoles • 07:00PM"
+                                            className: "jsx-246b0529713ade45",
+                                            children: "Todos los mi\xe9rcoles"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "jsx-246b0529713ade45",
+                                            children: "7:00 PM"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_EventCountdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
                                             eventDate: fechaMiercoles
@@ -121,25 +129,29 @@ function MonthEvents() {
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "jsx-e65b3dbbfab412db" + " " + "ArticlesContainer",
+                        className: "jsx-246b0529713ade45" + " " + "ArticlesContainer",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
-                            className: "jsx-e65b3dbbfab412db" + " " + "ArticleContainer",
+                            className: "jsx-246b0529713ade45" + " " + "ArticleContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: "Noche de Oraci\xf3n"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "/assets/predicadores/flor-fernandez/metamorfosis-del-alma.jpg",
-                                    className: "jsx-e65b3dbbfab412db"
+                                    className: "jsx-246b0529713ade45"
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-e65b3dbbfab412db",
+                                    className: "jsx-246b0529713ade45",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             id: "info",
-                                            className: "jsx-e65b3dbbfab412db",
-                                            children: "Todos los viernes • 08:00PM"
+                                            className: "jsx-246b0529713ade45",
+                                            children: "Todos los viernes"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "jsx-246b0529713ade45",
+                                            children: "8:00 PM"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_EventCountdown__WEBPACK_IMPORTED_MODULE_2__["default"], {
                                             eventDate: fechaViernes
@@ -152,8 +164,8 @@ function MonthEvents() {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "e65b3dbbfab412db",
-                children: ".MonthEventsContainer.jsx-e65b3dbbfab412db{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 20px 0 20px;gap:20px;background-color:var(--primary-color)}.MonthEventsContent.jsx-e65b3dbbfab412db{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;gap:20px}.ArticlesContainer.jsx-e65b3dbbfab412db{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;gap:20px}.ArticleContainer.jsx-e65b3dbbfab412db{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;width:100%;height:auto;gap:10px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:var(--light-grey)}.ArticleContainer.jsx-e65b3dbbfab412db img.jsx-e65b3dbbfab412db{width:100%;height:auto;max-height:180px;-o-object-fit:cover;object-fit:cover;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}.ArticleContainer.jsx-e65b3dbbfab412db p.jsx-e65b3dbbfab412db{font-size:14px;font-weight:100}.ArticleContainer.jsx-e65b3dbbfab412db div.jsx-e65b3dbbfab412db{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}@media only screen and (max-width:860px){.MonthEventsContent.jsx-e65b3dbbfab412db{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}"
+                id: "246b0529713ade45",
+                children: ".MonthEventsContainer.jsx-246b0529713ade45{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:auto;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 20px 0 20px;gap:20px;background-color:var(--primary-color)}.MonthEventsContent.jsx-246b0529713ade45{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;gap:20px}.ArticlesContainer.jsx-246b0529713ade45{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;gap:20px}.ArticleContainer.jsx-246b0529713ade45{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;width:100%;height:auto;gap:10px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:var(--light-grey)}.ArticleContainer.jsx-246b0529713ade45 img.jsx-246b0529713ade45{width:100%;height:auto;max-height:180px;-o-object-fit:cover;object-fit:cover;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}.ArticleContainer.jsx-246b0529713ade45 p.jsx-246b0529713ade45{font-size:16px;font-weight:100;text-align:center}.ArticleContainer.jsx-246b0529713ade45 div.jsx-246b0529713ade45{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}@media only screen and (max-width:860px){.MonthEventsContent.jsx-246b0529713ade45{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}"
             })
         ]
     });

@@ -44,7 +44,7 @@ function MenuMobile() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                 width: 24,
                                 height: 24,
-                                src: "/assets/home-icon.png",
+                                src: "/assets/icons/home-icon.png",
                                 alt: "Home Icon",
                                 className: "jsx-ab1eff2e48fdc45d"
                             }),
@@ -56,18 +56,35 @@ function MenuMobile() {
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         className: "BottomMenuButton",
-                        href: "/miembros",
+                        href: "/blog",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                 width: 24,
                                 height: 24,
-                                src: "/assets/icons/news-icon.png",
+                                src: "/assets/icons/blog-icon.png",
                                 alt: "Home Icon",
                                 className: "jsx-ab1eff2e48fdc45d"
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                 className: "jsx-ab1eff2e48fdc45d",
-                                children: "Novedades"
+                                children: "Blog"
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                        className: "BottomMenuButton",
+                        href: "/predicas",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                width: 24,
+                                height: 24,
+                                src: "/assets/icons/new-predicas-icon.png",
+                                alt: "Home Icon",
+                                className: "jsx-ab1eff2e48fdc45d"
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                className: "jsx-ab1eff2e48fdc45d",
+                                children: "Pr\xe9dicas"
                             })
                         ]
                     }),
@@ -76,6 +93,7 @@ function MenuMobile() {
                         href: "/miembros/menu",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                referrerPolicy: "no-referrer",
                                 width: 24,
                                 height: 24,
                                 src: user.picture,

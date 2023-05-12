@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 2888;
-exports.ids = [2888,9090,4693,5107,3182,454,6813,9607,8786,5869,3672,89,6716,7219,5920,8904,450,2682,3854,5577,7016,2549,1620,4605,8082,7158,4824,4706,3906,8206,9221,3801,8569,7824];
+exports.ids = [2888,2598,4693,5107,3182,454,6813,9607,9792,5869,3672,89,6716,7219,5920,8904,450,6572,3854,5577,7016,5895,2549,4605,8082,7158,4824,4706,3906,3236,8206,9221,3801,8569,7824];
 exports.modules = {
 
 /***/ 6004:
@@ -20,70 +20,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nextjs_progressbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8890);
 /* harmony import */ var nextjs_progressbar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nextjs_progressbar__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _UserProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3998);
-/* harmony import */ var _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1338);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_UserProvider__WEBPACK_IMPORTED_MODULE_3__, _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_4__]);
-([_UserProvider__WEBPACK_IMPORTED_MODULE_3__, _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1338);
+/* harmony import */ var _components_MenuMembersGlobal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4953);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2412);
+/* harmony import */ var _components_BackSidebar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7539);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_UserProvider__WEBPACK_IMPORTED_MODULE_3__, _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_5__, _components_MenuMembersGlobal__WEBPACK_IMPORTED_MODULE_6__, _components_Header__WEBPACK_IMPORTED_MODULE_7__, _components_BackSidebar__WEBPACK_IMPORTED_MODULE_8__]);
+([_UserProvider__WEBPACK_IMPORTED_MODULE_3__, _components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_5__, _components_MenuMembersGlobal__WEBPACK_IMPORTED_MODULE_6__, _components_Header__WEBPACK_IMPORTED_MODULE_7__, _components_BackSidebar__WEBPACK_IMPORTED_MODULE_8__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
 
 
 
 
 
 function MyApp({ Component , pageProps  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_UserProvider__WEBPACK_IMPORTED_MODULE_3__.UserProvider, {
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((nextjs_progressbar__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        className: "my-progress-bar",
-                        color: "#2d2d2d",
-                        startPosition: 0.3,
-                        stopDelayMs: 200,
-                        height: 85,
-                        showOnShallow: true
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_4__["default"], {}),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-                        ...pageProps
-                    })
-                ]
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("style", {})
-        ]
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_UserProvider__WEBPACK_IMPORTED_MODULE_3__.UserProvider, {
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((nextjs_progressbar__WEBPACK_IMPORTED_MODULE_2___default()), {
+                    className: "my-progress-bar",
+                    color: "#2d2d2d",
+                    startPosition: 0.3,
+                    stopDelayMs: 200,
+                    height: 85,
+                    showOnShallow: true
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {}),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: " theme PageGlobalContainer",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_BackSidebar__WEBPACK_IMPORTED_MODULE_8__["default"], {}),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "SidebarSectionContent",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MenuMembersGlobal__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "PrincipalSectionContent",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "PageContainer",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "PageContent PageContentIntern",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+                                        ...pageProps
+                                    })
+                                })
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MenuMobileGlobal__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+            ]
+        })
     });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp); // import 'daniel/styles/globals.css';
- // import NextNProgress from 'nextjs-progressbar';
- // import { UserProvider } from './UserProvider';
- // import MenuMobile from './components/MenuMobileGlobal';
- // import MenuMembers from './components/MenuMembersGlobal';
- // function MyApp({ Component, pageProps }) {
- //   return (
- //     <>
- //       <UserProvider>
- //         <NextNProgress
- //           className="my-progress-bar"
- //           color="#2d2d2d"
- //           startPosition={0.3}
- //           stopDelayMs={200}
- //           height={85}
- //           showOnShallow={true}
- //         />
- //         <MenuMobile />
- //         <div className='GlobalAppContainer'>
- //           <MenuMembers />
- //           <Component {...pageProps} />
- //         </div>
- //       </UserProvider>
- //       <style jsx>{`
- //         .GlobalAppContainer
- //         {
- //           display: flex;
- //         }
- //       `}</style>
- //     </>
- //   );
- // }
- // export default MyApp;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
@@ -241,6 +235,14 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
+/***/ 1853:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ 8890:
 /***/ ((module) => {
 
@@ -296,7 +298,7 @@ module.exports = import("firebase/compat/auth");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1664,2636,5675,3998,1338], () => (__webpack_exec__(6004)));
+var __webpack_exports__ = __webpack_require__.X(0, [1664,2636,5675,2705,6091,688,2412,5939,7539,4953,1338], () => (__webpack_exec__(6004)));
 module.exports = __webpack_exports__;
 
 })();

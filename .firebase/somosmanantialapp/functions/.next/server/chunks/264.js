@@ -63,7 +63,7 @@ function MaestrosFiltro(props) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-83d97df5f6a30faf" + " " + "MaestrosFiltroContainer",
+                className: "jsx-588fdfa7a4a52242" + " " + "MaestrosFiltroContainer",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ButtonListSociedades__WEBPACK_IMPORTED_MODULE_4__["default"], {
                         categories: categories,
@@ -75,8 +75,8 @@ function MaestrosFiltro(props) {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "83d97df5f6a30faf",
-                children: ".MaestrosFiltroContainer.jsx-83d97df5f6a30faf{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}"
+                id: "588fdfa7a4a52242",
+                children: ".MaestrosFiltroContainer.jsx-588fdfa7a4a52242{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0 20px;gap:20px}"
             })
         ]
     });

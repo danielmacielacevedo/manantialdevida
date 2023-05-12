@@ -3,6 +3,7 @@ import Link from 'next/link';
 export default function NewsBar() {
     return (
         <>
+            <div className='NewsGlobalContainer'>
             <div className='NewsContainer'>
                 <h2>INFO MANANTIAL</h2>
                 <div className='NewsTextContainer'>
@@ -11,7 +12,14 @@ export default function NewsBar() {
                 </div>
                 <Link id='predicas' className='PrimaryButton' href='/info'>VER INFO</Link>
             </div>
+            </div>
             <style jsx>{`
+                .NewsGlobalContainer
+                {
+                    display: flex;
+                    width: 100%;
+                    height: fit-content;
+                }
                 .NewsContainer
                 {
                     display: flex;
@@ -22,8 +30,9 @@ export default function NewsBar() {
                     gap: 40px;
                     justify-content: center; 
                     align-items: center;
-                    margin-top: 20px;
+                    margin: 20px 20px 0 20px;
                     padding: 20px; 
+                    border-radius: 10px;
                     background-color: var(--light-grey)
                 }
                 .NewsTextContainer

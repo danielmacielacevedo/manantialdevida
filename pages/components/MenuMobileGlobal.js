@@ -12,17 +12,27 @@ export default function MenuMobile() {
             {user && user.email && 
             <div className="BottomMenuContainer">
                 <Link className="BottomMenuButton" href="/">
-                    <img width={24} height={24} src="/assets/home-icon.png" alt="Home Icon" />
+                    <img width={24} height={24} src="/assets/icons/home-icon.png" alt="Home Icon" />
                     <p>Inicio</p>
                 </Link>
 
-                <Link className="BottomMenuButton" href="/miembros">
-                    <img width={24} height={24} src="/assets/icons/news-icon.png" alt="Home Icon" />
-                    <p>Novedades</p>
+                <Link className="BottomMenuButton" href="/blog">
+                    <img width={24} height={24} src="/assets/icons/blog-icon.png" alt="Home Icon" />
+                    <p>Blog</p>
                 </Link>
 
+                <Link className="BottomMenuButton" href="/predicas">
+                    <img width={24} height={24} src="/assets/icons/new-predicas-icon.png" alt="Home Icon" />
+                    <p>Prédicas</p>
+                </Link>
+
+                {/* <Link className="BottomMenuButton" href="/boletin">
+                    <img width={24} height={24} src="/assets/icons/news-icon.png" alt="Home Icon" />
+                    <p>Boletín</p>
+                </Link> */}
+
                 <Link className="BottomMenuButton" href="/miembros/menu">
-                    <img className="ProfilePicture" width={24} height={24} src={user.picture} alt="Menu Icon" />
+                    <img className="ProfilePicture" referrerPolicy="no-referrer" width={24} height={24} src={user.picture} alt="Menu Icon" />
                     <p>Menú</p>
                 </Link>
             </div>

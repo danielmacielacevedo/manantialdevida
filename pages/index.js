@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import BackHeader from './components/BackHeader';
-import HeaderHome from './components/HeaderHome';
+import Header from './components/Header';
 import Cover from './components/Cover';
 import AniversaryEvents from './components/AniversaryEvents';
 import MonthEvents from './components/MonthEvents';
@@ -27,6 +27,8 @@ export default function Home() {
         />
         <meta property="og:title" content="Inicio | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/" />
+        <meta property="og:image" content="/assets/iconApp.jpg" />
+        <link rel="apple-touch-icon" href="/assets/iconApp.jpg"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link
@@ -43,7 +45,7 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <HeaderHome />
+      {/* <Header /> */}
       <BackHeader />
       <Cover />
       {/* <AniversaryEvents /> */}

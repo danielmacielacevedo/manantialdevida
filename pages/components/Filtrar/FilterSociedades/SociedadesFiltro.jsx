@@ -49,6 +49,7 @@ export default function MaestrosFiltro(props) {
           display: flex;
           width: 100%;
           flex-direction: column;
+          padding: 0 20px;
           gap: 20px;
         }
       `}</style>

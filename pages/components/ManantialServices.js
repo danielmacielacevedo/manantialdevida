@@ -49,7 +49,8 @@ export default function MonthEvents() {
                     <h3>Servicio Manantial</h3>
                     <img src='/assets/predicadores/pastora-dina/en-mi-angustia.jpg'/>
                     <div>
-                        <p>Todos los domingos &bull; 11:30AM</p>
+                        <p>Todos los domingos</p>
+                        <h2>11:30 AM</h2>
                         <EventCountdown eventDate={fechaDomingo} />
                     </div>
                 </article>
@@ -59,7 +60,8 @@ export default function MonthEvents() {
                     <h3>Servicio de Enseñanza</h3>
                     <img src='/assets/predicadores/pastor-isaac/de-donde-vienes.jpg' />
                     <div>
-                        <p>Todos los miércoles &bull; 07:00PM</p>
+                        <p>Todos los miércoles</p>
+                        <h2>7:00 PM</h2>
                         <EventCountdown eventDate={fechaMiercoles} />
                     </div>
                 </article>
@@ -69,7 +71,8 @@ export default function MonthEvents() {
                     <h3>Noche de Oración</h3>
                     <img src='/assets/predicadores/flor-fernandez/metamorfosis-del-alma.jpg' />
                     <div>
-                        <p id='info'>Todos los viernes &bull; 08:00PM</p>
+                        <p id='info'>Todos los viernes</p>
+                        <h2>8:00 PM</h2>
                         <EventCountdown eventDate={fechaViernes} />
                     </div>
                 </article>
@@ -125,8 +128,9 @@ export default function MonthEvents() {
         }
         .ArticleContainer p
         {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 100;
+            text-align: center
         }
         .ArticleContainer div
         {

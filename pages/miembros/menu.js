@@ -3,12 +3,12 @@ import HeaderMembers from '../components/HeaderMembers'
 import BackHeader from '../components/BackHeader'
 import MenuMobileMenu from '../components/MenuMobileMenu'
 import BackMenuMobile from '../components/BackMenuMobile'
-import MenuMembers from '../components/MenuMembers'
+import MenuMembersGlobal from '../components/MenuMembersGlobal'
 
 export default function Miembros() {
 
   return (
-    <div className='theme'>
+    <div className='PageContentPadding'>
       <Head>
         <title>Panel Miembros | Manantial</title>
         <meta name="description" content="Panel para Miembros de Manantial de Vida." />
@@ -20,15 +20,15 @@ export default function Miembros() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <HeaderMembers />
-      <BackHeader />
+      {/* <HeaderMembers /> */}
+      {/* <BackHeader /> */}
       <div className='PageContainer'>
         <div className='PageContent PageContentIntern'>
-          <MenuMembers />
+          <MenuMembersGlobal />
         </div>
       </div>
       <BackMenuMobile />
-      <MenuMobileMenu />
+      {/* <MenuMobileMenu /> */}
     </div>
   )
 }

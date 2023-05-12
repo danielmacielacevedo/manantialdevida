@@ -11,7 +11,7 @@ import MenuMembers from '../components/MenuMembers'
 export default function CalendarioMaestros() {
 
   return (
-    <div className='theme'>
+    <div className='PageContentPadding'>
       <Head>
         <title>Calendario Sociedades 2023 | Manantial</title>
         <meta name="description" content="Calendario de clases para los maestros de Manantial de Vida." />
@@ -25,13 +25,9 @@ export default function CalendarioMaestros() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <HeaderMembers />
+      {/* <HeaderMembers /> */}
       <BackHeader />
       <div className='PageGlobalContainer'>
-        <BackSidebar />
-        <div className='SidebarSectionContent'>
-          <MenuMembers />  
-        </div>
         <div className='PrincipalSectionContent'>
         <div className='PageContainer'>
         <div className='CalendarTitle'>
@@ -59,7 +55,7 @@ export default function CalendarioMaestros() {
         </div>
       </div>
       <BackMenuMobile />
-      <MenuMobile />
+      {/* <MenuMobile /> */}
     </div>
   )
 }

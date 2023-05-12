@@ -16,7 +16,6 @@ export default function Cover() {
                     flex-direction: column;
                     width: 100%;
                     height: 450px;
-                    {/* padding: 20px; */}
                     background-color: var(--primary-color);
                     // background-color: red;
                     justify-content: center;

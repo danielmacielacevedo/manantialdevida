@@ -17,24 +17,18 @@ export default function Predica(props) {
   return (
     <div id='Top' className='Site theme'>
       <DynamicHead nombre={props.nombre} indice={props.indice} />
-      <HeaderMembers />
       <BackHeader />
       <div className='PageGlobalContainer'>
-        <BackSidebar />
-        <div className='SidebarSectionContent'>
-          <MenuMembers />  
-        </div>
         <div className='PrincipalSectionContent'>
           <div className="MainContainer">
-          <div className='PrimarySection'>
-            <Reproductor nombre={props.nombre} indice={props.indice} />
+            <div className='PrimarySection'>
+              <Reproductor nombre={props.nombre} indice={props.indice} />
+            </div>
           </div>
-      </div>
-      <NewsBar />
         </div>
       </div>
       <BackMenuMobile />
-      <MenuMobile />
+      {/* <MenuMobile /> */}
       <style jsx>{`
         .Site
         {
