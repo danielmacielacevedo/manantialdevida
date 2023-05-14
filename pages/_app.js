@@ -1,11 +1,10 @@
-import 'daniel/styles/globals.css';
-import NextNProgress from 'nextjs-progressbar';
-import { UserProvider } from './UserProvider';
-import { useRouter } from 'next/router';
-import MenuMobile from './components/MenuMobileGlobal';
-import MenuMembers from './components/MenuMembersGlobal';
-import Header from './components/Header';
-import BackSidebar from './components/BackSidebar';
+import "daniel/styles/globals.css";
+import NextNProgress from "nextjs-progressbar";
+import { UserProvider } from "./UserProvider";
+import MenuMobile from "./components/MenuMobileGlobal";
+import MenuMembers from "./components/MenuMembersGlobal";
+import Header from "./components/Header";
+import BackSidebar from "./components/BackSidebar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,15 +20,15 @@ function MyApp({ Component, pageProps }) {
         />
         <Header />
 
-        <div className=' theme PageGlobalContainer'>
+        <div className=" theme PageGlobalContainer">
           <BackSidebar />
-          <div className='SidebarSectionContent'>
-            <MenuMembers />  
+          <div className="SidebarSectionContent">
+            <MenuMembers />
           </div>
-          <div className='PrincipalSectionContent'>
-            <div className='PageContainer'>
-              <div className='PageContent PageContentIntern'>
-                <Component {...pageProps} />  
+          <div className="PrincipalSectionContent">
+            <div className="PageContainer">
+              <div className="PageContent PageContentIntern">
+                <Component {...pageProps} />
               </div>
             </div>
           </div>

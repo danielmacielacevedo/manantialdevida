@@ -1,130 +1,129 @@
 export default function predicadores(req, res) {
-
   const pastorIsaac = {
-    name: 'Pastor Isaac Delgado',
-    image: '/assets/predicadores/pastor-isaac.png',
-    url: '/@pastorisaac',
+    name: "Pastor Isaac Delgado",
+    image: "/assets/predicadores/pastor-isaac.png",
+    url: "/@pastorisaac",
   };
 
   const pastoraDina = {
-    name: 'Pastora Dina Campos',
-    image: '/assets/predicadores/pastora-dina.png',
-    url: '/@pastoradina',
+    name: "Pastora Dina Campos",
+    image: "/assets/predicadores/pastora-dina.png",
+    url: "/@pastoradina",
   };
 
   const adrielRamos = {
-    name: 'Adriel Ramos',
-    image: '/assets/predicadores/adriel-ramos.png',
-    url: '/@adrielramos',
+    name: "Adriel Ramos",
+    image: "/assets/predicadores/adriel-ramos.png",
+    url: "/@adrielramos",
   };
 
   const anitaMinchaca = {
-    name: 'Anita Minchaca',
-    image: '/assets/predicadores/anita-minchaca.png',
-    url: '/@anitaminchaca',
+    name: "Anita Minchaca",
+    image: "/assets/predicadores/anita-minchaca.png",
+    url: "/@anitaminchaca",
   };
 
   const emmanuelAguilar = {
-    name: 'Emmanuel Aguilar',
-    image: '/assets/predicadores/emmanuel-aguilar.png',
-    url: '/@emmanuelaguilar',
+    name: "Emmanuel Aguilar",
+    image: "/assets/predicadores/emmanuel-aguilar.png",
+    url: "/@emmanuelaguilar",
   };
 
   const famAguilarFernandez = {
-    name: 'Fam Aguilar Fernández',
-    image: '/assets/predicadores/fam-aguilar-fernandez.png',
-    url: '/@famaguilarfernandez',
+    name: "Fam Aguilar Fernández",
+    image: "/assets/predicadores/fam-aguilar-fernandez.png",
+    url: "/@famaguilarfernandez",
   };
 
   const florFernandez = {
-    name: 'Flor Fernández',
-    image: '/assets/predicadores/flor-fernandez.png',
-    url: '/@florfernandez',
+    name: "Flor Fernández",
+    image: "/assets/predicadores/flor-fernandez.png",
+    url: "/@florfernandez",
   };
 
   const franciscoGarcia = {
-    name: 'Francisco García',
-    image: '/assets/predicadores/francisco-garcia.png',
-    url: '/@franciscogarcia',
+    name: "Francisco García",
+    image: "/assets/predicadores/francisco-garcia.png",
+    url: "/@franciscogarcia",
   };
 
   const franciscoSerrano = {
-    name: 'Francisco Serrano',
-    image: '/assets/predicadores/francisco-serrano.png',
-    url: '/@franciscoserrano',
+    name: "Francisco Serrano",
+    image: "/assets/predicadores/francisco-serrano.png",
+    url: "/@franciscoserrano",
   };
 
   const juanLeyva = {
-    name: 'Juan Leyva',
-    image: '/assets/predicadores/juan-leyva.png',
-    url: '/@juanleyva'
+    name: "Juan Leyva",
+    image: "/assets/predicadores/juan-leyva.png",
+    url: "/@juanleyva",
   };
 
   const juanPabloRodriguez = {
-    name: 'Juan Pablo Rodríguez',
-    image: '/assets/predicadores/juan-pablo-rodriguez.png',
-    url: '/@juanpablorodriguez'
+    name: "Juan Pablo Rodríguez",
+    image: "/assets/predicadores/juan-pablo-rodriguez.png",
+    url: "/@juanpablorodriguez",
   };
 
   const karlaCervantes = {
-    name: 'Karla Cervantes',
-    image: '/assets/predicadores/karla-cervantes.png',
-    url: '/@karlacervantes',
+    name: "Karla Cervantes",
+    image: "/assets/predicadores/karla-cervantes.png",
+    url: "/@karlacervantes",
   };
 
   const leonorRuiz = {
-    name: 'Leonor Ruiz',
-    image: '/assets/predicadores/leonor-ruiz.png',
-    url: '/@leonorruiz',
+    name: "Leonor Ruiz",
+    image: "/assets/predicadores/leonor-ruiz.png",
+    url: "/@leonorruiz",
   };
 
   const luisRios = {
-    name: 'Luis Rios',
-    image: '/assets/predicadores/luis-rios.png',
-    url: '/@luisrios',
+    name: "Luis Rios",
+    image: "/assets/predicadores/luis-rios.png",
+    url: "/@luisrios",
   };
 
   const magdielPastrana = {
-    name: 'Magdiel Pastrana',
-    image: '/assets/predicadores/magdiel-pastrana.png',
-    url: '/@magdielpastrana',
+    name: "Magdiel Pastrana",
+    image: "/assets/predicadores/magdiel-pastrana.png",
+    url: "/@magdielpastrana",
   };
 
   const obedGarcia = {
-    name: 'Obed García',
-    image: '/assets/predicadores/obed-garcia.png',
-    url: '/@obedgarcia',
+    name: "Obed García",
+    image: "/assets/predicadores/obed-garcia.png",
+    url: "/@obedgarcia",
   };
 
   const omarMorales = {
-    name: 'Omar Morales',
-    image: '/assets/predicadores/omar-morales.png',
-    url: '/@omarmorales',
+    name: "Omar Morales",
+    image: "/assets/predicadores/omar-morales.png",
+    url: "/@omarmorales",
   };
 
   const oswaldoAli = {
-    name: 'Oswaldo Ali',
-    image: '/assets/predicadores/oswaldo-ali.png',
-    url: '/@oswaldoali',
+    name: "Oswaldo Ali",
+    image: "/assets/predicadores/oswaldo-ali.png",
+    url: "/@oswaldoali",
   };
 
   const veliaAcevedo = {
-    name: 'Velia Acevedo',
-    image: '/assets/predicadores/velia-acevedo.png',
-    url: '/@veliaacevedo',
+    name: "Velia Acevedo",
+    image: "/assets/predicadores/velia-acevedo.png",
+    url: "/@veliaacevedo",
   };
 
   const willyMartinez = {
-    name: 'Willy Martínez',
-    image: '/assets/predicadores/willy-martinez.png',
-    url: '/@willymartinez',
+    name: "Willy Martínez",
+    image: "/assets/predicadores/willy-martinez.png",
+    url: "/@willymartinez",
   };
 
   const yolandaPerez = {
-    name: 'Yolanda Pérez',
-    image: '/assets/predicadores/yolanda-perez.png',
-    url: '/@yolandaperez'
-  }
+    name: "Yolanda Pérez",
+    image: "/assets/predicadores/yolanda-perez.png",
+    url: "/@yolandaperez",
+  };
 
   res.status(200).json({
     PastorIsaac: pastorIsaac,
@@ -148,5 +147,5 @@ export default function predicadores(req, res) {
     VeliaAcevedo: veliaAcevedo,
     WillyMartinez: willyMartinez,
     YolandaPerez: yolandaPerez,
-  })
+  });
 }

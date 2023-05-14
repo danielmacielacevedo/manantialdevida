@@ -8,8 +8,7 @@
   --mid-grey: #5a5a5a;
   --dark-grey: #1d1d1d;
 }
-.theme
-{
+.theme {
   --primary-color: #000;
   --secondary-color: #ffffff;
   --light-grey: #1d1d1d;
@@ -22,17 +21,14 @@
   margin: 0;
 }
 
-html::-webkit-scrollbar
-{
-    width: 10px;
+html::-webkit-scrollbar {
+  width: 10px;
 }
-html::-webkit-scrollbar-thumb
-{
-    background-color: #1d1d1d;
+html::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
 }
-html::-webkit-scrollbar-track
-{
-    background-color: #000;
+html::-webkit-scrollbar-track {
+  background-color: #000;
 }
 
 html,
@@ -48,56 +44,47 @@ body {
   z-index: 99999;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-h1
-{
-  font-family: 'Roboto', sans-serif;
+h1 {
+  font-family: "Roboto", sans-serif;
   /* font-family: 'Noto Serif Display', serif; */
   color: var(--secondary-color);
 }
-h2
-{
-  font-family: 'Roboto', sans-serif;
+h2 {
+  font-family: "Roboto", sans-serif;
   /* font-family: 'Noto Serif Display', serif; */
   font-weight: 700;
   color: var(--secondary-color);
 }
-h3
-{
+h3 {
   font-size: 16px;
   /* font-family: 'Noto Serif Display', serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   color: var(--secondary-color);
 }
-h4
-{
-  font-family: 'Roboto', sans-serif;
+h4 {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--secondary-color);
 }
-h5
-{
+h5 {
   font-size: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--primary-color);
 }
-p
-{
+p {
   color: var(--secondary-color);
 }
 
-
 /* Header code */
 
-.NavContainer
-{
+.NavContainer {
   position: fixed;
   z-index: 999999;
   display: flex;
@@ -105,8 +92,7 @@ p
   width: 100%;
   height: auto;
 }
-.NavAvisos
-{
+.NavAvisos {
   position: relative;
   z-index: 9999;
   display: flex;
@@ -119,13 +105,11 @@ p
   background-color: var(--light-grey);
   color: var(--dark-grey);
 }
-.NavAvisos a
-{
+.NavAvisos a {
   text-decoration: underline;
   color: var(--secondary-color);
 }
-.NavFull
-{
+.NavFull {
   position: relative;
   z-index: 9999;
   display: flex;
@@ -138,19 +122,16 @@ p
   background-color: var(--dark-transparent);
   backdrop-filter: blur(10px);
 }
-.NavFull.NavFullMembers
-{
+.NavFull.NavFullMembers {
   justify-content: center;
   align-items: center;
   /* border-bottom: 0.5px solid var(--light-grey); */
 }
-.NavFull img
-{
+.NavFull img {
   width: auto;
   height: 30px;
 }
-.NavNavigation
-{
+.NavNavigation {
   display: flex;
   width: fit-content;
   height: auto;
@@ -158,29 +139,25 @@ p
   justify-content: center;
   align-items: center;
 }
-.NavLinksContainer
-{
+.NavLinksContainer {
   display: block;
 }
-.NavLinks
-{
+.NavLinks {
   display: flex;
   width: fit-content;
   height: auto;
   list-style: none;
   gap: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* font-family: 'Noto Serif Display', serif; */
   color: var(--secondary-color);
 }
-.NavLinks li 
-{
+.NavLinks li {
   display: flex;
   align-items: center;
   font-size: 20px;
 }
-.MenuButton
-{
+.MenuButton {
   position: relative;
   display: none;
   width: 30px;
@@ -188,48 +165,41 @@ p
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border: none;
   background: transparent;
 }
-.MenuButtonBurger
-{
+.MenuButtonBurger {
   width: 30px;
   height: 3px;
   background: transparent;
   border-radius: 5px;
   transform: translateX(-15px);
-  transition:  all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .MenuButtonBurger::before,
-.MenuButtonBurger::after
-{
-  content: ' ';
+.MenuButtonBurger::after {
+  content: " ";
   position: absolute;
   width: 30px;
   height: 3px;
   border-radius: 5px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: var(--secondary-color);
 }
-.MenuButtonBurger::before
-{
+.MenuButtonBurger::before {
   transform: translateY(5px);
 }
-.MenuButtonBurger::after
-{
+.MenuButtonBurger::after {
   transform: translateY(-5px);
 }
-.MenuButton.Open .MenuButtonBurger::before
-{
+.MenuButton.Open .MenuButtonBurger::before {
   transform: rotate(45deg);
 }
-.MenuButton.Open .MenuButtonBurger::after
-{
+.MenuButton.Open .MenuButtonBurger::after {
   transform: rotate(-45deg);
 }
-.LogInButton
-{
+.LogInButton {
   display: flex;
   width: 100px;
   height: 30px;
@@ -240,12 +210,10 @@ p
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.MenuMobileContainer
-{
+.MenuMobileContainer {
   display: relative;
 }
-.MenuMobileBackground
-{
+.MenuMobileBackground {
   position: absolute;
   z-index: 1;
   display: flex;
@@ -253,27 +221,24 @@ p
   height: fit-content;
   /* padding-top: 80px; */
   backdrop-filter: blur(10px);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateY(-300px);
   background-color: transparent;
 }
-.MenuMobileBackground.Open
-{
+.MenuMobileBackground.Open {
   transform: translateY(-80px);
   padding-top: 80px;
   background-color: #000000b1;
   /* backdrop-filter: blur(20px); */
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.4);
 }
-.MenuMobileLinksContainer
-{
+.MenuMobileLinksContainer {
   display: flex;
   width: 100%;
   height: auto;
   padding: 40px;
 }
-.MenuMobileLinks
-{
+.MenuMobileLinks {
   display: flex;
   width: 100%;
   height: auto;
@@ -286,8 +251,7 @@ p
 }
 
 /* Members Global */
-.PageGlobalContainer
-{
+.PageGlobalContainer {
   display: flex;
   width: 100%;
   height: auto;
@@ -305,8 +269,7 @@ p
   overscroll-behavior-y: contain;
   scroll-snap-type: y proximity;
 } */
-.SidebarSectionContent
-{
+.SidebarSectionContent {
   position: relative;
   display: flex;
   width: fit-content;
@@ -314,8 +277,7 @@ p
   height: auto;
   padding: 20px;
 }
-.PrincipalSectionContent
-{
+.PrincipalSectionContent {
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -323,8 +285,7 @@ p
   height: auto;
 }
 
-.PrimaryButton
-{
+.PrimaryButton {
   display: flex;
   width: 100%;
   max-width: 400px;
@@ -335,33 +296,36 @@ p
   font-size: 14px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  background: linear-gradient(to left, var(--secondary-color), var(--light-grey), var(--secondary-color));
+  background: linear-gradient(
+    to left,
+    var(--secondary-color),
+    var(--light-grey),
+    var(--secondary-color)
+  );
   background-size: 500% 500%;
   /* animation: animate-background 10s infinite ease-in-out; */
 }
-@keyframes animate-background 
-{
-  0%{
+@keyframes animate-background {
+  0% {
     background-position: 0 50%;
     color: var(--secondary-color);
-  } 
-  25%{
+  }
+  25% {
     color: var(--primary-color);
   }
-  50%{
-      background-position: 100% 50%;
-      color: var(--secondary-color);
+  50% {
+    background-position: 100% 50%;
+    color: var(--secondary-color);
   }
-  75%{
+  75% {
     color: var(--primary-color);
   }
-  100%{
-      background-position: 0 50%;
-      color: var(--secondary-color);
+  100% {
+    background-position: 0 50%;
+    color: var(--secondary-color);
   }
 }
-.SecondaryButton
-{
+.SecondaryButton {
   display: flex;
   width: 100%;
   max-width: 400px;
@@ -373,8 +337,7 @@ p
   background-color: var(--light-grey);
   color: var(--dark-grey);
 }
-.FullButton
-{
+.FullButton {
   display: flex;
   width: 100%;
   height: 40px;
@@ -383,13 +346,17 @@ p
   border-radius: 10px;
   font-size: 14px;
   background-color: var(--light-grey);
-  background: linear-gradient(to left, var(--light-grey) , var(--secondary-color), var(--light-grey));
+  background: linear-gradient(
+    to left,
+    var(--light-grey),
+    var(--secondary-color),
+    var(--light-grey)
+  );
   background-size: 500% 500%;
   /* animation: animate-background 10s infinite ease-in-out; */
   color: var(--secondary-color);
 }
-.ContentButton
-{
+.ContentButton {
   display: flex;
   width: fit-content;
   height: 40px;
@@ -399,7 +366,12 @@ p
   font-size: 14px;
   padding: 0 20px;
   background-color: var(--light-grey);
-  background: linear-gradient(to left, var(--light-grey) , var(--secondary-color), var(--light-grey));
+  background: linear-gradient(
+    to left,
+    var(--light-grey),
+    var(--secondary-color),
+    var(--light-grey)
+  );
   background-size: 500% 500%;
   /* animation: animate-background 10s infinite ease-in-out; */
   color: var(--secondary-color);
@@ -421,21 +393,18 @@ p
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-.ButtonStyle:hover
-{
+.ButtonStyle:hover {
   opacity: 0.7;
 }
 
-#ButtonImg
-{
+#ButtonImg {
   display: flex;
   width: 20px;
   height: 20px;
 }
 
 /* PredicadorStructure */
-.PageContainer
-{
+.PageContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -445,8 +414,7 @@ p
   align-items: center;
   /* padding: 0 20px; */
 }
-.PageContent
-{
+.PageContent {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -457,8 +425,7 @@ p
   gap: 20px;
   justify-content: center;
 }
-.PageContentPadding
-{
+.PageContentPadding {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -467,8 +434,7 @@ p
 }
 
 /* Calendario Maestros */
-.CalendarTitle
-{
+.CalendarTitle {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -476,40 +442,35 @@ p
   padding: 40px 0 20px 0;
   align-items: center;
 }
-.CalendarTitle span
-{
+.CalendarTitle span {
   width: 300px;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 30px;
   font-weight: 700;
   background-color: var(--light-grey);
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
-.CalendarTitle p
-{
+.CalendarTitle p {
   font-size: 12px;
 }
-.MainCalendario
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+.MainCalendario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
-.TableContainer
-{
+.TableContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
-.GlobalCalendarContainer
-{
-	display: flex;
+.GlobalCalendarContainer {
+  display: flex;
   flex-direction: column;
-	/* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: repeat(2, 1fr); */
   width: 100%;
   height: auto;
   gap: 20px;
@@ -528,29 +489,25 @@ p
   background-color: var(--light-grey);
   transition: 0.6s;
 }
-.MesContainer:hover
-{
-    background-color: var(--mid-grey);
+.MesContainer:hover {
+  background-color: var(--mid-grey);
 }
 
 /* BottomMenuButton */
-.BottomMenuButton
-{
+.BottomMenuButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.BottomMenuButton p
-{
+.BottomMenuButton p {
   color: var(--mid-grey);
   font-size: 12px;
 }
 
 /* Loading spinner */
-.LoadingSpinnerContainer
-{
+.LoadingSpinnerContainer {
   position: relative;
   display: flex;
   width: 100%;
@@ -567,8 +524,7 @@ p
   animation: spin 1s ease infinite;
 }
 
-.SpinnerImage
-{
+.SpinnerImage {
   position: absolute;
   width: 20px;
 }
@@ -583,41 +539,33 @@ p
   }
 }
 
-.TextAlignCenter
-{
+.TextAlignCenter {
   text-align: center;
 }
 
 @media only screen and (max-width: 860px) {
-  .NavNavigation
-  {
+  .NavNavigation {
     flex-direction: row-reverse;
   }
-  .NavLinksContainer
-  {
+  .NavLinksContainer {
     display: none;
   }
-  .MenuButton
-  {
+  .MenuButton {
     display: flex;
   }
   /* Members Global */
-  .SidebarSectionContent
-  {
+  .SidebarSectionContent {
     display: none;
   }
 
-  .MainContainerCalendario
-  {
+  .MainContainerCalendario {
     max-width: 500px;
   }
 
-  .ContentButton
-  {
+  .ContentButton {
     width: 100%;
   }
-  .InicioDesktop
-  {
-      display: none;
+  .InicioDesktop {
+    display: none;
   }
 }

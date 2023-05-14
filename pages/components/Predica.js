@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import BackHeader from './BackHeader'
-import Header from './Header'
-import Footer from './Footer'
-import Reproductor from './Reproductor/Reproductor'
-import NewsBar from './NewsBar'
-import DynamicHead from './DynamicHead'
-import Ad from './Ad'
-import UltimasPredicas from './Reproductor/UltimasPredicas'
+import React, { useState, useEffect } from "react";
+import BackHeader from "./BackHeader";
+import Footer from "./Footer";
+import Reproductor from "./Reproductor/Reproductor";
+import NewsBar from "./NewsBar";
+import DynamicHead from "./DynamicHead";
+import Ad from "./Ad";
+import UltimasPredicas from "./Reproductor/UltimasPredicas";
 
 export default function Predica(props) {
   const [scrollDown, setScrollDown] = useState(false);
@@ -20,23 +19,21 @@ export default function Predica(props) {
         setScrollDown(false);
       }
     }
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
   return (
-    <div id='Top' className='Site theme'>
+    <div id="Top" className="Site theme">
       <DynamicHead nombre={props.nombre} indice={props.indice} />
-      {/* <Header /> */}
       <BackHeader />
-      <div className={`MainContainer ${scrollDown ? 'scroll-down' : ''}`}>
-        <div className='PrimarySection'>
+      <div className={`MainContainer ${scrollDown ? "scroll-down" : ""}`}>
+        <div className="PrimarySection">
           <Reproductor nombre={props.nombre} indice={props.indice} />
         </div>
-        <div className='SecondarySection'>
+        <div className="SecondarySection">
           <Ad />
           <h3>Prédicas recientes</h3>
           <UltimasPredicas />
@@ -121,5 +118,5 @@ export default function Predica(props) {
         }
       `}</style>
     </div>
-  )
+  );
 }

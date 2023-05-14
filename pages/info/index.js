@@ -1,32 +1,39 @@
-import Head from 'next/head'
-import BackHeader from '../components/BackHeader'
-import Header from '../components/Header'
-import ManantialServices from '../components/ManantialServices'
-import Footer from '../components/Footer'
-import Actividades from '../components/ActividadesMes'
+import Head from "next/head";
+import BackHeader from "../components/BackHeader";
+import ManantialServices from "../components/ManantialServices";
+import Footer from "../components/Footer";
+import Actividades from "../components/ActividadesMes";
 
 export default function Home() {
-
   const mes = "Mayo";
 
   return (
-    <div id='Top' className='theme'>
+    <div id="Top" className="theme">
       <Head>
         <title>Inicio | Manantial</title>
-        <meta name="description" content="Porque contigo está el manantial de la vida; En tu luz veremos la luz." />
+        <meta
+          name="description"
+          content="Porque contigo está el manantial de la vida; En tu luz veremos la luz."
+        />
         <meta property="og:title" content="Inicio | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;400;700;900&family=Roboto:wght@100;400;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
-      {/* <Header /> */}
       <BackHeader />
       <Actividades mes={mes} />
       <ManantialServices />
       <Footer />
     </div>
-  )
+  );
 }

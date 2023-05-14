@@ -4,9 +4,8 @@ exports.ids = [688];
 exports.modules = {
 
 /***/ 688:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Header)
@@ -17,26 +16,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _EntrarButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6091);
-/* harmony import */ var _firebase_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2705);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_firebase_client__WEBPACK_IMPORTED_MODULE_4__]);
-_firebase_client__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
-
-
+// import EntrarButton from "./EntrarButton";
 function Header() {
     const menuButtonRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(null);
     const menuContentRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(null);
-    const handleClickGoogle = ()=>{
-        (0,_firebase_client__WEBPACK_IMPORTED_MODULE_4__/* .loginWithGoogle */ .Cb)().then((user)=>{
-            const { name , email , id , picture  } = user;
-            setUser(user);
-        }).catch((err)=>{
-            console.log(err);
-        });
-    };
     function handleBurgerClick() {
         menuButtonRef.current.classList.toggle("Open");
         // localStorage.setItem('menuOpen', menuButtonRef.current.classList.contains('Open'))
@@ -147,8 +133,6 @@ function Header() {
     });
 }
 
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
 
 /***/ })
 

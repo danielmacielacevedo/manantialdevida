@@ -1,0 +1,17 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.suggestSmartCommit": false,
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Absolute Black",
+  "eslint.run": "onSave",
+  "window.zoomLevel": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

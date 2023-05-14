@@ -21,12 +21,12 @@ function Button({ children , onClick  }) {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                 onClick: onClick,
-                className: "jsx-4dbc1e515504850a",
+                className: "jsx-691b99d51b9b6847",
                 children: children
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "4dbc1e515504850a",
-                children: "button.jsx-4dbc1e515504850a{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;padding:10px 20px;border:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;gap:20px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:var(--primary-color);color:var(--secondary-color)}button.jsx-4dbc1e515504850a:hover{opacity:.7}"
+                id: "691b99d51b9b6847",
+                children: "button.jsx-691b99d51b9b6847{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;padding:10px 20px;border:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;gap:20px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:var(--primary-color);color:var(--secondary-color)}button.jsx-691b99d51b9b6847:hover{opacity:.7}"
             })
         ]
     });

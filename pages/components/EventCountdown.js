@@ -36,18 +36,18 @@ function EventCountdown({ eventDate }) {
     return () => clearInterval(timer);
   }, [eventDate]);
 
-  const pad = (number) => number.toString().padStart(2, '0');
+  const pad = (number) => number.toString().padStart(2, "0");
 
   return (
     <div>
       <h4>
-        {timeRemaining.days}d, {pad(timeRemaining.hours)}h, {pad(timeRemaining.minutes)}m, {pad(timeRemaining.seconds)}s
+        {timeRemaining.days}d, {pad(timeRemaining.hours)}h,{" "}
+        {pad(timeRemaining.minutes)}m, {pad(timeRemaining.seconds)}s
       </h4>
       <style jsx>{`
-        h4
-        {
+        h4 {
           text-align: center;
-        }  
+        }
       `}</style>
     </div>
   );

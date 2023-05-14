@@ -1,7 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import Header from './components/Header'
-// import Header from 'daniel/components/Header'
-// import { useRouter } from 'next/router'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   // const router = useRouter();
@@ -14,5 +11,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

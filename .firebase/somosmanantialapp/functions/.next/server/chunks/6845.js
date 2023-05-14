@@ -23,6 +23,7 @@ _firebase_client__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.
 
 
 
+// import { loginWithGoogle, onAuthStateChanged } from "../firebase/client";
 const UserContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)();
 const UserProvider = ({ children  })=>{
     const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(undefined);
@@ -61,11 +62,11 @@ function BackMenuMobile() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-2cbc6f5303795fad" + " " + "BackMenuMobileContainer"
+                className: "jsx-b71919704977ce6e" + " " + "BackMenuMobileContainer"
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "2cbc6f5303795fad",
-                children: ".BackMenuMobileContainer.jsx-2cbc6f5303795fad{width:100%;height:100px;background:var(--primary-color)}"
+                id: "b71919704977ce6e",
+                children: ".BackMenuMobileContainer.jsx-b71919704977ce6e{width:100%;height:100px;background:var(--primary-color)}"
             })
         ]
     });
@@ -105,52 +106,52 @@ function Footer() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             user === null && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-32b6112acd39ac7d" + " " + "FooterContainer",
+                className: "jsx-5f52834379b4d518" + " " + "FooterContainer",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-32b6112acd39ac7d" + " " + "FooterContent",
+                        className: "jsx-5f52834379b4d518" + " " + "FooterContent",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "jsx-32b6112acd39ac7d" + " " + "FooterImage",
+                                className: "jsx-5f52834379b4d518" + " " + "FooterImage",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: "/assets/light_logo_manantial.png",
-                                    className: "jsx-32b6112acd39ac7d"
+                                    className: "jsx-5f52834379b4d518"
                                 })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-32b6112acd39ac7d" + " " + "FooterLinksContainer",
+                                className: "jsx-5f52834379b4d518" + " " + "FooterLinksContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        className: "jsx-32b6112acd39ac7d",
+                                        className: "jsx-5f52834379b4d518",
                                         children: "Navegaci\xf3n"
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                        className: "jsx-32b6112acd39ac7d" + " " + "FooterLinks",
+                                        className: "jsx-5f52834379b4d518" + " " + "FooterLinks",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
+                                                className: "jsx-5f52834379b4d518",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                     href: "#Top",
-                                                    className: "jsx-32b6112acd39ac7d",
+                                                    className: "jsx-5f52834379b4d518",
                                                     children: "Volver arriba"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
+                                                className: "jsx-5f52834379b4d518",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                     href: "/",
                                                     children: "Inicio"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
+                                                className: "jsx-5f52834379b4d518",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                     href: "/predicas",
                                                     children: "Pr\xe9dicas"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
+                                                className: "jsx-5f52834379b4d518",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                     href: "/info",
                                                     children: "Info"
@@ -161,29 +162,29 @@ function Footer() {
                                 ]
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-32b6112acd39ac7d" + " " + "FooterLinksContainer",
+                                className: "jsx-5f52834379b4d518" + " " + "FooterLinksContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        className: "jsx-32b6112acd39ac7d",
+                                        className: "jsx-5f52834379b4d518",
                                         children: "Como llegar"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                        className: "jsx-32b6112acd39ac7d" + " " + "FooterLinks",
+                                        className: "jsx-5f52834379b4d518" + " " + "FooterLinks",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                            className: "jsx-32b6112acd39ac7d",
+                                            className: "jsx-5f52834379b4d518",
                                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                                 target: "_blank",
                                                 rel: "noreferrer",
                                                 href: "https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic",
-                                                className: "jsx-32b6112acd39ac7d",
+                                                className: "jsx-5f52834379b4d518",
                                                 children: [
                                                     "Toma de Zacatecas #335 ",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
-                                                        className: "jsx-32b6112acd39ac7d"
+                                                        className: "jsx-5f52834379b4d518"
                                                     }),
                                                     " Victoria de Durango, Durango, M\xe9xico. ",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
-                                                        className: "jsx-32b6112acd39ac7d"
+                                                        className: "jsx-5f52834379b4d518"
                                                     }),
                                                     " CP 34230"
                                                 ]
@@ -193,43 +194,52 @@ function Footer() {
                                 ]
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-32b6112acd39ac7d" + " " + "FooterLinksContainer",
+                                className: "jsx-5f52834379b4d518" + " " + "FooterLinksContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        className: "jsx-32b6112acd39ac7d",
+                                        className: "jsx-5f52834379b4d518",
                                         children: "Social"
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                        className: "jsx-32b6112acd39ac7d" + " " + "FooterLinks",
+                                        className: "jsx-5f52834379b4d518" + " " + "FooterLinks",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: "jsx-5f52834379b4d518",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                                     target: "_blank",
                                                     rel: "noreferrer",
                                                     href: "https://www.instagram.com/somosmanantial/",
-                                                    className: "jsx-32b6112acd39ac7d",
-                                                    children: " Instagram"
+                                                    className: "jsx-5f52834379b4d518",
+                                                    children: [
+                                                        " ",
+                                                        "Instagram"
+                                                    ]
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: "jsx-5f52834379b4d518",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                                     target: "_blank",
                                                     rel: "noreferrer",
                                                     href: "https://www.facebook.com/somosmanantial.org/",
-                                                    className: "jsx-32b6112acd39ac7d",
-                                                    children: " Facebook"
+                                                    className: "jsx-5f52834379b4d518",
+                                                    children: [
+                                                        " ",
+                                                        "Facebook"
+                                                    ]
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "jsx-32b6112acd39ac7d",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: "jsx-5f52834379b4d518",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                                     target: "_blank",
                                                     rel: "noreferrer",
                                                     href: "https://www.tiktok.com/@somosmanantial",
-                                                    className: "jsx-32b6112acd39ac7d",
-                                                    children: " TikTok"
+                                                    className: "jsx-5f52834379b4d518",
+                                                    children: [
+                                                        " ",
+                                                        "TikTok"
+                                                    ]
                                                 })
                                             })
                                         ]
@@ -237,16 +247,16 @@ function Footer() {
                                 ]
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "jsx-32b6112acd39ac7d" + " " + "FooterLinksContainer",
+                                className: "jsx-5f52834379b4d518" + " " + "FooterLinksContainer",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        className: "jsx-32b6112acd39ac7d",
+                                        className: "jsx-5f52834379b4d518",
                                         children: "Legal"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                        className: "jsx-32b6112acd39ac7d" + " " + "FooterLinks",
+                                        className: "jsx-5f52834379b4d518" + " " + "FooterLinks",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                            className: "jsx-32b6112acd39ac7d",
+                                            className: "jsx-5f52834379b4d518",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/legal/privacidad",
                                                 children: "Pol\xedtica de privacidad"
@@ -258,15 +268,15 @@ function Footer() {
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        className: "jsx-32b6112acd39ac7d",
+                        className: "jsx-5f52834379b4d518",
                         children: "Manantial de Vida \xa9 2023"
                     })
                 ]
             }),
             user && user.email && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_BackMenuMobile__WEBPACK_IMPORTED_MODULE_5__["default"], {}),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "32b6112acd39ac7d",
-                children: '.FooterContainer.jsx-32b6112acd39ac7d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:400px;margin-top:20px;padding:40px;gap:50px;background-color:#000;color:#fff}.FooterContent.jsx-32b6112acd39ac7d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;gap:20px}.FooterContainer.jsx-32b6112acd39ac7d p.jsx-32b6112acd39ac7d{color:var(--light-grey);text-align:center}.FooterImage.jsx-32b6112acd39ac7d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.FooterImage.jsx-32b6112acd39ac7d img.jsx-32b6112acd39ac7d{width:auto;height:50px}.FooterLinksContainer.jsx-32b6112acd39ac7d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:40px;color:var(--primary-color)}.FooterLinksContainer.jsx-32b6112acd39ac7d h3.jsx-32b6112acd39ac7d{color:#fff;font-family:"Roboto",sans-serif;font-weight:700}.FooterLinks.jsx-32b6112acd39ac7d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;list-style:none;color:#fff;gap:20px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400}@media only screen and (max-width:860px){.FooterContainer.jsx-32b6112acd39ac7d{padding:40px 20px;height:auto}.FooterContent.jsx-32b6112acd39ac7d{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:40px}}'
+                id: "5f52834379b4d518",
+                children: '.FooterContainer.jsx-5f52834379b4d518{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:400px;margin-top:20px;padding:40px;gap:50px;background-color:#000;color:#fff}.FooterContent.jsx-5f52834379b4d518{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;gap:20px}.FooterContainer.jsx-5f52834379b4d518 p.jsx-5f52834379b4d518{color:var(--light-grey);text-align:center}.FooterImage.jsx-5f52834379b4d518{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.FooterImage.jsx-5f52834379b4d518 img.jsx-5f52834379b4d518{width:auto;height:50px}.FooterLinksContainer.jsx-5f52834379b4d518{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:40px;color:var(--primary-color)}.FooterLinksContainer.jsx-5f52834379b4d518 h3.jsx-5f52834379b4d518{color:#fff;font-family:"Roboto",sans-serif;font-weight:700}.FooterLinks.jsx-5f52834379b4d518{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;list-style:none;color:#fff;gap:20px;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400}@media only screen and (max-width:860px){.FooterContainer.jsx-5f52834379b4d518{padding:40px 20px;height:auto}.FooterContent.jsx-5f52834379b4d518{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:40px}}'
             })
         ]
     });

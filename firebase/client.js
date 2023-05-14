@@ -1,5 +1,5 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 // Tu configuración de Firebase
 const firebaseConfig = {
@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "somosmanantialapp.appspot.com",
   messagingSenderId: "44951684744",
   appId: "1:44951684744:web:e700420475b857f169813d",
-  measurementId: "G-728J7XXSDC"
+  measurementId: "G-728J7XXSDC",
 };
 
 // Verifica si ya hay una instancia de la aplicación

@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import cache from "../../../cache";
-import TimeAgoFull from '../TimeAgoFull';
+import TimeAgoFull from "../TimeAgoFull";
 
 export default function PredicaCard(props) {
   const [cardVideo, setCardVideo] = useState(null);
@@ -14,7 +14,7 @@ export default function PredicaCard(props) {
       if (cachedData) {
         setCardVideo(cachedData);
       } else {
-        const res = await fetch('/api/detallesVideos');
+        const res = await fetch("/api/detallesVideos");
         const data = await res.json();
         const cardVideoData = data[props.nombre][props.indice];
         cache.set(cacheKey, cardVideoData);
@@ -28,7 +28,11 @@ export default function PredicaCard(props) {
     <>
       {cardVideo && (
         <div className="LinkContainer">
-          <Link href={encodeURI(cardVideo.profileURL.replace('?', '/') + cardVideo.url)}>
+          <Link
+            href={encodeURI(
+              cardVideo.profileURL.replace("?", "/") + cardVideo.url
+            )}
+          >
             <div className="PredicadorContainer">
               <div className="ImageContainer">
                 <img src={cardVideo.image} alt={cardVideo.title} />
@@ -37,7 +41,12 @@ export default function PredicaCard(props) {
                 <h3>{cardVideo.title}</h3>
                 <div>
                   {/* <p>Hace</p> */}
-                  <TimeAgoFull dia={cardVideo.dia} mes={cardVideo.mes} año={cardVideo.año} hora={cardVideo.hora} />
+                  <TimeAgoFull
+                    dia={cardVideo.dia}
+                    mes={cardVideo.mes}
+                    año={cardVideo.año}
+                    hora={cardVideo.hora}
+                  />
                 </div>
               </div>
             </div>
@@ -103,9 +112,3 @@ export default function PredicaCard(props) {
     </>
   );
 }
-
-
-
-
-
-

@@ -18,14 +18,18 @@ export default function PredicadorHead(props) {
       <Head>
         {info && (
           <>
-            <title>
-              {info.name && `${info.name} | Manantial`}
-            </title>
-            <meta name="description" content={`Encuentra aquí algunas de las prédicas de ${info.name} en Manantial de Vida.`} />
+            <title>{info.name && `${info.name} | Manantial`}</title>
+            <meta
+              name="description"
+              content={`Encuentra aquí algunas de las prédicas de ${info.name} en Manantial de Vida.`}
+            />
             <meta property="og:title" content={`${info.name} | Manantial`} />
             <meta property="og:url" content="https://somos.mamantial.org/" />
             <meta property="og:image" content={info.picture} />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
             <link rel="icon" href="/assets/favicon_manantial.png" />
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
             <link

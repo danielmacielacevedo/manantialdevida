@@ -29,11 +29,11 @@ function BackHeader() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             user && user.email && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-4b37d87d6a0def8e" + " " + "BackHeaderContainer"
+                className: "jsx-b3dc80f5b2faa12d" + " " + "BackHeaderContainer"
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "4b37d87d6a0def8e",
-                children: ".BackHeaderContainer.jsx-4b37d87d6a0def8e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;width:100%;max-width:270px;height:80px;background:var(--primary-color);-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;transition:.2s}@media only screen and (max-width:1024px){.BackHeaderContainer.jsx-4b37d87d6a0def8e{max-width:134px}}@media only screen and (max-width:860px){.BackHeaderContainer.jsx-4b37d87d6a0def8e{display:none}}"
+                id: "b3dc80f5b2faa12d",
+                children: ".BackHeaderContainer.jsx-b3dc80f5b2faa12d{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;width:100%;max-width:270px;height:80px;background:var(--primary-color);-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;transition:.2s}@media only screen and (max-width:1024px){.BackHeaderContainer.jsx-b3dc80f5b2faa12d{max-width:134px}}@media only screen and (max-width:860px){.BackHeaderContainer.jsx-b3dc80f5b2faa12d{display:none}}"
             })
         ]
     });

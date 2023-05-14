@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
-import ArticleList from './ArticleListSociedades';
-import ButtonList from './ButtonListSociedades';
-import Novedad from '../../Novedad';
+import { useState, useEffect } from "react";
+import ArticleList from "./ArticleListSociedades";
+import ButtonList from "./ButtonListSociedades";
 
 export default function MaestrosFiltro(props) {
   const [originalArticles, setOriginalArticles] = useState([]);
@@ -9,11 +8,11 @@ export default function MaestrosFiltro(props) {
 
   const fetchData = async () => {
     if (props.mes) {
-		const response = await fetch(encodeURI(`/api/sociedades/${props.mes}`));
-		const data = await response.json();
-		setOriginalArticles(data);
-		setFilteredArticles(data);	
-	}
+      const response = await fetch(encodeURI(`/api/sociedades/${props.mes}`));
+      const data = await response.json();
+      setOriginalArticles(data);
+      setFilteredArticles(data);
+    }
   };
 
   // Realizar la solicitud fetch cuando se monta el componente
@@ -25,17 +24,19 @@ export default function MaestrosFiltro(props) {
     if (category === "Todos") {
       setFilteredArticles(originalArticles);
     } else {
-      const filteredArticles = originalArticles.map((article) => ({
-        ...article,
-        classes: article.classes.filter(
-          (clase) => clase.category === category
-        ),
-      })).filter((article) => article.classes.length > 0);
+      const filteredArticles = originalArticles
+        .map((article) => ({
+          ...article,
+          classes: article.classes.filter(
+            (clase) => clase.category === category
+          ),
+        }))
+        .filter((article) => article.classes.length > 0);
       setFilteredArticles(filteredArticles);
     }
   };
 
-  const categories = ['Todos', 'Damas', 'Niños', 'Jóvenes', 'Varones'];
+  const categories = ["Todos", "Damas", "Niños", "Jóvenes", "Varones"];
 
   return (
     <>
@@ -44,8 +45,7 @@ export default function MaestrosFiltro(props) {
         <ArticleList articles={filteredArticles} />
       </div>
       <style jsx>{`
-        .MaestrosFiltroContainer
-        {
+        .MaestrosFiltroContainer {
           display: flex;
           width: 100%;
           flex-direction: column;

@@ -50,15 +50,16 @@ function EventCountdown({ eventDate  }) {
     ]);
     const pad = (number)=>number.toString().padStart(2, "0");
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "jsx-432b3c71f8b9a0ae",
+        className: "jsx-20d74b93a8e1aea9",
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
-                className: "jsx-432b3c71f8b9a0ae",
+                className: "jsx-20d74b93a8e1aea9",
                 children: [
                     timeRemaining.days,
                     "d, ",
                     pad(timeRemaining.hours),
-                    "h, ",
+                    "h,",
+                    " ",
                     pad(timeRemaining.minutes),
                     "m, ",
                     pad(timeRemaining.seconds),
@@ -66,8 +67,8 @@ function EventCountdown({ eventDate  }) {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "432b3c71f8b9a0ae",
-                children: "h4.jsx-432b3c71f8b9a0ae{text-align:center}"
+                id: "20d74b93a8e1aea9",
+                children: "h4.jsx-20d74b93a8e1aea9{text-align:center}"
             })
         ]
     });

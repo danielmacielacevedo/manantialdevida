@@ -23,22 +23,22 @@ function Page404() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-abf999b6e2089ca0" + " " + "Container404",
+                className: "jsx-cf7ce7d94f374655" + " " + "Container404",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                        className: "jsx-abf999b6e2089ca0",
-                        children: "Upps!"
+                        className: "jsx-cf7ce7d94f374655",
+                        children: "Ups!"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        className: "jsx-abf999b6e2089ca0",
+                        className: "jsx-cf7ce7d94f374655",
                         children: "Esa secci\xf3n puede que no exista, est\xe9 en proceso de construcci\xf3n o que no tengas los permisos necesarios para acceder a ella."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "jsx-abf999b6e2089ca0" + " " + "ContentButton",
+                            className: "jsx-cf7ce7d94f374655" + " " + "ContentButton",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: "jsx-abf999b6e2089ca0",
+                                className: "jsx-cf7ce7d94f374655",
                                 children: "Ir al Inicio"
                             })
                         })
@@ -46,8 +46,8 @@ function Page404() {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "abf999b6e2089ca0",
-                children: ".Container404.jsx-abf999b6e2089ca0{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;padding:20px;gap:20px}.Container404.jsx-abf999b6e2089ca0 p.jsx-abf999b6e2089ca0{max-width:600px}"
+                id: "cf7ce7d94f374655",
+                children: ".Container404.jsx-cf7ce7d94f374655{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:100vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;padding:20px;gap:20px}.Container404.jsx-cf7ce7d94f374655 h1.jsx-cf7ce7d94f374655{font-size:100px}.Container404.jsx-cf7ce7d94f374655 p.jsx-cf7ce7d94f374655{max-width:600px}"
             })
         ]
     });

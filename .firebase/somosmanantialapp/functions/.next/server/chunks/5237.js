@@ -22,9 +22,9 @@ function AllPost() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-f758d81f727417c6" + " " + "AllPostContainer",
+                className: "jsx-1fd31c6922dcbcc4" + " " + "AllPostContainer",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "jsx-f758d81f727417c6" + " " + "PostContainer",
+                    className: "jsx-1fd31c6922dcbcc4" + " " + "PostContainer",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
                             autor: "Manantial de Vida",
@@ -76,8 +76,8 @@ function AllPost() {
                 })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "f758d81f727417c6",
-                children: ".PostContainer.jsx-f758d81f727417c6{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:500px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}"
+                id: "1fd31c6922dcbcc4",
+                children: ".PostContainer.jsx-1fd31c6922dcbcc4{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:500px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}"
             })
         ]
     });

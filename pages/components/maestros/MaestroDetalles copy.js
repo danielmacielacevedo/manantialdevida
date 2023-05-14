@@ -7,7 +7,7 @@ export default function MaestroDetails(props) {
   useEffect(() => {
     async function fetchMaestro() {
       if (props.mes) {
-        const res = await fetch(`/api/maestros/mayo`);
+        const res = await fetch("/api/maestros/mayo");
         const data = await res.json();
         const teacher = data.teachers.find(
           (t) => t.name.toLowerCase() === props.nombre.toLowerCase()
@@ -29,7 +29,11 @@ export default function MaestroDetails(props) {
       {maestro && (
         <button onClick={handleClick} className="MaestroContainer">
           <h2>{props.nombre}</h2>
-          <div className={isOpen ? "TableContainerInfo open" : "TableContainerInfo"}>
+          <div
+            className={
+              isOpen ? "TableContainerInfo open" : "TableContainerInfo"
+            }
+          >
             <div className="NameContainer TitleTableCalendar">
               <span>Día</span>
               <span>Clase</span>

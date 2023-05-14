@@ -79,15 +79,15 @@ function TimeAgo(props, { useLocalTime =true  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                className: "jsx-b6596229129eca1",
+                className: "jsx-113fd82444e4b943",
                 children: [
                     "Hace ",
                     timeElapsed
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "b6596229129eca1",
-                children: "p.jsx-b6596229129eca1{font-size:12px}"
+                id: "113fd82444e4b943",
+                children: "p.jsx-113fd82444e4b943{font-size:12px}"
             })
         ]
     });

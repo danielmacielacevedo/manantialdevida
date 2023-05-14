@@ -33,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 const cache = __webpack_require__(6465);
 function detallesVideos(req, res) {
     const cacheKey = "detallesVideos";
-    let cachedData = cache.get(cacheKey);
+    const cachedData = cache.get(cacheKey);
     if (cachedData) {
         console.log("Data from cache");
         return res.status(200).json(cachedData);

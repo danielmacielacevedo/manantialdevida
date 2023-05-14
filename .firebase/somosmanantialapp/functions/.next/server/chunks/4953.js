@@ -23,6 +23,7 @@ _firebase_client__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.
 
 
 
+// import { loginWithGoogle, onAuthStateChanged } from "../firebase/client";
 const UserContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)();
 const UserProvider = ({ children  })=>{
     const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(undefined);
@@ -75,36 +76,36 @@ function MenuMembers(props) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             user && user.email && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-356aabcb9765a0c" + " " + "theme MenuGlobalContainer",
+                className: "jsx-52ee18ff1acdaa6e" + " " + "theme MenuGlobalContainer",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                        className: "jsx-356aabcb9765a0c",
+                        className: "jsx-52ee18ff1acdaa6e",
                         children: "Menu"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         href: "/",
-                        className: "jsx-356aabcb9765a0c",
+                        className: "jsx-52ee18ff1acdaa6e",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         id: "user_profile_picture",
                                         src: user.picture,
                                         alt: "Home Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "InfoUserMenuGlobal",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "InfoUserMenuGlobal",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-356aabcb9765a0c",
+                                            className: "jsx-52ee18ff1acdaa6e",
                                             children: user.name
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            className: "jsx-356aabcb9765a0c",
+                                            className: "jsx-52ee18ff1acdaa6e",
                                             children: user.email
                                         })
                                     ]
@@ -116,18 +117,18 @@ function MenuMembers(props) {
                         className: "InicioDesktop",
                         href: "/",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/home-icon.png",
                                         alt: "Home Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Inicio"
                                 })
                             ]
@@ -137,18 +138,18 @@ function MenuMembers(props) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/blog",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/blog-icon.png",
                                         alt: "Home Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Blog"
                                 })
                             ]
@@ -157,18 +158,18 @@ function MenuMembers(props) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/predicas",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/new-predicas-icon.png",
                                         alt: "Home Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Pr\xe9dicas"
                                 })
                             ]
@@ -177,42 +178,42 @@ function MenuMembers(props) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/boletin",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/news-icon.png",
                                         alt: "Home Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Bolet\xedn"
                                 })
                             ]
                         })
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-356aabcb9765a0c" + " " + "PrivateContainerMenu",
+                        className: "jsx-52ee18ff1acdaa6e" + " " + "PrivateContainerMenu",
                         children: [
                             "Privados",
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                 href: "/miembros/calendario-maestros",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                            className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "/assets/icons/calendar-icon.png",
                                                 alt: "Calendar Icon",
-                                                className: "jsx-356aabcb9765a0c"
+                                                className: "jsx-52ee18ff1acdaa6e"
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-356aabcb9765a0c",
+                                            className: "jsx-52ee18ff1acdaa6e",
                                             children: "Maestros"
                                         })
                                     ]
@@ -221,18 +222,18 @@ function MenuMembers(props) {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                 href: "/miembros/calendario-sociedades",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                            className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "/assets/icons/calendar-icon.png",
                                                 alt: "Calendar Icon",
-                                                className: "jsx-356aabcb9765a0c"
+                                                className: "jsx-52ee18ff1acdaa6e"
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-356aabcb9765a0c",
+                                            className: "jsx-52ee18ff1acdaa6e",
                                             children: "Sociedades"
                                         })
                                     ]
@@ -242,18 +243,18 @@ function MenuMembers(props) {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                 href: "/miembros/tutoriales/como-ser-ujier",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                            className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                 src: "/assets/icons/ujier-icon.png",
                                                 alt: "Ujier Icon",
-                                                className: "jsx-356aabcb9765a0c"
+                                                className: "jsx-52ee18ff1acdaa6e"
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-356aabcb9765a0c",
+                                            className: "jsx-52ee18ff1acdaa6e",
                                             children: "Como ser ujier"
                                         })
                                     ]
@@ -265,18 +266,18 @@ function MenuMembers(props) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/actividades",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/calendar-icon.png",
                                         alt: "Calendar Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Actividades"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SmallNovedad__WEBPACK_IMPORTED_MODULE_3__["default"], {})
@@ -288,20 +289,20 @@ function MenuMembers(props) {
                         target: "_blank",
                         rel: "noreferrer",
                         href: "https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic",
-                        className: "jsx-356aabcb9765a0c",
+                        className: "jsx-52ee18ff1acdaa6e",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/map-icon-active.png",
                                         alt: "Image Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Ver mapa"
                                 })
                             ]
@@ -311,18 +312,18 @@ function MenuMembers(props) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                         href: "/miembros/recursos/logotipo",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-356aabcb9765a0c" + " " + "ItemMenuContainer",
+                            className: "jsx-52ee18ff1acdaa6e" + " " + "ItemMenuContainer",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-356aabcb9765a0c" + " " + "PostProfilePicture",
+                                    className: "jsx-52ee18ff1acdaa6e" + " " + "PostProfilePicture",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                         src: "/assets/icons/image-icon.png",
                                         alt: "Image Icon",
-                                        className: "jsx-356aabcb9765a0c"
+                                        className: "jsx-52ee18ff1acdaa6e"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-356aabcb9765a0c",
+                                    className: "jsx-52ee18ff1acdaa6e",
                                     children: "Logotipos"
                                 })
                             ]
@@ -331,8 +332,8 @@ function MenuMembers(props) {
                 ]
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "356aabcb9765a0c",
-                children: ".MenuGlobalContainer.jsx-356aabcb9765a0c{top:0;bottom:0;position:fixed;overflow-y:scroll;overflow-x:hidden;left:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:400px;height:auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;gap:20px;color:var(--secondary-color);margin-top:80px;padding:20px}.MenuGlobalContainer.jsx-356aabcb9765a0c::-webkit-scrollbar{width:8px}.MenuGlobalContainer.jsx-356aabcb9765a0c::-webkit-scrollbar-thumb{background-color:#1d1d1d;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}.MenuGlobalContainer.jsx-356aabcb9765a0c::-webkit-scrollbar-track{background-color:#000}.MenuGlobalContainer.jsx-356aabcb9765a0c h1.jsx-356aabcb9765a0c{display:none}.PrivateContainerMenu.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background:var(--mid-grey);-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:20px;gap:20px}.ItemMenuContainer.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;height:auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:10px 20px;gap:20px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:var(--light-grey);-webkit-transition:.6s;-moz-transition:.6s;-o-transition:.6s;transition:.6s}.ItemMenuContainer.jsx-356aabcb9765a0c:hover{background-color:var(--mid-grey)}.ItemMenuContainer.jsx-356aabcb9765a0c span.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:6px 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;font-size:10px;background-color:var(--primary-color)}.PostProfilePicture.jsx-356aabcb9765a0c{position:relative;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:40px;height:40px;background-color:var(--primary-color);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.PostProfilePicture.jsx-356aabcb9765a0c img.jsx-356aabcb9765a0c{width:auto;height:18px}#user_profile_picture.jsx-356aabcb9765a0c{width:auto;height:40px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}.InfoUserMenuGlobal.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:4px}@media only screen and (max-width:1024px){p.jsx-356aabcb9765a0c{font-size:10px}.ItemMenuContainer.jsx-356aabcb9765a0c{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px 10px}.InfoUserMenuGlobal.jsx-356aabcb9765a0c{display:none}}@media only screen and (max-width:860px){p.jsx-356aabcb9765a0c{font-size:16px}.MenuGlobalContainer.jsx-356aabcb9765a0c{position:relative;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:none;margin-top:80px;padding:0}.MenuGlobalContainer.jsx-356aabcb9765a0c h1.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;padding-top:20px}.ItemMenuContainer.jsx-356aabcb9765a0c{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:10px 20px}.InfoUserMenuGlobal.jsx-356aabcb9765a0c{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}"
+                id: "52ee18ff1acdaa6e",
+                children: ".MenuGlobalContainer.jsx-52ee18ff1acdaa6e{top:0;bottom:0;position:fixed;overflow-y:scroll;overflow-x:hidden;left:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:400px;height:auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;gap:20px;color:var(--secondary-color);margin-top:80px;padding:20px}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e::-webkit-scrollbar{width:8px}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e::-webkit-scrollbar-thumb{background-color:#1d1d1d;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e::-webkit-scrollbar-track{background-color:#000}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e h1.jsx-52ee18ff1acdaa6e{display:none}.PrivateContainerMenu.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background:var(--mid-grey);-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:20px;gap:20px}.ItemMenuContainer.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:260px;height:auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:10px 20px;gap:20px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;background-color:var(--light-grey);-webkit-transition:.6s;-moz-transition:.6s;-o-transition:.6s;transition:.6s}.ItemMenuContainer.jsx-52ee18ff1acdaa6e:hover{background-color:var(--mid-grey)}.ItemMenuContainer.jsx-52ee18ff1acdaa6e span.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:6px 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;font-size:10px;background-color:var(--primary-color)}.PostProfilePicture.jsx-52ee18ff1acdaa6e{position:relative;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:40px;height:40px;background-color:var(--primary-color);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.PostProfilePicture.jsx-52ee18ff1acdaa6e img.jsx-52ee18ff1acdaa6e{width:auto;height:18px}#user_profile_picture.jsx-52ee18ff1acdaa6e{width:auto;height:40px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}.InfoUserMenuGlobal.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:4px}@media only screen and (max-width:1024px){p.jsx-52ee18ff1acdaa6e{font-size:10px}.ItemMenuContainer.jsx-52ee18ff1acdaa6e{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px 10px}.InfoUserMenuGlobal.jsx-52ee18ff1acdaa6e{display:none}}@media only screen and (max-width:860px){p.jsx-52ee18ff1acdaa6e{font-size:16px}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e{position:relative;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:none;margin-top:80px;padding:0}.MenuGlobalContainer.jsx-52ee18ff1acdaa6e h1.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;padding-top:20px}.ItemMenuContainer.jsx-52ee18ff1acdaa6e{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row;max-width:none;padding:10px 20px}.InfoUserMenuGlobal.jsx-52ee18ff1acdaa6e{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}}"
             })
         ]
     });
