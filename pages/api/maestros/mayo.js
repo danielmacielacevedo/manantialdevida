@@ -6,6 +6,7 @@ const data = [
       {
         category: "Libre",
         date: "Mes libre",
+        dia: "",
         class: "",
       },
     ],
@@ -17,7 +18,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 21",
+        date: "Domingo",
+        dia: "21",
         class: "Niños grandes",
       },
     ],
@@ -29,12 +31,14 @@ const data = [
     classes: [
       {
         category: "Jóvenes",
-        date: "Domingo 14",
+        date: "Domingo",
+        dia: "14",
         class: "Jóvenes",
       },
       {
         category: "Jóvenes",
-        date: "Domingo 28",
+        date: "Domingo",
+        dia: "28",
         class: "Jóvenes",
       },
     ],
@@ -46,7 +50,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 14",
+        date: "Domingo",
+        dia: "14",
         class: "Niños pequeños",
       },
     ],
@@ -58,7 +63,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Viernes 12",
+        date: "Viernes",
+        dia: "12",
         class: "Niños",
       },
     ],
@@ -70,7 +76,8 @@ const data = [
     classes: [
       {
         category: "Adultos",
-        date: "Domingo 07",
+        date: "Domingo",
+        dia: "07",
         class: "Dominical general",
       },
     ],
@@ -82,17 +89,20 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Miércoles 03",
+        date: "Miércoles",
+        dia: "03",
         class: "Niños",
       },
       {
         category: "Adultos",
-        date: "Domingo 21",
+        date: "Domingo",
+        dia: "21",
         class: "Dominical general",
       },
       {
         category: "Niños",
-        date: "Domingo 28",
+        date: "Domingo",
+        dia: "28",
         class: "Dominical niños",
       },
     ],
@@ -104,17 +114,20 @@ const data = [
     classes: [
       {
         category: "Jóvenes",
-        date: "Miércoles 03",
+        date: "Miércoles",
+        dia: "03",
         class: "Jóvenes",
       },
       {
         category: "Jóvenes",
-        date: "Miércoles 17",
+        date: "Miércoles",
+        dia: "17",
         class: "Jóvenes",
       },
       {
         category: "Jóvenes",
-        date: "Miércoles 31",
+        date: "Miércoles",
+        dia: "31",
         class: "Jóvenes",
       },
     ],
@@ -126,12 +139,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 07",
+        date: "Domingo",
+        dia: "07",
         class: "Niños pequeños",
       },
       {
         category: "Niños",
-        date: "Domingo 21",
+        date: "Domingo",
+        dia: "21",
         class: "Niños pequeños",
       },
     ],
@@ -143,12 +158,14 @@ const data = [
     classes: [
       {
         category: "Jóvenes",
-        date: "Domingo 07",
+        date: "Domingo",
+        dia: "07",
         class: "Jóvenes",
       },
       {
         category: "Jóvenes",
-        date: "Domingo 21",
+        date: "Domingo",
+        dia: "21",
         class: "Jóvenes",
       },
     ],
@@ -160,12 +177,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 14",
-        class: "Niños garndes",
+        date: "Domingo",
+        dia: "14",
+        class: "Niños grandes",
       },
       {
         category: "Niños",
-        date: "Miércoles 31",
+        date: "Miércoles",
+        dia: "31",
         class: "Niños",
       },
     ],
@@ -177,12 +196,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 07",
+        date: "Domingo",
+        dia: "07",
         class: "Dominical niños",
       },
       {
         category: "Niños",
-        date: "Domingo 28",
+        date: "Domingo",
+        dia: "28",
         class: "Niños grandes",
       },
     ],
@@ -194,17 +215,20 @@ const data = [
     classes: [
       {
         category: "Jóvenes",
-        date: "Miércoles 10",
+        date: "Miércoles",
+        dia: "10",
         class: "Jóvenes",
       },
       {
         category: "Niños",
-        date: "Domingo 14",
+        date: "Domingo",
+        dia: "14",
         class: "Dominical niños",
       },
       {
         category: "Jóvenes",
-        date: "Miércoles 24",
+        date: "Miércoles",
+        dia: "24",
         class: "Jóvenes",
       },
     ],
@@ -216,12 +240,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Miércoles 10",
+        date: "Miércoles",
+        dia: "10",
         class: "Niños",
       },
       {
         category: "Niños",
-        date: "Domingo 21",
+        date: "Domingo",
+        dia: "21",
         class: "Dominical niños",
       },
     ],
@@ -233,7 +259,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 28",
+        date: "Domingo",
+        dia: "28",
         class: "Niños pequeños",
       },
     ],
@@ -245,7 +272,8 @@ const data = [
     classes: [
       {
         category: "Adultos",
-        date: "Domingo 28",
+        date: "Domingo",
+        dia: "28",
         class: "Dominical general",
       },
     ],
@@ -257,7 +285,8 @@ const data = [
     classes: [
       {
         category: "Adultos",
-        date: "Domingo 14",
+        date: "Domingo",
+        dia: "14",
         class: "Dominical general",
       },
     ],
@@ -269,12 +298,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Viernes 05",
+        date: "Viernes",
+        dia: "05",
         class: "Niños",
       },
       {
         category: "Niños",
-        date: "Viernes 26",
+        date: "Viernes",
+        dia: "26",
         class: "Niños",
       },
     ],
@@ -286,12 +317,14 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo 07",
+        date: "Domingo",
+        dia: "07",
         class: "Niños grandes",
       },
       {
         category: "Niños",
-        date: "Miércoles 24",
+        date: "Miércoles",
+        dia: "24",
         class: "Niños",
       },
     ],
@@ -304,6 +337,7 @@ const data = [
       {
         category: "Libre",
         date: "Mes libre",
+        dia: "",
         class: "",
       },
     ],
@@ -316,6 +350,7 @@ const data = [
       {
         category: "Libre",
         date: "Mes libre",
+        dia: "",
         class: "",
       },
     ],
@@ -327,7 +362,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Miércoles 17",
+        date: "Miércoles",
+        dia: "17",
         class: "Niños",
       },
     ],
@@ -339,7 +375,8 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Viernes 19",
+        date: "Viernes",
+        dia: "19",
         class: "Niños",
       },
     ],

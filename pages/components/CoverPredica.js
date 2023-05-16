@@ -3,16 +3,37 @@ import { useEffect, useState } from "react";
 import TimeAgoFull from "./TimeAgoFull";
 
 export default function CoverPredica(props) {
-  const [coverInfo, setCoverInfo] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [coverInfo, setCoverInfo] = useState(null);
 
   useEffect(() => {
-    async function fecthCoverDetails() {
+    async function fetchCoverDetails() {
       const res = await fetch("/api/detallesVideos");
       const data = await res.json();
       setCoverInfo(data[props.nombre][props.indice]);
+      setTimeout(() => {
+        setLoading(false);
+      }, 500); // Establece un retraso de 2 segundos antes de mostrar los datos
     }
-    fecthCoverDetails();
+    fetchCoverDetails();
   }, [props.nombre, props.indice]);
+
+  if (loading) {
+    return (
+      <div className="LoadingContainer">
+        <div className="LoadingBackground">
+          <div className="LoadingSpinnerContainer">
+            <div className="Spinner"></div>
+            <img
+              className="SpinnerImage"
+              src="/assets/favicon_manantial.png"
+              alt="Spinner"
+              />
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -25,7 +46,7 @@ export default function CoverPredica(props) {
         <div className="CoverSectionsContainer">
           <section className="LeftSection">
             <h5>Última predicación</h5>
-            <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}>
+            <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
               <h1>{coverInfo.title}</h1>
             </Link>
             <div className="ButtonsCoverPredica">
@@ -37,20 +58,20 @@ export default function CoverPredica(props) {
                   </div>
                   <div className="DetailsInfoReproductor">
                     <h4>{coverInfo.autor}</h4>
-                    <TimeAgoFull dia="07" mes="05" año="2023" hora="13" />
+                    <TimeAgoFull dia={coverInfo.dia} mes={coverInfo.mes} año={coverInfo.año} hora={coverInfo.hora} />
                   </div>
                 </div>
               </Link>
               <Link
                 className="ContentButton"
-                href={`${coverInfo.profileURL}/${coverInfo.url}`}
+                href={`${coverInfo.profileURL}${coverInfo.url}`}
               >
                 VER AHORA
               </Link>
             </div>
           </section>
           <section className="RightSection">
-            <Link href={`${coverInfo.profileURL}/${coverInfo.url}`}>
+            <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
               <img src={coverInfo.image} />
             </Link>
           </section>
@@ -74,7 +95,7 @@ export default function CoverPredica(props) {
           color: var(--secondary-color);
         }
         .CoverPredicaContainer h1 {
-          font-size: 70px;
+          font-size: 50px;
         }
         .CoverBackground {
           position: absolute;

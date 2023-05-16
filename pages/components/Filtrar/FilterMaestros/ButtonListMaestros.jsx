@@ -1,6 +1,7 @@
-export default function ButtonList({ categories, filterCategory }) {
+export default function ButtonCategoryList({ categories, filterCategory }) {
   return (
     <>
+      <h4>Filtrar por clase:</h4>
       <div className="ButtonCategories">
         {categories && categories.length > 0 ? (
           categories.map((category) => (
@@ -20,7 +21,7 @@ export default function ButtonList({ categories, filterCategory }) {
       <style jsx>{`
         .ButtonCategories {
           display: flex;
-          gap: 10px;
+          gap: 20px;
         }
         .ButtonListContainer {
           display: flex;

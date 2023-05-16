@@ -4,7 +4,7 @@ export default function Cover() {
   return (
     <>
       <div className="CoverContainer">
-        <CoverPredica nombre="PastorIsaac" indice="5" />
+        <CoverPredica nombre="FranciscoSerrano" indice="2" />
       </div>
       <style jsx>{`
         .CoverContainer {

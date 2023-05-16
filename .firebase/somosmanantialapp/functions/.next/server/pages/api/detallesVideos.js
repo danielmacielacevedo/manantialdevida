@@ -326,6 +326,22 @@ function detallesVideos(req, res) {
             url: "/crucifixion",
             profileURL: "/@franciscoserrano",
             embed: "GpjFkvmX9yk"
+        },
+        {
+            title: "La importancia de lo que no se ve",
+            autor: "Francisco Serrano",
+            picture: "/assets/predicadores/francisco-serrano.png",
+            date: "10 MAYO 2023",
+            dia: "10",
+            mes: "05",
+            año: "2023",
+            hora: "13",
+            minuto: "00",
+            desc: "Predicaci\xf3n Manantial de Vida",
+            image: "/assets/predicadores/francisco-serrano/la-importancia-de-lo-que-no-se-ve.jpg",
+            url: "/la-importancia-de-lo-que-no-se-ve",
+            profileURL: "/@franciscoserrano",
+            embed: "qZ8C3tjW_xM"
         }
     ];
     const juanLeyva = [

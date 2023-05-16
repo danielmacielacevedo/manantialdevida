@@ -24,8 +24,8 @@ function Cover() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "jsx-9111c0a771bdc9ca" + " " + "CoverContainer",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_CoverPredica__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                    nombre: "PastorIsaac",
-                    indice: "5"
+                    nombre: "FranciscoSerrano",
+                    indice: "2"
                 })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {

@@ -18,6 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _ArticleListMaestros__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(525);
 /* harmony import */ var _ButtonListMaestros__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5261);
+/* harmony import */ var _ButtonDayListMaestros__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5186);
+
 
 
 
@@ -26,6 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 function MaestrosFiltro(props) {
     const [originalArticles, setOriginalArticles] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
     const [filteredArticles, setFilteredArticles] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);
+    const [selectedDay, setSelectedDay] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""); // Estado para el día seleccionado
     const fetchData = async ()=>{
         if (props.mes) {
             const response = await fetch(encodeURI(`/api/maestros/${props.mes}`));
@@ -41,13 +44,23 @@ function MaestrosFiltro(props) {
         props.mes
     ]);
     const filterCategory = (category)=>{
+        setSelectedDay(""); // Restablecer el día seleccionado al filtrar por categoría
         if (category === "Todos") {
             setFilteredArticles(originalArticles);
         } else {
             const filteredArticles = originalArticles.map((article)=>({
                     ...article,
-                    classes: article.classes.filter((clase)=>clase.category === category)
+                    classes: article.classes.filter((clase)=>clase.category === category && (!selectedDay || clase.dia === selectedDay))
                 })).filter((article)=>article.classes.length > 0);
+            setFilteredArticles(filteredArticles);
+        }
+    };
+    const filterDay = (day)=>{
+        setSelectedDay(day); // Actualizar el día seleccionado
+        if (day === "Todos") {
+            setFilteredArticles(originalArticles);
+        } else {
+            const filteredArticles = originalArticles.filter((article)=>article.classes.some((clase)=>clase.dia === day));
             setFilteredArticles(filteredArticles);
         }
     };
@@ -66,8 +79,13 @@ function MaestrosFiltro(props) {
                         categories: categories,
                         filterCategory: filterCategory
                     }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ButtonDayListMaestros__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                        articles: originalArticles,
+                        filterDay: filterDay
+                    }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ArticleListMaestros__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                        articles: filteredArticles
+                        articles: filteredArticles,
+                        selectedDay: selectedDay
                     })
                 ]
             }),

@@ -20,6 +20,7 @@ const data = [
             {
                 category: "Libre",
                 date: "Mes libre",
+                dia: "",
                 class: ""
             }
         ]
@@ -30,7 +31,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 21",
+                date: "Domingo",
+                dia: "21",
                 class: "Ni\xf1os grandes"
             }
         ]
@@ -41,12 +43,14 @@ const data = [
         classes: [
             {
                 category: "J\xf3venes",
-                date: "Domingo 14",
+                date: "Domingo",
+                dia: "14",
                 class: "J\xf3venes"
             },
             {
                 category: "J\xf3venes",
-                date: "Domingo 28",
+                date: "Domingo",
+                dia: "28",
                 class: "J\xf3venes"
             }
         ]
@@ -57,7 +61,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 14",
+                date: "Domingo",
+                dia: "14",
                 class: "Ni\xf1os peque\xf1os"
             }
         ]
@@ -68,7 +73,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Viernes 12",
+                date: "Viernes",
+                dia: "12",
                 class: "Ni\xf1os"
             }
         ]
@@ -79,7 +85,8 @@ const data = [
         classes: [
             {
                 category: "Adultos",
-                date: "Domingo 07",
+                date: "Domingo",
+                dia: "07",
                 class: "Dominical general"
             }
         ]
@@ -90,17 +97,20 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Mi\xe9rcoles 03",
+                date: "Mi\xe9rcoles",
+                dia: "03",
                 class: "Ni\xf1os"
             },
             {
                 category: "Adultos",
-                date: "Domingo 21",
+                date: "Domingo",
+                dia: "21",
                 class: "Dominical general"
             },
             {
                 category: "Ni\xf1os",
-                date: "Domingo 28",
+                date: "Domingo",
+                dia: "28",
                 class: "Dominical ni\xf1os"
             }
         ]
@@ -111,17 +121,20 @@ const data = [
         classes: [
             {
                 category: "J\xf3venes",
-                date: "Mi\xe9rcoles 03",
+                date: "Mi\xe9rcoles",
+                dia: "03",
                 class: "J\xf3venes"
             },
             {
                 category: "J\xf3venes",
-                date: "Mi\xe9rcoles 17",
+                date: "Mi\xe9rcoles",
+                dia: "17",
                 class: "J\xf3venes"
             },
             {
                 category: "J\xf3venes",
-                date: "Mi\xe9rcoles 31",
+                date: "Mi\xe9rcoles",
+                dia: "31",
                 class: "J\xf3venes"
             }
         ]
@@ -132,12 +145,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 07",
+                date: "Domingo",
+                dia: "07",
                 class: "Ni\xf1os peque\xf1os"
             },
             {
                 category: "Ni\xf1os",
-                date: "Domingo 21",
+                date: "Domingo",
+                dia: "21",
                 class: "Ni\xf1os peque\xf1os"
             }
         ]
@@ -148,12 +163,14 @@ const data = [
         classes: [
             {
                 category: "J\xf3venes",
-                date: "Domingo 07",
+                date: "Domingo",
+                dia: "07",
                 class: "J\xf3venes"
             },
             {
                 category: "J\xf3venes",
-                date: "Domingo 21",
+                date: "Domingo",
+                dia: "21",
                 class: "J\xf3venes"
             }
         ]
@@ -164,12 +181,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 14",
-                class: "Ni\xf1os garndes"
+                date: "Domingo",
+                dia: "14",
+                class: "Ni\xf1os grandes"
             },
             {
                 category: "Ni\xf1os",
-                date: "Mi\xe9rcoles 31",
+                date: "Mi\xe9rcoles",
+                dia: "31",
                 class: "Ni\xf1os"
             }
         ]
@@ -180,12 +199,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 07",
+                date: "Domingo",
+                dia: "07",
                 class: "Dominical ni\xf1os"
             },
             {
                 category: "Ni\xf1os",
-                date: "Domingo 28",
+                date: "Domingo",
+                dia: "28",
                 class: "Ni\xf1os grandes"
             }
         ]
@@ -196,17 +217,20 @@ const data = [
         classes: [
             {
                 category: "J\xf3venes",
-                date: "Mi\xe9rcoles 10",
+                date: "Mi\xe9rcoles",
+                dia: "10",
                 class: "J\xf3venes"
             },
             {
                 category: "Ni\xf1os",
-                date: "Domingo 14",
+                date: "Domingo",
+                dia: "14",
                 class: "Dominical ni\xf1os"
             },
             {
                 category: "J\xf3venes",
-                date: "Mi\xe9rcoles 24",
+                date: "Mi\xe9rcoles",
+                dia: "24",
                 class: "J\xf3venes"
             }
         ]
@@ -217,12 +241,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Mi\xe9rcoles 10",
+                date: "Mi\xe9rcoles",
+                dia: "10",
                 class: "Ni\xf1os"
             },
             {
                 category: "Ni\xf1os",
-                date: "Domingo 21",
+                date: "Domingo",
+                dia: "21",
                 class: "Dominical ni\xf1os"
             }
         ]
@@ -233,7 +259,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 28",
+                date: "Domingo",
+                dia: "28",
                 class: "Ni\xf1os peque\xf1os"
             }
         ]
@@ -244,7 +271,8 @@ const data = [
         classes: [
             {
                 category: "Adultos",
-                date: "Domingo 28",
+                date: "Domingo",
+                dia: "28",
                 class: "Dominical general"
             }
         ]
@@ -255,7 +283,8 @@ const data = [
         classes: [
             {
                 category: "Adultos",
-                date: "Domingo 14",
+                date: "Domingo",
+                dia: "14",
                 class: "Dominical general"
             }
         ]
@@ -266,12 +295,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Viernes 05",
+                date: "Viernes",
+                dia: "05",
                 class: "Ni\xf1os"
             },
             {
                 category: "Ni\xf1os",
-                date: "Viernes 26",
+                date: "Viernes",
+                dia: "26",
                 class: "Ni\xf1os"
             }
         ]
@@ -282,12 +313,14 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Domingo 07",
+                date: "Domingo",
+                dia: "07",
                 class: "Ni\xf1os grandes"
             },
             {
                 category: "Ni\xf1os",
-                date: "Mi\xe9rcoles 24",
+                date: "Mi\xe9rcoles",
+                dia: "24",
                 class: "Ni\xf1os"
             }
         ]
@@ -299,6 +332,7 @@ const data = [
             {
                 category: "Libre",
                 date: "Mes libre",
+                dia: "",
                 class: ""
             }
         ]
@@ -310,6 +344,7 @@ const data = [
             {
                 category: "Libre",
                 date: "Mes libre",
+                dia: "",
                 class: ""
             }
         ]
@@ -320,7 +355,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Mi\xe9rcoles 17",
+                date: "Mi\xe9rcoles",
+                dia: "17",
                 class: "Ni\xf1os"
             }
         ]
@@ -331,7 +367,8 @@ const data = [
         classes: [
             {
                 category: "Ni\xf1os",
-                date: "Viernes 19",
+                date: "Viernes",
+                dia: "19",
                 class: "Ni\xf1os"
             }
         ]

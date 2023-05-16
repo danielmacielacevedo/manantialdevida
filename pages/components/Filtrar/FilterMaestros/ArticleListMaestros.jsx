@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ArticleList({ articles }) {
+export default function ArticleList({ articles, selectedDay }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -17,7 +17,11 @@ export default function ArticleList({ articles }) {
         {isLoading ? (
           <div className="LoadingSpinnerContainer">
             <div className="Spinner"></div>
-            <img className="SpinnerImage" src="/assets/favicon_manantial.png" />
+            <img
+              className="SpinnerImage"
+              src="/assets/favicon_manantial.png"
+              alt="Spinner"
+            />
           </div>
         ) : articles && articles.length > 0 ? (
           articles.map((article) => (
@@ -27,20 +31,18 @@ export default function ArticleList({ articles }) {
             >
               <h2>{article.title}</h2>
               <div className="MaestroClasses">
-                {article.classes.map((clase) => (
-                  <div className="TableContainerInfo.open" key={clase.date}>
-                    {/* {clase.category !== 'Libre' && (
-                    <div className='NameContainer TitleTableCalendar'>
-                      <span>Día</span>
-                      <span>Clase</span>
+                {article.classes
+                  .filter((clase) => !selectedDay || clase.dia === selectedDay)
+                  .map((clase) => (
+                    <div className="TableContainerInfo" key={clase.date}>
+                      <div className="NameContainer">
+                        <span>
+                          {clase.date} {clase.dia}
+                        </span>
+                        <span>{clase.class}</span>
+                      </div>
                     </div>
-                  )} */}
-                    <div className="NameContainer">
-                      <span>{clase.date}</span>
-                      <span>{clase.class}</span>
-                    </div>
-                  </div>
-                ))}
+                  ))}
               </div>
             </div>
           ))
@@ -74,9 +76,6 @@ export default function ArticleList({ articles }) {
           background-color: var(--mid-grey);
         }
         .MaestroContainer h2 {
-           {
-            /* color: var(--manantial-color); */
-          }
           color: var(--secondary-color);
         }
         .MaestroClasses {
@@ -102,10 +101,6 @@ export default function ArticleList({ articles }) {
           justify-content: center;
           align-items: center;
         }
-        .TitleTableCalendar {
-          font-size: 14px;
-          font-weight: 100;
-        }
         .NameContainer span:nth-child(1) {
           width: 50%;
         }
@@ -113,13 +108,13 @@ export default function ArticleList({ articles }) {
           display: flex;
           width: 50%;
         }
-        .TableContainerInfo {
-          display: none;
-        }
-        .TableContainerInfo.open {
-          display: flex;
-        }
       `}</style>
     </>
   );
 }
+
+
+
+
+
+

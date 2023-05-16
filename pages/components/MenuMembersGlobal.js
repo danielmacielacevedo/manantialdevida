@@ -1,10 +1,52 @@
 import Link from "next/link";
 import SmallNovedad from "./SmallNovedad";
-import { useContext } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import { UserContext } from "../UserProvider";
+import Lottie from "react-lottie";
+import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
+import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
+import PredicaIcon from "../../public/assets/icons/animated-icons/PredicaIcon.json";
+import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
 
 export default function MenuMembers(props) {
   const { user } = useContext(UserContext);
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [activeIcon, setActiveIcon] = useState(null);
+  const [iconColor, setIconColor] = useState("#515151");
+
+  const handleIconClick = (iconName) => {
+    setIsPlaying(true);
+    setActiveIcon(iconName);
+    setIconColor("#fff"); // Cambiar el color al hacer clic
+  };
+
+  useEffect(() => {
+    // Detener la animación cuando el componente se desmonte
+    return () => {
+      setIsPlaying(false);
+      setActiveIcon(null);
+      setIconColor("#515151"); // Restaurar el color por defecto
+    };
+  }, []);
+
+  const animationRefs = {
+    home: useRef(null),
+    blog: useRef(null),
+    predicas: useRef(null),
+    article: useRef(null),
+  };
+
+  useEffect(() => {
+    Object.keys(animationRefs).forEach((key) => {
+      const ref = animationRefs[key];
+      if (isPlaying && activeIcon === key && ref.current) {
+        ref.current.play();
+      } else if ((!isPlaying || activeIcon !== key) && ref.current) {
+        ref.current.stop();
+      }
+    });
+  }, [isPlaying, activeIcon]);
 
   return (
     <>
@@ -13,8 +55,9 @@ export default function MenuMembers(props) {
           <h1>Menu</h1>
           <div href="/">
             <div className="ItemMenuContainer">
-              <div className="PostProfilePicture">
+              <div id="user_profile_picture_container" className="PostProfilePicture">
                 <img
+                  referrerPolicy="no-referrer"
                   id="user_profile_picture"
                   src={user.picture}
                   alt="Home Icon"
@@ -22,42 +65,99 @@ export default function MenuMembers(props) {
               </div>
               <div className="InfoUserMenuGlobal">
                 <p>{user.name}</p>
-                <span>{user.email}</span>
+                {/* <span>{user.email}</span> */}
               </div>
             </div>
           </div>
           <Link className="InicioDesktop" href="/">
-            <div className="ItemMenuContainer">
-              <div className="PostProfilePicture">
-                <img src="/assets/icons/home-icon.png" alt="Home Icon" />
+            <div onClick={() => handleIconClick("home")} className="ItemMenuContainer">
+                <div className="PostProfilePicture">
+                  <div
+                  className={`IconContainer ${activeIcon === "home" ? "active" : ""}`}
+                >
+                  <Lottie
+                    options={{
+                      animationData: HomeIcon,
+                      loop: false,
+                      autoplay: false,
+                    }}
+                    isStopped={activeIcon !== "home" || !isPlaying}
+                    width={24}
+                    height={24}
+                    isClickToPauseDisabled
+                    ref={animationRefs.home}
+                  />
+                </div>
               </div>
               <p>Inicio</p>
             </div>
           </Link>
           Accesos directos
           <Link href="/blog">
-            <div className="ItemMenuContainer">
+            <div onClick={() => handleIconClick("blog")} className="ItemMenuContainer">
               <div className="PostProfilePicture">
-                <img src="/assets/icons/blog-icon.png" alt="Home Icon" />
+              <div
+              className={`IconContainer ${activeIcon === "blog" ? "active" : ""}`}
+            >
+              <Lottie
+                options={{
+                  animationData: BlogIcon,
+                  loop: false,
+                  autoplay: false,
+                }}
+                isStopped={activeIcon !== "blog" || !isPlaying}
+                width={24}
+                height={24}
+                isClickToPauseDisabled
+                ref={animationRefs.blog}
+              />
+            </div>
               </div>
               <p>Blog</p>
             </div>
           </Link>
           <Link href="/predicas">
-            <div className="ItemMenuContainer">
+            <div onClick={() => handleIconClick("predicas")} className="ItemMenuContainer">
               <div className="PostProfilePicture">
-                <img
-                  src="/assets/icons/new-predicas-icon.png"
-                  alt="Home Icon"
+                <div
+                className={`IconContainer ${activeIcon === "predicas" ? "active" : ""}`}
+              >
+                <Lottie
+                  options={{
+                    animationData: PredicaIcon,
+                    loop: false,
+                    autoplay: false,
+                  }}
+                  isStopped={activeIcon !== "predicas" || !isPlaying}
+                  width={24}
+                  height={24}
+                  isClickToPauseDisabled
+                  ref={animationRefs.predicas}
                 />
+              </div>
               </div>
               <p>Prédicas</p>
             </div>
           </Link>
           <Link href="/boletin">
-            <div className="ItemMenuContainer">
+            <div onClick={() => handleIconClick("article")} className="ItemMenuContainer">
               <div className="PostProfilePicture">
-                <img src="/assets/icons/news-icon.png" alt="Home Icon" />
+                <div
+                  className={`IconContainer ${activeIcon === "article" ? "active" : ""}`}
+                >
+                  <Lottie
+                    options={{
+                      animationData: ArticleIcon,
+                      loop: false,
+                      autoplay: false,
+                    }}
+                    isStopped={activeIcon !== "article" || !isPlaying}
+                    width={24}
+                    height={24}
+                    isClickToPauseDisabled
+                    ref={animationRefs.article}
+                  />
+                </div>
               </div>
               <p>Boletín</p>
             </div>
@@ -150,7 +250,7 @@ export default function MenuMembers(props) {
           gap: 20px;
           color: var(--secondary-color);
           margin-top: 80px;
-          padding: 20px;
+          padding: 0px 20px;
         }
         .MenuGlobalContainer::-webkit-scrollbar {
           width: 8px;
@@ -177,7 +277,7 @@ export default function MenuMembers(props) {
           display: flex;
           width: 100%;
           max-width: 260px;
-          height: auto;
+          height: fit-content;
           border-radius: 10px;
           padding: 10px 20px;
           gap: 20px;
@@ -209,6 +309,11 @@ export default function MenuMembers(props) {
         .PostProfilePicture img {
           width: auto;
           height: 18px;
+        }
+        #user_profile_picture_container
+        {
+          width: 40px;
+          height: 40px;
         }
         #user_profile_picture {
           width: auto;
