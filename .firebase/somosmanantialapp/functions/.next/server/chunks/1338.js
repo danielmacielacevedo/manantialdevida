@@ -38,6 +38,7 @@ _UserProvider__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.the
 
 
 
+// import NewsIcon from "../../public/assets/icons/animated-icons/NewsIcon.json";
 function MenuMobile() {
     const { user  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(_UserProvider__WEBPACK_IMPORTED_MODULE_4__.UserContext);
     const [isPlaying, setIsPlaying] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
@@ -60,7 +61,8 @@ function MenuMobile() {
         home: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null),
         blog: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null),
         predicas: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null),
-        article: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null)
+        article: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null),
+        news: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null)
     };
     (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(()=>{
         Object.keys(animationRefs).forEach((key)=>{
@@ -171,6 +173,7 @@ function MenuMobile() {
                                         loop: false,
                                         autoplay: false
                                     },
+                                    className: "LottieIconBoletin",
                                     isStopped: activeIcon !== "article" || !isPlaying,
                                     width: 24,
                                     height: 24,

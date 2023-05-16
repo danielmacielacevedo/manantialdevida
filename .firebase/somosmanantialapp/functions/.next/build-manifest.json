@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/w3Sod3ZVOVpDipHBw5bdx/_buildManifest.js",
-    "static/w3Sod3ZVOVpDipHBw5bdx/_ssgManifest.js"
+    "static/fc0Sq2yyOHIUx4EeBkkhJ/_buildManifest.js",
+    "static/fc0Sq2yyOHIUx4EeBkkhJ/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -446,7 +446,7 @@
       "static/chunks/framework-3671d8951bf44e4e.js",
       "static/chunks/main-754f456e4536651e.js",
       "static/css/e450baf3ac16b0af.css",
-      "static/chunks/pages/_app-e07d5fa096afb6f7.js"
+      "static/chunks/pages/_app-70fd92d5e9ee1639.js"
     ],
     "/_error": [
       "static/chunks/webpack-df42a563e0d74512.js",
@@ -656,7 +656,7 @@
       "static/chunks/webpack-df42a563e0d74512.js",
       "static/chunks/framework-3671d8951bf44e4e.js",
       "static/chunks/main-754f456e4536651e.js",
-      "static/chunks/pages/components/MenuMembersGlobal-2090e6d6dce513b5.js"
+      "static/chunks/pages/components/MenuMembersGlobal-e43b27b965f0cde7.js"
     ],
     "/components/MenuMobile": [
       "static/chunks/webpack-df42a563e0d74512.js",
@@ -894,6 +894,12 @@
       "static/chunks/main-754f456e4536651e.js",
       "static/chunks/pages/miembros-8f1a8a1069990095.js"
     ],
+    "/miembros/calendario-audio": [
+      "static/chunks/webpack-df42a563e0d74512.js",
+      "static/chunks/framework-3671d8951bf44e4e.js",
+      "static/chunks/main-754f456e4536651e.js",
+      "static/chunks/pages/miembros/calendario-audio-100a6c12ee337e93.js"
+    ],
     "/miembros/calendario-maestros": [
       "static/chunks/webpack-df42a563e0d74512.js",
       "static/chunks/framework-3671d8951bf44e4e.js",
@@ -928,7 +934,7 @@
       "static/chunks/webpack-df42a563e0d74512.js",
       "static/chunks/framework-3671d8951bf44e4e.js",
       "static/chunks/main-754f456e4536651e.js",
-      "static/chunks/pages/miembros/menu-da0733bf834da4eb.js"
+      "static/chunks/pages/miembros/menu-80bee78b7c8873b6.js"
     ],
     "/miembros/recursos/logotipo": [
       "static/chunks/webpack-df42a563e0d74512.js",

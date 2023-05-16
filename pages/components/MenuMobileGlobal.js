@@ -3,10 +3,10 @@ import { useState, useContext, useEffect, useRef } from "react";
 import { UserContext } from "../UserProvider";
 import Lottie from "react-lottie";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
-// import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
+import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
 import PredicaIcon from "../../public/assets/icons/animated-icons/PredicaIcon.json";
 import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
-import NewsIcon from "../../public/assets/icons/animated-icons/NewsIcon.json";
+// import NewsIcon from "../../public/assets/icons/animated-icons/NewsIcon.json";
 
 export default function MenuMobile() {
   const { user } = useContext(UserContext);
@@ -76,20 +76,20 @@ export default function MenuMobile() {
 
           <Link className="BottomMenuButton" href="/blog">
             <div
-              className={`IconContainer ${activeIcon === "article" ? "active" : ""}`}
-              onClick={() => handleIconClick("article")}
+              className={`IconContainer ${activeIcon === "blog" ? "active" : ""}`}
+              onClick={() => handleIconClick("blog")}
             >
               <Lottie
                 options={{
-                  animationData: ArticleIcon,
+                  animationData: BlogIcon,
                   loop: false,
                   autoplay: false,
                 }}
-                isStopped={activeIcon !== "article" || !isPlaying}
+                isStopped={activeIcon !== "blog" || !isPlaying}
                 width={24}
                 height={24}
                 isClickToPauseDisabled
-                ref={animationRefs.article}
+                ref={animationRefs.blog}
               />
               <p>Blog</p>
             </div>
@@ -118,20 +118,21 @@ export default function MenuMobile() {
 
           <Link className="BottomMenuButton" href="/boletin">
             <div
-              className={`IconContainer ${activeIcon === "news" ? "active" : ""}`}
-              onClick={() => handleIconClick("news")}
+              className={`IconContainer ${activeIcon === "article" ? "active" : ""}`}
+              onClick={() => handleIconClick("article")}
             >
               <Lottie
                 options={{
-                  animationData: NewsIcon,
+                  animationData: ArticleIcon,
                   loop: false,
                   autoplay: false,
                 }}
-                isStopped={activeIcon !== "news" || !isPlaying}
+                className="LottieIconBoletin"
+                isStopped={activeIcon !== "article" || !isPlaying}
                 width={24}
                 height={24}
                 isClickToPauseDisabled
-                ref={animationRefs.news}
+                ref={animationRefs.article}
               />
               <p>Boletín</p>
             </div>
