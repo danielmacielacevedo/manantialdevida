@@ -66,9 +66,10 @@ export default function ButtonDayList({ articles, filterDay }) {
           border-radius: 10px;
           justify-content: center;
           font-size: 12px;
-          background: var(--light-grey);
+          background: var(--manantial-color);
           color: var(--secondary-color);
           transition: 0.6s;
+          {/* background: var(--light-grey); */}
         }
         .ButtonDayListContainer:hover {
           background: var(--secondary-color);

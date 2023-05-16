@@ -8,7 +8,7 @@ exports.modules = {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Header)
+/* harmony export */   "default": () => (/* binding */ HeaderGeneral)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import EntrarButton from "./EntrarButton";
-function Header() {
+function HeaderGeneral() {
     const menuButtonRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(null);
     const menuContentRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(null);
     function handleBurgerClick() {

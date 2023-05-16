@@ -7,6 +7,34 @@ export default function AllPost() {
         <div className="PostContainer">
           <PostComponent
             autor="Manantial de Vida"
+            mensaje=""
+            novedad=""
+            alerta="Si aún no lo haces, crea una cuenta para no perder tu acceso como miembro autorizado y seguir viendo el calendario."
+            registro="true"
+            link="/miembros/calendario-maestros/mayo"
+            titleLink=""
+            picture="/assets/light_logo_manantial.png"
+            dia="16"
+            mes="05"
+            año="2023"
+            hora="09"
+          />
+
+          <PostComponent
+            autor="Manantial de Vida"
+            mensaje="📆 👈"
+            novedad="Ya puedes filtrar el calendario por día."
+            link="/miembros/calendario-maestros/mayo"
+            titleLink="Ver calendario"
+            picture="/assets/light_logo_manantial.png"
+            dia="14"
+            mes="05"
+            año="2023"
+            hora="23"
+          />
+
+          <PostComponent
+            autor="Manantial de Vida"
             mensaje="Ya está disponible el calendario con las actividades de cada sociedad."
             novedad=""
             link="/miembros/calendario-sociedades"

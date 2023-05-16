@@ -7,7 +7,7 @@ export default function Miembros() {
   return (
     <>
       <Head>
-        <title>Panel Miembros | Manantial</title>
+        <title>Notificaciones Miembros | Manantial</title>
         <meta
           name="description"
           content="Panel para Miembros de Manantial de Vida."

@@ -1,5 +1,6 @@
 :root {
   --manantial-color: #0084ff;
+  --alert-color: #ff0000;
   --manantial-transparent: #0084ffb0;
   --primary-color: #fff;
   --secondary-color: #000;
@@ -123,9 +124,8 @@ p {
   backdrop-filter: blur(10px);
 }
 .NavFull.NavFullMembers {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  /* border-bottom: 0.5px solid var(--light-grey); */
 }
 .NavFull img {
   width: auto;
@@ -409,7 +409,7 @@ p {
   height: auto;
   background: var(--primary-color);
   /* padding: 0 20px; */
-  gap: 20px;
+  /* gap: 20px; */
   justify-content: center;
 }
 .PageContentPadding {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SmallNovedad from "./SmallNovedad";
-import { useState, useContext, useEffect, useRef } from "react";
+import { useState, useContext, useEffect, useRef, createContext } from "react";
 import { UserContext } from "../UserProvider";
 import Lottie from "react-lottie";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
@@ -12,17 +12,17 @@ import HumanIcon from "../../public/assets/icons/animated-icons/HumanIcon.json";
 import DirectionsIcon from "../../public/assets/icons/animated-icons/DirectionsIcon.json";
 import FolderIcon from "../../public/assets/icons/animated-icons/FolderIcon.json";
 
+export const MenuContext = createContext();
+
 export default function MenuMembers(props) {
   const { user } = useContext(UserContext);
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
-  const [iconColor, setIconColor] = useState("#515151");
 
   const handleIconClick = (iconName) => {
     setIsPlaying(true);
     setActiveIcon(iconName);
-    setIconColor("#fff"); // Cambiar el color al hacer clic
   };
 
   useEffect(() => {
@@ -30,7 +30,6 @@ export default function MenuMembers(props) {
     return () => {
       setIsPlaying(false);
       setActiveIcon(null);
-      setIconColor("#515151"); // Restaurar el color por defecto
     };
   }, []);
 
@@ -50,6 +49,8 @@ export default function MenuMembers(props) {
     directions: useRef(null),
     
     folder: useRef(null),
+
+    nofify: useRef(null),
   };
 
   useEffect(() => {
@@ -63,8 +64,18 @@ export default function MenuMembers(props) {
     });
   }, [isPlaying, activeIcon]);
 
+  const menuContextValues = {
+    handleIconClick,
+    activeIcon,
+    isPlaying,
+    animationRefs
+  };
+
   return (
     <>
+    <MenuContext.Provider
+      value={{ menuContextValues }}
+    >
       {user && user.email && (
         <div className="theme MenuGlobalContainer">
           <h1>Menu</h1>
@@ -352,6 +363,7 @@ export default function MenuMembers(props) {
           </Link>
         </div>
       )}
+      </MenuContext.Provider>
       <style jsx>{`
         .MenuGlobalContainer {
           top: 0;

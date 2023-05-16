@@ -48,24 +48,24 @@ function ButtonDayList({ articles , filterDay  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                className: "jsx-b5ecedca3b4bbe6",
+                className: "jsx-c68d59382ad24e4a",
                 children: "Filtrar por d\xeda:"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "jsx-b5ecedca3b4bbe6" + " " + "ButtonDays",
+                className: "jsx-c68d59382ad24e4a" + " " + "ButtonDays",
                 children: days && days.length > 0 ? days.map((day)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         type: "button",
                         onClick: ()=>handleDayClick(day),
-                        className: "jsx-b5ecedca3b4bbe6" + " " + `ButtonDayListContainer btn-day ${selectedDay === day ? "active" : ""}`,
+                        className: "jsx-c68d59382ad24e4a" + " " + `ButtonDayListContainer btn-day ${selectedDay === day ? "active" : ""}`,
                         children: day
                     }, day)) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                    className: "jsx-b5ecedca3b4bbe6",
+                    className: "jsx-c68d59382ad24e4a",
                     children: "Loading..."
                 })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
-                id: "b5ecedca3b4bbe6",
-                children: ".ButtonDays.jsx-b5ecedca3b4bbe6{display:grid;grid-template-columns:repeat(4,1fr);width:100%;gap:20px}.ButtonDayListContainer.jsx-b5ecedca3b4bbe6{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:100%;padding:10px;cursor:pointer;border:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:12px;background:var(--light-grey);color:var(--secondary-color);-webkit-transition:.6s;-moz-transition:.6s;-o-transition:.6s;transition:.6s}.ButtonDayListContainer.jsx-b5ecedca3b4bbe6:hover{background:var(--secondary-color);color:var(--primary-color)}"
+                id: "c68d59382ad24e4a",
+                children: ".ButtonDays.jsx-c68d59382ad24e4a{display:grid;grid-template-columns:repeat(4,1fr);width:100%;gap:20px}.ButtonDayListContainer.jsx-c68d59382ad24e4a{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;max-width:100%;padding:10px;cursor:pointer;border:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:12px;background:var(--manantial-color);color:var(--secondary-color);-webkit-transition:.6s;-moz-transition:.6s;-o-transition:.6s;transition:.6s;{}}.ButtonDayListContainer.jsx-c68d59382ad24e4a:hover{background:var(--secondary-color);color:var(--primary-color)}"
             })
         ]
     });

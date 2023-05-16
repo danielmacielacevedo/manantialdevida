@@ -28,6 +28,32 @@ function AllPost() {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
                             autor: "Manantial de Vida",
+                            mensaje: "",
+                            novedad: "",
+                            alerta: "Si a\xfan no lo haces, crea una cuenta para no perder tu acceso como miembro autorizado y seguir viendo el calendario.",
+                            registro: "true",
+                            link: "/miembros/calendario-maestros/mayo",
+                            titleLink: "",
+                            picture: "/assets/light_logo_manantial.png",
+                            dia: "16",
+                            mes: "05",
+                            año: "2023",
+                            hora: "09"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                            autor: "Manantial de Vida",
+                            mensaje: "\uD83D\uDCC6 \uD83D\uDC48",
+                            novedad: "Ya puedes filtrar el calendario por d\xeda.",
+                            link: "/miembros/calendario-maestros/mayo",
+                            titleLink: "Ver calendario",
+                            picture: "/assets/light_logo_manantial.png",
+                            dia: "14",
+                            mes: "05",
+                            año: "2023",
+                            hora: "23"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_post_PostComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                            autor: "Manantial de Vida",
                             mensaje: "Ya est\xe1 disponible el calendario con las actividades de cada sociedad.",
                             novedad: "",
                             link: "/miembros/calendario-sociedades",

@@ -9,6 +9,7 @@ exports.modules = {
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MenuContext": () => (/* binding */ MenuContext),
 /* harmony export */   "default": () => (/* binding */ MenuMembers)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
@@ -48,22 +49,20 @@ _UserProvider__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.the
 
 
 
+const MenuContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_4__.createContext)();
 function MenuMembers(props) {
     const { user  } = (0,react__WEBPACK_IMPORTED_MODULE_4__.useContext)(_UserProvider__WEBPACK_IMPORTED_MODULE_5__.UserContext);
     const [isPlaying, setIsPlaying] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
     const [activeIcon, setActiveIcon] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(null);
-    const [iconColor, setIconColor] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)("#515151");
     const handleIconClick = (iconName)=>{
         setIsPlaying(true);
         setActiveIcon(iconName);
-        setIconColor("#fff"); // Cambiar el color al hacer clic
     };
     (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>{
         // Detener la animación cuando el componente se desmonte
         return ()=>{
             setIsPlaying(false);
             setActiveIcon(null);
-            setIconColor("#515151"); // Restaurar el color por defecto
         };
     }, []);
     const animationRefs = {
@@ -77,7 +76,8 @@ function MenuMembers(props) {
         calendar4: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null),
         human: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null),
         directions: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null),
-        folder: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null)
+        folder: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null),
+        nofify: (0,react__WEBPACK_IMPORTED_MODULE_4__.useRef)(null)
     };
     (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>{
         Object.keys(animationRefs).forEach((key)=>{
@@ -92,400 +92,411 @@ function MenuMembers(props) {
         isPlaying,
         activeIcon
     ]);
+    const menuContextValues = {
+        handleIconClick,
+        activeIcon,
+        isPlaying,
+        animationRefs
+    };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            user && user.email && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "jsx-6db2c568b46db2d4" + " " + "theme MenuGlobalContainer",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                        className: "jsx-6db2c568b46db2d4",
-                        children: "Menu"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        href: "/",
-                        className: "jsx-6db2c568b46db2d4",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    id: "user_profile_picture_container",
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        referrerPolicy: "no-referrer",
-                                        id: "user_profile_picture",
-                                        src: user.picture,
-                                        alt: "Home Icon",
-                                        className: "jsx-6db2c568b46db2d4"
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "InfoUserMenuGlobal",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        className: "jsx-6db2c568b46db2d4",
-                                        children: user.name
-                                    })
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        className: "InicioDesktop",
-                        href: "/",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("home"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "home" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_HomeIcon_json__WEBPACK_IMPORTED_MODULE_7__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "home" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.home
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(MenuContext.Provider, {
+                value: {
+                    menuContextValues
+                },
+                children: user && user.email && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "jsx-6db2c568b46db2d4" + " " + "theme MenuGlobalContainer",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                            className: "jsx-6db2c568b46db2d4",
+                            children: "Menu"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            href: "/",
+                            className: "jsx-6db2c568b46db2d4",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        id: "user_profile_picture_container",
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                            referrerPolicy: "no-referrer",
+                                            id: "user_profile_picture",
+                                            src: user.picture,
+                                            alt: "Home Icon",
+                                            className: "jsx-6db2c568b46db2d4"
                                         })
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Inicio"
-                                })
-                            ]
-                        })
-                    }),
-                    "Accesos directos",
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        href: "/blog",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("blog"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "blog" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_BlogIcon_json__WEBPACK_IMPORTED_MODULE_8__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "blog" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.blog
-                                        })
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Blog"
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        href: "/predicas",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("predicas"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "predicas" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_PredicaIcon_json__WEBPACK_IMPORTED_MODULE_9__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "predicas" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.predicas
-                                        })
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Pr\xe9dicas"
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        href: "/boletin",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("article"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "article" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_ArticleIcon_json__WEBPACK_IMPORTED_MODULE_10__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "article" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.article
-                                        })
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Bolet\xedn"
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "jsx-6db2c568b46db2d4" + " " + "PrivateContainerMenu",
-                        children: [
-                            "Privados",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/miembros/calendario-maestros",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    onClick: ()=>handleIconClick("calendar1"),
-                                    className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar1" ? "active" : ""}`,
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                                    options: {
-                                                        animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
-                                                        loop: false,
-                                                        autoplay: false
-                                                    },
-                                                    isStopped: activeIcon !== "calendar1" || !isPlaying,
-                                                    width: 24,
-                                                    height: 24,
-                                                    isClickToPauseDisabled: true,
-                                                    ref: animationRefs.calendar1
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "InfoUserMenuGlobal",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: "jsx-6db2c568b46db2d4",
-                                            children: "Maestros"
+                                            children: user.name
                                         })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/miembros/calendario-sociedades",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    onClick: ()=>handleIconClick("calendar2"),
-                                    className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar2" ? "active" : ""}`,
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                                    options: {
-                                                        animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
-                                                        loop: false,
-                                                        autoplay: false
-                                                    },
-                                                    isStopped: activeIcon !== "calendar2" || !isPlaying,
-                                                    width: 24,
-                                                    height: 24,
-                                                    isClickToPauseDisabled: true,
-                                                    ref: animationRefs.calendar2
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-6db2c568b46db2d4",
-                                            children: "Sociedades"
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/miembros/calendario-audio",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    onClick: ()=>handleIconClick("calendar3"),
-                                    className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar3" ? "active" : ""}`,
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                                    options: {
-                                                        animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
-                                                        loop: false,
-                                                        autoplay: false
-                                                    },
-                                                    isStopped: activeIcon !== "calendar3" || !isPlaying,
-                                                    width: 24,
-                                                    height: 24,
-                                                    isClickToPauseDisabled: true,
-                                                    ref: animationRefs.calendar3
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-6db2c568b46db2d4",
-                                            children: "Audio"
-                                        })
-                                    ]
-                                })
-                            }),
-                            "Guias",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/miembros/tutoriales/como-ser-ujier",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    onClick: ()=>handleIconClick("human"),
-                                    className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "human" ? "active" : ""}`,
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                                    options: {
-                                                        animationData: _public_assets_icons_animated_icons_HumanIcon_json__WEBPACK_IMPORTED_MODULE_12__,
-                                                        loop: false,
-                                                        autoplay: false
-                                                    },
-                                                    isStopped: activeIcon !== "human" || !isPlaying,
-                                                    width: 24,
-                                                    height: 24,
-                                                    isClickToPauseDisabled: true,
-                                                    ref: animationRefs.human
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "jsx-6db2c568b46db2d4",
-                                            children: "Como ser ujier"
-                                        })
-                                    ]
-                                })
+                                    })
+                                ]
                             })
-                        ]
-                    }),
-                    "Calendarios",
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        href: "/actividades",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("calendar4"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar4" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "calendar4" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.calendar4
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            className: "InicioDesktop",
+                            href: "/",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("home"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "home" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_HomeIcon_json__WEBPACK_IMPORTED_MODULE_7__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "home" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.home
+                                            })
                                         })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Inicio"
+                                    })
+                                ]
+                            })
+                        }),
+                        "Accesos directos",
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            href: "/blog",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("blog"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "blog" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_BlogIcon_json__WEBPACK_IMPORTED_MODULE_8__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "blog" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.blog
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Blog"
+                                    })
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            href: "/predicas",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("predicas"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "predicas" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_PredicaIcon_json__WEBPACK_IMPORTED_MODULE_9__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "predicas" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.predicas
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Pr\xe9dicas"
+                                    })
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            href: "/boletin",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("article"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "article" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_ArticleIcon_json__WEBPACK_IMPORTED_MODULE_10__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "article" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.article
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Bolet\xedn"
+                                    })
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "jsx-6db2c568b46db2d4" + " " + "PrivateContainerMenu",
+                            children: [
+                                "Privados",
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    href: "/miembros/calendario-maestros",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        onClick: ()=>handleIconClick("calendar1"),
+                                        className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar1" ? "active" : ""}`,
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                        options: {
+                                                            animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
+                                                            loop: false,
+                                                            autoplay: false
+                                                        },
+                                                        isStopped: activeIcon !== "calendar1" || !isPlaying,
+                                                        width: 24,
+                                                        height: 24,
+                                                        isClickToPauseDisabled: true,
+                                                        ref: animationRefs.calendar1
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "jsx-6db2c568b46db2d4",
+                                                children: "Maestros"
+                                            })
+                                        ]
                                     })
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Actividades"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SmallNovedad__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-                            ]
-                        })
-                    }),
-                    "Como llegar",
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        target: "_blank",
-                        rel: "noreferrer",
-                        href: "https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic",
-                        className: "jsx-6db2c568b46db2d4",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("directions"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "directions" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_DirectionsIcon_json__WEBPACK_IMPORTED_MODULE_13__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "directions" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.directions
-                                        })
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    href: "/miembros/calendario-sociedades",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        onClick: ()=>handleIconClick("calendar2"),
+                                        className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar2" ? "active" : ""}`,
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                        options: {
+                                                            animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
+                                                            loop: false,
+                                                            autoplay: false
+                                                        },
+                                                        isStopped: activeIcon !== "calendar2" || !isPlaying,
+                                                        width: 24,
+                                                        height: 24,
+                                                        isClickToPauseDisabled: true,
+                                                        ref: animationRefs.calendar2
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "jsx-6db2c568b46db2d4",
+                                                children: "Sociedades"
+                                            })
+                                        ]
                                     })
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Ver mapa"
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    href: "/miembros/calendario-audio",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        onClick: ()=>handleIconClick("calendar3"),
+                                        className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar3" ? "active" : ""}`,
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                        options: {
+                                                            animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
+                                                            loop: false,
+                                                            autoplay: false
+                                                        },
+                                                        isStopped: activeIcon !== "calendar3" || !isPlaying,
+                                                        width: 24,
+                                                        height: 24,
+                                                        isClickToPauseDisabled: true,
+                                                        ref: animationRefs.calendar3
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "jsx-6db2c568b46db2d4",
+                                                children: "Audio"
+                                            })
+                                        ]
+                                    })
+                                }),
+                                "Guias",
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    href: "/miembros/tutoriales/como-ser-ujier",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        onClick: ()=>handleIconClick("human"),
+                                        className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "human" ? "active" : ""}`,
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                        options: {
+                                                            animationData: _public_assets_icons_animated_icons_HumanIcon_json__WEBPACK_IMPORTED_MODULE_12__,
+                                                            loop: false,
+                                                            autoplay: false
+                                                        },
+                                                        isStopped: activeIcon !== "human" || !isPlaying,
+                                                        width: 24,
+                                                        height: 24,
+                                                        isClickToPauseDisabled: true,
+                                                        ref: animationRefs.human
+                                                    })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "jsx-6db2c568b46db2d4",
+                                                children: "Como ser ujier"
+                                            })
+                                        ]
+                                    })
                                 })
                             ]
-                        })
-                    }),
-                    "Recursos",
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        href: "/miembros/recursos/logotipo",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            onClick: ()=>handleIconClick("folder"),
-                            className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "folder" ? "active" : ""}`,
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                            options: {
-                                                animationData: _public_assets_icons_animated_icons_FolderIcon_json__WEBPACK_IMPORTED_MODULE_14__,
-                                                loop: false,
-                                                autoplay: false
-                                            },
-                                            isStopped: activeIcon !== "folder" || !isPlaying,
-                                            width: 24,
-                                            height: 24,
-                                            isClickToPauseDisabled: true,
-                                            ref: animationRefs.folder
+                        }),
+                        "Calendarios",
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            href: "/actividades",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("calendar4"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "calendar4" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_CalendarIcon_json__WEBPACK_IMPORTED_MODULE_11__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "calendar4" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.calendar4
+                                            })
                                         })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Actividades"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SmallNovedad__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+                                ]
+                            })
+                        }),
+                        "Como llegar",
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            target: "_blank",
+                            rel: "noreferrer",
+                            href: "https://maps.app.goo.gl/BJ5W33SYbQfQr8cg9?g_st=ic",
+                            className: "jsx-6db2c568b46db2d4",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("directions"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "directions" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_DirectionsIcon_json__WEBPACK_IMPORTED_MODULE_13__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "directions" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.directions
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Ver mapa"
                                     })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: "jsx-6db2c568b46db2d4",
-                                    children: "Logotipos"
-                                })
-                            ]
+                                ]
+                            })
+                        }),
+                        "Recursos",
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            href: "/miembros/recursos/logotipo",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                onClick: ()=>handleIconClick("folder"),
+                                className: "jsx-6db2c568b46db2d4" + " " + "ItemMenuContainer",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "jsx-6db2c568b46db2d4" + " " + "PostProfilePicture",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "jsx-6db2c568b46db2d4" + " " + `IconContainer ${activeIcon === "folder" ? "active" : ""}`,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_lottie__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                options: {
+                                                    animationData: _public_assets_icons_animated_icons_FolderIcon_json__WEBPACK_IMPORTED_MODULE_14__,
+                                                    loop: false,
+                                                    autoplay: false
+                                                },
+                                                isStopped: activeIcon !== "folder" || !isPlaying,
+                                                width: 24,
+                                                height: 24,
+                                                isClickToPauseDisabled: true,
+                                                ref: animationRefs.folder
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "jsx-6db2c568b46db2d4",
+                                        children: "Logotipos"
+                                    })
+                                ]
+                            })
                         })
-                    })
-                ]
+                    ]
+                })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
                 id: "6db2c568b46db2d4",

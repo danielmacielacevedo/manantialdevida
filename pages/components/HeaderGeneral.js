@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRef } from "react";
 // import EntrarButton from "./EntrarButton";
 
-export default function Header() {
+export default function HeaderGeneral() {
   const menuButtonRef = useRef(null);
   const menuContentRef = useRef(null);
 
