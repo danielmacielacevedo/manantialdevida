@@ -5,6 +5,7 @@ import NewsBar from "./components/NewsBar";
 import PredicasBar from "./components/PredicasBar";
 import Footer from "./components/Footer";
 import ManantialServices from "./components/ManantialServices";
+import CoverPredica from "./components/CoverPredica";
 
 export default function Home() {
   return (
@@ -33,7 +34,9 @@ export default function Home() {
         ></link>
       </Head>
       <BackHeader />
-      <Cover />
+      <Cover>
+        <CoverPredica nombre="FranciscoSerrano" indice="2" />
+      </Cover>
       <ManantialServices />
       <NewsBar />
       <PredicasBar />

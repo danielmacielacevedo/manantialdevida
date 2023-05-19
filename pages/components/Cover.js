@@ -1,11 +1,7 @@
-import CoverPredica from "./CoverPredica";
-
-export default function Cover() {
+export default function Cover({ children }) {
   return (
     <>
-      <div className="CoverContainer">
-        <CoverPredica nombre="FranciscoSerrano" indice="2" />
-      </div>
+      <div className="CoverContainer">{children}</div>
       <style jsx>{`
         .CoverContainer {
           display: flex;

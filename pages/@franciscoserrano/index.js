@@ -14,7 +14,7 @@ export default function Predicador() {
       <BackHeader />
       <div className="PageContainer">
         <PredicadorCard nombre={predicador} />
-        <div className="PageContent">
+        <div className="PageContent PageContentWrap">
           <PredicaCard nombre={predicador} indice="10" />
           <PredicaCard nombre={predicador} indice="9" />
           <PredicaCard nombre={predicador} indice="8" />

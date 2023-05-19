@@ -1,5 +1,9 @@
 import Head from "next/head";
-import Page404 from "../components/404";
+import BackHeader from "../components/BackHeader";
+import Cover from "../components/Cover";
+import Footer from "../components/Footer";
+import CoverBlog from "../components/CoverBlog";
+import UltimosBlogs from "../components/Blog/UltimosBlogs";
 
 export default function Home() {
   return (
@@ -10,7 +14,7 @@ export default function Home() {
           name="description"
           content="Porque contigo está el manantial de la vida; En tu luz veremos la luz."
         />
-        <meta property="og:title" content="Inicio | Manantial" />
+        <meta property="og:title" content="Blog | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/" />
         <meta property="og:image" content="/assets/iconApp.jpg" />
         <link rel="apple-touch-icon" href="/assets/iconApp.jpg"></link>
@@ -27,7 +31,12 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <Page404 />
+      <BackHeader />
+      <Cover>
+        <CoverBlog nombre="Manantial" indice="0" />
+      </Cover>
+      <UltimosBlogs />
+      <Footer />
     </div>
   );
 }
