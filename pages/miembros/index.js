@@ -1,7 +1,7 @@
 import Head from "next/head";
 import BackHeader from "../components/BackHeader";
 import BackMenuMobile from "../components/BackMenuMobile";
-import AllPost from "../components/post/AllPost";
+import AllPost from "../components/Post/AllPost";
 
 export default function Miembros() {
   return (

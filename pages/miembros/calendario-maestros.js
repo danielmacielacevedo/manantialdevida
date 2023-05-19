@@ -41,7 +41,7 @@ export default function CalendarioMaestros() {
               <span>MAESTROS</span>
               <p>Selecciona un mes.</p>
             </div>
-            <div className="PageContent">
+            <div className="PageContent PageContentFull">
               <div className="MainCalendario">
                 <article className="CalendarArticle">
                   <div className="GlobalCalendarContainer">

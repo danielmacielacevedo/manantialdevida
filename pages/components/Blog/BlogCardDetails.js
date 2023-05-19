@@ -14,7 +14,7 @@ export default function BlogCard(props) {
       if (cachedData) {
         setCardBlog(cachedData);
       } else {
-        const res = await fetch("/api/detallesVideos");
+        const res = await fetch("/api/detallesBlog");
         const data = await res.json();
         const cardBlogData = data[props.nombre][props.indice];
         cache.set(cacheKey, cardBlogData);
@@ -34,10 +34,10 @@ export default function BlogCard(props) {
             )}
           >
             <div className="PredicadorContainer">
-              <div className="ImageContainer">
-                <img src={cardBlog.image} alt={cardBlog.title} />
-              </div>
               <div className="PredicadorData">
+                <div className="ImageContainer">
+                  <img src={cardBlog.image} alt={cardBlog.title} />
+                </div>
                 <h3>{cardBlog.title}</h3>
                 <div className="InfoReproductor">
                   <div className="ProfilePicture">
@@ -63,42 +63,43 @@ export default function BlogCard(props) {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: auto;
+          height: 100%;
           border-radius: 20px;
         }
         .PredicadorContainer {
           display: flex;
+          flex-direction: column;
           width: 100%;
           height: auto;
         }
         .ImageContainer {
           display: flex;
           width: 100%;
-          height: 160px;
+          height: 100%;
           justify-content: center;
           align-items: center;
         }
         .ImageContainer img {
           display: flex;
           width: 100%;
-          height: 100%;
+          height: auto;
           object-fit: cover;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           justify-self: center;
           align-self: center;
-          border-radius: 20px 0 0 20px;
+          border-radius: 10px;
         }
         .PredicadorData {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: auto;
+          height: 100%;
           justify-content: center;
           align-items: flex-start;
           text-align: left;
-          border-radius: 0 20px 20px 0;
+          border-radius: 10px;
           padding: 20px;
           gap: 10px;
           font-size: 12px;
@@ -114,8 +115,8 @@ export default function BlogCard(props) {
         }
         .InfoReproductor {
           display: flex;
-          width: 100;
-          height: auto;
+          width: 100%;
+          height: 100%;
           justify-content: center;
           align-items: center;
           gap: 10px;
@@ -146,6 +147,9 @@ export default function BlogCard(props) {
         @media only screen and (max-width: 860px) {
           .LinkContainer {
             max-width: none;
+          }
+          .PredicadorData {
+            width: 200px;
           }
           .DetailsInfoReproductor h4 {
             font-size: 11px;

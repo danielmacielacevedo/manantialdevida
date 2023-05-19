@@ -328,7 +328,8 @@ export default function detallesVideos(req, res) {
       hora: "13",
       minuto: "00",
       desc: "Predicación Manantial de Vida",
-      image: "/assets/predicadores/francisco-serrano/la-importancia-de-lo-que-no-se-ve.jpg",
+      image:
+        "/assets/predicadores/francisco-serrano/la-importancia-de-lo-que-no-se-ve.jpg",
       url: "/la-importancia-de-lo-que-no-se-ve",
       profileURL: "/@franciscoserrano",
       embed: "qZ8C3tjW_xM",
@@ -595,6 +596,24 @@ export default function detallesVideos(req, res) {
       url: "/getsemani",
       profileURL: "/@veliaacevedo",
       embed: "4Id_ZH0aRIM",
+    },
+    {
+      title: "Una respuesta inesperada",
+      autor: "Velia Acevedo",
+      picture: "/assets/predicadores/velia-acevedo.png",
+      date: "17 MAYO 2023",
+      dia: "17",
+      mes: "05",
+      año: "2023",
+      hora: "19",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/velia-acevedo/una-respuesta-inesperada.jpg",
+      imageHD:
+        "/assets/predicadores/velia-acevedo/una-respuesta-inesperadaHD.jpg",
+      url: "/una-respuesta-inesperada",
+      profileURL: "/@veliaacevedo",
+      embed: "sUG65_2U1H8",
     },
   ];
 

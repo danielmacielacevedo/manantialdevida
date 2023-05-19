@@ -1,4 +1,4 @@
-import PostComponent from "../post/PostComponent";
+import PostComponent from "./PostComponent";
 
 export default function AllPost() {
   return (
@@ -85,6 +85,11 @@ export default function AllPost() {
         </div>
       </div>
       <style jsx>{`
+        .AllPostContainer {
+          display: flex;
+          justify-content: center;
+          padding: 0 20px;
+        }
         .PostContainer {
           display: flex;
           width: 100%;

@@ -80,14 +80,26 @@ export default function PredicadorCard(props) {
           justify-content: center;
           align-items: center;
           text-align: center;
-          // padding: 20px;
           font-size: 12px;
           background-color: var(--light-grey);
           color: var(--primary-color);
           border-radius: 10px;
+          padding: 0 10px;
         }
         .PredicadorData h3 {
           font-weight: 700;
+        }
+        @media only screen and (max-width: 860px) {
+          .PredicadorData h3 {
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+        @media only screen and (max-width: 380px) {
+          .ImageContainer img {
+            width: 100%;
+            object-fit: cover;
+          }
         }
       `}</style>
     </>

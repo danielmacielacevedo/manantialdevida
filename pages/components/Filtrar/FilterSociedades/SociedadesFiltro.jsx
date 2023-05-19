@@ -36,7 +36,7 @@ export default function MaestrosFiltro(props) {
     }
   };
 
-  const categories = ["Todos", "Damas", "Niños", "Jóvenes", "Varones"];
+  const categories = ["Damas", "Niños", "Jóvenes", "Varones"];
 
   return (
     <>

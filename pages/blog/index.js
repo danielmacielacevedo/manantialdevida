@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
       <BackHeader />
       <Cover>
-        <CoverBlog nombre="Manantial" indice="0" />
+        <CoverBlog nombre="Manantial" blog="0" />
       </Cover>
       <UltimosBlogs />
       <Footer />

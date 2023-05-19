@@ -27,6 +27,40 @@ export default function detallesVideos(req, res) {
       profileURL: "/blog",
       embed: "",
     },
+
+    {
+      title: "Pan",
+      autor: "Manantial de Vida",
+      picture: "/assets/profile-picture.png",
+      date: "01 JUNIO 2023",
+      dia: "01",
+      mes: "06",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Guia ujieres Manantial de Vida",
+      image: "/assets/blog/pan.jpg",
+      url: "/",
+      profileURL: "/blog",
+      embed: "",
+    },
+
+    {
+      title: "Sabiduria",
+      autor: "Manantial de Vida",
+      picture: "/assets/profile-picture.png",
+      date: "01 JUNIO 2023",
+      dia: "01",
+      mes: "06",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Guia ujieres Manantial de Vida",
+      image: "/assets/blog/sabiduria.jpg",
+      url: "/",
+      profileURL: "/blog",
+      embed: "",
+    },
   ];
 
   const data = {

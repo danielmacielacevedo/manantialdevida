@@ -10,7 +10,7 @@ export default function ButtonList({ categories, filterCategory }) {
               onClick={() => filterCategory(category)}
               key={category}
             >
-              {category}
+              <span>{category}</span>
             </button>
           ))
         ) : (
@@ -41,7 +41,7 @@ export default function ButtonList({ categories, filterCategory }) {
         .ButtonListContainer:hover {
           background: var(--secondary-color);
           color: var(--primary-color);
-        }
+        } 
       `}</style>
     </>
   );

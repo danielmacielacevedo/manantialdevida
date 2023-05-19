@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <BackHeader />
       <Cover>
-        <CoverPredica nombre="FranciscoSerrano" indice="2" />
+        <CoverPredica nombre="VeliaAcevedo" indice="1" />
       </Cover>
       <ManantialServices />
       <NewsBar />

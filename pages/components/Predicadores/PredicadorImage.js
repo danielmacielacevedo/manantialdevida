@@ -52,6 +52,12 @@ export default function PredicadorImage(props) {
           justify-self: center;
           align-self: center;
         }
+        @media only screen and (max-width: 380px) {
+          .ImageContainer img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
       `}</style>
     </>
   );

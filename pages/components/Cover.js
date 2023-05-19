@@ -29,6 +29,12 @@ export default function Cover({ children }) {
             width: 300px;
           }
         }
+
+        @media only screen and (max-width: 380px) {
+          .CoverContainer {
+            height: 350px;
+          }
+        }
       `}</style>
     </>
   );

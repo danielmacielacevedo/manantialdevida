@@ -50,7 +50,7 @@ export default function MonthEvents() {
             <h3>Servicio Manantial</h3>
             <img src="/assets/predicadores/pastora-dina/en-mi-angustia.jpg" />
             <div>
-              <p>Todos los domingos</p>
+              <h3>DOMINGOS</h3>
               <h2>11:30 AM</h2>
               <EventCountdown eventDate={fechaDomingo} />
             </div>
@@ -61,7 +61,7 @@ export default function MonthEvents() {
             <h3>Servicio de Enseñanza</h3>
             <img src="/assets/predicadores/pastor-isaac/de-donde-vienes.jpg" />
             <div>
-              <p>Todos los miércoles</p>
+              <h3>MIÉRCOLES</h3>
               <h2>7:00 PM</h2>
               <EventCountdown eventDate={fechaMiercoles} />
             </div>
@@ -72,7 +72,7 @@ export default function MonthEvents() {
             <h3>Noche de Oración</h3>
             <img src="/assets/predicadores/flor-fernandez/metamorfosis-del-alma.jpg" />
             <div>
-              <p id="info">Todos los viernes</p>
+              <h3 id="info">VIERNES</h3>
               <h2>8:00 PM</h2>
               <EventCountdown eventDate={fechaViernes} />
             </div>
@@ -109,7 +109,7 @@ export default function MonthEvents() {
           flex: 1;
           width: 100%;
           height: auto;
-          gap: 10px;
+          gap: 20px;
           align-items: center;
           padding: 20px;
           border-radius: 10px;
@@ -121,6 +121,9 @@ export default function MonthEvents() {
           max-height: 180px;
           object-fit: cover;
           border-radius: 10px;
+        }
+        .ArticleContainer h2 {
+          font-size: 38px;
         }
         .ArticleContainer p {
           font-size: 16px;
@@ -137,6 +140,14 @@ export default function MonthEvents() {
         @media only screen and (max-width: 860px) {
           .MonthEventsContent {
             flex-direction: column;
+          }
+          .ArticleContainer h2 {
+            font-size: 60px;
+          }
+        }
+        @media only screen and (max-width: 380px) {
+          .ArticleContainer h2 {
+            font-size: 50px;
           }
         }
       `}</style>

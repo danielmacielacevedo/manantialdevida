@@ -45,7 +45,8 @@ export default function CoverPredica(props) {
         </div>
         <div className="CoverSectionsContainer">
           <section className="LeftSection">
-            <h5>Última predicación</h5>
+            <h5>ÚLTIMA PREDICACIÓN</h5>
+            {/* <h5>Última predicación</h5> */}
             <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
               <h1>{coverInfo.title}</h1>
             </Link>
@@ -77,7 +78,7 @@ export default function CoverPredica(props) {
           </section>
           <section className="RightSection">
             <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
-              <img src={coverInfo.image} />
+              <img src={coverInfo.imageHD} />
             </Link>
           </section>
         </div>
@@ -100,7 +101,10 @@ export default function CoverPredica(props) {
           color: var(--secondary-color);
         }
         .CoverPredicaContainer h1 {
-          font-size: 50px;
+          font-size: 70px;
+        }
+        .CoverPredicaContainer h5 {
+          font-size: 22px;
         }
         .CoverBackground {
           position: absolute;
@@ -121,27 +125,45 @@ export default function CoverPredica(props) {
           text-align: left;
           border-radius: 10px;
           overflow: hidden;
-          backdrop-filter: blur(10px);
+          backdrop-filter: blur(100px);
         }
         .LeftSection {
           display: flex;
           flex-direction: column;
+          width: 100%;
+          height: 100%;
+          justify-content: space-between;
           gap: 20px;
           padding: 20px;
         }
         .RightSection {
           display: flex;
-          padding-right: 20px;
+          width: 90%;
+          height: 100%;
+          padding: 20px;
+          justify-content: end;
+          align-items: center;
+        }
+         {
+          /* .RightSection img {
+          width: 100%;
+          max-height: 400px;
+          border-radius: 10px;
+          overflow: hidden;
+        } */
         }
         .RightSection img {
           width: 100%;
-          max-height: 300px;
+          height: 100vh;
+          max-height: 400px;
           border-radius: 10px;
           overflow: hidden;
+          object-fit: cover;
         }
         .ButtonsCoverPredica {
           display: flex;
           width: 100%;
+          min-width: 364px;
           height: fit-content;
           gap: 20px;
           justify-content: flex-start;
@@ -208,6 +230,10 @@ export default function CoverPredica(props) {
           .RightSection {
             display: none;
           }
+          .LeftSection {
+            height: 100%;
+            justify-content: space-between;
+          }
         }
         @media only screen and (max-width: 860px) {
           .RightSection {
@@ -217,7 +243,10 @@ export default function CoverPredica(props) {
             height: 450px;
           }
           .CoverPredicaContainer h1 {
-            font-size: 50px;
+            font-size: 58px;
+          }
+          .CoverPredicaContainer h5 {
+            font-size: 22px;
           }
           .InfoReproductor {
              {
@@ -227,6 +256,18 @@ export default function CoverPredica(props) {
           .ButtonsCoverPredica {
             flex-direction: column;
             gap: 30px;
+          }
+        }
+        @media only screen and (max-width: 380px) {
+          .CoverPredicaContainer h1 {
+            font-size: 40px;
+          }
+          .CoverPredicaContainer h5 {
+            font-size: 16px;
+          }
+          .CoverSectionsContainer,
+          #ImageCoverPredica {
+            height: 350px;
           }
         }
       `}</style>

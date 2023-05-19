@@ -65,7 +65,7 @@ h3 {
   font-size: 16px;
   /* font-family: 'Noto Serif Display', serif; */
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   color: var(--secondary-color);
 }
 h4 {
@@ -417,6 +417,12 @@ p {
   flex-wrap: wrap;
   gap: 20px;
 }
+.PageContentFull {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .PageContentPadding {
   display: flex;
   flex-direction: column;
@@ -450,7 +456,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
+  /* max-width: 700px; */
   height: auto;
 }
 .TableContainer {
