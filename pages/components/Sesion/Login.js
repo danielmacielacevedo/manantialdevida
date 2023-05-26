@@ -1,28 +1,17 @@
-// import React, { useContext } from "react";
-// import { UserContext } from "../../UserProvider";
 import Button from "../Button";
 import Link from "next/link";
 import { loginWithGoogle } from "../../../firebase/client";
 
 export default function Entrar() {
-  // const { user, setUser } = useContext(UserContext);
-
   const handleClickGoogle = () => {
-    loginWithGoogle()
-      // .then((user) => {
-      //   const { name, email, id, picture } = user;
-      //   setUser(user);
-      //   window.location.reload(); 
-      // })
-      .catch((err) => {
-        console.log(err);
-      });
+    loginWithGoogle().catch((err) => {
+      console.log(err);
+    });
   };
 
   return (
     <>
       <div className="EntrarContainer">
-        {/* <div className="EntrarContentContainer"> */}
         <div className="EntrarContent">
           <img src="/assets/light_logo_manantial.png" />
           <h1>Entrar</h1>
@@ -42,7 +31,6 @@ export default function Entrar() {
             </i>{" "}
           </span>
         </div>
-        {/* </div> */}
       </div>
       <style jsx>{`
         .EntrarContainer {

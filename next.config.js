@@ -1,6 +1,9 @@
-const serverStatic = require("serve-static");
+// const serverStatic = require("serve-static");
 
 module.exports = {
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
   async headers() {
     return [

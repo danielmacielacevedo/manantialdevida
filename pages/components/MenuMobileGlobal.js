@@ -13,12 +13,12 @@ export default function MenuMobile() {
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
-  const [iconColor, setIconColor] = useState("#515151");
+  // const [iconColor, setIconColor] = useState("#515151");
 
   const handleIconClick = (iconName) => {
     setIsPlaying(true);
     setActiveIcon(iconName);
-    setIconColor("#fff"); // Cambiar el color al hacer clic
+    // setIconColor("#fff"); // Cambiar el color al hacer clic
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function MenuMobile() {
     return () => {
       setIsPlaying(false);
       setActiveIcon(null);
-      setIconColor("#515151"); // Restaurar el color por defecto
+      // setIconColor("#515151"); // Restaurar el color por defecto
     };
   }, []);
 
@@ -55,7 +55,9 @@ export default function MenuMobile() {
         <div className="BottomMenuContainer">
           <Link className="BottomMenuButton" href="/">
             <div
-              className={`IconContainer ${activeIcon === "home" ? "active" : ""}`}
+              className={`IconContainer ${
+                activeIcon === "home" ? "active" : ""
+              }`}
               onClick={() => handleIconClick("home")}
             >
               <Lottie
@@ -76,7 +78,9 @@ export default function MenuMobile() {
 
           <Link className="BottomMenuButton" href="/blog">
             <div
-              className={`IconContainer ${activeIcon === "blog" ? "active" : ""}`}
+              className={`IconContainer ${
+                activeIcon === "blog" ? "active" : ""
+              }`}
               onClick={() => handleIconClick("blog")}
             >
               <Lottie
@@ -94,10 +98,12 @@ export default function MenuMobile() {
               <p>Blog</p>
             </div>
           </Link>
-  
+
           <Link className="BottomMenuButton" href="/predicas">
             <div
-              className={`IconContainer ${activeIcon === "predicas" ? "active" : ""}`}
+              className={`IconContainer ${
+                activeIcon === "predicas" ? "active" : ""
+              }`}
               onClick={() => handleIconClick("predicas")}
             >
               <Lottie
@@ -118,7 +124,9 @@ export default function MenuMobile() {
 
           <Link className="BottomMenuButton" href="/boletin">
             <div
-              className={`IconContainer ${activeIcon === "article" ? "active" : ""}`}
+              className={`IconContainer ${
+                activeIcon === "article" ? "active" : ""
+              }`}
               onClick={() => handleIconClick("article")}
             >
               <Lottie
@@ -137,10 +145,12 @@ export default function MenuMobile() {
               <p>Boletín</p>
             </div>
           </Link>
-  
+
           <Link className="BottomMenuButton" href="/miembros/menu">
             <div
-              className={`IconContainer ${activeIcon === "menu" ? "active" : ""}`}
+              className={`IconContainer ${
+                activeIcon === "menu" ? "active" : ""
+              }`}
               onClick={() => handleIconClick("menu")}
             >
               <img
@@ -167,7 +177,7 @@ export default function MenuMobile() {
           align-items: center;
           background-color: #000000b1;
           backdrop-filter: blur(10px);
-          {
+           {
             /* border-top: 0.5px solid var(--light-grey); */
           }
         }
@@ -197,4 +207,3 @@ export default function MenuMobile() {
     </>
   );
 }
-

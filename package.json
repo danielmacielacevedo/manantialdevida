@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node build.js",
+    "build": "next build",
     "fixlint": "eslint . --fix",
     "start": "next start",
     "lint": "next lint",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "file-saver": "^2.0.5",
-    "firebase": "^9.21.0",
+    "firebase": "9.22.1",
     "lord-icon-element": "^4.1.1",
     "lottie-web": "^5.11.0",
     "moment": "^2.29.4",
