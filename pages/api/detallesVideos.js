@@ -168,6 +168,24 @@ export default function detallesVideos(req, res) {
       profileURL: "/@pastoradina",
       embed: "EvNvGzqYkJI",
     },
+
+    {
+      title: "¿Quieres ser libre?",
+      autor: "Pastora Dina Campos",
+      picture: "/assets/predicadores/pastora-dina.png",
+      date: "30 ABRIL 2023",
+      dia: "21",
+      mes: "05",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/pastora-dina/quieres-ser-libre.jpg",
+      imageHD: "/assets/predicadores/pastora-dina/quieres-ser-libre-HD.jpg",
+      url: "/quieres-ser-libre",
+      profileURL: "/@pastoradina",
+      embed: "K52GvwVD5lc",
+    },
   ];
 
   const adrielRamos = [
