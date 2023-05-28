@@ -255,6 +255,7 @@ export default function CoverPredica(props) {
           }
           .ButtonsCoverPredica {
             flex-direction: column;
+            min-width: inherit;
             gap: 30px;
           }
         }
