@@ -7,6 +7,18 @@ export default function AllPost() {
         <div className="PostContainer">
           <PostComponent
             autor="Manantial de Vida"
+            mensaje="Hola, ya está disponible el rol de maestros para el mes de junio."
+            link="/miembros/calendario-maestros/"
+            titleLink="Ver calendarios"
+            picture="/assets/light_logo_manantial.png"
+            dia="03"
+            mes="05"
+            año="2023"
+            hora="10"
+          />
+
+          <PostComponent
+            autor="Manantial de Vida"
             mensaje=""
             novedad=""
             alerta="Si aún no lo haces, crea una cuenta para no perder tu acceso como miembro autorizado y seguir viendo el calendario."

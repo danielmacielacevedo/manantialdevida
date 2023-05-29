@@ -48,10 +48,10 @@ function CalendarioMaestros() {
                   <div className="GlobalCalendarContainer">
                     <Link
                       className="MesContainer"
-                      href="/miembros/calendario-maestros/abril"
+                      href="/miembros/calendario-maestros/junio"
                     >
                       <div>
-                        <p>Abril</p>
+                        <p>Junio</p>
                       </div>
                     </Link>
 
@@ -66,10 +66,10 @@ function CalendarioMaestros() {
 
                     <Link
                       className="MesContainer"
-                      href="/miembros/calendario-maestros/junio"
+                      href="/miembros/calendario-maestros/abril"
                     >
                       <div>
-                        <p>Junio</p>
+                        <p>Abril</p>
                       </div>
                     </Link>
                   </div>

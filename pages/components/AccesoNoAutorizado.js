@@ -5,10 +5,7 @@ export default function Page404() {
     <>
       <div className="Container404">
         <h1>No autorizado</h1>
-        <p>
-          No tienes los permisos necesarios para acceder a estos datos, puedes
-          solicitar tu acceso con el desarrollador.
-        </p>
+        <p>No tienes los permisos necesarios para acceder a estos datos.</p>
         <Link href="/">
           <div className="ContentButton">
             <p>Ir al Inicio</p>
@@ -28,10 +25,15 @@ export default function Page404() {
           gap: 20px;
         }
         .Container404 h1 {
-          font-size: 100px;
+          font-size: 80px;
         }
         .Container404 p {
           max-width: 600px;
+        }
+        @media only screen and (max-width: 860px) {
+          .Container404 h1 {
+            font-size: 30px;
+          }
         }
       `}</style>
     </>
