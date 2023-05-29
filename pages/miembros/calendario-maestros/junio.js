@@ -1,21 +1,21 @@
 import Head from "next/head";
-import BackHeader from "../components/BackHeader";
-import Link from "next/link";
-import BackMenuMobile from "../components/BackMenuMobile";
+import BackHeader from "../../components/BackHeader";
+import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
+import MaestrosFiltro from "daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro";
 
 export default function CalendarioMaestros() {
+  const mesTitle = "JUNIO";
+  const mes = "Junio";
+
   return (
-    <div className="PageContentPadding">
+    <>
       <Head>
-        <title>Calendario Maestros 2023 | Manantial</title>
+        <title>Calendario Junio | Manantial</title>
         <meta
           name="description"
           content="Calendario de clases para los maestros de Manantial de Vida."
         />
-        <meta
-          property="og:title"
-          content="Calendario Maestros 2023 | Manantial"
-        />
+        <meta property="og:title" content="Calendario Mayo | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/miembros" />
         <meta property="og:image" content="/assets/icon_manantial.png" />
         <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
@@ -37,41 +37,14 @@ export default function CalendarioMaestros() {
         <div className="PrincipalSectionContent">
           <div className="PageContainer">
             <div className="CalendarTitle">
-              <h3>Calendario 2023</h3>
-              <span>MAESTROS</span>
-              <p>Selecciona un mes.</p>
+              <h3>Calendario Maestros</h3>
+              <span>{mesTitle}</span>
             </div>
-            <div className="PageContent PageContentFull">
+            <MaestrosFiltro mes={mes} />
+            <div className="PageContent">
               <div className="MainCalendario">
                 <article className="CalendarArticle">
-                  <div className="GlobalCalendarContainer">
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-maestros/abril"
-                    >
-                      <div>
-                        <p>Abril</p>
-                      </div>
-                    </Link>
-
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-maestros/mayo"
-                    >
-                      <div>
-                        <p>Mayo</p>
-                      </div>
-                    </Link>
-
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-maestros/junio"
-                    >
-                      <div>
-                        <p>Junio</p>
-                      </div>
-                    </Link>
-                  </div>
+                  <div className="TableContainer"></div>
                 </article>
               </div>
             </div>
@@ -79,6 +52,6 @@ export default function CalendarioMaestros() {
         </div>
       </div>
       <BackMenuMobile />
-    </div>
+    </>
   );
 }
