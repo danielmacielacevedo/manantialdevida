@@ -23,11 +23,6 @@ function MyApp({ Component, pageProps }) {
         <div className=" theme PageGlobalContainer">
           <BackSidebar />
           <SidebarContent />
-          {/* {user && user.email &&
-          <div className="SidebarSectionContent">
-            <MenuMembers />
-          </div>
-          } */}
           <div className="PrincipalSectionContent">
             <div className="PageContainer">
               <div className="PageContent PageContentIntern">

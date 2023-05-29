@@ -2,8 +2,9 @@ import Head from "next/head";
 import BackHeader from "../components/BackHeader";
 import Link from "next/link";
 import BackMenuMobile from "../components/BackMenuMobile";
+import withAuth from "daniel/utils/withAuth";
 
-export default function CalendarioMaestros() {
+function CalendarioSociedades() {
   return (
     <div className="PageContentPadding">
       <Head>
@@ -64,3 +65,5 @@ export default function CalendarioMaestros() {
     </div>
   );
 }
+
+export default withAuth(CalendarioSociedades);

@@ -2,8 +2,9 @@ import Head from "next/head";
 import BackHeader from "../../components/BackHeader";
 import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
 import MaestrosFiltro from "daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro";
+import withAuth from "daniel/utils/withAuth";
 
-export default function CalendarioMaestros() {
+function CalendarioMaestros() {
   const mesTitle = "JUNIO";
   const mes = "Junio";
 
@@ -55,3 +56,5 @@ export default function CalendarioMaestros() {
     </>
   );
 }
+
+export default withAuth(CalendarioMaestros);

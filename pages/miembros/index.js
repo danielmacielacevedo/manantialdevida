@@ -2,8 +2,9 @@ import Head from "next/head";
 import BackHeader from "../components/BackHeader";
 import BackMenuMobile from "../components/BackMenuMobile";
 import AllPost from "../components/post/AllPost";
+import withAuth from "daniel/utils/withAuth";
 
-export default function Miembros() {
+function Miembros() {
   return (
     <>
       <Head>
@@ -43,3 +44,5 @@ export default function Miembros() {
     </>
   );
 }
+
+export default withAuth(Miembros);
