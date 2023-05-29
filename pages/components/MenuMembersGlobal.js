@@ -4,6 +4,7 @@ import { useState, useContext, useEffect, useRef, createContext } from "react";
 import { UserContext } from "../UserProvider";
 import esMiembroAutorizado from "../api/MiembrosAutorizados";
 import Lottie from "react-lottie";
+import Salir from "./Sesion/Logout";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
 import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
 import PredicaIcon from "../../public/assets/icons/animated-icons/PredicaIcon.json";
@@ -420,6 +421,8 @@ export default function MenuMembers(props) {
                 <p>Logotipos</p>
               </div>
             </Link>
+            <hr></hr>
+            <Salir />
           </div>
         )}
       </MenuContext.Provider>

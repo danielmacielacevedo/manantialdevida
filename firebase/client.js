@@ -42,4 +42,8 @@ export const loginWithGoogle = () => {
   return firebase.auth().signInWithPopup(googleProvider);
 };
 
+export const logout = () => {
+  return firebase.auth().signOut();
+};
+
 export default firebase;
