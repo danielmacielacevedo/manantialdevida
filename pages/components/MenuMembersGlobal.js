@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
 import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
 import PredicaIcon from "../../public/assets/icons/animated-icons/PredicaIcon.json";
-import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
+// import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
 import CalendarIcon from "../../public/assets/icons/animated-icons/CalendarIcon.json";
 import HumanIcon from "../../public/assets/icons/animated-icons/HumanIcon.json";
 import DirectionsIcon from "../../public/assets/icons/animated-icons/DirectionsIcon.json";
@@ -182,7 +182,7 @@ export default function MenuMembers(props) {
                 <p>Prédicas</p>
               </div>
             </Link>
-            <Link href="/boletin">
+            {/* <Link href="/boletin">
               <div
                 onClick={() => handleIconClick("article")}
                 className="ItemMenuContainer"
@@ -209,7 +209,7 @@ export default function MenuMembers(props) {
                 </div>
                 <p>Boletín</p>
               </div>
-            </Link>
+            </Link> */}
             {esMiembroAutorizado(user.id) && (
               <div className="PrivateContainerMenu">
                 Privados

@@ -5,7 +5,7 @@ import Lottie from "react-lottie";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
 import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
 import PredicaIcon from "../../public/assets/icons/animated-icons/PredicaIcon.json";
-import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
+// import ArticleIcon from "../../public/assets/icons/animated-icons/ArticleIcon.json";
 // import NewsIcon from "../../public/assets/icons/animated-icons/NewsIcon.json";
 
 export default function MenuMobile() {
@@ -122,7 +122,7 @@ export default function MenuMobile() {
             </div>
           </Link>
 
-          <Link className="BottomMenuButton" href="/boletin">
+          {/* <Link className="BottomMenuButton" href="/boletin">
             <div
               className={`IconContainer ${
                 activeIcon === "article" ? "active" : ""
@@ -144,7 +144,7 @@ export default function MenuMobile() {
               />
               <p>Boletín</p>
             </div>
-          </Link>
+          </Link> */}
 
           <Link className="BottomMenuButton" href="/miembros/menu">
             <div
