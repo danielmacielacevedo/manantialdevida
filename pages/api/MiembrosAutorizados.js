@@ -23,6 +23,7 @@ const miembrosAutorizados = [
   "MfYMLHtJbfMdfIEMIOs6DtwVgv83",
   "nbQkU19bWjh7uo5YsvHqsYQXnDt1",
   "NeqcoHtjJzSYkYj4plkZF3aQxT12",
+  "gT4ICHdF3hSs5CpTco2IoqVqKzf2",
 ];
 
 function esMiembroAutorizado(idUsuario) {
