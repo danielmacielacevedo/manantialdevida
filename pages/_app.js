@@ -5,6 +5,7 @@ import MenuMobile from "./components/MenuMobileGlobal";
 import Header from "./components/Header";
 import BackSidebar from "./components/BackSidebar";
 import SidebarContent from "./components/SidebarContent";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -27,6 +28,7 @@ function MyApp({ Component, pageProps }) {
             <div className="PageContainer">
               <div className="PageContent PageContentIntern">
                 <Component {...pageProps} />
+                <Analytics />
               </div>
             </div>
           </div>
