@@ -72,7 +72,7 @@ export default function CoverBlog(props) {
                 className="ContentButton"
                 href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}
               >
-                EN DESARROLLO
+                LEER AHORA
               </Link>
             </div>
           </section>
@@ -101,7 +101,7 @@ export default function CoverBlog(props) {
           color: var(--secondary-color);
         }
         .CoverPredicaContainer h1 {
-          font-size: 100px;
+          font-size: 70px;
         }
         .CoverPredicaContainer h5 {
           font-size: 22px;
@@ -232,7 +232,7 @@ export default function CoverBlog(props) {
             height: 450px;
           }
           .CoverPredicaContainer h1 {
-            font-size: 100px;
+            font-size: 60px;
           }
           .CoverPredicaContainer h5 {
             font-size: 22px;
@@ -249,7 +249,7 @@ export default function CoverBlog(props) {
         }
         @media only screen and (max-width: 380px) {
           .CoverPredicaContainer h1 {
-            font-size: 76px;
+            font-size: 50px;
           }
           .CoverPredicaContainer h5 {
             font-size: 16px;

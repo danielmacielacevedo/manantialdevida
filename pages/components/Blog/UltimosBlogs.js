@@ -7,40 +7,7 @@ export default function UltimosBlogs() {
         <h2>TODOS LOS BLOGS</h2>
         <div className="UltimosBlogsContent">
           <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="0" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="1" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="2" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="0" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="1" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="2" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="0" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="1" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="2" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="0" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="1" />
-          </article>
-          <article className="UltimosBlogsArticle">
-            <BlogCard nombre="Manantial" indice="2" />
+            <BlogCard nombre="CarolinaMacias" indice="0" />
           </article>
         </div>
       </div>
