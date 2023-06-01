@@ -5,6 +5,7 @@ const miembrosAutorizados = [
   "2v8vhcmISgeZKEDk2YDACmGgDJI2",
   "U9UMfAa0LCh6f9klUhj2sK4Bx683",
   "W29vwL62AbSd37xzOfRdDDAH3wH3",
+  "RUQgNwDtNLQU438wdwzTPhaMWxH2",
 
   "w7U8W7FU4sfR3FAjduNB5NFAiT82",
   "A3uCWAOZfYMXRzig1L74kQOfBbf1",
