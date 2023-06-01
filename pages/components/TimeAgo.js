@@ -44,7 +44,7 @@ export default function TimeAgo(props, { useLocalTime = true }) {
 
   return (
     <>
-      <p>{timeElapsed}</p>
+      <p>Hace {timeElapsed}</p>
       <style jsx>{`
         p {
           font-size: 12px;
