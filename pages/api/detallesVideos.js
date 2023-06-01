@@ -262,6 +262,24 @@ export default function detallesVideos(req, res) {
       profileURL: "/@florfernandez",
       embed: "c7Ok6yvFALA",
     },
+
+    {
+      title: "Confiando en Dios",
+      autor: "Flor Fernández",
+      picture: "/assets/predicadores/flor-fernandez.png",
+      date: "23 ENERO 2023",
+      dia: "24",
+      mes: "05",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/flor-fernandez/confiando-en-DIOS.jpg",
+      imageHD: "/assets/predicadores/flor-fernandez/confiando-en-DIOS-HD.jpg",
+      url: "/confiando-en-DIOS",
+      profileURL: "/@florfernandez",
+      embed: "lVBSNHvyqic",
+    },
   ];
 
   const franciscoGarcia = [
