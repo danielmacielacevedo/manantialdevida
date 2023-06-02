@@ -93,7 +93,7 @@ export default function IndividualBlog() {
         <title>Alumbra mi camino | Carolina Macias</title>
         <meta
           name="description"
-          content="¿Alguna vez has camino por un lugar oscuro?"
+          content="¿Alguna vez has caminado por un lugar oscuro?"
         />
         <meta
           property="og:title"
