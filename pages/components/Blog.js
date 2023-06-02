@@ -1,38 +1,35 @@
-import DynamicBlogHead from "./DynamicBlogHead";
-import BackHeader from "./BackHeader";
-import Footer from "./Footer";
+// import DynamicBlogHead from "./DynamicBlogHead";
+// import BackHeader from "./BackHeader";
 import CoverBlog from "./CoverBlogSmall";
 import CoverSmall from "./CoverSmall";
 
 export default function Blog(props) {
   return (
     <div id="Top" className="Site theme">
-      <DynamicBlogHead nombre={props.nombre} indice={props.indice} />
-      <BackHeader />
+      {/* <DynamicBlogHead nombre={props.nombre} indice={props.indice} /> */}
+      {/* <BackHeader /> */}
       <div className="MainContainer">
         <CoverSmall>
           <CoverBlog nombre={props.nombre} blog={props.indice} />
         </CoverSmall>
       </div>
-      <Footer />
       <style jsx>{`
         .Site
         {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: auto;
+          height: 100vh;
           align-items: center;
-          background-color: var(--primary-color);
           {/* padding-top: 20px; */}
         }
         .MainContainer
         {
           display: flex;
           width: 100%;
-          height: auto;
+          height: -webkit-fill-available;
           gap: 20px;
-          padding: 0 20px;
+          {/* padding: 0 20px; */}
         }
         .PrimarySection
         {
@@ -55,7 +52,7 @@ export default function Blog(props) {
           .MainContainer
           {
             flex-direction: column;
-            padding: 0 20px;
+            {/* padding: 0 20px; */}
             gap: 20px
           }
         }
@@ -68,7 +65,6 @@ export default function Blog(props) {
           .MainContainer
           {
             flex-direction: column;
-            padding: 0 20px;
             gap: 20px
           }
           .MainContainer.scroll-down

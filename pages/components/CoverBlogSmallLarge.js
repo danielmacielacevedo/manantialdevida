@@ -49,7 +49,6 @@ export default function CoverBlog(props) {
             <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
               <h1>{coverInfoBlog.title}</h1>
             </Link>
-            <img id="BlogImage" src={coverInfoBlog.image} />
             <div className="ButtonsCoverPredica">
               <div className="InfoReproductor">
                 <div className="DetailsInfoReproductor">
@@ -68,6 +67,7 @@ export default function CoverBlog(props) {
                 </Link>
               </div>
             </div>
+            <img id="BlogImage" src={coverInfoBlog.image} />
           </section>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-          height: fill;
+          height: fit-content;
           justify-content: center;
           align-items: center;
         }
@@ -105,7 +105,7 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-          height: -webkit-fill-available;
+          height: fit-content;
           justify-content: space-between;
           align-items: center;
           gap: 40px;
@@ -126,10 +126,12 @@ export default function CoverBlog(props) {
           padding: 20px;
         }
         #BlogImage {
+          position: absolute;
+          z-index: 10;
           display: flex;
-          width: 100%;
-          max-width: 500px;
-          height: auto;
+          bottom: -70px;
+          width: 130px;
+          height: 130px;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
@@ -237,6 +239,12 @@ export default function CoverBlog(props) {
           }
           .CoverPredicaContainer h5 {
             font-size: 16px;
+          }
+          .CoverSectionsContainer {
+            height: fit-content;
+          }
+          #ImageCoverPredica {
+            height: 150px;
           }
         }
       `}</style>

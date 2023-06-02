@@ -7,12 +7,13 @@ export default function Cover({ children }) {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: fit-content;
+          height: -webkit-fill-available;
           background-color: var(--primary-color);
           // background-color: red;
           justify-content: center;
           align-items: center;
           gap: 80px;
+          border-radius: 10px;
         }
         .CoverImage {
           width: 100%;
@@ -23,7 +24,7 @@ export default function Cover({ children }) {
 
         @media only screen and (max-width: 860px) {
           .CoverImage {
-            width: 300px;
+            width: auto;
           }
         }
       `}</style>

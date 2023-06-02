@@ -13,6 +13,7 @@ export default function Cover({ children }) {
           justify-content: center;
           align-items: center;
           gap: 80px;
+          border-radius: 10px;
         }
         .CoverImage {
           width: 100%;
