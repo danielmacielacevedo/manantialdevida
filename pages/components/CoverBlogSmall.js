@@ -77,7 +77,7 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-          height: 100%;
+          height: -webkit-fill-available;
           justify-content: center;
           align-items: center;
         }
@@ -98,14 +98,14 @@ export default function CoverBlog(props) {
           position: absolute;
           display: flex;
           width: 100%;
-          height: fit-content;
+          height: -webkit-fill-available;
         }
         .CoverSectionsContainer {
           position: relative;
           z-index: 2;
           display: flex;
           width: 100%;
-          height: 100%;
+          height: -webkit-fill-available;
           justify-content: space-between;
           align-items: center;
           gap: 40px;
@@ -119,6 +119,7 @@ export default function CoverBlog(props) {
           display: flex;
           flex-direction: column;
           width: 100%;
+          height: 100%;
           height: 100%;
           justify-content: space-between;
           align-items: center;
@@ -203,9 +204,6 @@ export default function CoverBlog(props) {
             display: none;
           }
           .LeftSection {
-             {
-              /* height: 100%; */
-            }
             justify-content: space-between;
           }
         }
@@ -227,13 +225,6 @@ export default function CoverBlog(props) {
         @media only screen and (max-width: 380px) {
           .CoverPredicaContainer h1 {
             font-size: 40px;
-          }
-           {
-            /* #BlogImage {
-            bottom: -55px;
-            width: 110px;
-            height: 110px;
-          } */
           }
           .CoverPredicaContainer h5 {
             font-size: 16px;
