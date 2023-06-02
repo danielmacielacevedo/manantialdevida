@@ -1,31 +1,32 @@
 import Link from "next/link";
 import { useRef } from "react";
+import { useRouter } from "next/router";
 import EntrarButton from "./EntrarButton";
 
 export default function HeaderGeneral() {
   const menuButtonRef = useRef(null);
   const menuContentRef = useRef(null);
+  const router = useRouter();
 
   function handleBurgerClick() {
     menuButtonRef.current.classList.toggle("Open");
-    // localStorage.setItem('menuOpen', menuButtonRef.current.classList.contains('Open'))
 
     menuContentRef.current.classList.toggle("Open");
-    // localStorage.setItem('menuOpen', menuContentRef.current.classList.contains('Open'))
   }
 
   return (
     <>
       <nav className="theme NavContainer">
         {/* <div className="NavAvisos">
-                    <p>Sitio en desarrollo.</p>
-                    <a href="/noticias">Más info</a>
-                </div> */}
+            <p>Sitio en desarrollo.</p>
+            <a href="/noticias">Más info</a>
+        </div> */}
         <div className="NavFull">
           <Link href="/">
             <img
               src="/assets/light_logo_manantial.png"
               alt="Logo Manantial de Vida"
+              className={router.pathname === "/" ? "LogoOpacity" : ""}
             />
           </Link>
 

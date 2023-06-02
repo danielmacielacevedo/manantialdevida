@@ -2,6 +2,8 @@ import Head from "next/head";
 import Predicas from "../components/Predicas";
 import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
+import Cover from "../components/Cover";
+import CoverPredica from "../components/CoverPredica";
 
 export default function Home() {
   return (
@@ -29,6 +31,9 @@ export default function Home() {
         ></link>
       </Head>
       <BackHeader />
+      <Cover>
+        <CoverPredica nombre="FlorFernandez" indice="1" />
+      </Cover>
       <Predicas />
       <Footer />
     </div>

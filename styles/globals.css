@@ -131,6 +131,9 @@ p {
   width: auto;
   height: 30px;
 }
+.LogoOpacity {
+  opacity: 0;
+}
 .NavNavigation {
   display: flex;
   width: fit-content;

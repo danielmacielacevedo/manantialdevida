@@ -1,5 +1,4 @@
 import PredicadorCardPredicas from "./Predicadores/PredicadorCardPredicas";
-import NewsBar from "./NewsBar";
 
 export default function PredicasBar() {
   return (
@@ -56,7 +55,6 @@ export default function PredicasBar() {
           </div>
         </div>
       </div>
-      <NewsBar />
       <style jsx>{`
         .PredicasBarContainer {
           display: flex;

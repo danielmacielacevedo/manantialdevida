@@ -1,10 +1,11 @@
-export default function Cover() {
+export default function CoverCenterImage() {
   return (
     <>
       <div className="CoverContainer">
         <img
           className="CoverImage"
-          src="/assets/svg-aniversario/XII_light.svg"
+          src="/assets/logotipos/descargar/light_logo_manantial.png"
+          alt="Manantial"
         />
         {/* <Link className='PrimaryButton' href='/aniversario'>VER AHORA</Link> */}
       </div>
@@ -23,7 +24,7 @@ export default function Cover() {
         }
         .CoverImage {
           width: 100%;
-          max-width: 600px;
+          max-width: 300px;
           height: auto;
           margin-bottom: 80px;
         }
@@ -33,7 +34,7 @@ export default function Cover() {
             height: 450px;
           }
           .CoverImage {
-            width: 300px;
+            width: 200px;
           }
         }
       `}</style>

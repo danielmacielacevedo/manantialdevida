@@ -153,6 +153,7 @@ export default function CoverBlog(props) {
         .ButtonsCoverPredica {
           display: flex;
           width: 100%;
+          min-width: 320px;
           height: fit-content;
           gap: 20px;
           justify-content: flex-start;

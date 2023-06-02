@@ -43,7 +43,7 @@ export default function MonthEvents() {
 
   return (
     <div className="MonthEventsContainer">
-      <h2>NUESTROS SERVICIOS</h2>
+      {/* <h2>NUESTROS SERVICIOS</h2> */}
       <div className="MonthEventsContent">
         <div className="ArticlesContainer">
           <article className="ArticleContainer">

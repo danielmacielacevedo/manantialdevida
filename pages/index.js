@@ -1,11 +1,10 @@
 import Head from "next/head";
 import BackHeader from "./components/BackHeader";
-import Cover from "./components/Cover";
 import NewsBar from "./components/NewsBar";
 import PredicasBar from "./components/PredicasBar";
 import Footer from "./components/Footer";
 import ManantialServices from "./components/ManantialServices";
-import CoverPredica from "./components/CoverPredica";
+import CoverCenterImage from "./components/CoverCenterImage";
 
 export default function Home() {
   return (
@@ -34,12 +33,10 @@ export default function Home() {
         ></link>
       </Head>
       <BackHeader />
-      <Cover>
-        <CoverPredica nombre="FlorFernandez" indice="1" />
-      </Cover>
+      <CoverCenterImage />
+      <PredicasBar />
       <ManantialServices />
       <NewsBar />
-      <PredicasBar />
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import Lottie from "react-lottie";
 import Link from "next/link";
 import NotifyIcon from "../../public/assets/icons/animated-icons/NotifyIcon.json";
@@ -7,6 +8,7 @@ export default function HeaderMembers() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
   const [animationKey, setAnimationKey] = useState(0); // Agregamos una clave de animación para reiniciarla
+  const router = useRouter();
 
   const handleIconClick = (iconName) => {
     setIsPlaying(true);
@@ -23,7 +25,7 @@ export default function HeaderMembers() {
   }, []);
 
   const animationRefs = {
-    notify: useRef(null)
+    notify: useRef(null),
   };
 
   useEffect(() => {
@@ -44,6 +46,7 @@ export default function HeaderMembers() {
           <img
             src="/assets/light_logo_manantial.png"
             alt="Logo Manantial de Vida"
+            className={router.pathname === "/" ? "LogoOpacity" : ""}
           />
           <Link href="/miembros">
             <div
@@ -60,7 +63,7 @@ export default function HeaderMembers() {
                     options={{
                       animationData: NotifyIcon,
                       loop: false,
-                      autoplay: false
+                      autoplay: false,
                     }}
                     isStopped={activeIcon !== "notify" || !isPlaying}
                     width={34}
