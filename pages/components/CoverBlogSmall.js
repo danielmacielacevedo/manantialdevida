@@ -77,7 +77,7 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-          height: fill;
+          height: 100%;
           justify-content: center;
           align-items: center;
         }
@@ -105,7 +105,7 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-          height: -webkit-fill-available;
+          height: 100%;
           justify-content: space-between;
           align-items: center;
           gap: 40px;
@@ -127,9 +127,8 @@ export default function CoverBlog(props) {
         }
         #BlogImage {
           display: flex;
-          width: 100%;
-          max-width: 500px;
-          height: auto;
+          width: auto;
+          height: 20vh;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
@@ -204,16 +203,15 @@ export default function CoverBlog(props) {
             display: none;
           }
           .LeftSection {
-            height: 100%;
+             {
+              /* height: 100%; */
+            }
             justify-content: space-between;
           }
         }
         @media only screen and (max-width: 860px) {
           .RightSection {
             display: none;
-          }
-          #ImageCoverPredica {
-            height: 150px;
           }
           .CoverPredicaContainer h1 {
             font-size: 50px;
@@ -230,10 +228,12 @@ export default function CoverBlog(props) {
           .CoverPredicaContainer h1 {
             font-size: 40px;
           }
-          #BlogImage {
+           {
+            /* #BlogImage {
             bottom: -55px;
             width: 110px;
             height: 110px;
+          } */
           }
           .CoverPredicaContainer h5 {
             font-size: 16px;

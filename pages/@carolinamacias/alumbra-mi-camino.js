@@ -156,11 +156,13 @@ export default function IndividualBlog() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 70vh;
+          height: 66vh;
           align-items: center;
           justify-content: center;
           gap: 20px;
-          overflow: hidden;
+           {
+            /* overflow: hidden; */
+          }
         }
         #SlideContainer {
           position: relative;
@@ -171,9 +173,7 @@ export default function IndividualBlog() {
           font-size: 4vh;
           align-items: center;
           justify-content: space-between;
-          padding: 20px;
           border-radius: 10px;
-          background: var(--light-grey);
           gap: 20px;
           text-align: center;
         }
