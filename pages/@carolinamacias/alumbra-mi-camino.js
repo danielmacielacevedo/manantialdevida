@@ -169,8 +169,10 @@ export default function IndividualBlog() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: fit-content;
           padding: 0 20px;
+           {
+            /* height: fit-content; */
+          }
         }
         .BlogContentSliderCards {
           position: relative;
@@ -181,9 +183,6 @@ export default function IndividualBlog() {
           align-items: center;
           justify-content: center;
           gap: 20px;
-           {
-            /* overflow: hidden; */
-          }
         }
         #SlideContainer {
           position: relative;

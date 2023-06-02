@@ -7,9 +7,8 @@ export default function Cover({ children }) {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: -webkit-fill-available;
+          height: auto;
           background-color: var(--primary-color);
-          // background-color: red;
           justify-content: center;
           align-items: center;
           gap: 80px;
