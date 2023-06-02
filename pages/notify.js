@@ -2,9 +2,8 @@ import Head from "next/head";
 import BackHeader from "./components/BackHeader";
 import BackMenuMobile from "./components/BackMenuMobile";
 import AllNotify from "./components/Notify/AllNotify";
-import withAuth from "daniel/utils/withAuth";
 
-function Miembros() {
+export default function Miembros() {
   return (
     <>
       <Head>
@@ -44,5 +43,3 @@ function Miembros() {
     </>
   );
 }
-
-export default withAuth(Miembros);

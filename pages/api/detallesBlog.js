@@ -23,8 +23,8 @@ export default function detallesBlog(req, res) {
       hora: "08",
       minuto: "00",
       desc: "Guia ujieres Manantial de Vida",
-      image:
-        "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "/assets/escritores/carolina-macias/alumbra-mi-camino.jpg",
+      imageHD: "/assets/escritores/carolina-macias/alumbra-mi-camino-share.jpg",
       url: "/alumbra-mi-camino",
       profileURL: "/@carolinamacias",
     },

@@ -2,6 +2,7 @@ import Link from "next/link";
 import TimeAgo from "../TimeAgoFull";
 import Novedad from "../Novedad";
 import Alerta from "../Alerta";
+import BlogNotify from "../BlogNotify";
 import EntrarButton from "../EntrarButton";
 
 export default function PostComponent(props) {
@@ -42,6 +43,11 @@ export default function PostComponent(props) {
           {props.alerta && (
             <div className="NovedadContainer">
               <Alerta content={`${props.alerta}`} />
+            </div>
+          )}
+          {props.blog && (
+            <div className="NovedadContainer">
+              <BlogNotify content={`${props.blog}`} />
             </div>
           )}
         </div>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Blog from "../components/Blog";
+import BlogShare from "../components/BlogShare";
 import { useState, useContext } from "react";
 import { UserContext } from "../UserProvider";
 import Footer from "../components/Footer";
@@ -82,7 +83,7 @@ export default function IndividualBlog() {
       Ya que es la única solución para permanecer firmes y en dirección a Su
       propósito.
     </p>,
-    <Blog key={9} nombre="CarolinaMacias" indice="0" />,
+    <BlogShare key={9} nombre="CarolinaMacias" indice="0" />,
   ];
 
   return (
@@ -98,7 +99,14 @@ export default function IndividualBlog() {
           content="Alumbra mi camino | Carolina Macias"
         />
         <meta property="og:url" content="https://somosmamantial.org/blog" />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content="/assets/escritores/carolina-macias/alumbra-mi-camino-share.jpg"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/escritores/carolina-macias/alumbra-mi-camino-share.jpg"
+        ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
