@@ -45,7 +45,7 @@ export default function CoverBlog(props) {
         </div>
         <div className="CoverSectionsContainer">
           <section className="LeftSection">
-            {/* <h5>Último blog</h5> */}
+            <h3>BLOG</h3>
             <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
               <h1>{coverInfoBlog.title}</h1>
             </Link>
@@ -77,9 +77,6 @@ export default function CoverBlog(props) {
           z-index: 2;
           display: flex;
           width: 100%;
-           {
-            /* height: 60vh; */
-          }
           justify-content: center;
           align-items: center;
         }
@@ -100,9 +97,6 @@ export default function CoverBlog(props) {
           position: absolute;
           display: flex;
           width: 100%;
-           {
-            /* height: 60vh; */
-          }
         }
         .CoverSectionsContainer {
           position: relative;
@@ -115,9 +109,6 @@ export default function CoverBlog(props) {
           text-align: left;
           border-radius: 10px;
           backdrop-filter: blur(100px);
-           {
-            /* height: 60vh; */
-          }
         }
         .LeftSection {
           position: relative;
@@ -129,9 +120,7 @@ export default function CoverBlog(props) {
           align-items: center;
           gap: 20px;
           padding: 20px;
-           {
-            /* height: 60vh; */
-          }
+          height: 57.8vh;
         }
         #BlogImage {
           display: flex;
