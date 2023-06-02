@@ -49,7 +49,7 @@ export default function CoverBlog(props) {
             <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
               <h1>{coverInfoBlog.title}</h1>
             </Link>
-            <img id="BlogImage" src={coverInfoBlog.image} />
+            {/* <img id="BlogImage" src={coverInfoBlog.image} /> */}
             <div className="ButtonsCoverPredica">
               <div className="InfoReproductor">
                 <div className="DetailsInfoReproductor">

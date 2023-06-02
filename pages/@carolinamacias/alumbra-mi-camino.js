@@ -4,6 +4,8 @@ import { useState, useContext } from "react";
 import { UserContext } from "../UserProvider";
 import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function IndividualBlog() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,18 +24,28 @@ export default function IndividualBlog() {
       // Compartir en dispositivos móviles
       navigator
         .share({
-          title: "Título del blog",
-          text: "Echa un vistazo a este blog interesante",
+          // title: "Título del blog",
+          // text: "Echa un vistazo a este blog interesante",
           url: window.location.href,
         })
-        .then(() => console.log("Enlace compartido"))
-        .catch((error) => console.error("Error al compartir:", error));
+        .then(() => {
+          toast.success("Enlace compartido");
+        })
+        .catch((error) => {
+          toast.error("Error al compartir");
+          console.error("Error al compartir:", error);
+        });
     } else {
       // Copiar enlace al portapapeles en ordenadores
       navigator.clipboard
         .writeText(window.location.href)
-        .then(() => console.log("Enlace copiado al portapapeles"))
-        .catch((error) => console.error("Error al copiar enlace:", error));
+        .then(() => {
+          toast.success("Enlace copiado al portapapeles");
+        })
+        .catch((error) => {
+          toast.error("Error al copiar enlace");
+          console.error("Error al copiar enlace:", error);
+        });
     }
   };
 
@@ -141,8 +153,17 @@ export default function IndividualBlog() {
           </div>
         )}
       </div>
-
       <Footer />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar
+        closeOnClick
+        pauseOnHover
+        draggable
+        pauseOnFocusLoss={false}
+        toastClassName="custom-toast"
+      />
       <style jsx>{`
         .BlogContentContainer {
           display: flex;
@@ -218,6 +239,8 @@ export default function IndividualBlog() {
           font-size: 16px;
           font-weight: 700;
           cursor: pointer;
+          background-color: var(--light-grey);
+          color: var(--secondary-color);
         }
 
         @keyframes fadeInOut {
@@ -230,6 +253,9 @@ export default function IndividualBlog() {
           100% {
             opacity: 1;
           }
+        }
+        .custom-toast {
+          z-index: 999999999;
         }
 
         .fadeInOut {
