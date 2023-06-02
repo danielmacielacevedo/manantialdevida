@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import TimeAgoFull from "./TimeAgoFull";
 
 export default function CoverBlog(props) {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [coverInfoBlog, setCoverInfoBlog] = useState(null);
 
   useEffect(() => {
@@ -12,28 +12,28 @@ export default function CoverBlog(props) {
       const data = await res.json();
       setCoverInfoBlog(data[props.nombre][props.blog]);
       setTimeout(() => {
-        // setLoading(false);
+        setLoading(false);
       }, 500); // Establece un retraso de 2 segundos antes de mostrar los datos
     }
     fetchCoverDetails();
   }, [props.nombre, props.blog]);
 
-  // if (loading) {
-  //   return (
-  //     <div className="LoadingContainer">
-  //       <div className="LoadingBackground">
-  //         <div className="LoadingSpinnerContainer">
-  //           <div className="Spinner"></div>
-  //           <img
-  //             className="SpinnerImage"
-  //             src="/assets/favicon_manantial.png"
-  //             alt="Spinner"
-  //           />
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (loading) {
+    return (
+      <div className="LoadingContainer">
+        <div className="LoadingBackground">
+          <div className="LoadingSpinnerContainer">
+            <div className="Spinner"></div>
+            <img
+              className="SpinnerImage"
+              src="/assets/favicon_manantial.png"
+              alt="Spinner"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
