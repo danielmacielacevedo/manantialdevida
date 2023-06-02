@@ -1,5 +1,5 @@
 import Login from "./Login";
-import LoginSuccessful from "./LoginSuccessfull";
+import LoginSuccessfulBlog from "./LoginSuccessfullBlog";
 import { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 
@@ -9,7 +9,7 @@ export default function LoginProcess() {
   return (
     <>
       {user === null && <Login />}
-      {user && user.email && <LoginSuccessful />}
+      {user && user.email && <LoginSuccessfulBlog />}
     </>
   );
 }

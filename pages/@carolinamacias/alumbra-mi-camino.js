@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import EntrarButtonBlog from "../components/EntrarButtonBlog";
 
 export default function IndividualBlog() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -111,6 +112,35 @@ export default function IndividualBlog() {
       <BackHeader />
 
       <div className="BlogContentContainer">
+        {user === null && (
+          <div className="BlogContentSliderCards">
+            {slides.map((slide, index) => (
+              <div
+                id="SlideContainer"
+                key={index}
+                className={`Slide Slide${index + 1} ${
+                  currentSlide === index ? "active" : ""
+                } ${currentSlide > index ? "previous" : ""}`}
+                style={{ display: currentSlide === index ? "flex" : "none" }}
+              >
+                <div
+                  className={`BlogContentItem ${
+                    currentSlide === index ? "fadeInOut" : ""
+                  }`}
+                >
+                  {slide}
+                </div>
+                <div className="SlideButtons">
+                  <EntrarButtonBlog>
+                    <img id="ButtonImg" src="/assets/icons/google.png" />
+                    Entrar para leer
+                  </EntrarButtonBlog>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
         {user && user.email && (
           <div className="BlogContentSliderCards">
             {slides.map((slide, index) => (

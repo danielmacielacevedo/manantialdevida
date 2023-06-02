@@ -390,6 +390,10 @@ p {
   height: 20px;
 }
 
+#FullButton {
+  width: 100%;
+}
+
 /* PredicadorStructure */
 .PageContainer {
   display: flex;

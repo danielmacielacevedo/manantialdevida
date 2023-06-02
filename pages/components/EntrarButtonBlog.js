@@ -3,15 +3,14 @@ import Link from "next/link";
 export default function EntrarButton({ children, props }) {
   return (
     <>
-      <Link href="/entrar">
+      <Link id="FullButton" href="/blog/entrar">
         <div className="Button">{children}</div>
       </Link>
       <style jsx>{`
         .Button {
           display: flex;
           width: 100%;
-          height: auto;
-          padding: 10px 20px;
+          height: 60px;
           border: none;
           border-radius: 10px;
           font-size: 16px;
@@ -20,13 +19,13 @@ export default function EntrarButton({ children, props }) {
           gap: 20px;
           justify-content: center;
           align-items: center;
-          background-color: var(--light-grey);
-          color: var(--secondary-color);
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
           transition: 0.4s;
         }
         .Button:hover {
-          background-color: var(--secondary-color);
-          color: var(--primary-color);
+          background-color: var(--light-grey);
+          color: var(--secondary-color);
         }
       `}</style>
     </>

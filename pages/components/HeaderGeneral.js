@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { useRef } from "react";
-// import EntrarButton from "./EntrarButton";
+import EntrarButton from "./EntrarButton";
 
 export default function HeaderGeneral() {
   const menuButtonRef = useRef(null);
   const menuContentRef = useRef(null);
-
 
   function handleBurgerClick() {
     menuButtonRef.current.classList.toggle("Open");
@@ -38,6 +37,9 @@ export default function HeaderGeneral() {
                     <Link href="/">Inicio</Link>
                   </li>
                   <li>
+                    <Link href="/blog">Blog</Link>
+                  </li>
+                  <li>
                     <Link href="/predicas">Prédicas</Link>
                   </li>
                   <li>
@@ -54,10 +56,10 @@ export default function HeaderGeneral() {
               </button>
             </div>
             <div className="LogInButtonContainer">
-              {/* <EntrarButton buttonURL="/entrar">
-                            <img id="ButtonImg" src="/assets/icons/google.png" />
-                            Entrar
-                        </EntrarButton> */}
+              <EntrarButton buttonURL="/entrar">
+                <img id="ButtonImg" src="/assets/icons/google.png" />
+                Entrar
+              </EntrarButton>
             </div>
           </div>
         </div>
@@ -68,6 +70,11 @@ export default function HeaderGeneral() {
                 <li>
                   <Link onClick={handleBurgerClick} href="/">
                     Inicio
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={handleBurgerClick} href="/blog">
+                    Blog
                   </Link>
                 </li>
                 <li>
