@@ -17,7 +17,7 @@ export default function PredicasBar() {
           </div>
         </div>
         <Link className="FullButton" href="/predicas">
-          VER PRÉDICAS
+          <span className="Text">Ver prédicas</span>
         </Link>
         <div className="PredicasBar">
           <div className="PredicadoresContainer">
@@ -53,6 +53,10 @@ export default function PredicasBar() {
           width: 100%;
           height: auto;
           gap: 20px;
+        }
+        .Text {
+          font-size: 16px;
+          font-weight: 700;
         }
         @media only screen and (max-width: 860px) {
           .PredicasBar {

@@ -72,7 +72,7 @@ export default function CoverBlog(props) {
                 className="ContentButton"
                 href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}
               >
-                LEER AHORA
+                Leer
               </Link>
             </div>
           </section>
@@ -245,6 +245,7 @@ export default function CoverBlog(props) {
           }
           .ButtonsCoverPredica {
             flex-direction: column;
+            min-width: unset;
             gap: 30px;
           }
         }

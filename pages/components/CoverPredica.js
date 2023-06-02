@@ -72,7 +72,7 @@ export default function CoverPredica(props) {
                 className="ContentButton"
                 href={`${coverInfo.profileURL}${coverInfo.url}`}
               >
-                VER AHORA
+                Ver
               </Link>
             </div>
           </section>

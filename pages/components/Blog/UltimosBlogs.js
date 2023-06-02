@@ -4,7 +4,7 @@ export default function UltimosBlogs() {
   return (
     <>
       <div className="UltimosBlogsContainer" dir="ltr">
-        <h2>TODOS LOS BLOGS</h2>
+        {/* <h2>TODOS LOS BLOGS</h2> */}
         <div className="UltimosBlogsContent">
           <article className="UltimosBlogsArticle">
             <BlogCard nombre="CarolinaMacias" indice="0" />

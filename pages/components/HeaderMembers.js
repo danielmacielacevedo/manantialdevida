@@ -48,7 +48,7 @@ export default function HeaderMembers() {
             alt="Logo Manantial de Vida"
             className={router.pathname === "/" ? "LogoOpacity" : ""}
           />
-          <Link href="/miembros">
+          <Link href="/notify">
             <div
               onClick={() => handleIconClick("notify")}
               className="ItemMenuContainer"

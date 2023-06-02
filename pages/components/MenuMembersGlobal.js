@@ -421,7 +421,7 @@ export default function MenuMembers(props) {
                 <p>Logotipos</p>
               </div>
             </Link>
-            <hr></hr>
+            {/* <hr></hr> */}
             <Salir />
           </div>
         )}

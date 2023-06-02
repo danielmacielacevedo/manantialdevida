@@ -17,10 +17,10 @@ export default function detallesBlog(req, res) {
       autor: "Carolina Macias",
       picture: "/assets/escritores/carolina-macias.png",
       date: "02 JUNIO 2023",
-      dia: "01",
+      dia: "02",
       mes: "06",
       año: "2023",
-      hora: "01",
+      hora: "08",
       minuto: "00",
       desc: "Guia ujieres Manantial de Vida",
       image:
