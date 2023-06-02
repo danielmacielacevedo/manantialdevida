@@ -1,12 +1,15 @@
 import Head from "next/head";
-import Blog from "../components/Blog";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { UserContext } from "../UserProvider";
 import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
+import Blog from "../components/Blog";
 
 export default function IndividualBlog() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesData, setSlidesData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const { user } = useContext(UserContext);
 
   const handleNextSlide = () => {
@@ -17,36 +20,29 @@ export default function IndividualBlog() {
     setCurrentSlide((prevSlide) => prevSlide - 1);
   };
 
-  const slides = [
-    <Blog key={0} nombre="CarolinaMacias" indice="0" />,
-    <h2 key={1}>¿Alguna vez has caminado por un lugar oscuro?</h2>,
-    <p key={2}>
-      En tal lugar resulta complicado dar pasos firmes y por ello, tropezar,
-      caer, herirse o perder el rumbo son consecuencias de ello.
-    </p>,
-    <p key={3}>
-      La dificultad que se enfrenta en esa situación, suele ser la misma que al
-      andar por este mundo lleno de oscuridad.
-    </p>,
-    <p key={4}>
-      Juan 12:35 menciona que el que anda en oscuridad no sabe a dónde va. Sin
-      embargo, el versículo base muestra la solución.
-    </p>,
-    <p key={5}>
-      La Palabra de Dios es una lámpara, una lámpara que alumbra el camino de
-      todos aquellos que se disponen a hacer Su voluntad, caminando en la
-      dirección que Él ha determinado.
-    </p>,
-    <p key={6}>
-      Haz de Su Palabra tu mayor refugio y pide continuamente a Dios que alumbre
-      tu camino...
-    </p>,
-    <p key={7}>
-      Ya que es la única solución para permanecer firmes y en dirección a Su
-      propósito.
-    </p>,
-    <Blog key={8} nombre="CarolinaMacias" indice="0" />,
-  ];
+  useEffect(() => {
+    fetch("/api/detallesBlog")
+      .then((response) => response.json())
+      .then((data) => {
+        setSlidesData(
+          data.CarolinaMacias[0].slides.map(
+            (slide) => slide.component.props.children
+          )
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
 
   return (
     <>
@@ -77,7 +73,7 @@ export default function IndividualBlog() {
       <div className="BlogContentContainer">
         {user && user.email && (
           <div className="BlogContentSliderCards">
-            {slides.map((slide, index) => (
+            {slidesData.map((slide, index) => (
               <div
                 id="SlideContainer"
                 key={index}
@@ -86,7 +82,10 @@ export default function IndividualBlog() {
                 }`}
                 style={{ display: currentSlide === index ? "flex" : "none" }}
               >
-                <div className="BlogContentItem">{slide}</div>
+                {slide}
+                <div>
+                  <Blog nombre="CarolinaMacias" blog="0" />
+                </div>
                 <div className="SlideButtons">
                   {currentSlide !== 0 && (
                     <button onClick={handlePrevSlide}>Anterior</button>
@@ -96,7 +95,8 @@ export default function IndividualBlog() {
                     <button onClick={handleNextSlide}>Empezar a leer</button>
                   )}
 
-                  {currentSlide !== 0 && currentSlide < slides.length - 1 ? (
+                  {currentSlide !== 0 &&
+                  currentSlide < slidesData.length - 1 ? (
                     <button onClick={handleNextSlide}>Siguiente</button>
                   ) : (
                     currentSlide !== 0 && (
@@ -143,14 +143,6 @@ export default function IndividualBlog() {
           border-radius: 10px;
           background: var(--light-grey);
           gap: 20px;
-        }
-        .BlogContentItem {
-          position: relative;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          justify-content: center;
-          align-items: center;
         }
         .SlideButtons {
           display: flex;

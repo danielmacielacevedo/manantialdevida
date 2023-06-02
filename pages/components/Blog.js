@@ -19,7 +19,7 @@ export default function Blog(props) {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 100vh;
+          height: 100%;
           align-items: center;
           {/* padding-top: 20px; */}
         }
