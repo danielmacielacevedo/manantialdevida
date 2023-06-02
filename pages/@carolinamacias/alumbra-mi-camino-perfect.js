@@ -17,59 +17,35 @@ export default function IndividualBlog() {
     setCurrentSlide((prevSlide) => prevSlide - 1);
   };
 
-  const handleShare = () => {
-    if (navigator.share) {
-      // Compartir en dispositivos móviles
-      navigator
-        .share({
-          title: "Título del blog",
-          text: "Echa un vistazo a este blog interesante",
-          url: window.location.href,
-        })
-        .then(() => console.log("Enlace compartido"))
-        .catch((error) => console.error("Error al compartir:", error));
-    } else {
-      // Copiar enlace al portapapeles en ordenadores
-      navigator.clipboard
-        .writeText(window.location.href)
-        .then(() => console.log("Enlace copiado al portapapeles"))
-        .catch((error) => console.error("Error al copiar enlace:", error));
-    }
-  };
-
   const slides = [
     <Blog key={0} nombre="CarolinaMacias" indice="0" />,
-    <div key={1}>
-      <h3>Salmos 119:105</h3>
-      <p>Lámpara es a mis pies tu palabra, Y lumbrera a mi camino.</p>
-    </div>,
-    <h2 key={2}>¿Alguna vez has caminado por un lugar oscuro?</h2>,
-    <p key={3}>
+    <h2 key={1}>¿Alguna vez has caminado por un lugar oscuro?</h2>,
+    <p key={2}>
       En tal lugar resulta complicado dar pasos firmes y por ello, tropezar,
       caer, herirse o perder el rumbo son consecuencias de ello.
     </p>,
-    <p key={4}>
+    <p key={3}>
       La dificultad que se enfrenta en esa situación, suele ser la misma que al
       andar por este mundo lleno de oscuridad.
     </p>,
-    <p key={5}>
+    <p key={4}>
       Juan 12:35 menciona que el que anda en oscuridad no sabe a dónde va. Sin
       embargo, el versículo base muestra la solución.
     </p>,
-    <p key={6}>
+    <p key={5}>
       La Palabra de Dios es una lámpara, una lámpara que alumbra el camino de
       todos aquellos que se disponen a hacer Su voluntad, caminando en la
       dirección que Él ha determinado.
     </p>,
-    <p key={7}>
+    <p key={6}>
       Haz de Su Palabra tu mayor refugio y pide continuamente a Dios que alumbre
       tu camino...
     </p>,
-    <p key={8}>
+    <p key={7}>
       Ya que es la única solución para permanecer firmes y en dirección a Su
       propósito.
     </p>,
-    <Blog key={9} nombre="CarolinaMacias" indice="0" />,
+    <Blog key={8} nombre="CarolinaMacias" indice="0" />,
   ];
 
   return (
@@ -105,18 +81,12 @@ export default function IndividualBlog() {
               <div
                 id="SlideContainer"
                 key={index}
-                className={`Slide Slide${index + 1} ${
+                className={`Slide${index + 1} ${
                   currentSlide === index ? "active" : ""
-                } ${currentSlide > index ? "previous" : ""}`}
+                }`}
                 style={{ display: currentSlide === index ? "flex" : "none" }}
               >
-                <div
-                  className={`BlogContentItem ${
-                    currentSlide === index ? "fadeInOut" : ""
-                  }`}
-                >
-                  {slide}
-                </div>
+                <div className="BlogContentItem">{slide}</div>
                 <div className="SlideButtons">
                   {currentSlide !== 0 && (
                     <button onClick={handlePrevSlide}>Anterior</button>
@@ -131,7 +101,7 @@ export default function IndividualBlog() {
                   ) : (
                     currentSlide !== 0 && (
                       <>
-                        <button onClick={handleShare}>Compartir</button>
+                        <button onClick={handleNextSlide}>Compartir</button>
                       </>
                     )
                   )}
@@ -152,7 +122,6 @@ export default function IndividualBlog() {
           padding: 0 20px;
         }
         .BlogContentSliderCards {
-          position: relative;
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -160,7 +129,6 @@ export default function IndividualBlog() {
           align-items: center;
           justify-content: center;
           gap: 20px;
-          overflow: hidden;
         }
         #SlideContainer {
           position: relative;
@@ -175,7 +143,7 @@ export default function IndividualBlog() {
           border-radius: 10px;
           background: var(--light-grey);
           gap: 20px;
-          text-align: center;
+          text-align: justify;
         }
         .BlogContentItem {
           position: relative;
@@ -190,22 +158,6 @@ export default function IndividualBlog() {
           width: 100%;
           gap: 20px;
         }
-        .Slide {
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 0;
-          transition: opacity 0.5s ease;
-        }
-
-        .Slide.active {
-          opacity: 1;
-          z-index: 1;
-        }
-
-        .Slide.previous {
-          opacity: 0;
-        }
         button {
           display: flex;
           flex: 1;
@@ -218,22 +170,6 @@ export default function IndividualBlog() {
           font-size: 16px;
           font-weight: 700;
           cursor: pointer;
-        }
-
-        @keyframes fadeInOut {
-          0% {
-            opacity: 0;
-          }
-          50% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-
-        .fadeInOut {
-          animation: fadeInOut 2s ease-in-out;
         }
       `}</style>
     </>

@@ -88,7 +88,7 @@ export default function CoverBlog(props) {
           color: var(--secondary-color);
         }
         .CoverPredicaContainer h1 {
-          font-size: 70px;
+          font-size: 60px;
           text-align: center;
         }
         .CoverPredicaContainer h5 {
