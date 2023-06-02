@@ -1,17 +1,18 @@
 import Head from "next/head";
 import Blog from "../components/Blog";
 import BlogShare from "../components/BlogShare";
-import { useState, useContext } from "react";
-import { UserContext } from "../UserProvider";
+import { useState } from "react";
+// import { useState, useContext } from "react";
+// import { UserContext } from "../UserProvider";
 import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import EntrarButtonBlog from "../components/EntrarButtonBlog";
+// import EntrarButtonBlog from "../components/EntrarButtonBlog";
 
 export default function IndividualBlog() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { user } = useContext(UserContext);
+  // const { user } = useContext(UserContext);
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) => prevSlide + 1);
@@ -120,7 +121,7 @@ export default function IndividualBlog() {
       <BackHeader />
 
       <div className="BlogContentContainer">
-        {user === null && (
+        {/* {user === null && (
           <div className="BlogContentSliderCards">
             {slides.map((slide, index) => (
               <div
@@ -147,51 +148,51 @@ export default function IndividualBlog() {
               </div>
             ))}
           </div>
-        )}
+        )} */}
 
-        {user && user.email && (
-          <div className="BlogContentSliderCards">
-            {slides.map((slide, index) => (
+        {/* {user && user.email && ( */}
+        <div className="BlogContentSliderCards">
+          {slides.map((slide, index) => (
+            <div
+              id="SlideContainer"
+              key={index}
+              className={`Slide Slide${index + 1} ${
+                currentSlide === index ? "active" : ""
+              } ${currentSlide > index ? "previous" : ""}`}
+              style={{ display: currentSlide === index ? "flex" : "none" }}
+            >
               <div
-                id="SlideContainer"
-                key={index}
-                className={`Slide Slide${index + 1} ${
-                  currentSlide === index ? "active" : ""
-                } ${currentSlide > index ? "previous" : ""}`}
-                style={{ display: currentSlide === index ? "flex" : "none" }}
+                className={`BlogContentItem ${
+                  currentSlide === index ? "fadeInOut" : ""
+                }`}
               >
-                <div
-                  className={`BlogContentItem ${
-                    currentSlide === index ? "fadeInOut" : ""
-                  }`}
-                >
-                  {slide}
-                </div>
-                <div className="SlideButtons">
-                  {currentSlide !== 0 && (
-                    <button onClick={handlePrevSlide}>Anterior</button>
-                  )}
-
-                  {currentSlide === 0 && (
-                    <button onClick={handleNextSlide}>Empezar a leer</button>
-                  )}
-
-                  {currentSlide !== 0 && currentSlide < slides.length - 1 ? (
-                    <button onClick={handleNextSlide}>Siguiente</button>
-                  ) : (
-                    currentSlide !== 0 && (
-                      <>
-                        <button id="whiteButton" onClick={handleShare}>
-                          Compartir
-                        </button>
-                      </>
-                    )
-                  )}
-                </div>
+                {slide}
               </div>
-            ))}
-          </div>
-        )}
+              <div className="SlideButtons">
+                {currentSlide !== 0 && (
+                  <button onClick={handlePrevSlide}>Anterior</button>
+                )}
+
+                {currentSlide === 0 && (
+                  <button onClick={handleNextSlide}>Empezar a leer</button>
+                )}
+
+                {currentSlide !== 0 && currentSlide < slides.length - 1 ? (
+                  <button onClick={handleNextSlide}>Siguiente</button>
+                ) : (
+                  currentSlide !== 0 && (
+                    <>
+                      <button id="whiteButton" onClick={handleShare}>
+                        Compartir
+                      </button>
+                    </>
+                  )
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* )} */}
       </div>
       <Footer />
       <ToastContainer
