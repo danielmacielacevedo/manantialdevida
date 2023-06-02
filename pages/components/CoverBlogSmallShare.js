@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import TimeAgo from "./TimeAgo";
 import Lottie from "react-lottie";
-import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
+import ShareIcon from "../../public/assets/icons/animated-icons/ShareIcon.json";
 
 export default function CoverBlog(props) {
   const [loading, setLoading] = useState(true);
@@ -49,8 +49,8 @@ export default function CoverBlog(props) {
           <section className="LeftSection">
             <Lottie
               options={{
-                animationData: BlogIcon,
-                loop: false,
+                animationData: ShareIcon,
+                loop: true,
                 autoplay: true,
               }}
               width={34}

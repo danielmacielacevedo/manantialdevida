@@ -181,7 +181,9 @@ export default function IndividualBlog() {
                   ) : (
                     currentSlide !== 0 && (
                       <>
-                        <button onClick={handleShare}>Compartir</button>
+                        <button id="whiteButton" onClick={handleShare}>
+                          Compartir
+                        </button>
                       </>
                     )
                   )}
@@ -278,6 +280,17 @@ export default function IndividualBlog() {
           cursor: pointer;
           background-color: var(--light-grey);
           color: var(--secondary-color);
+          transition: 0.6s;
+        }
+        button:hover {
+          background-color: var(--mid-grey);
+        }
+        #whiteButton {
+          background: var(--secondary-color);
+          color: var(--light-grey);
+        }
+        #whiteButton:hover {
+          background: var(--dark-grey);
         }
 
         @keyframes fadeInOut {
