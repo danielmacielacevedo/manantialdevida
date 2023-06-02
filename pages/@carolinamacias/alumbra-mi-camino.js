@@ -196,7 +196,6 @@ export default function IndividualBlog() {
           border-radius: 10px;
           gap: 20px;
           text-align: center;
-          background: red;
         }
         .BlogContentItem {
           position: relative;

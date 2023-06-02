@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import TimeAgo from "./TimeAgo";
+import Lottie from "react-lottie";
+import BlogIcon from "../../public/assets/icons/animated-icons/BlogIcon.json";
 
 export default function CoverBlog(props) {
   const [loading, setLoading] = useState(true);
@@ -45,7 +47,16 @@ export default function CoverBlog(props) {
         </div>
         <div className="CoverSectionsContainer">
           <section className="LeftSection">
-            <h3>BLOG</h3>
+            <Lottie
+              options={{
+                animationData: BlogIcon,
+                loop: false,
+                autoplay: true,
+              }}
+              width={34}
+              height={34}
+              isClickToPauseDisabled
+            />
             <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
               <h1>{coverInfoBlog.title}</h1>
             </Link>
@@ -120,7 +131,7 @@ export default function CoverBlog(props) {
           align-items: center;
           gap: 20px;
           padding: 20px;
-          height: 57.8vh;
+          height: 56vh;
         }
         #BlogImage {
           display: flex;
