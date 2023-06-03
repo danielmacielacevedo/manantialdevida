@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
       <BackHeader />
       <Cover>
-        <CoverPredica nombre="FlorFernandez" indice="1" />
+        <CoverPredica nombre="PastorIsaac" indice="6" />
       </Cover>
       <Predicas />
       <Footer />

@@ -132,6 +132,24 @@ export default function detallesVideos(req, res) {
       profileURL: "/@pastorisaac",
       embed: "ld3xPECRZDA",
     },
+
+    {
+      title: "El tiempo se agota",
+      autor: "Pastor Isaac Delgado",
+      picture: "/assets/predicadores/pastor-isaac.png",
+      date: "31 MAYO 2023",
+      dia: "31",
+      mes: "05",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/pastor-isaac/el-tiempo-se-agota.jpg",
+      imageHD: "/assets/predicadores/pastor-isaac/el-tiempo-se-agota-HD.jpg",
+      url: "/el-tiempo-se-agota",
+      profileURL: "/@pastorisaac",
+      embed: "3Sr97AgpcDo",
+    },
   ];
 
   const pastoraDina = [

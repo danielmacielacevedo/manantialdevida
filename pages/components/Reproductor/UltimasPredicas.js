@@ -3,6 +3,7 @@ import PredicaCardDetails from "./PredicaCardDetails";
 export default function UltimasPredicas() {
   return (
     <>
+      <PredicaCardDetails nombre="PastorIsaac" indice="6" />
       <PredicaCardDetails nombre="PastoraDina" indice="2" />
       <PredicaCardDetails nombre="FranciscoSerrano" indice="2" />
       <PredicaCardDetails nombre="PastorIsaac" indice="5" />
