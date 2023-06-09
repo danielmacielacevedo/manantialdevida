@@ -172,11 +172,11 @@ export default function IndividualBlog() {
         <meta property="og:url" content="https://somosmamantial.org/blog" />
         <meta
           property="og:image"
-          content="https://somosmamantial.org/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
+          content="/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
         />
         <link
           rel="apple-touch-icon"
-          href="https://somosmamantial.org/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
+          href="/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
         ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
