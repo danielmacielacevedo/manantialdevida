@@ -30,8 +30,29 @@ export default function detallesBlog(req, res) {
     },
   ];
 
+  const marlenZamora = [
+    {
+      title: "El Señor está a mi lado",
+      autor: "Marlen Zamora",
+      picture: "/assets/escritores/marlen-zamora.png",
+      date: "09 JUNIO 2023",
+      dia: "09",
+      mes: "06",
+      año: "2023",
+      hora: "08",
+      minuto: "00",
+      desc: "",
+      image: "/assets/escritores/marlen-zamora/el-SENOR-esta-a-mi-lado.jpg",
+      imageHD:
+        "/assets/escritores/marlen-zamora/el-SENOR-esta-a-mi-lado-HD.jpg",
+      url: "/el-SENOR-esta-a-mi-lado",
+      profileURL: "/@marlenzamora",
+    },
+  ];
+
   const data = {
     CarolinaMacias: carolinaMacias,
+    MarlenZamora: marlenZamora,
   };
 
   cache.set(cacheKey, data, 60 * 60); // Cache durante 1 hora

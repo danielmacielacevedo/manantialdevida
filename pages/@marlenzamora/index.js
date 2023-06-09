@@ -5,7 +5,7 @@ import BlogCard from "../components/Blog/BlogCard";
 import EscritorCard from "../components/Blog/EscritorCardDetails";
 
 export default function Predicador() {
-  const predicador = "CarolinaMacias";
+  const predicador = "MarlenZamora";
 
   return (
     <div className="theme">
