@@ -2,13 +2,17 @@ import Head from "next/head";
 import Blog from "../components/Blog";
 import BlogShare from "../components/BlogShare";
 import { useState } from "react";
+// import { useState, useContext } from "react";
+// import { UserContext } from "../UserProvider";
 import Footer from "../components/Footer";
 import BackHeader from "../components/BackHeader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import EntrarButtonBlog from "../components/EntrarButtonBlog";
 
 export default function IndividualBlog() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  // const { user } = useContext(UserContext);
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) => prevSlide + 1);
@@ -159,7 +163,7 @@ export default function IndividualBlog() {
         <title>El Señor está a mi lado | Marlen Zamora</title>
         <meta
           name="description"
-          content="Ser un seguidor comprometido de Jesús no te exime del sufrimiento y del dolor, pero..."
+          content="Ser un seguidor comprometido de Jesús no..."
         />
         <meta
           property="og:title"
@@ -168,11 +172,11 @@ export default function IndividualBlog() {
         <meta property="og:url" content="https://somosmamantial.org/blog" />
         <meta
           property="og:image"
-          content="/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
+          content="https://somosmamantial.org/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
         />
         <link
           rel="apple-touch-icon"
-          href="/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
+          href="https://somosmamantial.org/assets/escritores/marlen-zamora/el-senor-esta-a-mi-lado-share.jpg"
         ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
