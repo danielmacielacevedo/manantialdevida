@@ -19,26 +19,6 @@ export default function MaestrosFiltro(props) {
       setFilteredArticles(data);
   };
 
-  // const fetchData = async () => {
-  //   if (esAdministrador(user.id)) {
-  //     const response = await fetch(encodeURI(`/api/maestros/${props.mes}`));
-  //     const data = await response.json();
-  //     setOriginalArticles(data);
-  //     setFilteredArticles(data);
-  //   } else {
-  //     const idUsuario = user.id;
-  //     const response = await fetch(`/api/maestros/Junio?data.id=${user.id}`);
-  //     // const response = await fetch("/api/maestros/Junio.js?id=2v8vhcmISgeZKEDk2YDACmGgDJI2");
-  //     console.log(response)
-  //     const data = await response.json();
-  //     const filteredData = data.filter((article) =>
-  //       article.classes.some((clase) => clase.id === idUsuario)
-  //     );
-  //     setOriginalArticles(filteredData);
-  //     setFilteredArticles(filteredData);
-  //   }
-  // };
-
   // Realizar la solicitud fetch cuando se monta el componente
   useEffect(() => {
     fetchData();
@@ -78,18 +58,20 @@ export default function MaestrosFiltro(props) {
 
   return (
     <>
-      <div className="MaestrosFiltroContainer">
-        {esAdministrador(user.id) && (
-          <>
-            <ButtonList categories={categories} filterCategory={filterCategory} />
-            <ButtonDayList
-              articles={originalArticles}
-              filterDay={filterDay}
-            />
-          </>
-        )}
-        <ArticleList mes={mes} articles={filteredArticles} selectedDay={selectedDay} />
-      </div>
+      {user && user.id && (
+        <div className="MaestrosFiltroContainer">
+          {esAdministrador(user.id) && (
+            <>
+              <ButtonList categories={categories} filterCategory={filterCategory} />
+              <ButtonDayList
+                articles={originalArticles}
+                filterDay={filterDay}
+              />
+            </>
+          )}
+          <ArticleList mes={mes} articles={filteredArticles} selectedDay={selectedDay} />
+        </div>
+      )}
       <style jsx>{`
         .MaestrosFiltroContainer {
           display: flex;
