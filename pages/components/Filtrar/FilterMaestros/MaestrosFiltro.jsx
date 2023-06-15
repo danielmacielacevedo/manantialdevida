@@ -10,7 +10,7 @@ export default function MaestrosFiltro(props) {
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [selectedDay, setSelectedDay] = useState(""); // Estado para el día seleccionado
   const { user } = useContext(UserContext);
-  const mes = "Junio";
+  const mes = props.mes
 
   const fetchData = async () => {
       const response = await fetch(encodeURI(`/api/maestros/${props.mes}`));

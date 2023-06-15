@@ -1,24 +1,5 @@
 const data = [
   {
-    id: "2v8vhcmISgeZKEDk2YDACmGgDJI2",
-    title: "Daniel Maciel",
-    classes: [
-      {
-        category: "Niños",
-        date: "Miércoles",
-        dia: "14",
-        class: "Niños",
-      },
-      {
-        category: "Niños",
-        date: "Domingo",
-        dia: "25",
-        class: "Niños grandes",
-      },
-    ],
-  },
-
-  {
     id: "KyQkvrUTmbRHnFbhqVGXtG9M22J3",
     title: "Anita Minchaca",
     classes: [

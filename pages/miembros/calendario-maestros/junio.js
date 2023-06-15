@@ -8,6 +8,8 @@ import { useContext } from "react";
 import { UserContext } from "daniel/pages/UserProvider";
 import Entrar from "daniel/pages/components/Sesion/Login";
 import esMiembroAutorizado from "daniel/pages/api/MiembrosAutorizados";
+import esAdministrador from "daniel/pages/api/Administradores";
+import Link from "next/link";
 
 export default function CalendarioMaestros() {
   const mesTitle = "JUNIO";
@@ -48,8 +50,21 @@ export default function CalendarioMaestros() {
             <div className="PageContainer">
               <div className="CalendarTitle">
                 <h1>Hola {user.name.split(" ")[0]}</h1>
-                <p>Aquí está tu calendario de</p>
-                <span>{mesTitle}</span>
+                {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
+                {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
+                <div className="CalendarTitleButtons">
+                  <Link href="/miembros/calendario-maestros/mayo">
+                    <span className="CalendarLeft">
+                      <i></i>
+                    </span>
+                  </Link>
+                  <span>{mesTitle}</span>
+                  <div href="/">
+                    <span className="CalendarRight off">
+                      <i></i>
+                    </span>
+                  </div>
+                </div>
               </div>
               <MaestrosFiltro mes={mes} />
               <div className="PageContent">
@@ -69,14 +84,6 @@ export default function CalendarioMaestros() {
         </>
       )}
       <BackMenuMobile />
-      <style jsx>{`
-        h1 {
-          margin-bottom: -10px;
-        }
-      `}</style>
     </>
   );
 }
-
-// export default withAuth(CalendarioMaestros);
-// export default withAuth(CalendarioMaestros);

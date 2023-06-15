@@ -54,6 +54,21 @@ export default function IndividualBlog() {
   const slides = [
     <Blog key={0} nombre="MarlenZamora" indice="0" />,
     <div key={1}>
+      <h3>2 Timoteo 4:17</h3>
+      <p>
+        Pero el Señor estuvo a mi lado, y me dio fuerzas, para que por mí fuese
+        cumplida la predicación, y que todos los gentiles oyesen. Así fui
+        librado de la boca del león.
+      </p>
+    </div>,
+    <p key={2}>
+      Un ejemplo de vida entregada a Dios sin duda es el apóstol Pablo
+    </p>,
+    <p key={3}>
+      y a pesar de su arduo trabajo para expandir el evangelio vivió muchas
+      circunstancias en donde incluso peligró su vida.
+    </p>,
+    <div key={4}>
       <h3>2 Corintios 11:25</h3>
       <p>
         Tres veces he sido azotado con varas; una vez apedreado; tres veces he
@@ -61,7 +76,7 @@ export default function IndividualBlog() {
         mar;
       </p>
     </div>,
-    <div key={2}>
+    <div key={5}>
       <h3>2 Corintios 11:26</h3>
       <p>
         en caminos muchas veces; en peligros de ríos, peligros de ladrones,
@@ -70,57 +85,57 @@ export default function IndividualBlog() {
         falsos hermanos;
       </p>
     </div>,
-    <div key={3}>
+    <div key={6}>
       <h3>2 Corintios 11:27</h3>
       <p>
         en trabajo y fatiga, en muchos desvelos, en hambre y sed, en muchos
         ayunos, en frío y en desnudez;
       </p>
     </div>,
-    <div key={4}>
+    <div key={7}>
       <h3>2 Corintios 11:28</h3>
       <p>
         y además de otras cosas, lo que sobre mí se agolpa cada día, la
         preocupación por todas las iglesias.
       </p>
     </div>,
-    <h2 key={5}>
+    <p key={8}>
       Ser un seguidor comprometido de Jesús no te exime del sufrimiento y del
       dolor...
-    </h2>,
-    <p key={6}>
+    </p>,
+    <p key={9}>
       ...pero la gloriosa esperanza es que aun en el dolor, en la perdida, en la
       enfermedad, encontramos alivio en los brazos de un Padre que nos ama.
     </p>,
-    <p key={7}>Y sabemos esto, pero lo olvidamos.</p>,
-    <p key={8}>
+    <p key={10}>Y sabemos esto, pero lo olvidamos.</p>,
+    <p key={11}>
       Y en medio del desánimo pensamos “¿Por qué esto me pasó a mí? Estaba
       tratando de obedecer a Dios.
     </p>,
-    <p key={9}>Lo amo. Lo sigo. ¡Por que Dios dejó que pasara esto!”.</p>,
-    <p key={10}>Recuerda que nosotros no vemos el panorama completo</p>,
-    <p key={11}>
+    <p key={12}>Lo amo. Lo sigo. ¡Por que Dios dejó que pasara esto!”.</p>,
+    <p key={13}>Recuerda que nosotros no vemos el panorama completo</p>,
+    <p key={14}>
       No sabes cómo Dios está obrando y moviendo las piezas para cumplir Su
       eterno propósito en tu vida.
     </p>,
-    <p key={12}>
+    <p key={15}>
       Puede que tus circunstancias actuales que son tan desesperantes, sean
       exactamente lo que Dios está utilizando para traer victoria a tu vida...
     </p>,
-    <p key={13}>...solo confía en su perfecta y agradable voluntad.</p>,
-    <p key={14}>
+    <p key={16}>...solo confía en su perfecta y agradable voluntad.</p>,
+    <p key={17}>
       Pablo sabía de dónde venían sus fuerzas, el entendió que no estaba solo
       aún cuando todos lo abandonaron.
     </p>,
 
-    <div key={15}>
+    <div key={18}>
       <h3>2 Timoteo 4:16</h3>
       <p>
         En mi primera defensa ninguno estuvo a mi lado, sino que todos me
         desampararon; no les sea tomado en cuenta.
       </p>
     </div>,
-    <div key={16}>
+    <div key={19}>
       <h3>2 Timoteo 4:17</h3>
       <p>
         Pero el Señor estuvo a mi lado, y me dio fuerzas, para que por mí fuese
@@ -128,7 +143,7 @@ export default function IndividualBlog() {
         librado de la boca del león.
       </p>
     </div>,
-    <div key={17}>
+    <div key={20}>
       <h3>2 Timoteo 4:18</h3>
       <p>
         Y el Señor me librará de toda obra mala, y me preservará para su reino
@@ -136,25 +151,25 @@ export default function IndividualBlog() {
       </p>
     </div>,
 
-    <p key={18}>
+    <p key={21}>
       El Señor nos librará de todo ataque maligno, necesitas recordar esto
       cuando sientes que no puedes más...
     </p>,
-    <p key={19}>
+    <p key={22}>
       cuando te sientes abandonado o incluso cuando realmente todos te han
       desamparado como al apóstol Pablo.
     </p>,
-    <p key={20}>Sigamos confiando y así también nosotros poder declarar:</p>,
-    <div key={21}>
+    <p key={23}>Sigamos confiando y así también nosotros poder declarar:</p>,
+    <div key={24}>
       <h3>2 Timoteo 4:17</h3>
       <h2>Pero el Señor estuvo a mi lado y me dio fuerzas...</h2>
     </div>,
-    <p key={22}>Dios está a tu lado. Él te dará ánimo.</p>,
-    <p key={23}>Él te dará las fuerzas incluso para resistir la prueba.</p>,
-    <p key={24}>Todo es con un propósito...</p>,
-    <p key={25}>y el propósito lo encontramos siempre a los pies de Cristo.</p>,
+    <p key={25}>Dios está a tu lado. Él te dará ánimo.</p>,
+    <p key={26}>Él te dará las fuerzas incluso para resistir la prueba.</p>,
+    <p key={27}>Todo es con un propósito...</p>,
+    <p key={28}>y el propósito lo encontramos siempre a los pies de Cristo.</p>,
 
-    <BlogShare key={9} nombre="MarlenZamora" indice="0" />,
+    <BlogShare key={29} nombre="MarlenZamora" indice="0" />,
   ];
 
   return (

@@ -2,35 +2,38 @@ import { useState, useEffect, useContext } from "react";
 import esAdministrador from "daniel/pages/api/Administradores";
 import { UserContext } from "daniel/pages/UserProvider";
 
-export default function ArticleList({props, articles, selectedDay }) {
+export default function ArticleList({ articles, selectedDay, mes }) {
   const [isLoading, setIsLoading] = useState(true);
   const { user } = useContext(UserContext);
   const [userData, setUserData] = useState([]);
 
-  function fetchArticles() {
-    fetch('/api/maestros/Junio')
-      .then(response => response.json())
-      .then(data => {
-        // Buscar el objeto con el ID específico
-        const id = user.id
-        const desiredArticle = data.find(article => article.id === id);
+  console.log('Valor de props.mes:', mes);
+
   
-        // Verificar si se encontró el objeto
-        if (desiredArticle) {
-          console.log('Objeto encontrado:', desiredArticle);
+  async function fetchArticles() {
+    try {
+      const response = await fetch(`/api/maestros/${mes}`);
+      const data = await response.json();
+      
+      // Buscar el objeto con el ID específico
+      const id = user.id;
+      const desiredArticle = data.find(article => article.id === id);
   
-          // Verificar si el estado ya contiene el objeto deseado
-          if (!userData || userData.id !== desiredArticle.id) {
-            setUserData(desiredArticle);
-          }
-        } else {
-          console.log('No se encontró el objeto con el ID especificado');
+      // Verificar si se encontró el objeto
+      if (desiredArticle) {
+        console.log('Objeto encontrado:', desiredArticle);
+  
+        // Verificar si el estado ya contiene el objeto deseado
+        if (!userData || userData.id !== desiredArticle.id) {
+          setUserData(desiredArticle);
         }
-      })
-      .catch(error => {
-        // Manejo de errores
-        console.error(error);
-      });
+      } else {
+        console.log('No se encontró el objeto con el ID especificado');
+      }
+    } catch (error) {
+      // Manejo de errores
+      console.error(error);
+    }
   }
   
   // Llamar a fetchArticles solo cuando userData esté vacío
@@ -40,10 +43,7 @@ export default function ArticleList({props, articles, selectedDay }) {
     }
   }, [userData]);
   
-  // Resto de tu código...
   
-  
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -90,26 +90,33 @@ export default function ArticleList({props, articles, selectedDay }) {
           ))
           ) : !esAdministrador(user.id) && articles && articles.length > 0 ? (
             <>
-              <div className="MaestroContainer article-container">
-                <div className="MaestroClasses">
-                  {userData.classes.map((clase, index) => (
-                    <div className="TableContainerInfo" key={index}>
-                      <div className="NameContainer">
-                        <span>
-                          {clase.date} {clase.dia}
-                        </span>
-                        <span>{clase.class}</span>
+              {userData.classes ? (
+                <div className="MaestroContainer article-container">
+                  <div className="MaestroClasses">
+                    {userData.classes.map((clase, index) => (
+                      <div className="TableContainerInfo" key={index}>
+                        <div className="NameContainer">
+                          <span>
+                            {clase.date} {clase.dia}
+                          </span>
+                          <span>{clase.class}</span>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <p className="TextAlignCenter">
+                  No hay datos para ti en este mes.
+                </p>
+              )}
             </>
           ) : (
-          <p className="TextAlignCenter">
-            Este calendario aún no está disponible.
-          </p>
-        )}
+            <p className="TextAlignCenter">
+              Este calendario aún no está disponible.
+            </p>
+          )}
+          
       </div>
       <style jsx>{`
         .ArticleListContainer {
@@ -170,9 +177,3 @@ export default function ArticleList({props, articles, selectedDay }) {
     </>
   );
 }
-
-
-
-
-
-

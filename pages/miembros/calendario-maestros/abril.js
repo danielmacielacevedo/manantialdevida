@@ -3,10 +3,16 @@ import BackHeader from "../../components/BackHeader";
 import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
 import MaestrosFiltro from "daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro";
 import withAuth from "daniel/utils/withAuth";
+import esAdministrador from "daniel/pages/api/Administradores";
+import { useContext } from "react";
+import { UserContext } from "daniel/pages/UserProvider";
+import Link from "next/link";
 
 function CalendarioMaestros() {
   const mesTitle = "ABRIL";
   const mes = "Abril";
+
+  const { user } = useContext(UserContext);
 
   return (
     <>
@@ -38,8 +44,22 @@ function CalendarioMaestros() {
         <div className="PrincipalSectionContent">
           <div className="PageContainer">
             <div className="CalendarTitle">
-              <h3>Calendario Maestros</h3>
-              <span>{mesTitle}</span>
+              <h1>Hola {user.name.split(" ")[0]}</h1>
+              {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
+              {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
+              <div className="CalendarTitleButtons">
+                <div href="/">
+                  <span className="CalendarLeft off">
+                    <i></i>
+                  </span>
+                </div>
+                <span>{mesTitle}</span>
+                <Link href="/miembros/calendario-maestros/mayo">
+                  <span className="CalendarRight">
+                    <i></i>
+                  </span>
+                </Link>
+              </div>
             </div>
             <div className="PageContent">
               <div className="MainCalendario">

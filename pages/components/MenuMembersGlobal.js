@@ -2,7 +2,6 @@ import Link from "next/link";
 import SmallNovedad from "./SmallNovedad";
 import { useState, useContext, useEffect, useRef, createContext } from "react";
 import { UserContext } from "../UserProvider";
-import esMiembroAutorizado from "../api/MiembrosAutorizados";
 import Lottie from "react-lottie";
 import Salir from "./Sesion/Logout";
 import HomeIcon from "../../public/assets/icons/animated-icons/HomeIcon.json";
@@ -13,6 +12,7 @@ import CalendarIcon from "../../public/assets/icons/animated-icons/CalendarIcon.
 import HumanIcon from "../../public/assets/icons/animated-icons/HumanIcon.json";
 import DirectionsIcon from "../../public/assets/icons/animated-icons/DirectionsIcon.json";
 import FolderIcon from "../../public/assets/icons/animated-icons/FolderIcon.json";
+import esAdministrador from "../api/Administradores";
 
 export const MenuContext = createContext();
 
@@ -126,6 +126,184 @@ export default function MenuMembers(props) {
                 <p>Inicio</p>
               </div>
             </Link>
+            {esAdministrador(user.id) && (
+              <div className="PrivateContainerMenu">
+                Administrador
+                <Link href="/miembros/calendario-maestros">
+                  <div
+                    onClick={() => handleIconClick("calendar1")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar1" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar1" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar1}
+                        />
+                      </div>
+                    </div>
+                    <p>Maestros</p>
+                  </div>
+                </Link>
+                <Link href="/miembros/calendario-sociedades">
+                  <div
+                    onClick={() => handleIconClick("calendar2")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar2" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar2" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar2}
+                        />
+                      </div>
+                    </div>
+                    <p>Sociedades</p>
+                  </div>
+                </Link>
+                <Link href="/miembros/calendario-audio">
+                  <div
+                    onClick={() => handleIconClick("calendar3")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar3" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar3" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar3}
+                        />
+                      </div>
+                    </div>
+                    <p>Audio</p>
+                  </div>
+                </Link>
+              </div>
+            )}
+            {!esAdministrador(user.id) && (
+              <div className="PrivateContainerMenu">
+                Mi calendario
+                <Link href="/miembros/calendario-maestros">
+                  <div
+                    onClick={() => handleIconClick("calendar1")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar1" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar1" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar1}
+                        />
+                      </div>
+                    </div>
+                    <p>Maestros</p>
+                  </div>
+                </Link>
+                {/* <Link href="/miembros/calendario-sociedades">
+                  <div
+                    onClick={() => handleIconClick("calendar2")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar2" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar2" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar2}
+                        />
+                      </div>
+                    </div>
+                    <p>Sociedades</p>
+                  </div>
+                </Link>
+                <Link href="/miembros/calendario-audio">
+                  <div
+                    onClick={() => handleIconClick("calendar3")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar3" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar3" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar3}
+                        />
+                      </div>
+                    </div>
+                    <p>Audio</p>
+                  </div>
+                </Link> */}
+              </div>
+            )}
             Accesos directos
             <Link href="/blog">
               <div
@@ -211,124 +389,6 @@ export default function MenuMembers(props) {
                 <p>Boletín</p>
               </div>
             </Link> */}
-            {esMiembroAutorizado(user.id) && (
-              <div className="PrivateContainerMenu">
-                Privados
-                <Link href="/miembros/calendario-maestros">
-                  <div
-                    onClick={() => handleIconClick("calendar1")}
-                    className="ItemMenuContainer"
-                  >
-                    <div className="PostProfilePicture">
-                      <div
-                        className={`IconContainer ${
-                          activeIcon === "calendar1" ? "active" : ""
-                        }`}
-                      >
-                        <Lottie
-                          options={{
-                            animationData: CalendarIcon,
-                            loop: false,
-                            autoplay: false,
-                          }}
-                          isStopped={activeIcon !== "calendar1" || !isPlaying}
-                          width={24}
-                          height={24}
-                          isClickToPauseDisabled
-                          ref={animationRefs.calendar1}
-                        />
-                      </div>
-                    </div>
-                    <p>Maestros</p>
-                  </div>
-                </Link>
-                <Link href="/miembros/calendario-sociedades">
-                  <div
-                    onClick={() => handleIconClick("calendar2")}
-                    className="ItemMenuContainer"
-                  >
-                    <div className="PostProfilePicture">
-                      <div
-                        className={`IconContainer ${
-                          activeIcon === "calendar2" ? "active" : ""
-                        }`}
-                      >
-                        <Lottie
-                          options={{
-                            animationData: CalendarIcon,
-                            loop: false,
-                            autoplay: false,
-                          }}
-                          isStopped={activeIcon !== "calendar2" || !isPlaying}
-                          width={24}
-                          height={24}
-                          isClickToPauseDisabled
-                          ref={animationRefs.calendar2}
-                        />
-                      </div>
-                    </div>
-                    <p>Sociedades</p>
-                  </div>
-                </Link>
-                <Link href="/miembros/calendario-audio">
-                  <div
-                    onClick={() => handleIconClick("calendar3")}
-                    className="ItemMenuContainer"
-                  >
-                    <div className="PostProfilePicture">
-                      <div
-                        className={`IconContainer ${
-                          activeIcon === "calendar3" ? "active" : ""
-                        }`}
-                      >
-                        <Lottie
-                          options={{
-                            animationData: CalendarIcon,
-                            loop: false,
-                            autoplay: false,
-                          }}
-                          isStopped={activeIcon !== "calendar3" || !isPlaying}
-                          width={24}
-                          height={24}
-                          isClickToPauseDisabled
-                          ref={animationRefs.calendar3}
-                        />
-                      </div>
-                    </div>
-                    <p>Audio</p>
-                  </div>
-                </Link>
-                Guias
-                <Link href="/miembros/tutoriales/como-ser-ujier">
-                  <div
-                    onClick={() => handleIconClick("human")}
-                    className="ItemMenuContainer"
-                  >
-                    <div className="PostProfilePicture">
-                      <div
-                        className={`IconContainer ${
-                          activeIcon === "human" ? "active" : ""
-                        }`}
-                      >
-                        <Lottie
-                          options={{
-                            animationData: HumanIcon,
-                            loop: false,
-                            autoplay: false,
-                          }}
-                          isStopped={activeIcon !== "human" || !isPlaying}
-                          width={24}
-                          height={24}
-                          isClickToPauseDisabled
-                          ref={animationRefs.human}
-                        />
-                      </div>
-                    </div>
-                    <p>Como ser ujier</p>
-                  </div>
-                </Link>
-              </div>
-            )}
             Calendarios
             <Link href="/actividades">
               <div
@@ -419,6 +479,34 @@ export default function MenuMembers(props) {
                   </div>
                 </div>
                 <p>Logotipos</p>
+              </div>
+            </Link>
+            <Link href="/miembros/tutoriales/como-ser-ujier">
+              <div
+                onClick={() => handleIconClick("human")}
+                className="ItemMenuContainer"
+              >
+                <div className="PostProfilePicture">
+                  <div
+                    className={`IconContainer ${
+                      activeIcon === "human" ? "active" : ""
+                    }`}
+                  >
+                    <Lottie
+                      options={{
+                        animationData: HumanIcon,
+                        loop: false,
+                        autoplay: false,
+                      }}
+                      isStopped={activeIcon !== "human" || !isPlaying}
+                      width={24}
+                      height={24}
+                      isClickToPauseDisabled
+                      ref={animationRefs.human}
+                    />
+                  </div>
+                </div>
+                <p>Como ser ujier</p>
               </div>
             </Link>
             {/* <hr></hr> */}
