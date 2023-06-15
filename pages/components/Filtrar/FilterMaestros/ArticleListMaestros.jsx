@@ -12,7 +12,8 @@ export default function ArticleList({props, articles, selectedDay }) {
       .then(response => response.json())
       .then(data => {
         // Buscar el objeto con el ID específico
-        const desiredArticle = data.find(article => article.id === '2v8vhcmISgeZKEDk2YDACmGgDJI2');
+        const id = user.id
+        const desiredArticle = data.find(article => article.id === id);
   
         // Verificar si se encontró el objeto
         if (desiredArticle) {
