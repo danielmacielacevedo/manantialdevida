@@ -54,13 +54,13 @@ export default function CalendarioMaestros() {
                 {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
                 <div className="CalendarTitleButtons">
                   <Link href="/miembros/calendario-maestros/mayo">
-                    <span className="CalendarLeft">
+                    <span id="on" className="CalendarLeft">
                       <i></i>
                     </span>
                   </Link>
                   <span>{mesTitle}</span>
                   <div href="/">
-                    <span className="CalendarRight off">
+                    <span className="CalendarRight">
                       <i></i>
                     </span>
                   </div>

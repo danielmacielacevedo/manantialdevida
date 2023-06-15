@@ -468,6 +468,8 @@ p {
   justify-content: center;
   border-radius: 10px;
   font-weight: 700;
+  font-size: 30px;
+  background-color: var(--light-grey);
   color: var(--secondary-color);
 }
 .CalendarLeft {
@@ -476,7 +478,6 @@ p {
   max-width: 100px;
   font-size: 10px;
   padding: 10px;
-  background-color: var(--manantial-color);
 }
 .CalendarRight {
   flex: 1;
@@ -484,11 +485,10 @@ p {
   max-width: 100px;
   font-size: 10px;
   padding: 10px;
-  background-color: var(--manantial-color);
 }
-.CalendarLeft.off,
-.CalendarRight.off {
-  background-color: var(--light-grey);
+#on,
+#on {
+  background-color: var(--manantial-color);
 }
 .CalendarTitleButtons span:nth-child(2) {
   flex: 2;

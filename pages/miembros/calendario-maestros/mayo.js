@@ -49,13 +49,13 @@ function CalendarioMaestros() {
               {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
               <div className="CalendarTitleButtons">
                 <Link href="/miembros/calendario-maestros/abril">
-                  <span className="CalendarLeft">
+                  <span id="on" className="CalendarLeft">
                     <i></i>
                   </span>
                 </Link>
                 <span>{mesTitle}</span>
                 <Link href="/miembros/calendario-maestros/junio">
-                  <span className="CalendarRight">
+                  <span id="on" className="CalendarRight">
                     <i></i>
                   </span>
                 </Link>
