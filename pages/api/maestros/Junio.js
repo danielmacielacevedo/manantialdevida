@@ -1,6 +1,25 @@
 const data = [
   {
-    id: "AnitaMinchaca",
+    id: "2v8vhcmISgeZKEDk2YDACmGgDJI2",
+    title: "Daniel Maciel",
+    classes: [
+      {
+        category: "Niños",
+        date: "Miércoles",
+        dia: "14",
+        class: "Niños",
+      },
+      {
+        category: "Niños",
+        date: "Domingo",
+        dia: "25",
+        class: "Niños grandes",
+      },
+    ],
+  },
+
+  {
+    id: "KyQkvrUTmbRHnFbhqVGXtG9M22J3",
     title: "Anita Minchaca",
     classes: [
       {
@@ -13,7 +32,7 @@ const data = [
   },
 
   {
-    id: "CarolinaMacias",
+    id: "sSIBzQSvt8a4Wb6EHIUtPRx1JwP2",
     title: "Carolina Macias",
     classes: [
       {
@@ -51,7 +70,7 @@ const data = [
   },
 
   {
-    id: "DoraCervantes",
+    id: "75fText1KOM1fieNBLYyCYUfuJA3",
     title: "Dora Cervantes",
     classes: [
       {
@@ -70,7 +89,7 @@ const data = [
   },
 
   {
-    id: "ElusaiCazares",
+    id: "DtPfF0troXVtASHt8SlKdlogZa52",
     title: "Elusai Cazares",
     classes: [
       {
@@ -89,7 +108,7 @@ const data = [
   },
 
   {
-    id: "EmmanuelAguilar",
+    id: "A3uCWAOZfYMXRzig1L74kQOfBbf1",
     title: "Emmanuel Aguilar",
     classes: [
       {
@@ -102,7 +121,7 @@ const data = [
   },
 
   {
-    id: "FlorFernandez",
+    id: "w7U8W7FU4sfR3FAjduNB5NFAiT82",
     title: "Flor Fernández",
     classes: [
       {
@@ -121,7 +140,7 @@ const data = [
   },
 
   {
-    id: "FranciscoSerrano",
+    id: "gT4ICHdF3hSs5CpTco2IoqVqKzf2",
     title: "Francisco Serrano",
     classes: [
       {
@@ -140,7 +159,7 @@ const data = [
   },
 
   {
-    id: "HortensiaSigala",
+    id: "jWjXU1TtiEZAM6h10xU8KFjObq73",
     title: "Hortensia Sigala",
     classes: [
       {
@@ -153,7 +172,7 @@ const data = [
   },
 
   {
-    id: "IsaiasRomero",
+    id: "2fDInfgoOXSLJ0VKuWWb05PHgHI2",
     title: "Isaias Romero",
     classes: [
       {
@@ -172,7 +191,7 @@ const data = [
   },
 
   {
-    id: "JessicaTenorio",
+    id: "tJKcQeLf3rZqajgVBvNdQEosqwC2",
     title: "Jessica Tenorio",
     classes: [
       {
@@ -198,7 +217,7 @@ const data = [
   },
 
   {
-    id: "MarlenZamora",
+    id: "W29vwL62AbSd37xzOfRdDDAH3wH3",
     title: "Marlen Zamora",
     classes: [
       {
@@ -217,7 +236,7 @@ const data = [
   },
 
   {
-    id: "MargariatEscobedo",
+    id: "nbQkU19bWjh7uo5YsvHqsYQXnDt1",
     title: "Margarita Escobedo",
     classes: [
       {
@@ -249,7 +268,7 @@ const data = [
   },
 
   {
-    id: "PastoraDina",
+    id: "LJtncOdSYLdWIrNmYQCxE0al54q1",
     title: "Pastora Dina",
     classes: [
       {
@@ -262,7 +281,7 @@ const data = [
   },
 
   {
-    id: "PastorIsaac",
+    id: "RUQgNwDtNLQU438wdwzTPhaMWxH2",
     title: "Pastor Isaac",
     classes: [
       {
@@ -275,7 +294,7 @@ const data = [
   },
 
   {
-    id: "SaraiGalarza",
+    id: "ZIxM3r34e0S4kQSHMCbvHZ7ABy02",
     title: "Saraí Galarza",
     classes: [
       {
@@ -301,7 +320,7 @@ const data = [
   },
 
   {
-    id: "VeliaAcevedo",
+    id: "U9UMfAa0LCh6f9klUhj2sK4Bx683",
     title: "Velia Acevedo",
     classes: [
       {
@@ -314,7 +333,7 @@ const data = [
   },
 
   {
-    id: "VeronicaCazares",
+    id: "yK3OT3bHEifaEGZ7riUaJwmCMHI3",
     title: "Verónica Cazares",
     classes: [
       {
@@ -333,7 +352,7 @@ const data = [
   },
 
   {
-    id: "WendyMartinez",
+    id: "LuUKlt3KTHNZx7t0GFUseDRij0n2",
     title: "Wendy Martínez",
     classes: [
       {
@@ -346,7 +365,7 @@ const data = [
   },
 
   {
-    id: "YoselinGalarza",
+    id: "sdiHJ7G0wUS6DNdc9yprVQWLw763",
     title: "Yoselin Galarza",
     classes: [
       {

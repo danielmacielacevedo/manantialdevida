@@ -1,12 +1,19 @@
 import Head from "next/head";
 import BackHeader from "../../components/BackHeader";
 import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
+import AccesoNoAutorizado from "daniel/pages/components/AccesoNoAutorizado";
 import MaestrosFiltro from "daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro";
-import withAuth from "daniel/utils/withAuth";
+// import withAuth from "daniel/utils/withAuth";
+import { useContext } from "react";
+import { UserContext } from "daniel/pages/UserProvider";
+import Entrar from "daniel/pages/components/Sesion/Login";
+import esMiembroAutorizado from "daniel/pages/api/MiembrosAutorizados";
 
-function CalendarioMaestros() {
+export default function CalendarioMaestros() {
   const mesTitle = "JUNIO";
   const mes = "Junio";
+
+  const { user } = useContext(UserContext);
 
   return (
     <>
@@ -34,27 +41,42 @@ function CalendarioMaestros() {
         ></link>
       </Head>
       <BackHeader />
-      <div className="PageGlobalContainer">
-        <div className="PrincipalSectionContent">
-          <div className="PageContainer">
-            <div className="CalendarTitle">
-              <h3>Calendario Maestros</h3>
-              <span>{mesTitle}</span>
-            </div>
-            <MaestrosFiltro mes={mes} />
-            <div className="PageContent">
-              <div className="MainCalendario">
-                <article className="CalendarArticle">
-                  <div className="TableContainer"></div>
-                </article>
+      {user === null && <Entrar />}
+      {user && user.name && esMiembroAutorizado(user.id) && (
+        <div className="PageGlobalContainer">
+          <div className="PrincipalSectionContent">
+            <div className="PageContainer">
+              <div className="CalendarTitle">
+                <h1>Hola {user.name.split(" ")[0]}</h1>
+                <p>Aquí está tu calendario de</p>
+                <span>{mesTitle}</span>
+              </div>
+              <MaestrosFiltro mes={mes} />
+              <div className="PageContent">
+                <div className="MainCalendario">
+                  <article className="CalendarArticle">
+                    <div className="TableContainer"></div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
+      {user && user.name && !esMiembroAutorizado(user.id) && (
+        <>
+          <AccesoNoAutorizado />
+        </>
+      )}
       <BackMenuMobile />
+      <style jsx>{`
+        h1 {
+          margin-bottom: -10px;
+        }
+      `}</style>
     </>
   );
 }
 
-export default withAuth(CalendarioMaestros);
+// export default withAuth(CalendarioMaestros);
+// export default withAuth(CalendarioMaestros);

@@ -1,48 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import esAdministrador from "daniel/pages/api/Administradores";
+// import esMiembroAutorizado from "daniel/pages/api/MiembrosAutorizados";
 import { UserContext } from "daniel/pages/UserProvider";
 
-export default function ArticleList({props, articles, selectedDay }) {
+export default function ArticleList({ articles, selectedDay }) {
   const [isLoading, setIsLoading] = useState(true);
   const { user } = useContext(UserContext);
-  const [userData, setUserData] = useState([]);
-
-  function fetchArticles() {
-    fetch('/api/maestros/Junio')
-      .then(response => response.json())
-      .then(data => {
-        // Buscar el objeto con el ID específico
-        const desiredArticle = data.find(article => article.id === '2v8vhcmISgeZKEDk2YDACmGgDJI2');
-  
-        // Verificar si se encontró el objeto
-        if (desiredArticle) {
-          console.log('Objeto encontrado:', desiredArticle);
-  
-          // Verificar si el estado ya contiene el objeto deseado
-          if (!userData || userData.id !== desiredArticle.id) {
-            setUserData(desiredArticle);
-          }
-        } else {
-          console.log('No se encontró el objeto con el ID especificado');
-        }
-      })
-      .catch(error => {
-        // Manejo de errores
-        console.error(error);
-      });
-  }
-  
-  // Llamar a fetchArticles solo cuando userData esté vacío
-  useEffect(() => {
-    if (!userData.length) {
-      fetchArticles();
-    }
-  }, [userData]);
-  
-  // Resto de tu código...
-  
-  
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -64,7 +27,7 @@ export default function ArticleList({props, articles, selectedDay }) {
               alt="Spinner"
             />
           </div>
-        ) : esAdministrador(user.id) && articles && articles.length > 0 ? (
+        ) : articles && articles.length > 0 ? (
           articles.map((article) => (
             <div
               className="MaestroContainer article-container"
@@ -87,26 +50,9 @@ export default function ArticleList({props, articles, selectedDay }) {
               </div>
             </div>
           ))
-          ) : !esAdministrador(user.id) && articles && articles.length > 0 ? (
-            <>
-              <div className="MaestroContainer article-container">
-                <div className="MaestroClasses">
-                  {userData.classes.map((clase, index) => (
-                    <div className="TableContainerInfo" key={index}>
-                      <div className="NameContainer">
-                        <span>
-                          {clase.date} {clase.dia}
-                        </span>
-                        <span>{clase.class}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </>
-          ) : (
+        ) : (
           <p className="TextAlignCenter">
-            Este calendario aún no está disponible.
+            Este calendario aún no está disponibleeee.
           </p>
         )}
       </div>
@@ -145,6 +91,7 @@ export default function ArticleList({props, articles, selectedDay }) {
           display: flex;
           flex-direction: column;
           width: 100%;
+          {/* padding: 20px 0 0 0; */}
           gap: 20px;
         }
         .NameContainer {
