@@ -68,7 +68,7 @@ export default function IndividualBlog() {
         trabajando, y nada hemos pescado; mas en tu palabra echaré la red.
       </p>
     </div>,
-    <p key={3}>Cuando por nosotros mismos intentamos llevar algo a cabo,</p>,
+    <p key={3}>Cuando nosotros mismos intentamos llevar algo a cabo,</p>,
     <p key={3}>
       lo más seguro es que al final del camino obtengamos fracaso, en lugar de
       éxito;
@@ -133,23 +133,23 @@ export default function IndividualBlog() {
   return (
     <>
       <Head>
-        <title>Alumbra mi camino | Carolina Macias</title>
+        <title>Vuelve a intentarlo | Carolina Macias</title>
         <meta
           name="description"
-          content="¿Alguna vez has caminado por un lugar oscuro?"
+          content="Cuando nosotros mismos intentamos llevar algo a cabo..."
         />
         <meta
           property="og:title"
-          content="Alumbra mi camino | Carolina Macias"
+          content="Vuelve a intentarlo | Carolina Macias"
         />
         <meta property="og:url" content="https://somosmamantial.org/blog" />
         <meta
           property="og:image"
-          content="/assets/escritores/carolina-macias/alumbra-mi-camino-share.jpg"
+          content="/assets/escritores/carolina-macias/vuelve-a-intentarlo-HD.jpg"
         />
         <link
           rel="apple-touch-icon"
-          href="/assets/escritores/carolina-macias/alumbra-mi-camino-share.jpg"
+          href="/assets/escritores/carolina-macias/vuelve-a-intentarlo-HD.jpg"
         ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
