@@ -54,6 +54,7 @@ export default function ArticleList({ articles }) {
       </div>
       <style jsx>{`
         .ArticleListContainer {
+          position: relative;
           display: flex;
           flex-direction: column;
           gap: 20px;

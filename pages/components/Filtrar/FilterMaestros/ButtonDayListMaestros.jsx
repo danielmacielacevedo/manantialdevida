@@ -33,26 +33,26 @@ export default function ButtonDayList({ articles, filterDay }) {
       <h4>Filtrar por día:</h4>
       <div className="ButtonDays">
         {days && days.length > 0 ? (
-          days.map((day) => (
-            <button
-              type="button"
-              className={`ButtonDayListContainer btn-day ${
-                selectedDay === day ? "active" : ""
-              }`}
-              onClick={() => handleDayClick(day)}
-              key={day}
-            >
-              {day}
-            </button>
-          ))
+            days.map((day) => (
+              <button
+                type="button"
+                className={`ButtonDayListContainer btn-day ${
+                  selectedDay === day ? "active" : ""
+                }`}
+                onClick={() => handleDayClick(day)}
+                key={day}
+              >
+                {day}
+              </button>
+            ))
         ) : (
-          <p>Loading...</p>
+          <p></p>
         )}
       </div>
       <style jsx>{`
         .ButtonDays {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(8, 1fr);
           width: 100%;
           gap: 20px;
         }
@@ -73,6 +73,13 @@ export default function ButtonDayList({ articles, filterDay }) {
         .ButtonDayListContainer:hover {
           background: var(--secondary-color);
           color: var(--primary-color);
+        }
+        @media only screen and (max-width: 860px)
+        {
+          .ButtonDays
+          {
+            grid-template-columns: repeat(5, 1fr);
+          }
         }
       `}</style>
     </>

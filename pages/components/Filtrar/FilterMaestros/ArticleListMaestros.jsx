@@ -57,13 +57,15 @@ export default function ArticleList({ articles, selectedDay, mes }) {
     <>
       <div className="ArticleListContainer">
         {isLoading ? (
-          <div className="LoadingSpinnerContainer">
-            <div className="Spinner"></div>
-            <img
-              className="SpinnerImage"
-              src="/assets/favicon_manantial.png"
-              alt="Spinner"
-            />
+          <div className="LoadingContainer">
+            <div className="LoadingSpinnerContainer">
+              <div className="Spinner"></div>
+              <img
+                className="SpinnerImage"
+                src="/assets/favicon_manantial.png"
+                alt="Spinner"
+              />
+            </div>
           </div>
         ) : esAdministrador(user.id) && articles && articles.length > 0 ? (
           articles.map((article) => (
@@ -120,8 +122,9 @@ export default function ArticleList({ articles, selectedDay, mes }) {
       </div>
       <style jsx>{`
         .ArticleListContainer {
-          display: flex;
-          flex-direction: column;
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
           gap: 20px;
         }
         .MaestroContainer {
@@ -172,6 +175,12 @@ export default function ArticleList({ articles, selectedDay, mes }) {
         .NameContainer span:nth-child(2) {
           display: flex;
           width: 50%;
+        }
+        @media only screen and (max-width: 860px)
+        {
+          .ArticleListContainer {
+          grid-template-columns: repeat(1, 1fr);
+        }
         }
       `}</style>
     </>

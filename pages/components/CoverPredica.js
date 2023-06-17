@@ -18,70 +18,69 @@ export default function CoverPredica(props) {
     fetchCoverDetails();
   }, [props.nombre, props.indice]);
 
-  if (loading) {
-    return (
-      <div className="LoadingContainer">
-        <div className="LoadingBackground">
-          <div className="LoadingSpinnerContainer">
-            <div className="Spinner"></div>
-            <img
-              className="SpinnerImage"
-              src="/assets/favicon_manantial.png"
-              alt="Spinner"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <>
       <div className="CoverPredicaContainer">
-        <div className="CoverBackground">
-          <div id="ImageCoverPredica">
-            <img src={coverInfo.image} />
-          </div>
-        </div>
-        <div className="CoverSectionsContainer">
-          <section className="LeftSection">
-            <h5>ÚLTIMA PREDICACIÓN</h5>
-            {/* <h5>Última predicación</h5> */}
-            <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
-              <h1>{coverInfo.title}</h1>
-            </Link>
-            <div className="ButtonsCoverPredica">
-              <Link href={encodeURI(coverInfo.profileURL)}>
-                <div className="InfoReproductor">
-                  <div className="ProfilePicture">
-                    <img src={coverInfo.picture} />
-                    <i></i>
-                  </div>
-                  <div className="DetailsInfoReproductor">
-                    <h4>{coverInfo.autor}</h4>
-                    <TimeAgoFull
-                      dia={coverInfo.dia}
-                      mes={coverInfo.mes}
-                      año={coverInfo.año}
-                      hora={coverInfo.hora}
-                    />
-                  </div>
-                </div>
-              </Link>
-              <Link
-                className="ContentButton"
-                href={`${coverInfo.profileURL}${coverInfo.url}`}
-              >
-                Ver
-              </Link>
+        <div className="CoverBackground"></div>
+        {loading ? (
+          <div className="LoadingContainer">
+            <div className="LoadingSpinnerContainer">
+              <div className="Spinner"></div>
+              <img
+                className="SpinnerImage"
+                src="/assets/favicon_manantial.png"
+                alt="Spinner"
+              />
             </div>
-          </section>
-          <section className="RightSection">
-            <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
-              <img src={coverInfo.imageHD} />
-            </Link>
-          </section>
-        </div>
+          </div>
+        ) : (
+          <>
+            <div className="CoverBackground">
+              <div id="ImageCoverPredica">
+                <img src={coverInfo.image} />
+              </div>
+            </div>
+            <div className="CoverSectionsContainer">
+              <section className="LeftSection">
+                <h5>ÚLTIMA PREDICACIÓN</h5>
+                {/* <h5>Última predicación</h5> */}
+                <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
+                  <h1>{coverInfo.title}</h1>
+                </Link>
+                <div className="ButtonsCoverPredica">
+                  <Link href={encodeURI(coverInfo.profileURL)}>
+                    <div className="InfoReproductor">
+                      <div className="ProfilePicture">
+                        <img src={coverInfo.picture} />
+                        <i></i>
+                      </div>
+                      <div className="DetailsInfoReproductor">
+                        <h4>{coverInfo.autor}</h4>
+                        <TimeAgoFull
+                          dia={coverInfo.dia}
+                          mes={coverInfo.mes}
+                          año={coverInfo.año}
+                          hora={coverInfo.hora}
+                        />
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    className="ContentButton"
+                    href={`${coverInfo.profileURL}${coverInfo.url}`}
+                  >
+                    Ver
+                  </Link>
+                </div>
+              </section>
+              <section className="RightSection">
+                <Link href={`${coverInfo.profileURL}${coverInfo.url}`}>
+                  <img src={coverInfo.imageHD} />
+                </Link>
+              </section>
+            </div>
+          </>
+        )}
       </div>
       <style jsx>{`
         .CoverPredicaContainer {

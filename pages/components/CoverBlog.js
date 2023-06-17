@@ -13,75 +13,74 @@ export default function CoverBlog(props) {
       setCoverInfoBlog(data[props.nombre][props.blog]);
       setTimeout(() => {
         setLoading(false);
-      }, 500); // Establece un retraso de 2 segundos antes de mostrar los datos
+      }, 1000); // Establece un retraso de 2 segundos antes de mostrar los datos
     }
     fetchCoverDetails();
   }, [props.nombre, props.blog]);
 
-  if (loading) {
-    return (
-      <div className="LoadingContainer">
-        <div className="LoadingBackground">
-          <div className="LoadingSpinnerContainer">
-            <div className="Spinner"></div>
-            <img
-              className="SpinnerImage"
-              src="/assets/favicon_manantial.png"
-              alt="Spinner"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <>
       <div className="CoverPredicaContainer">
-        <div className="CoverBackground">
-          <div id="ImageCoverPredica">
-            <img src={coverInfoBlog.image} />
-          </div>
-        </div>
-        <div className="CoverSectionsContainer">
-          <section className="LeftSection">
-            <h5>ÚLTIMO BLOG</h5>
-            {/* <h5>Último blog</h5> */}
-            <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
-              <h1>{coverInfoBlog.title}</h1>
-            </Link>
-            <div className="ButtonsCoverPredica">
-              <Link href={encodeURI(coverInfoBlog.profileURL)}>
-                <div className="InfoReproductor">
-                  <div className="ProfilePicture">
-                    <img src={coverInfoBlog.picture} />
-                    <i></i>
-                  </div>
-                  <div className="DetailsInfoReproductor">
-                    <h4>{coverInfoBlog.autor}</h4>
-                    <TimeAgoFull
-                      dia={coverInfoBlog.dia}
-                      mes={coverInfoBlog.mes}
-                      año={coverInfoBlog.año}
-                      hora={coverInfoBlog.hora}
-                    />
-                  </div>
-                </div>
-              </Link>
-              <Link
-                className="ContentButton"
-                href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}
-              >
-                Leer
-              </Link>
+        <div className="CoverBackground"></div>
+        {loading ? (
+          <div className="CoverPredicaContainer">
+            <div className="LoadingSpinnerContainer">
+              <div className="Spinner"></div>
+              <img
+                className="SpinnerImage"
+                src="/assets/favicon_manantial.png"
+                alt="Spinner"
+              />
             </div>
-          </section>
-          <section className="RightSection">
-            <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
-              <img src={coverInfoBlog.image} />
-            </Link>
-          </section>
-        </div>
+          </div>
+        ) : (
+          <>
+            <div className="CoverBackground">
+              <div id="ImageCoverPredica">
+                <img src={coverInfoBlog.image} />
+              </div>
+            </div>
+            <div className="CoverSectionsContainer">
+              <section className="LeftSection">
+                <h5>ÚLTIMO BLOG</h5>
+                {/* <h5>Último blog</h5> */}
+                <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
+                  <h1>{coverInfoBlog.title}</h1>
+                </Link>
+                <div className="ButtonsCoverPredica">
+                  <Link href={encodeURI(coverInfoBlog.profileURL)}>
+                    <div className="InfoReproductor">
+                      <div className="ProfilePicture">
+                        <img src={coverInfoBlog.picture} />
+                        <i></i>
+                      </div>
+                      <div className="DetailsInfoReproductor">
+                        <h4>{coverInfoBlog.autor}</h4>
+                        <TimeAgoFull
+                          dia={coverInfoBlog.dia}
+                          mes={coverInfoBlog.mes}
+                          año={coverInfoBlog.año}
+                          hora={coverInfoBlog.hora}
+                        />
+                      </div>
+                    </div>
+                  </Link>
+                  <Link
+                    className="ContentButton"
+                    href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}
+                  >
+                    Leer
+                  </Link>
+                </div>
+              </section>
+              <section className="RightSection">
+                <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
+                  <img src={coverInfoBlog.image} />
+                </Link>
+              </section>
+            </div>
+          </>
+        )}
       </div>
       <style jsx>{`
         .CoverPredicaContainer {
