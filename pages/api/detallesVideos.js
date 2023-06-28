@@ -150,6 +150,25 @@ export default function detallesVideos(req, res) {
       profileURL: "/@pastorisaac",
       embed: "3Sr97AgpcDo",
     },
+
+    {
+      title: "El lugar de sacrificio",
+      autor: "Pastor Isaac Delgado",
+      picture: "/assets/predicadores/pastor-isaac.png",
+      date: "25 JUNIO 2023",
+      dia: "25",
+      mes: "06",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/pastor-isaac/el-lugar-del-sacrificio.jpg",
+      imageHD:
+        "/assets/predicadores/pastor-isaac/el-lugar-del-sacrificio-HD.jpg",
+      url: "/el-lugar-del-sacrificio",
+      profileURL: "/@pastorisaac",
+      embed: "uC6aaIwErKU",
+    },
   ];
 
   const pastoraDina = [
