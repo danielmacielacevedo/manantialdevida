@@ -166,7 +166,6 @@ export default function IndividualBlog() {
     </div>,
     <p key={32}>Confiemos sabiendo que estamos en su mano</p>,
     <p key={33}>y nadie ni nada nos arrebatará de Él.</p>,
-    <BlogVideo key={34} nombre="MarlenZamora" indice="1" />,
     <BlogShare key={35} nombre="MarlenZamora" indice="1" />,
   ];
 
