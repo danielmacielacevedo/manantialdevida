@@ -259,15 +259,15 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Domingo",
-        dia: "09",
-        class: "Niños pequeños",
+        date: "Viernes",
+        dia: "07",
+        class: "Niños",
       },
       {
         category: "Niños",
-        date: "Domingo",
-        dia: "23",
-        class: "Niños pequeños",
+        date: "Viernes",
+        dia: "21",
+        class: "Niños",
       },
     ],
   },
@@ -387,15 +387,15 @@ const data = [
     classes: [
       {
         category: "Niños",
-        date: "Viernes",
-        dia: "07",
-        class: "Niños",
+        date: "Domingo",
+        dia: "09",
+        class: "Niños pequeños",
       },
       {
         category: "Niños",
-        date: "Viernes",
-        dia: "21",
-        class: "Niños",
+        date: "Domingo",
+        dia: "23",
+        class: "Niños pequeños",
       },
     ],
   },
