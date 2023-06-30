@@ -112,9 +112,7 @@ export default function CoverBlog(props) {
           justify-content: space-between;
           align-items: center;
           gap: 20px;
-           {
-            /* padding: 20px; */
-          }
+          padding: 20px 0;
           height: 56vh;
         }
         #BlogImage {
