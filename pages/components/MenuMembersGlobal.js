@@ -129,7 +129,7 @@ export default function MenuMembers(props) {
             {esAdministrador(user.id) && (
               <div className="PrivateContainerMenu">
                 Administrador
-                <Link href="/miembros/calendario-maestros">
+                <Link href="/miembros/maestros">
                   <div
                     onClick={() => handleIconClick("calendar1")}
                     className="ItemMenuContainer"
@@ -157,7 +157,7 @@ export default function MenuMembers(props) {
                     <p>Maestros</p>
                   </div>
                 </Link>
-                <Link href="/miembros/calendario-sociedades">
+                <Link href="/miembros/sociedades">
                   <div
                     onClick={() => handleIconClick("calendar2")}
                     className="ItemMenuContainer"
@@ -185,7 +185,7 @@ export default function MenuMembers(props) {
                     <p>Sociedades</p>
                   </div>
                 </Link>
-                <Link href="/miembros/calendario-audio">
+                <Link href="/miembros/audio">
                   <div
                     onClick={() => handleIconClick("calendar3")}
                     className="ItemMenuContainer"
@@ -218,7 +218,7 @@ export default function MenuMembers(props) {
             {!esAdministrador(user.id) && (
               <div className="PrivateContainerMenu">
                 Mi calendario
-                <Link href="/miembros/calendario-maestros">
+                <Link href="/miembros/maestros">
                   <div
                     onClick={() => handleIconClick("calendar1")}
                     className="ItemMenuContainer"

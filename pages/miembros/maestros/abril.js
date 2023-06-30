@@ -2,13 +2,16 @@ import Head from "next/head";
 import BackHeader from "../../components/BackHeader";
 import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
 import MaestrosFiltro from "daniel/pages/components/Filtrar/FilterMaestros/MaestrosFiltro";
-import withAuth from "daniel/utils/withAuth";
+// import withAuth from "daniel/utils/withAuth";
 import esAdministrador from "daniel/pages/api/Administradores";
+import esMiembroAutorizado from "daniel/pages/api/MiembrosAutorizados";
+import Entrar from "daniel/pages/components/Sesion/Login";
+import AccesoNoAutorizado from "daniel/pages/components/AccesoNoAutorizado";
 import { useContext } from "react";
 import { UserContext } from "daniel/pages/UserProvider";
 import Link from "next/link";
 
-function CalendarioMaestros() {
+export default function CalendarioMaestros() {
   const mesTitle = "ABRIL";
   const mes = "Abril";
 
@@ -40,42 +43,47 @@ function CalendarioMaestros() {
         ></link>
       </Head>
       <BackHeader />
-      <div className="PageGlobalContainer">
-        <div className="PrincipalSectionContent">
-          <div className="PageContainer">
-            <div className="CalendarTitle">
-              <h1>Hola {user.name.split(" ")[0]}</h1>
-              {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
-              {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
-              <div className="CalendarTitleButtons">
-                <div href="/">
-                  <span className="CalendarLeft">
-                    <i></i>
-                  </span>
-                </div>
-                <span>{mesTitle}</span>
-                <Link href="/miembros/calendario-maestros/mayo">
-                  <span id="on" className="CalendarRight">
-                    <i></i>
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="PageContent">
-              <div className="MainCalendario">
-                <article className="CalendarArticle">
-                  <div className="TableContainer">
-                    <MaestrosFiltro mes={mes} />
+      {user === null && <Entrar />}
+      {user && user.name && esMiembroAutorizado(user.id) && (
+        <div className="PageGlobalContainer">
+          <div className="PrincipalSectionContent">
+            <div className="PageContainer">
+              <div className="CalendarTitle">
+                <h1>Hola {user.name.split(" ")[0]}</h1>
+                {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
+                {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
+                <div className="CalendarTitleButtons">
+                  <div href="/miembros/maestros/">
+                    <span className="CalendarLeft">
+                      <i></i>
+                    </span>
                   </div>
-                </article>
+                  <span>{mesTitle}</span>
+                  <Link href="/miembros/maestros/mayo">
+                    <span id="on" className="CalendarRight">
+                      <i></i>
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <MaestrosFiltro mes={mes} />
+              <div className="PageContent">
+                <div className="MainCalendario">
+                  <article className="CalendarArticle">
+                    <div className="TableContainer"></div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
+      {user && user.name && !esMiembroAutorizado(user.id) && (
+        <>
+          <AccesoNoAutorizado />
+        </>
+      )}
       <BackMenuMobile />
     </>
   );
 }
-
-export default withAuth(CalendarioMaestros);

@@ -1,25 +1,22 @@
 import Head from "next/head";
-import BackHeader from "../components/BackHeader";
+import BackHeader from "../../components/BackHeader";
 import Link from "next/link";
-import BackMenuMobile from "../components/BackMenuMobile";
+import BackMenuMobile from "../../components/BackMenuMobile";
 import withAuth from "daniel/utils/withAuth";
 
-function CalendarioSociedades() {
+function CalendarioAudio() {
   return (
     <div className="PageContentPadding">
       <Head>
-        <title>Calendario Sociedades 2023 | Manantial</title>
+        <title>Calendario Audio 2023 | Manantial</title>
         <meta
           name="description"
-          content="Calendario de clases para los maestros de Manantial de Vida."
+          content="Calendario para el equipo de audio en Manantial de Vida."
         />
-        <meta
-          property="og:title"
-          content="Calendario Sociedades 2023 | Manantial"
-        />
+        <meta property="og:title" content="Calendario Audio 2023 | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/miembros" />
         <meta property="og:image" content="/assets/icon_manantial.png" />
-        <link rel="apple-touch-icon" href="/assets/icon_manantial.jpg"></link>
+        <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -39,19 +36,16 @@ function CalendarioSociedades() {
           <div className="PageContainer">
             <div className="CalendarTitle">
               <h3>Calendario 2023</h3>
-              <span>SOCIEDADES</span>
+              <span>AUDIO</span>
               <p>Selecciona un mes.</p>
             </div>
-            <div className="PageContent">
+            <div className="PageContent PageContentFull">
               <div className="MainCalendario">
                 <article className="CalendarArticle">
                   <div className="GlobalCalendarContainer">
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-sociedades/mayo"
-                    >
+                    <Link className="MesContainer" href="/miembros/audio/julio">
                       <div>
-                        <p>Mayo</p>
+                        <p>Julio</p>
                       </div>
                     </Link>
                   </div>
@@ -66,4 +60,4 @@ function CalendarioSociedades() {
   );
 }
 
-export default withAuth(CalendarioSociedades);
+export default withAuth(CalendarioAudio);

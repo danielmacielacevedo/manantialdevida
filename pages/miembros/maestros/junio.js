@@ -25,7 +25,7 @@ export default function CalendarioMaestros() {
           name="description"
           content="Calendario de clases para los maestros de Manantial de Vida."
         />
-        <meta property="og:title" content="Calendario Mayo | Manantial" />
+        <meta property="og:title" content="Calendario Junio | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/miembros" />
         <meta property="og:image" content="/assets/icon_manantial.png" />
         <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
@@ -53,17 +53,17 @@ export default function CalendarioMaestros() {
                 {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
                 {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
                 <div className="CalendarTitleButtons">
-                  <Link href="/miembros/calendario-maestros/mayo">
+                  <Link href="/miembros/maestros/mayo">
                     <span id="on" className="CalendarLeft">
                       <i></i>
                     </span>
                   </Link>
                   <span>{mesTitle}</span>
-                  <div href="/">
-                    <span className="CalendarRight">
+                  <Link href="/miembros/maestros/julio">
+                    <span id="on" className="CalendarRight">
                       <i></i>
                     </span>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <MaestrosFiltro mes={mes} />

@@ -1,25 +1,25 @@
 import Head from "next/head";
-import BackHeader from "../components/BackHeader";
+import BackHeader from "../../components/BackHeader";
 import Link from "next/link";
-import BackMenuMobile from "../components/BackMenuMobile";
+import BackMenuMobile from "../../components/BackMenuMobile";
 import withAuth from "daniel/utils/withAuth";
 
-function CalendarioMaestros() {
+function CalendarioSociedades() {
   return (
     <div className="PageContentPadding">
       <Head>
-        <title>Calendario Maestros 2023 | Manantial</title>
+        <title>Calendario Sociedades 2023 | Manantial</title>
         <meta
           name="description"
           content="Calendario de clases para los maestros de Manantial de Vida."
         />
         <meta
           property="og:title"
-          content="Calendario Maestros 2023 | Manantial"
+          content="Calendario Sociedades 2023 | Manantial"
         />
         <meta property="og:url" content="https://somosmamantial.org/miembros" />
         <meta property="og:image" content="/assets/icon_manantial.png" />
-        <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
+        <link rel="apple-touch-icon" href="/assets/icon_manantial.jpg"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -39,37 +39,19 @@ function CalendarioMaestros() {
           <div className="PageContainer">
             <div className="CalendarTitle">
               <h3>Calendario 2023</h3>
-              <span>MAESTROS</span>
+              <span>SOCIEDADES</span>
               <p>Selecciona un mes.</p>
             </div>
-            <div className="PageContent PageContentFull">
+            <div className="PageContent">
               <div className="MainCalendario">
                 <article className="CalendarArticle">
                   <div className="GlobalCalendarContainer">
                     <Link
                       className="MesContainer"
-                      href="/miembros/calendario-maestros/junio"
-                    >
-                      <div>
-                        <p>Junio</p>
-                      </div>
-                    </Link>
-
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-maestros/mayo"
+                      href="/miembros/sociedades/mayo"
                     >
                       <div>
                         <p>Mayo</p>
-                      </div>
-                    </Link>
-
-                    <Link
-                      className="MesContainer"
-                      href="/miembros/calendario-maestros/abril"
-                    >
-                      <div>
-                        <p>Abril</p>
                       </div>
                     </Link>
                   </div>
@@ -84,4 +66,4 @@ function CalendarioMaestros() {
   );
 }
 
-export default withAuth(CalendarioMaestros);
+export default withAuth(CalendarioSociedades);
