@@ -1,105 +1,7 @@
 const data = [
-  // {
-  //   id: "2v8vhcmISgeZKEDk2YDACmGgDJI2",
-  //   title: "Daniel Maciel A.",
-  //   classes: [
-  //     {
-  //       category: "Audio",
-  //       date: "Domingo",
-  //       dia: "02",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Miércoles",
-  //       dia: "05",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Viernes",
-  //       dia: "07",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Domingo",
-  //       dia: "09",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Miércoles",
-  //       dia: "12",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Viernes",
-  //       dia: "14",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Domingo",
-  //       dia: "16",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Miércoles",
-  //       dia: "19",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Viernes",
-  //       dia: "21",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Domingo",
-  //       dia: "23",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Miércoles",
-  //       dia: "26",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Viernes",
-  //       dia: "28",
-  //       class: "Grabación audio",
-  //     },
-
-  //     {
-  //       category: "Audio",
-  //       date: "Domingo",
-  //       dia: "30",
-  //       class: "Grabación audio",
-  //     },
-
-  //   ],
-  // },
-
   {
-    id: "wSTKpsaybUQarJQsNsNhuLU1EWp2",
-    title: "Elias Cano",
+    id: "2v8vhcmISgeZKEDk2YDACmGgDJI2",
+    title: "Daniel Maciel A.",
     classes: [
       {
         category: "Audio",
@@ -108,6 +10,47 @@ const data = [
         class: "9:40-10:20",
       },
 
+      {
+        category: "Audio",
+        date: "Miércoles",
+        dia: "12",
+        class: "18:40-19:20",
+      },
+
+      {
+        category: "Audio",
+        date: "Viernes",
+        dia: "14",
+        class: "18:40-20:00",
+      },
+
+      {
+        category: "Audio",
+        date: "Miércoles",
+        dia: "26",
+        class: "18:40-19:20",
+      },
+
+      {
+        category: "Audio",
+        date: "Viernes",
+        dia: "28",
+        class: "18:40-20:00",
+      },
+
+      {
+        category: "Audio",
+        date: "Domingo",
+        dia: "30",
+        class: "9:40-10:20",
+      },
+    ],
+  },
+
+  {
+    id: "wSTKpsaybUQarJQsNsNhuLU1EWp2",
+    title: "Elias Cano",
+    classes: [
       {
         category: "Audio",
         date: "Miércoles",
@@ -127,20 +70,6 @@ const data = [
         date: "Domingo",
         dia: "09",
         class: "11:15-13:30",
-      },
-
-      {
-        category: "Audio",
-        date: "Miércoles",
-        dia: "12",
-        class: "18:40-19:20",
-      },
-
-      {
-        category: "Audio",
-        date: "Viernes",
-        dia: "14",
-        class: "18:40-20:00",
       },
 
       {
@@ -169,27 +98,6 @@ const data = [
         date: "Domingo",
         dia: "23",
         class: "11:15-13:30",
-      },
-
-      {
-        category: "Audio",
-        date: "Miércoles",
-        dia: "26",
-        class: "18:40-19:20",
-      },
-
-      {
-        category: "Audio",
-        date: "Viernes",
-        dia: "28",
-        class: "18:40-20:00",
-      },
-
-      {
-        category: "Audio",
-        date: "Domingo",
-        dia: "30",
-        class: "9:40-10:20",
       },
     ],
   },

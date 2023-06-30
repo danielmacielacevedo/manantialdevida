@@ -65,6 +65,23 @@ export default function detallesBlog(req, res) {
       url: "/el-SENOR-esta-a-mi-lado",
       profileURL: "/@marlenzamora",
     },
+
+    {
+      title: "Mi buen pastor",
+      autor: "Marlen Zamora",
+      picture: "/assets/escritores/marlen-zamora.png",
+      date: "30 JUNIO 2023",
+      dia: "30",
+      mes: "06",
+      año: "2023",
+      hora: "08",
+      minuto: "00",
+      desc: "",
+      image: "/assets/escritores/marlen-zamora/mi-buen-pastor.jpg",
+      imageHD: "/assets/escritores/marlen-zamora/mi-buen-pastor-HD.jpg",
+      url: "/mi-buen-pastor",
+      profileURL: "/@marlenzamora",
+    },
   ];
 
   const data = {
