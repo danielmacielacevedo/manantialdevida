@@ -106,12 +106,6 @@ const data = [
     title: "Flor Fernández",
     classes: [
       {
-        category: "Niños",
-        date: "Domingo",
-        dia: "04",
-        class: "Niños grandes",
-      },
-      {
         category: "Adultos",
         date: "Domingo",
         dia: "09",
@@ -119,9 +113,15 @@ const data = [
       },
       {
         category: "Niños",
-        date: "Miércoles",
-        dia: "28",
-        class: "Niños",
+        date: "Domingo",
+        dia: "16",
+        class: "Niños pequeños",
+      },
+      {
+        category: "Niños",
+        date: "Domingo",
+        dia: "23",
+        class: "Dominical niños",
       },
     ],
   },
