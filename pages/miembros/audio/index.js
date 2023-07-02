@@ -2,9 +2,9 @@ import Head from "next/head";
 import BackHeader from "../../components/BackHeader";
 import Link from "next/link";
 import BackMenuMobile from "../../components/BackMenuMobile";
-import withAuth from "daniel/utils/withAuth";
+// import withAuth from "daniel/utils/withAuth";
 
-function CalendarioAudio() {
+export default function CalendarioAudio() {
   return (
     <div className="PageContentPadding">
       <Head>
@@ -59,5 +59,3 @@ function CalendarioAudio() {
     </div>
   );
 }
-
-export default withAuth(CalendarioAudio);
