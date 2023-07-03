@@ -14,7 +14,7 @@ import DirectionsIcon from "../../public/assets/icons/animated-icons/DirectionsI
 import FolderIcon from "../../public/assets/icons/animated-icons/FolderIcon.json";
 import esAdministrador from "../api/Administradores";
 import esMaestro from "../api/Maestros";
-import esAudio from "../api/Audio";
+import esMedia from "../api/Media";
 
 export const MenuContext = createContext();
 
@@ -131,34 +131,6 @@ export default function MenuMembers(props) {
             {esAdministrador(user.id) && (
               <div className="PrivateContainerMenu">
                 Administrador
-                <Link href="/miembros/audio">
-                  <div
-                    onClick={() => handleIconClick("calendar3")}
-                    className="ItemMenuContainer"
-                  >
-                    <div className="PostProfilePicture">
-                      <div
-                        className={`IconContainer ${
-                          activeIcon === "calendar3" ? "active" : ""
-                        }`}
-                      >
-                        <Lottie
-                          options={{
-                            animationData: CalendarIcon,
-                            loop: false,
-                            autoplay: false,
-                          }}
-                          isStopped={activeIcon !== "calendar3" || !isPlaying}
-                          width={24}
-                          height={24}
-                          isClickToPauseDisabled
-                          ref={animationRefs.calendar3}
-                        />
-                      </div>
-                    </div>
-                    <p>Audio</p>
-                  </div>
-                </Link>
                 <Link href="/miembros/maestros">
                   <div
                     onClick={() => handleIconClick("calendar1")}
@@ -185,6 +157,34 @@ export default function MenuMembers(props) {
                       </div>
                     </div>
                     <p>Maestros</p>
+                  </div>
+                </Link>
+                <Link href="/miembros/media">
+                  <div
+                    onClick={() => handleIconClick("calendar3")}
+                    className="ItemMenuContainer"
+                  >
+                    <div className="PostProfilePicture">
+                      <div
+                        className={`IconContainer ${
+                          activeIcon === "calendar3" ? "active" : ""
+                        }`}
+                      >
+                        <Lottie
+                          options={{
+                            animationData: CalendarIcon,
+                            loop: false,
+                            autoplay: false,
+                          }}
+                          isStopped={activeIcon !== "calendar3" || !isPlaying}
+                          width={24}
+                          height={24}
+                          isClickToPauseDisabled
+                          ref={animationRefs.calendar3}
+                        />
+                      </div>
+                    </div>
+                    <p>Media</p>
                   </div>
                 </Link>
                 <Link href="/miembros/sociedades">
@@ -220,36 +220,6 @@ export default function MenuMembers(props) {
             {!esAdministrador(user.id) && (
               <div className="PrivateContainerMenu">
                 Mis calendarios
-                {esAudio(user.id) && (
-                  <Link href="/miembros/audio">
-                    <div
-                      onClick={() => handleIconClick("calendar3")}
-                      className="ItemMenuContainer"
-                    >
-                      <div className="PostProfilePicture">
-                        <div
-                          className={`IconContainer ${
-                            activeIcon === "calendar3" ? "active" : ""
-                          }`}
-                        >
-                          <Lottie
-                            options={{
-                              animationData: CalendarIcon,
-                              loop: false,
-                              autoplay: false,
-                            }}
-                            isStopped={activeIcon !== "calendar3" || !isPlaying}
-                            width={24}
-                            height={24}
-                            isClickToPauseDisabled
-                            ref={animationRefs.calendar3}
-                          />
-                        </div>
-                      </div>
-                      <p>Audio</p>
-                    </div>
-                  </Link>
-                )}
                 {esMaestro(user.id) && (
                   <Link href="/miembros/maestros">
                     <div
@@ -277,6 +247,36 @@ export default function MenuMembers(props) {
                         </div>
                       </div>
                       <p>Maestros</p>
+                    </div>
+                  </Link>
+                )}
+                {esMedia(user.id) && (
+                  <Link href="/miembros/media">
+                    <div
+                      onClick={() => handleIconClick("calendar3")}
+                      className="ItemMenuContainer"
+                    >
+                      <div className="PostProfilePicture">
+                        <div
+                          className={`IconContainer ${
+                            activeIcon === "calendar3" ? "active" : ""
+                          }`}
+                        >
+                          <Lottie
+                            options={{
+                              animationData: CalendarIcon,
+                              loop: false,
+                              autoplay: false,
+                            }}
+                            isStopped={activeIcon !== "calendar3" || !isPlaying}
+                            width={24}
+                            height={24}
+                            isClickToPauseDisabled
+                            ref={animationRefs.calendar3}
+                          />
+                        </div>
+                      </div>
+                      <p>Media</p>
                     </div>
                   </Link>
                 )}

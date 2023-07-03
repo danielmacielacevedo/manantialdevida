@@ -50,8 +50,12 @@ export default function CalendarioMaestros() {
             <div className="PageContainer">
               <div className="CalendarTitle">
                 <h1>Hola {user.name.split(" ")[0]}</h1>
-                {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
-                {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
+                {esAdministrador(user.id) && (
+                  <p>aquí está el calendario de maestros para</p>
+                )}
+                {!esAdministrador(user.id) && (
+                  <p>este es tu calendario de clase para</p>
+                )}
                 <div className="CalendarTitleButtons">
                   <Link href="/miembros/maestros/abril">
                     <span id="on" className="CalendarLeft">

@@ -2,14 +2,14 @@ import Head from "next/head";
 import BackHeader from "../../components/BackHeader";
 import BackMenuMobile from "daniel/pages/components/BackMenuMobile";
 import AccesoNoAutorizado from "daniel/pages/components/AccesoNoAutorizado";
-import AudioFiltro from "daniel/pages/components/Filtrar/FilterAudio/AudioFiltro";
+import MediaFiltro from "daniel/pages/components/Filtrar/FilterMedia/MediaFiltro";
 // import withAuth from "daniel/utils/withAuth";
 import { useContext } from "react";
 import { UserContext } from "daniel/pages/UserProvider";
 import Entrar from "daniel/pages/components/Sesion/Login";
 // import esMiembroAutorizado from "daniel/pages/api/MiembrosAutorizados";
 import esAdministrador from "daniel/pages/api/Administradores";
-import esAudio from "daniel/pages/api/Audio";
+import esMedia from "daniel/pages/api/Media";
 // import Link from "next/link";
 
 export default function CalendarioAudio() {
@@ -24,12 +24,12 @@ export default function CalendarioAudio() {
         <title>Calendario Julio | Manantial</title>
         <meta
           name="description"
-          content="Calendario para el equipo de audio en Manantial de Vida."
+          content="Calendario para el equipo de media en Manantial de Vida."
         />
         <meta property="og:title" content="Calendario Julio | Manantial" />
         <meta
           property="og:url"
-          content="https://somosmamantial.org/miembros/audio"
+          content="https://somosmamantial.org/miembros/media"
         />
         <meta property="og:image" content="/assets/icon_manantial.png" />
         <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
@@ -48,14 +48,18 @@ export default function CalendarioAudio() {
       </Head>
       <BackHeader />
       {user === null && <Entrar />}
-      {user && user.name && esAudio(user.id) && (
+      {user && user.name && esMedia(user.id) && (
         <div className="PageGlobalContainer">
           <div className="PrincipalSectionContent">
             <div className="PageContainer">
               <div className="CalendarTitle">
                 <h1>Hola {user.name.split(" ")[0]}</h1>
-                {esAdministrador(user.id) && <p>aquí está el calendario de</p>}
-                {!esAdministrador(user.id) && <p>este es tu calendario de</p>}
+                {esAdministrador(user.id) && (
+                  <p>aquí está el calendario de media para</p>
+                )}
+                {!esAdministrador(user.id) && (
+                  <p>este es tu calendario de media para</p>
+                )}
                 <div className="CalendarTitleButtons">
                   <div href="/">
                     <span className="CalendarLeft">
@@ -70,7 +74,7 @@ export default function CalendarioAudio() {
                   </div>
                 </div>
               </div>
-              <AudioFiltro mes={mes} />
+              <MediaFiltro mes={mes} />
               <div className="PageContent">
                 <div className="MainCalendario">
                   <article className="CalendarArticle">
@@ -82,7 +86,7 @@ export default function CalendarioAudio() {
           </div>
         </div>
       )}
-      {user && user.name && !esAudio(user.id) && (
+      {user && user.name && !esMedia(user.id) && (
         <>
           <AccesoNoAutorizado />
         </>

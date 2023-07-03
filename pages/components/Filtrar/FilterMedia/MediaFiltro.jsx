@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
-import ArticleList from "./ArticleListAudio";
+import ArticleList from "./ArticleListMedia";
 // import ButtonList from "./ButtonListAudio";
-import ButtonDayList from "./ButtonDayListAudio";
+import ButtonDayList from "./ButtonDayListMedia";
 import esAdministrador from "daniel/pages/api/Administradores";
 import { UserContext } from "daniel/pages/UserProvider";
 
-export default function AudioFiltro(props) {
+export default function MediaFiltro(props) {
   const [originalArticles, setOriginalArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [selectedDay, setSelectedDay] = useState(""); // Estado para el día seleccionado
@@ -13,7 +13,7 @@ export default function AudioFiltro(props) {
   const mes = props.mes
 
   const fetchData = async () => {
-      const response = await fetch(encodeURI(`/api/audio/${props.mes}`));
+      const response = await fetch(encodeURI(`/api/media/${props.mes}`));
       const data = await response.json();
       setOriginalArticles(data);
       setFilteredArticles(data);

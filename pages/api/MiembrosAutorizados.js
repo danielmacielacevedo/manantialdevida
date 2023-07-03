@@ -2,7 +2,7 @@
 
 const miembrosAutorizados = [
   "AmEBnCiVbSgtPHcMI7LUHkpbJqi1",
-  "2v8vhcmISgeZKEDk2YDACmGgDJI2",
+  // "2v8vhcmISgeZKEDk2YDACmGgDJI2",
   "U9UMfAa0LCh6f9klUhj2sK4Bx683",
   "W29vwL62AbSd37xzOfRdDDAH3wH3",
   "RUQgNwDtNLQU438wdwzTPhaMWxH2",

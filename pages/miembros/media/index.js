@@ -4,16 +4,16 @@ import Link from "next/link";
 import BackMenuMobile from "../../components/BackMenuMobile";
 // import withAuth from "daniel/utils/withAuth";
 
-export default function CalendarioAudio() {
+export default function CalendarioMedia() {
   return (
     <div className="PageContentPadding">
       <Head>
-        <title>Calendario Audio 2023 | Manantial</title>
+        <title>Calendario Media 2023 | Manantial</title>
         <meta
           name="description"
-          content="Calendario para el equipo de audio en Manantial de Vida."
+          content="Calendario para el equipo de media en Manantial de Vida."
         />
-        <meta property="og:title" content="Calendario Audio 2023 | Manantial" />
+        <meta property="og:title" content="Calendario Media 2023 | Manantial" />
         <meta property="og:url" content="https://somosmamantial.org/miembros" />
         <meta property="og:image" content="/assets/icon_manantial.png" />
         <link rel="apple-touch-icon" href="/assets/icon_manantial.png"></link>
@@ -36,14 +36,14 @@ export default function CalendarioAudio() {
           <div className="PageContainer">
             <div className="CalendarTitle">
               <h3>Calendario 2023</h3>
-              <span>AUDIO</span>
+              <span>MEDIA</span>
               <p>Selecciona un mes.</p>
             </div>
             <div className="PageContent PageContentFull">
               <div className="MainCalendario">
                 <article className="CalendarArticle">
                   <div className="GlobalCalendarContainer">
-                    <Link className="MesContainer" href="/miembros/audio/julio">
+                    <Link className="MesContainer" href="/miembros/media/julio">
                       <div>
                         <p>Julio</p>
                       </div>

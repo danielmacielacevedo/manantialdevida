@@ -12,7 +12,7 @@ export default function ArticleList({ articles, selectedDay, mes }) {
   
   async function fetchArticles() {
     try {
-      const response = await fetch(`/api/audio/${mes}`);
+      const response = await fetch(`/api/media/${mes}`);
       const data = await response.json();
       
       // Buscar el objeto con el ID específico
