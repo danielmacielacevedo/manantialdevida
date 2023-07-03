@@ -169,6 +169,25 @@ export default function detallesVideos(req, res) {
       profileURL: "/@pastorisaac",
       embed: "uC6aaIwErKU",
     },
+
+    {
+      title: "Buscando lo más importante",
+      autor: "Pastor Isaac Delgado",
+      picture: "/assets/predicadores/pastor-isaac.png",
+      date: "2 JJULIO 2023",
+      dia: "02",
+      mes: "07",
+      año: "2023",
+      hora: "13",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image: "/assets/predicadores/pastor-isaac/buscando-lo-mas-importante.jpg",
+      imageHD:
+        "/assets/predicadores/pastor-isaac/buscando-lo-mas-importante-HD.jpg",
+      url: "/buscando-lo-mas-importante",
+      profileURL: "/@pastorisaac",
+      embed: "ucgvrNc4OFE",
+    },
   ];
 
   const pastoraDina = [
