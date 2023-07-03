@@ -688,6 +688,25 @@ export default function detallesVideos(req, res) {
       profileURL: "/@veliaacevedo",
       embed: "sUG65_2U1H8",
     },
+    {
+      title: "Dios cumple lo que promete",
+      autor: "Velia Acevedo",
+      picture: "/assets/predicadores/velia-acevedo.png",
+      date: "28 JUNIO 2023",
+      dia: "28",
+      mes: "06",
+      año: "2023",
+      hora: "19",
+      minuto: "00",
+      desc: "Predicación Manantial de Vida",
+      image:
+        "/assets/predicadores/velia-acevedo/DIOS-cumple-lo-que-promete.jpg",
+      imageHD:
+        "/assets/predicadores/velia-acevedo/DIOS-cumple-lo-que-promete-HD.jpg",
+      url: "/DIOS-cumple-lo-que-promete",
+      profileURL: "/@veliaacevedo",
+      embed: "PpkMsn-tXHo",
+    },
   ];
 
   const willyMartinez = [
