@@ -75,7 +75,7 @@ export default function CoverBlog(props) {
               </section>
               <section className="RightSection">
                 <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
-                  <img src={coverInfoBlog.image} />
+                  <img src={coverInfoBlog.imageHD} />
                 </Link>
               </section>
             </div>

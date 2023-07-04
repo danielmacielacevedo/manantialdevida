@@ -7,6 +7,10 @@ export default function UltimosBlogs() {
         {/* <h2>TODOS LOS BLOGS</h2> */}
         <div className="UltimosBlogsContent">
           <article className="UltimosBlogsArticle">
+            <BlogCard nombre="CarolinaMacias" indice="2" />
+          </article>
+
+          <article className="UltimosBlogsArticle">
             <BlogCard nombre="MarlenZamora" indice="1" />
           </article>
 

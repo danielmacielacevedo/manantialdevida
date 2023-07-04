@@ -33,7 +33,8 @@ export default function Home() {
       </Head>
       <BackHeader />
       <Cover>
-        <CoverBlog nombre="MarlenZamora" blog="1" />
+        <CoverBlog nombre="CarolinaMacias" blog="2" />
+        {/* <CoverBlog nombre="MarlenZamora" blog="1" /> */}
       </Cover>
       <UltimosBlogs />
       <Footer />
