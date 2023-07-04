@@ -130,23 +130,20 @@ export default function IndividualBlog() {
   return (
     <>
       <Head>
-        <title>Vuelve a intentarlo | Carolina Macias</title>
+        <title>Si Tú quieres | Carolina Macias</title>
         <meta
           name="description"
-          content="Cuando nosotros mismos intentamos llevar algo a cabo..."
+          content="Disponer nuestra vida para hacer..."
         />
-        <meta
-          property="og:title"
-          content="Vuelve a intentarlo | Carolina Macias"
-        />
+        <meta property="og:title" content="Si Tú quieres | Carolina Macias" />
         <meta property="og:url" content="https://somosmamantial.org/blog" />
         <meta
           property="og:image"
-          content="/assets/escritores/carolina-macias/vuelve-a-intentarlo-HD.jpg"
+          content="/assets/escritores/carolina-macias/si-TU-quieres-HD.jpg"
         />
         <link
           rel="apple-touch-icon"
-          href="/assets/escritores/carolina-macias/vuelve-a-intentarlo-HD.jpg"
+          href="/assets/escritores/carolina-macias/si-TU-quieres-HD.jpg"
         ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon_manantial.png" />
