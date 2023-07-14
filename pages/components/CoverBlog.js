@@ -101,6 +101,7 @@ export default function CoverBlog(props) {
         }
         .CoverPredicaContainer h1 {
           font-size: 70px;
+          color: #80a0ad60;
         }
         .CoverPredicaContainer h5 {
           font-size: 22px;

@@ -99,6 +99,23 @@ export default function detallesBlog(req, res) {
       url: "/mi-buen-pastor",
       profileURL: "/@marlenzamora",
     },
+
+    {
+      title: "Mi proveedor",
+      autor: "Marlen Zamora",
+      picture: "/assets/escritores/marlen-zamora.png",
+      date: "14 JULIO 2023",
+      dia: "14",
+      mes: "07",
+      año: "2023",
+      hora: "08",
+      minuto: "00",
+      desc: "Una de las mayores preocupaciones diarias puede ser la provisión para...",
+      image: "/assets/escritores/marlen-zamora/mi-proveedor.jpg",
+      imageHD: "/assets/escritores/marlen-zamora/mi-proveedor-HD.jpg",
+      url: "/mi-proveedor",
+      profileURL: "/@marlenzamora",
+    },
   ];
 
   const data = {

@@ -57,10 +57,10 @@ export default function CoverBlog(props) {
               height={34}
               isClickToPauseDisabled
             />
-            <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
+            {/* <Link href={`${coverInfoBlog.profileURL}${coverInfoBlog.url}`}>
               <h1>{coverInfoBlog.title}</h1>
-            </Link>
-            {/* <img id="BlogImage" src={coverInfoBlog.image} /> */}
+            </Link> */}
+            <img id="BlogImage" src={coverInfoBlog.imageHD} />
             <div className="ButtonsCoverPredica">
               <div className="InfoReproductor">
                 <div className="DetailsInfoReproductor">
